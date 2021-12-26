@@ -26,7 +26,6 @@
    font-family:'Times New Roman', Times, serif ;
 }
  .mainBox .img{
-   max-width:700px;
    margin-top: 30px;
 }
 .mainBox .imgs{
@@ -40,7 +39,6 @@
 .leftCard img,
 .rightCard img{
 width: 90px;
-height: 80px;
 }
 .leftCard h4,
 .rightCard h4{
@@ -67,9 +65,7 @@ height: 80px;
    .title{
       font-size: 40px;
    }
-   .mainBox .imgs{
-      display: none; 
-   }
+ 
   
    .mainBox .img{
       max-width:500px;
@@ -85,7 +81,5 @@ height: 80px;
       max-width:300px;
       margin: 50px 0;
    } 
-   .mainBox .imgs{
-      display: none; 
-   }
+  
 }

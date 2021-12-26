@@ -6,9 +6,11 @@ import rightImg from '../img/1111.png';
 import gril from '../img/kk.jpg';
 import { Container,Col,Row} from 'react-bootstrap';
 import styles from '../css/nashPrinsip.module.css';
-export default function nash_prinsip() {
-    return (
-        <div>
+
+export default class Nash_prinsip extends React.Component {
+    render() {
+        return (
+            <div>
             <div className={styles.main}>
             <Container>
                 <div className={styles.mainBox}>
@@ -29,8 +31,8 @@ export default function nash_prinsip() {
                          </Col>
 
                          <Col sm={12} md={12} lg={6} xxl={6}>
-                          <img className={styles.img} src={imgs}/>
-                          <img className={styles.imgs} src={gril} />
+                          <img className={styles.img} src={imgs} alt=" "/>
+                          <img className={styles.imgs} src={gril}  alt=" "/>
                          </Col>
                     </Row>
                     </div>
@@ -38,7 +40,7 @@ export default function nash_prinsip() {
                        <Row>
                            <Col sm={12} md={6} lg={6}>
                            <div className={styles.leftCard}>
-                               <img src={child}/>
+                               <img src={child}  alt=" " />
                                <h4>Удобный формат</h4>
                                <p>Благодаря современным технологиям мы построили самый лучший и комфортный формат дистанционного обучения</p>
                                </div> 
@@ -46,7 +48,7 @@ export default function nash_prinsip() {
 
                             <Col sm={12} md={6} lg={6}>
                            <div className={styles.rightCard}>
-                               <img src={rightImg}/>
+                               <img src={rightImg} alt=" "/>
                                <h4>Выжимаем максимум</h4>
                                <p>Мы проводим исключительно индивидуальные занятия, чтобы передать максимум знаний и опыта вашему ребенку</p>
                            </div>
@@ -56,5 +58,6 @@ export default function nash_prinsip() {
                 </Container>
             </div>
         </div>
-    )
+        )
+    }
 }
