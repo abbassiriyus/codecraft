@@ -57,12 +57,12 @@ export default class Dashboard extends Component {
 <Container>
   
   <Row>
-    <Col lg={4}>
+    <Col lg={4} lg={{order:'first'}}>
     <div>1</div>
     <div>2</div>
     <div>3</div>
     </Col>
-    <Col  lg={4} class="col order-md-1">img</Col>
+    <Col  lg={4} md={{order:'first'}}>img</Col>
     <Col lg={4}>
     <div>1</div>
     <div>2</div>
