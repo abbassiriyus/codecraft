@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+footer{
+    background-color: black;
+}
+.footer{
+    width: 85%;
+    margin: 0 auto;
+    padding: 100px 0;
+    color: white;
+}
+.footer h4{
+    font-size:25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+.footer a{
+    line-height: 38px;
+    text-decoration: none;
+    color: rgb(218, 212, 203);
+    font-size: 16px;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.icons a{
+    font-size: 32px;
+    margin-left: 30px;
+    line-height: 45px;
+}
+.icons .icon a:first-child{
+    margin-left: 95px;
+}
+ul li a:hover{
+    color: rgba(241, 158, 241, 0.9);
+}
+
+.icon a:hover{
+ 
+   box-shadow: 0 0 10px 0px rgba(241, 158, 241, 0.9);;
+}
+.footerTel{
+    margin-top: 14px;
+}
+.footerTel a{
+    color: rgb(255, 123, 0);
+    text-decoration: underline;
+    font-size: 24px;
+    margin-left: 50px;
+}
+.heart{
+    display: flex;
+   margin-top: 50px;
+    justify-content: center;
+}
+.heart div{
+    font-size: 20px;
+
+}
+.yurakcha{
+    color: rgb(255, 123, 0);
+    margin: 0 6px;
+}
+.yurakcha:hover{
+    animation-name: yurak;
+    animation-duration: 2s;
+}
+@keyframes yurak{
+    0%{transform: scale(1.3);}
+    25%{transform: scale(1);}
+    50%{transform: scale(1.3);}
+    75%{transform: scale(1);}
+    100%{transform: scale(1.3);}
+}
+@media (max-width:1200px) {
+    .footer h4{
+        font-size:22px;
+        
+    }
+
+    .footerTel a{
+        font-size: 20px;
+      
+    }
+}
+@media (max-width:992px) {
+    .footer{
+        text-align: center;
+    }
+    .icons a{
+        font-size:20px;
+        
+    }
+    .icons .icon a:first-child{
+        margin-left: 0px;
+    }
+    .footerTel a{
+        font-size: 17px;
+        margin-left: 0;
+      
+    }
+}

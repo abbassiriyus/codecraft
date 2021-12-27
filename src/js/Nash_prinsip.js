@@ -114,7 +114,7 @@ export default class Nash_prinsip extends React.Component {
              </div>
              </div>
             </div>
-
+           
         </div>
         )
     }
