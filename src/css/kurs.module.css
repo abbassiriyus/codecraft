@@ -1,0 +1,70 @@
+.cuorse{
+    padding: 140px 0 10px;
+    background-color:rgb(233, 222, 222);
+}
+.kurs{
+    width: 80%;
+    margin: 0 auto 140px;
+    display: flex;
+    justify-content: center;
+}
+.cuorse h1{
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    font-family: serif;
+}
+.cuorse span{
+    color: rgb(255, 136, 0);
+}
+ .kurs .kursImg{
+    height: 250px;
+    width: 90%;
+    margin: -50px auto 0;
+    
+}
+.rows{
+    margin-top: 200px;
+}
+.kursCard{
+   display: flex;
+   
+   margin-bottom: 90px;
+   justify-content: center;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+
+}
+.kurscol{
+    margin: 0 auto;
+    text-align: center;
+}
+.kursCard .textyellow{
+    color: rgb(255, 217, 0);
+}
+.kursCard .title{
+    font-size: 23px;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing:1px;
+}
+.kursCard p{
+    font-size: 17px;
+    text-align:justify;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 25px;
+    font-family: sans-serif;
+}
+.kursCard a{
+    text-decoration: none;
+    background-color:violet;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin: 30px auto;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    font-family: sans-serif;
+}
