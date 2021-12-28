@@ -21,7 +21,7 @@ export default class Nash_prinsip extends React.Component {
             <div className={styles.boxNash}>
                 <div className={styles.mainBox}>
                     <Row>
-                        <h2 className={styles.title}>Наши принципы <span>преподавания</span></h2>
+                        <h1 className={styles.title}>Наши принципы <span>преподавания</span></h1>
                     <Col sm={12} md={12} md={{order: 1}} lg={6} xxl={6}>
                         <div className={styles.text}>
                         <p>Большая часть нашего учебного времени посвящена получению практического опыта при работе над проектами.</p>
@@ -65,7 +65,7 @@ export default class Nash_prinsip extends React.Component {
 
 
             <div className={styles.codecrafMain}>
-             <h2 className={styles.title}>Почему выбирают <span>codecraft</span></h2>
+             <h1 className={styles.title}>Почему выбирают <span>codecraft</span></h1>
              <div className={styles.codecraf }>
                  <div className={styles.boxNash}>
                  <Row>

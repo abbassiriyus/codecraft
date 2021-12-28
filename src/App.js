@@ -1,16 +1,19 @@
+import React from 'react'
 import './App.css';
-import Nash_prinsip from '../src/js/Nash_prinsip';
-import Dashboard from '../src/js/Dashboard';
+import Nashprinsip from '../src/js/Nash_prinsip';
+import Dashboard from '../src/js/Dashboard'
 import Kurs from '../src/js/kurs'
-import Footere from '../src/js/footer'
+import Footer from '../src/js/footer'
+
 
 function App() {
   return (
    <div>
      <Dashboard/>
-     <Nash_prinsip/>
+     <Nashprinsip/>
      <Kurs/>
-     <Footere/>
+     <Footer/>
+
     </div>
   );
 }
