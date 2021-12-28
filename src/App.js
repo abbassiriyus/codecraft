@@ -9,10 +9,10 @@ import Footer from '../src/js/footer'
 function App() {
   return (
    <div>
-     <Dashboard/>
+     {/* <Dashboard/>
      <Nashprinsip/>
      <Kurs/>
-     <Footer/>
+     <Footer/> */}
 
     </div>
   );
