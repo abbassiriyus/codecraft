@@ -84,8 +84,9 @@ export default class Dashboard extends Component {
     </div>
     </Col>
     <Col  lg={4}  md={12}  md={{order:'first'}} sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img width="100%"  src='https://thumbs.dreamstime.com/b/adorable-child-using-laptop-21973756.jpg' alt=' '/></Col>
-    <Col lg={4}  md={12} >
-    <div style={{display:'flex'}} className={s.kard}>
+    <Col lg={4}  md={12} data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+    <div style={{display:'flex'}} className={s.kard} >
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " src="https://neurospectrum.ru/wp-content/uploads/mask-group-3-1.png" /></div>
       <div style={{display:'block'}}>
       <h2>Укрепляет стойкость</h2>
