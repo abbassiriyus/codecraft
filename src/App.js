@@ -5,16 +5,12 @@ import Dashboard from '../src/js/Dashboard'
 import Kurs from '../src/js/kurs'
 import Footer from '../src/js/footer'
 import Accordion from '../src/js/accordion'
+import Narxlar from './js/Narxlar';
 
 function App() {
   return (
    <div>
-     <Dashboard/>
-     <Nashprinsip/>
-     <Kurs/>
-     <Accordion/>
-     <Footer/>
-
+  <Narxlar/>
     </div>
   );
 }
