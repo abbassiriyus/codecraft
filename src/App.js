@@ -4,7 +4,7 @@ import Nashprinsip from '../src/js/Nash_prinsip';
 import Dashboard from '../src/js/Dashboard'
 import Kurs from '../src/js/kurs'
 import Footer from '../src/js/footer'
-
+import Accordion from '../src/js/accordion'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
      <Dashboard/>
      <Nashprinsip/>
      <Kurs/>
+     <Accordion/>
      <Footer/>
 
     </div>
