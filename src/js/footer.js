@@ -6,6 +6,7 @@ import {FaTelegramPlane} from 'react-icons/fa';
 import {RiPhoneFill} from 'react-icons/ri';
 import {ImHeart} from 'react-icons/im';
 import styleFooter from '../css/footer.module.css'
+import 'aos/dist/aos.css';
 export default function footer() {
     return (
         <div>

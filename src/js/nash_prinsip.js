@@ -12,7 +12,7 @@ import image5 from '../img/glob.png';
 import image6 from '../img/image6.png';
 import { Container,Col,Row} from 'react-bootstrap';
 import styles from '../css/nashPrinsip.module.css';
-
+import 'aos/dist/aos.css';
 export default class Nash_prinsip extends React.Component {
     render() {
         return (

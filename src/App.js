@@ -10,7 +10,11 @@ import Narxlar from './js/Narxlar';
 function App() {
   return (
    <div>
-  <Narxlar/>
+ <Dashboard/>
+ <Nashprinsip/>
+ <Kurs/>
+ <Accordion/>
+ <Footer/>
     </div>
   );
 }

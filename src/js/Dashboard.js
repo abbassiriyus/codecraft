@@ -5,6 +5,7 @@ import{ Navbar,Nav, Row, Col } from 'react-bootstrap'
 import { FaBars, FaTelegramPlane } from "react-icons/fa"
 import { FaFacebookSquare }from 'react-icons/fa'
 import { RiInstagramFill }from 'react-icons/ri'
+import 'aos/dist/aos.css';
 export default class Dashboard extends Component {
     render() {
         return (

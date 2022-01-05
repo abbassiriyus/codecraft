@@ -1,4 +1,4 @@
-import React from 'react'     
+import React, {useEffect, Component} from 'react'     
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import kurstyle from '../css/kurs.module.css'
 import {FaHandPointUp}from 'react-icons/fa'
@@ -9,16 +9,29 @@ import Php from '../img/prolog.gif';
 import Html from '../img/html.gif';
 import Scratch from '../img/scratch.gif';
 import Arifmetika from '../img/arif.gif'
-export default function kurs() {
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
+export default class kurs extends Component {
+
+  render() {
+    
+    useEffect(() => {
+      AOS.init();
+    
+    });
+    
+    
     return (
-        <div className={kurstyle.cuorse}>
+      <div>
+          <div className={kurstyle.cuorse}>
  <h1><span>Чему</span> мы учим?</h1>   
    <div className={kurstyle.kurs}> 
   
     <div className={kurstyle.rows}>
     <MDBRow className='row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ' >
       <MDBCol className={kurstyle.kurscol}>
-        <MDBCard className={kurstyle.kursCard}>
+        <MDBCard data-aos='fade-right' className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
             src={Python}
             alt='Hollywood Sign on The Hill'
@@ -141,5 +154,11 @@ export default function kurs() {
     </div>
     </div>
         </div>
+      </div>
     )
+  }
 }
+
+
+
+
