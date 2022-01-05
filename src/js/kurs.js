@@ -11,11 +11,12 @@ import Scratch from '../img/scratch.gif';
 import Arifmetika from '../img/arif.gif'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-
+  AOS.init();
 export default class kurs extends Component {
 
   render() {
-   
+    
+    
     
     
     return (
