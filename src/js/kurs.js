@@ -15,11 +15,7 @@ import 'aos/dist/aos.css';
 export default class kurs extends Component {
 
   render() {
-    
-    useEffect(() => {
-      AOS.init();
-    
-    });
+   
     
     
     return (

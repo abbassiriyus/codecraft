@@ -6,7 +6,10 @@ import { FaBars, FaTelegramPlane } from "react-icons/fa"
 import { FaFacebookSquare }from 'react-icons/fa'
 import { RiInstagramFill }from 'react-icons/ri'
 import 'aos/dist/aos.css';
+import AOS from 'aos'
+  AOS.init();
 export default class Dashboard extends Component {
+
     render() {
         return (
             <div>
@@ -61,22 +64,29 @@ export default class Dashboard extends Component {
 
   
   <Row className={s.chet}>
-    <Col   lg={{order:'first'}} lg={4} md={12}>
-    <div style={{display:'flex'}} className={s.kard}>
+    <Col   lg={{order:'first'}} lg={4} md={12}
+    >
+    <div style={{display:'flex'}} className={s.kard} data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="3000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt="  " src="https://4brain.ru/images/courses/cri.png" /></div>
       <div style={{display:'block'}}>
       <h2>Развивает мышление</h2>
       <p>Создавая программы дети учатся мыслить логически, анализировать, концентрировать внимание и находить решения возникшим проблемам.</p>
       </div>
     </div>
-    <div style={{display:'flex'}} className={s.kard}>
+    <div style={{display:'flex'}} className={s.kard} data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="3000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} style={{borderRadius:"50%"}} alt="  "  src="https://w7.pngwing.com/pngs/209/1016/png-transparent-computer-icons-task-id-miscellaneous-computer-logo.png" /></div>
       <div style={{display:'block'}}>
       <h2>Улучшает способности решать задачи </h2>
       <p>Создавая программы, дети учатся разбивать сложные задачи на более мелкие, применив логику, фантазию и креативность.</p>
       </div>
     </div>
-    <div style={{display:'flex'}} className={s.kard}>
+    <div style={{display:'flex'}} className={s.kard} data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="3000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " style={{borderRadius:'50%'}} src="https://www.kindpng.com/picc/m/236-2366695_presentacin-en-tu-colegio-o-instituto-circle-school.png" /></div>
       <div style={{display:'block'}}>
       <h2>Улучшает успеваемость в школе</h2>
@@ -86,7 +96,8 @@ export default class Dashboard extends Component {
     </Col>
     <Col  lg={4}  md={12}  md={{order:'first'}} sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img width="100%"  src='https://thumbs.dreamstime.com/b/adorable-child-using-laptop-21973756.jpg' alt=' '/></Col>
     <Col lg={4}  md={12} data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="2000">
     <div style={{display:'flex'}} className={s.kard} >
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " src="https://neurospectrum.ru/wp-content/uploads/mask-group-3-1.png" /></div>
       <div style={{display:'block'}}>
