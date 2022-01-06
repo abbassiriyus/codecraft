@@ -43,7 +43,7 @@ export default class nash_prinsip extends Component {
                          </Col>
 
                          <Col sm={12} md={12} md={12}  lg={12} lg={{order: 2}} xl={12} xxl={6}>
-                          <img data-aos="zoom-in-left" data-aos-duration="3000" className={styles.img} src={imgs} alt=" "/>
+                          <img data-aos="zoom-in-left" data-aos-duration="2000" className={styles.img} src={imgs} alt=" "/>
                          
                          </Col>
                     </Row>
@@ -75,11 +75,11 @@ data-aos-duration="2000"  className={styles.rightCard}>
             <div className={styles.codecrafMain}>
              <h1 className={styles.title}>Почему выбирают <span>codecraft</span></h1>
              <div className={styles.codecraf }>
-                 <div className={styles.boxNash}>
+                 <div className={styles.boxNash1}>
                  <Row>
             
 
-                     <Col sm={12} md={6} lg={4} data-aos="flip-up">
+                     <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
                      <div >
                          <img src={image1} />
                          <h4>Самые клёвые инструкторы</h4>
@@ -87,19 +87,19 @@ data-aos-duration="2000"  className={styles.rightCard}>
                      </div>
                      </Col>
 
-                     <Col sm={12} md={6} lg={4} data-aos="flip-up">
+                     <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
                          <img src={image2}/>
                          <h4>Индивидуальный подход</h4>
                          <p>Мы умеем находить индивидуальный подход ко всем нашим ученикам, учитывая их разные характерные особенности</p>
                      </Col>
 
-                    <Col sm={12} md={6} lg={4} data-aos="flip-up"> 
+                    <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000"> 
                     <img src={image3}/>
                     <h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
                     </Col>
          
-                      <Col  sm={12} md={6} lg={4} data-aos="flip-up">
+                      <Col  sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
                           <div>
                               <img src={image4} />
                               <h4>Удобный график занятий</h4>
@@ -110,7 +110,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
                            
                        
                           
-                              <Col sm={12} md={6} lg={4} data-aos="flip-up">
+                              <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
                                   <div>
                                       <img src={image5} />
                                       <h4>Обучение из любой точки мира</h4>
@@ -119,7 +119,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
 
                               </Col>
                             
-                              <Col sm={12} md={6} lg={4} data-aos="flip-up"> 
+                              <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000"> 
                               <div>
                                   <img src={image6} />
                                   <h4>Сертификат по окончанию</h4>

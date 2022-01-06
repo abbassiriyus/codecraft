@@ -39,12 +39,12 @@ footer{
     margin-left: 95px;
 }
 ul li a:hover{
-    color: rgba(241, 158, 241, 0.9);
+    color: rgb(255, 123, 0);
 }
 
-.icon a:hover{
+.icons1:hover{
  
-   box-shadow: 0 0 10px 0px rgba(241, 158, 241, 0.9);;
+   color:rgb(255, 123, 0);
 }
 .footerTel{
     margin-top: 14px;

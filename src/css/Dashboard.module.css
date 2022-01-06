@@ -403,7 +403,7 @@ font-size: 25px;
    }
    .kard p{
 font-size: 15px;
-opacity: 0.7;
+opacity: 0.9;
    }
    @media (min-width:991px) and  (max-width:1460px)  {
     .kard h2{

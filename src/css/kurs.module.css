@@ -4,7 +4,7 @@
 }
 .kurs{
     width: 80%;
-    margin: 0 auto 40px;
+    margin: 0 auto 0px;
     display: flex;
     justify-content: center;
 }
@@ -19,13 +19,12 @@
     color: rgb(255, 136, 0);
 }
  .kurs .kursImg{
-    min-height: 250px;
     width: 85%;
-    margin: -50px auto 0;
+    margin: -30px auto 0;
     
 }
 .rows{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .icons{
 font-size: 30px;
@@ -68,7 +67,7 @@ padding-right: 10px;
 }
 .kursCard a{
     text-decoration: none;
-    background-color:violet;
+    background-color:orange;
     padding: 15px 20px;
     border-radius: 20px;
     margin: 30px auto;
@@ -78,114 +77,14 @@ padding-right: 10px;
     font-family: sans-serif;
     display: flex;
     justify-content: center;
-    
+    position: absolute;
+    left: 30%;
+    bottom: 0px;
 }
 .icon{
     padding-right:6px;
 }
-@media (max-width:1700px) {
-    .cuorse h1{
-        font-size: 60px;
-    }
-    .kursCard p{
-        font-size: 16px;
-    }
-    .kursCard a{
-        font-size: 15px;
-        width: 40%;
-    }
-}
-@media (max-width:1549px) {
-    .kursCard a{
-        width: 45%;
-    }
-}
-@media (max-width:1500px) {
-    .cuorse h1{
-        font-size: 55px;
-    }
-    .kursCard a{
-        font-size: 15px;
-        width: 47%;
-    }
-}
-@media (max-width:1350px) {
-    .kursCard a{     
-        width: 57%;
-    }
-}
-@media (max-width:1200px) {
-    .cuorse h1{
-        font-size: 50px;
-    }
-    .kurs{
-        margin: 0 auto; 
-    }
-    .kursCard a{
-        font-size: 15px;
-        width: 60%;
-    }
-    .kursCard p{
-        font-size: 15px;
-    }
-    .kurs .kursImg{
-        height: 200px;
-        width: 85%;   
-    }
-}
-@media (max-width:1092px) {
-    .kursCard p{
-        font-size: 12px;
-    }
-    .kursCard a{
-        width: 65%;
-    } 
-}
-@media (max-width:992px) {
-    .cuorse h1{
-        font-size: 50px;
-    }
-     .kurs{
-        margin: 0 auto; 
-        width: 70%;
-    }
-    .kursCard a{
-        font-size: 13px;
-        width: 70%;
-    }
-    .kursCard p{
-        font-size: 14px;
-        text-align:unset; 
-    }
-   
-    .kurs .kursImg{
-        height: 250px;
-        width: 85%;   
-    }
-}
 
-@media(max-width:678px) {
-    .cuorse h1{
-        font-size: 30px;
-    }
-    .kursCard p{
-        font-size: 12px;
-       
-    }
-    .kurs{
-        width: 70%;
-       
-    }
-    .kursCard a{
-        font-size: 15px;
-        width: 40%;
-    }
-    .kurs .kursImg{
-        height: 250px;
-        width: 85%;   
-    }
-    }
-  
 @media (max-width:1400px){
     .kursCard{
         display: flex;
@@ -211,7 +110,7 @@ position: relative;
     }
     .kursCard a{
         text-decoration: none;
-        background-color:violet;
+        background-color:orange;
         padding: 15px 20px;
         border-radius: 20px;
         margin: 30px auto;
@@ -220,7 +119,7 @@ position: relative;
         display: flex;
         position: absolute;
         left: 30%;
-        bottom: 20px;
+        bottom: 0px;
         justify-content: center;
         width: 40%;
         font-family: sans-serif;
@@ -251,7 +150,7 @@ position: relative;
     }
     .kursCard a{
         text-decoration: none;
-        background-color:violet;
+        background-color:orange;
         padding: 15px 20px;
         border-radius: 20px;
         margin: 30px auto;
@@ -260,7 +159,7 @@ position: relative;
         display: flex;
         position: absolute;
         left: 30%;
-        bottom: 20px;
+        bottom: 0px;
         justify-content: center;
         width: 40%;
         font-family: sans-serif;
