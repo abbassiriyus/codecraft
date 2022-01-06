@@ -1,6 +1,6 @@
 .cuorse{
     padding: 140px 0 10px;
-    background-color:rgb(233, 222, 222);
+    background-color:rgb(92, 22, 133);
 }
 .kurs{
     width: 80%;
@@ -13,13 +13,14 @@
     font-weight: 600;
     text-align: center;
     font-family: serif;
+    color: white;
 }
 .cuorse span{
     color: rgb(255, 136, 0);
 }
  .kurs .kursImg{
     height: 250px;
-    width: 90%;
+    width: 85%;
     margin: -50px auto 0;
     
 }
@@ -68,3 +69,9 @@
     width: 40%;
     font-family: sans-serif;
 }
+@media(max-width:678px) {
+    .cuorse h1{
+        font-size: 50px;
+    }
+    
+    }

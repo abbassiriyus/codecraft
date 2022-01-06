@@ -11,13 +11,12 @@ import Scratch from '../img/scratch.gif';
 import Arifmetika from '../img/arif.gif'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-  AOS.init();
+AOS.init();
 export default class kurs extends Component {
 
   render() {
-    
-    
-    
+ 
+   
     
     return (
       <div>
@@ -28,7 +27,7 @@ export default class kurs extends Component {
     <div className={kurstyle.rows}>
     <MDBRow className='row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ' >
       <MDBCol className={kurstyle.kurscol}>
-        <MDBCard data-aos='fade-right' className={kurstyle.kursCard}>
+        <MDBCard data-aos='fade-right'  data-aos-duration="2000" className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
             src={Python}
             alt='Hollywood Sign on The Hill'
@@ -44,7 +43,7 @@ export default class kurs extends Component {
         </MDBCard>
       </MDBCol>
       <MDBCol className={kurstyle.kurscol}>
-        <MDBCard className={kurstyle.kursCard}>
+        <MDBCard data-aos="flip-up"  data-aos-duration="3000" className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
             src={javascript}
             alt='...'
@@ -60,7 +59,7 @@ export default class kurs extends Component {
         </MDBCard>
       </MDBCol>
       <MDBCol className={kurstyle.kurscol}>
-        <MDBCard className={kurstyle.kursCard}>
+        <MDBCard data-aos="fade-left"  data-aos-duration="2000" className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
             src={Andiroid}
             alt='...'
@@ -78,7 +77,7 @@ export default class kurs extends Component {
         </MDBCard>
       </MDBCol>
       <MDBCol className={kurstyle.kurscol}>
-        <MDBCard className={kurstyle.kursCard}>
+        <MDBCard data-aos="zoom-in" data-aos-duration="4000" className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
             src={Php}
             alt='...'
@@ -96,7 +95,7 @@ export default class kurs extends Component {
         </MDBCard>
       </MDBCol>
       <MDBCol className={kurstyle.kurscol}>
-        <MDBCard  className={kurstyle.kursCard}>
+        <MDBCard data-aos="zoom-in-down" data-aos-duration="4000" className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
             src={Html}
             alt='...'
@@ -113,7 +112,7 @@ export default class kurs extends Component {
         </MDBCard>
       </MDBCol>
       <MDBCol className={kurstyle.kurscol}>
-        <MDBCard className={kurstyle.kursCard}>
+        <MDBCard data-aos="zoom-in-left" data-aos-duration="3000"  className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
             src={Scratch}
             alt='...'
@@ -129,7 +128,9 @@ export default class kurs extends Component {
           </MDBCardBody>
         </MDBCard>
       </MDBCol >
-      <MDBCol className={kurstyle.kurscol}>
+      <MDBCol data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className={kurstyle.kurscol}>
         <MDBCard  className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
             src={Arifmetika}
