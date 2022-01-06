@@ -6,6 +6,7 @@ import { FaBars, FaTelegramPlane } from "react-icons/fa"
 import { FaFacebookSquare }from 'react-icons/fa'
 import { RiInstagramFill }from 'react-icons/ri'
 import 'aos/dist/aos.css';
+import Zoom from 'react-reveal/Zoom';
 import AOS from 'aos'
   AOS.init();
 export default class Dashboard extends Component {
@@ -43,9 +44,10 @@ export default class Dashboard extends Component {
 <header>
 <div className={s.satr}>
 
-<ul>
-<h1>Мы учим ремеслу
-программирования</h1>
+<ul> <Zoom left cascade>
+      <h1>Мы учим ремеслу
+программирования</h1>  </Zoom>
+
 <li>Для детей и подростков от 7 до 18 лет</li>
 <li>Учитесь из любой точки мира</li>
 <li>С любым уровнем знаний и подготовки</li>
@@ -94,25 +96,29 @@ export default class Dashboard extends Component {
       </div>
     </div>
     </Col>
-    <Col  lg={4}  md={12}  md={{order:'first'}} sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img width="100%"  src='https://thumbs.dreamstime.com/b/adorable-child-using-laptop-21973756.jpg' alt=' '/></Col>
-    <Col lg={4}  md={12} data-aos="fade-up"
+    <Col  lg={4}  md={12}  md={{order:'first'}} sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img data-aos="zoom-in-down" data-aos-duration="3000" width="100%"  src='https://thumbs.dreamstime.com/b/adorable-child-using-laptop-21973756.jpg' alt=' '/></Col>
+    <Col lg={4}  md={12}>
+    <div style={{display:'flex'}} className={s.kard}  data-aos="fade-up"
      data-aos-anchor-placement="top-bottom"
-     data-aos-duration="2000">
-    <div style={{display:'flex'}} className={s.kard} >
+     data-aos-duration="3000" >
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " src="https://neurospectrum.ru/wp-content/uploads/mask-group-3-1.png" /></div>
       <div style={{display:'block'}}>
       <h2>Укрепляет стойкость</h2>
       <p>Программирование – дело не легкое: каждая сделанная ошибка требует внимательного изучения и поиска ее решения.</p>
       </div>
     </div>
-    <div style={{display:'flex'}} className={s.kard}>
+    <div style={{display:'flex'}} className={s.kard}  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="3000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " style={{borderRadius:'50%'}} src="https://key0.cc/images/preview/2098982_b6e8fa1142169a63f9596e00e503e200.png" /></div>
       <div style={{display:'block'}}>
       <h2>Учит работать в команде</h2>
       <p>Работая в группах, дети учатся находить общий язык, сотрудничать и брать ответственность за свои действия в команде.</p>
       </div>
     </div>
-    <div style={{display:'flex'}} className={s.kard}>
+    <div style={{display:'flex'}} className={s.kard}  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="3000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " src="https://duxrec.com/wp-content/uploads/2020/11/teachers-img2.png" /></div>
       <div style={{display:'block'}}>
       <h2>Расширяет возможности трудоустройства</h2>
