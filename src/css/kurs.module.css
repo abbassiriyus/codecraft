@@ -76,7 +76,6 @@ padding-right: 10px;
     font-size: 18px;
     width: 40%;
     font-family: sans-serif;
-<<<<<<< Updated upstream
     display: flex;
     justify-content: center;
     
@@ -164,17 +163,7 @@ padding-right: 10px;
         width: 85%;   
     }
 }
-@media (max-width:768px) {
-    .kursCard a{
-        font-size: 14px;
-        width: 70%;
-    }
-=======
-    position: absolute;
-    left: 30%;
-    bottom: 20px;
->>>>>>> Stashed changes
-}
+
 @media(max-width:678px) {
     .cuorse h1{
         font-size: 30px;

@@ -38,11 +38,8 @@ export default class kurs extends Component {
             <MDBCardText>
              <p>Python - это язык программирования, который активно используеться в разработке веб-сайтов, игр и программ. Благодаря своей простоте и понятности, этот язык идеально подходит для новичков.</p>
             </MDBCardText>
-<<<<<<< Updated upstream
             <a href=""> < FaHandPointUp className={kurstyle.icon}/> Подробнее</a>
-=======
             <a href=""> Подробнее</a>
->>>>>>> Stashed changes
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -58,11 +55,8 @@ export default class kurs extends Component {
             <MDBCardText>
             <p>Javascript - это один из самых востребованных языков программирования на сегодня. Владея этим языком, можно создавать почти всё: веб-сайты, игры и программы для любых электронных устройств,и архитектуру сайта.</p>
             </MDBCardText>
-<<<<<<< Updated upstream
             <a href=""> < FaHandPointUp className={kurstyle.icon}/> Подробнее</a>
-=======
             <a href=""> Подробнее</a>
->>>>>>> Stashed changes
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -79,11 +73,8 @@ export default class kurs extends Component {
            <p>это визуальный конструктор приложений для Android. Таким образом, несмотря на то, что основным языком создания программ для Android является Java, в случае использования App Inventor совершенно не требуется.
                                 </p>
             </MDBCardText>
-<<<<<<< Updated upstream
             <a href=""> < FaHandPointUp className={kurstyle.icon}/> Подробнее</a>
-=======
             <a href=""> Подробнее</a>
->>>>>>> Stashed changes
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -101,11 +92,8 @@ export default class kurs extends Component {
             <p>Этот курс позволит освоить базовые принципы в программировании, без которых не обойтись ни одному будущему разработчику. Дети получат необходимый фундамент, который позволит идти дальше изучая более интересные и сложные
                                     темы в программировании.</p>
             </MDBCardText>
-<<<<<<< Updated upstream
             <a href=""> < FaHandPointUp className={kurstyle.icon}/> Подробнее</a>
-=======
             <a href=""> Подробнее</a>
->>>>>>> Stashed changes
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -122,11 +110,8 @@ export default class kurs extends Component {
             <p>это курс Лучший способ провести время полезно и забавно !!! Цель курса веб-программирования-научить детей самостоятельно создавать веб-страницы, оформлять дизайн и структуру этой страницы. Курс способствует развитию фантазии
                                     и новаторского качества вашега ребенка.</p>
             </MDBCardText>
-<<<<<<< Updated upstream
             <a href=""> < FaHandPointUp className={kurstyle.icon}/> Подробнее</a>
-=======
             <a href=""> Подробнее</a>
->>>>>>> Stashed changes
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -143,11 +128,8 @@ export default class kurs extends Component {
            <p>
                                     Ваш ребёнок много времени проводит играя за компьютером? Как превратить это время в пользу? Цель курса визуального программирования - научить детей созидательной работе за компьютером, раскрывая весь их творческий потенциал</p>
             </MDBCardText>
-<<<<<<< Updated upstream
             <a href=""> < FaHandPointUp className={kurstyle.icon}/> Подробнее</a>
-=======
             <a href=""> Подробнее</a>
->>>>>>> Stashed changes
           </MDBCardBody>
         </MDBCard>
       </MDBCol >
@@ -166,11 +148,8 @@ export default class kurs extends Component {
              <p>
                                     это – древняя система счета.Занятия проходят с использованием специальных счетов абакус. К работе левого полушария присоединяется правое полушарие, подключая к логическим операциям творческое мышление. </p>
             </MDBCardText>
-<<<<<<< Updated upstream
             <a href=""> < FaHandPointUp className={kurstyle.icon}/> Подробнее</a>
-=======
             <a href=""> Подробнее</a>
->>>>>>> Stashed changes
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
