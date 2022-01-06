@@ -6,6 +6,7 @@ import Kurs from '../src/js/kurs'
 import Footer from '../src/js/footer'
 import Accordion from '../src/js/accordion'
 import Narxlar from './js/Narxlar';
+import Xabaryuborish from './js/Xabaryuborish';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
  <Kurs/>
  <Accordion/>
  <Footer/>
+ <Xabaryuborish/>
     </div>
   );
 }
