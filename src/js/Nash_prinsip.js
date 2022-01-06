@@ -11,9 +11,6 @@ import image5 from '../img/glob.png';
 import image6 from '../img/image6.png';
 import {Col,Row} from 'react-bootstrap';
 import styles from '../css/nashPrinsip.module.css';
-import Fade from 'react-reveal/Fade';
-import Rotate from 'react-reveal/Rotate';
-import Slide from 'react-reveal/Slide';
 
 import 'aos/dist/aos.css';
 import AOS from 'aos'
@@ -28,7 +25,7 @@ export default class nash_prinsip extends Component {
                     <Row>
                         <h1 className={styles.title}>Наши принципы <span>преподавания</span></h1>
                     <Col sm={12} md={12} md={{order: 1}} lg={12} xl={12} xxl={6}>
-                        <div data-aos="zoom-in-right" data-aos-duration="1000" className={styles.text}>
+                        <div data-aos="zoom-right" data-aos-duration="1000" className={styles.text}>
                         <p>Большая часть нашего учебного времени посвящена получению практического опыта при работе над проектами.</p>
                          <p>Работа над проектами побуждает наших студентов выражать себя с помощью кода.</p>
                          <p>Мы позволяем ученикам развиваться в своем темпе, помогая каждому понять и применить предоставленную информацию</p>
@@ -77,58 +74,50 @@ export default class nash_prinsip extends Component {
                  <div className={styles.boxNash}>
                  <Row>
                      <Col sm={12} md={6} lg={4}>
-                     <Fade left>
+                  
                      <div >
                          <img src={image1} />
                          <h4>Самые клёвые инструкторы</h4>
                          <p>Инструкторы Codecraft - молодые, энергичные программисты и айтишники, которые с легкостью найдут общий язык с детьми и помогут им понять даже самые сложные нюансы программирования</p>
                      </div>
-                     </Fade>
+                     
                      </Col>
 
                      <Col sm={12} md={6} lg={4}>
-                         <Rotate top rigth>
+                         
                          <img src={image2}/>
                          <h4>Индивидуальный подход</h4>
                          <p>Мы умеем находить индивидуальный подход ко всем нашим ученикам, учитывая их разные характерные особенности</p>
-                         </Rotate>
+                       
                      </Col>
 
                     <Col sm={12} md={6} lg={4}> 
-                    <Fade top>
                     <img src={image3}/>
                     <h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
-                    </Fade>
                     </Col>
          
                       <Col  sm={12} md={6} lg={4}>
-                          <Rotate top rigth>
                           <div>
                               <img src={image4} />
                               <h4>Удобный график занятий</h4>
                               <p>Мы строим индивидуальный график занятий для каждого ученика, поэтому заниматься можно в любое удобное для Вас время</p>
                           </div>
-                          </Rotate>
                       </Col>
                            
                               <Col sm={12} md={6} lg={4}>
-                                  <Slide right>
                                   <div>
                                       <img src={image5} />
                                       <h4>Обучение из любой точки мира</h4>
                                       <p>Благодаря дистанционной форме обучения, Вам не приходиться тратить время на дорогу, заниматься можно в любом удобном месте</p>
                                   </div>
-                                  </Slide>
                               </Col>
                               <Col sm={12} md={6} lg={4}> 
-                              <Slide bottom>
                               <div>
                                   <img src={image6} />
                                   <h4>Сертификат по окончанию</h4>
                                   <p>Все ребята, при успешном завершении курса, получают от нашей школы подтверждающий сертификат с выпиской про оценки</p>
                               </div>
-                              </Slide>
                               </Col>
                       </Row>
              </div>

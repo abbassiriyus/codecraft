@@ -6,7 +6,6 @@ import { FaBars, FaTelegramPlane } from "react-icons/fa"
 import { FaFacebookSquare }from 'react-icons/fa'
 import { RiInstagramFill }from 'react-icons/ri'
 import 'aos/dist/aos.css';
-import Zoom from 'react-reveal/Zoom';
 import AOS from 'aos'
   AOS.init();
 export default class Dashboard extends Component {
@@ -44,9 +43,9 @@ export default class Dashboard extends Component {
 <header>
 <div className={s.satr}>
 
-<ul> <Zoom left cascade>
+<ul> 
       <h1>Мы учим ремеслу
-программирования</h1>  </Zoom>
+программирования</h1>  
 
 <li>Для детей и подростков от 7 до 18 лет</li>
 <li>Учитесь из любой точки мира</li>

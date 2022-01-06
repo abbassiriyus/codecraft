@@ -1,6 +1,14 @@
 *{
     box-sizing: border-box;
 }
+.title{
+    color:black;
+    margin: 50px 0;
+    text-align: center;
+ }
+ .title span{
+    color: rgb(255, 136, 0);
+ }
 .accordions{
     width: 80%;
     margin: 100px auto;

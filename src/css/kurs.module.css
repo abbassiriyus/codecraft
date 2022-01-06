@@ -19,7 +19,7 @@
     color: rgb(255, 136, 0);
 }
  .kurs .kursImg{
-    height: 250px;
+    min-height: 250px;
     width: 85%;
     margin: -50px auto 0;
     
@@ -29,7 +29,6 @@
 }
 .kursCard{
    display: flex;
-   
    margin-bottom: 90px;
    justify-content: center;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.5);

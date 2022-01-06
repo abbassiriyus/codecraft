@@ -4,7 +4,11 @@ import accordionstyle from '../css/accordion.module.css'
 export default function accordion() {
     return (
         <div>
+
+
             <div className={accordionstyle.accordions}>
+           
+            <h1 className={accordionstyle.title}>Часто задаваемые <span> вопросы</span></h1>
             <Accordion>
   <Accordion.Item eventKey="0">
     <Accordion.Header ><h5 className={accordionstyle.accordionHeader}>На каком языке ведутся занятия?</h5>
