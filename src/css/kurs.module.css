@@ -1,15 +1,15 @@
 .cuorse{
-    padding: 140px 0 10px;
+    padding: 40px 0 10px;
     background-color:rgb(92, 22, 133);
 }
 .kurs{
     width: 80%;
-    margin: 0 auto 140px;
+    margin: 0 auto 40px;
     display: flex;
     justify-content: center;
 }
 .cuorse h1{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 600;
     text-align: center;
     font-family: serif;
@@ -27,16 +27,23 @@
 .rows{
     margin-top: 200px;
 }
+.icons{
+font-size: 30px;
+padding-right: 10px;
+}
 .kursCard{
+    position: relative;
    display: flex;
    height: 90%;
    width: 90%;
 
    margin-bottom: 90px;
+   min-height: 600px;
    justify-content: center;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 
 }
+
 .kurscol{
     margin: 0 auto;
     text-align: center;
@@ -69,6 +76,7 @@
     font-size: 18px;
     width: 40%;
     font-family: sans-serif;
+<<<<<<< Updated upstream
     display: flex;
     justify-content: center;
     
@@ -161,10 +169,15 @@
         font-size: 14px;
         width: 70%;
     }
+=======
+    position: absolute;
+    left: 30%;
+    bottom: 20px;
+>>>>>>> Stashed changes
 }
 @media(max-width:678px) {
     .cuorse h1{
-        font-size: 50px;
+        font-size: 30px;
     }
     .kursCard p{
         font-size: 12px;
@@ -183,3 +196,84 @@
         width: 85%;   
     }
     }
+  
+@media (max-width:1400px){
+    .kursCard{
+        display: flex;
+        margin-bottom: 90px;
+        min-height: 650px;
+        justify-content: center;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+position: relative;
+     }
+     .kursCard .title{
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+        letter-spacing:1px;
+    }
+    .kursCard p{
+        font-size: 13px;
+        text-align:justify;
+        cursor: pointer;
+        font-weight: 500;
+        line-height: 25px;
+        font-family: sans-serif;
+    }
+    .kursCard a{
+        text-decoration: none;
+        background-color:violet;
+        padding: 15px 20px;
+        border-radius: 20px;
+        margin: 30px auto;
+        color: white;
+        font-size: 13px;
+        display: flex;
+        position: absolute;
+        left: 30%;
+        bottom: 20px;
+        justify-content: center;
+        width: 40%;
+        font-family: sans-serif;
+    }
+}
+@media (max-width:991px){
+    .kursCard{
+        display: flex;
+        margin-bottom: 90px;
+        min-height: 550px;
+        justify-content: center;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+position: relative;
+     }
+     .kursCard .title{
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+        letter-spacing:1px;
+    }
+    .kursCard p{
+        font-size: 13px;
+        text-align:justify;
+        cursor: pointer;
+        font-weight: 500;
+        line-height: 25px;
+        font-family: sans-serif;
+    }
+    .kursCard a{
+        text-decoration: none;
+        background-color:violet;
+        padding: 15px 20px;
+        border-radius: 20px;
+        margin: 30px auto;
+        color: white;
+        font-size: 13px;
+        display: flex;
+        position: absolute;
+        left: 30%;
+        bottom: 20px;
+        justify-content: center;
+        width: 40%;
+        font-family: sans-serif;
+    }
+}

@@ -50,7 +50,7 @@ export default class nash_prinsip extends Component {
                     <Row>
                            <Col sm={12} md={6} lg={6}>
                            <div  data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center" data-aos-duration="2000" className={styles.leftCard}>
+     data-aos-duration="2000" className={styles.leftCard}>
                                <img src={child}  alt=" " />
                                <h4>Удобный формат</h4>
                                <p>Благодаря современным технологиям мы построили самый лучший и комфортный формат дистанционного обучения</p>
@@ -59,7 +59,7 @@ export default class nash_prinsip extends Component {
 
                             <Col sm={12} md={6} lg={6}>
                            <div  data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center"data-aos-duration="2000"  className={styles.rightCard}>
+data-aos-duration="2000"  className={styles.rightCard}>
                                <img src={rightImg} alt=" "/>
                                <h4>Выжимаем максимум</h4>
                                <p>Мы проводим исключительно индивидуальные занятия, чтобы передать максимум знаний и опыта вашему ребенку</p>
@@ -77,9 +77,14 @@ export default class nash_prinsip extends Component {
              <div className={styles.codecraf }>
                  <div className={styles.boxNash}>
                  <Row>
+<<<<<<< Updated upstream
                      <Col sm={12} md={6} lg={4}>
                      {/* <Fade left> */}
 
+=======
+                     <Col sm={12} md={6} lg={4} data-aos="flip-up">
+                  
+>>>>>>> Stashed changes
                      <div >
                          <img src={image1} />
                          <h4>Самые клёвые инструкторы</h4>
@@ -88,7 +93,7 @@ export default class nash_prinsip extends Component {
 
                      </Col>
 
-                     <Col sm={12} md={6} lg={4}>
+                     <Col sm={12} md={6} lg={4} data-aos="flip-up">
                          
                          <img src={image2}/>
                          <h4>Индивидуальный подход</h4>
@@ -96,12 +101,13 @@ export default class nash_prinsip extends Component {
                        
                      </Col>
 
-                    <Col sm={12} md={6} lg={4}> 
+                    <Col sm={12} md={6} lg={4} data-aos="flip-up"> 
                     <img src={image3}/>
                     <h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
                     </Col>
          
+<<<<<<< Updated upstream
                       <Col  sm={12} md={6} lg={4}>
                      {/* </Fade> */}
                      </Col>
@@ -125,6 +131,9 @@ export default class nash_prinsip extends Component {
                       <Col  sm={12} md={6} lg={4}>
                           {/* <Rotate top rigth> */}
 
+=======
+                      <Col  sm={12} md={6} lg={4} data-aos="flip-up">
+>>>>>>> Stashed changes
                           <div>
                               <img src={image4} />
                               <h4>Удобный график занятий</h4>
@@ -138,9 +147,13 @@ export default class nash_prinsip extends Component {
                           {/* </Rotate> */}
                       </Col>
                            
+<<<<<<< Updated upstream
                               <Col sm={12} md={6} lg={4}>
                                   {/* <Slide right> */}
 
+=======
+                              <Col sm={12} md={6} lg={4} data-aos="flip-up">
+>>>>>>> Stashed changes
                                   <div>
                                       <img src={image5} />
                                       <h4>Обучение из любой точки мира</h4>
@@ -148,6 +161,7 @@ export default class nash_prinsip extends Component {
                                   </div>
 
                               </Col>
+<<<<<<< Updated upstream
                               <Col sm={12} md={6} lg={4}> 
 
                                   {/* </Slide> */}
@@ -155,6 +169,9 @@ export default class nash_prinsip extends Component {
                               <Col sm={12} md={6} lg={4}> 
                               {/* <Slide bottom> */}
 
+=======
+                              <Col sm={12} md={6} lg={4} data-aos="flip-up"> 
+>>>>>>> Stashed changes
                               <div>
                                   <img src={image6} />
                                   <h4>Сертификат по окончанию</h4>

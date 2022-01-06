@@ -5,7 +5,7 @@ export default class Xabaryuborish extends Component {
     render() {
         return (
             <div>
-         <Row>
+         <Row >
              <Col lg={6}>wefff</Col>
              <Col lg={6}>ewfewfe</Col>
          </Row>       
