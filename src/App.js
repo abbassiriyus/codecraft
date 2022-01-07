@@ -14,9 +14,10 @@ function App() {
  <Dashboard/>
  <Nashprinsip/>
  <Kurs/>
- <Accordion/>
+ <Accordion/><Narxlar/>
  <Footer/>
- <Xabaryuborish/>
+
+
     </div>
   );
 }
