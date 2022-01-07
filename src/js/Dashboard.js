@@ -57,7 +57,7 @@ export default class Dashboard extends Component {
 <li>Мы научим вашего ребенка программировать!</li>
 </ul>
 </div>
-<div className={s.rasm}><img id={s.images} src='https://freepngimg.com/save/33947-kids-learning-clipart/655x400' alt=' '/></div>
+<div className={s.rasm}><img id={s.images} data-aos="zoom-in" src='https://freepngimg.com/save/33947-kids-learning-clipart/655x400' alt=' '/></div>
 <div className={s.aylana}></div>
 </header>
 

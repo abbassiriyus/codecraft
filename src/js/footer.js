@@ -35,9 +35,9 @@ export default function footer() {
                             <h4>Мы в социальных сетях</h4>
                             <div className={styleFooter.icons}> 
                                <div className={styleFooter.icon}>
-                                 <a><FaFacebookSquare/></a>
-                                <a><AiFillInstagram/></a>
-                                <a><FaTelegramPlane/></a>
+                                 <a><FaFacebookSquare className={styleFooter.icons1}/></a>
+                                <a><AiFillInstagram className={styleFooter.icons1}/></a>
+                                <a><FaTelegramPlane className={styleFooter.icons1}/></a>
                                 </div>
                                 <div className={styleFooter.footerTel}><a href="tel:+998 99 300 55 00"><RiPhoneFill/>+998 99 300 55 00</a></div>
                                 </div>

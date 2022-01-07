@@ -1,0 +1,17 @@
+.row1{
+    margin: 40px;
+}
+.title{
+    color:black;
+    margin: 50px 0;
+    text-align: center;
+ }
+ .title span{
+    color: rgb(255, 136, 0);
+ }
+ .asosiy1{
+     display: flex;
+ }
+ .uchtalik1{
+     display: block;
+ }

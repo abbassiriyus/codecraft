@@ -43,14 +43,14 @@ export default class nash_prinsip extends Component {
                          </Col>
 
                          <Col sm={12} md={12} md={12}  lg={12} lg={{order: 2}} xl={12} xxl={6}>
-                          <img data-aos="zoom-in-left" data-aos-duration="3000" className={styles.img} src={imgs} alt=" "/>
+                          <img data-aos="zoom-in-left" data-aos-duration="2000" className={styles.img} src={imgs} alt=" "/>
                          
                          </Col>
                     </Row>
                     <Row>
                            <Col sm={12} md={6} lg={6}>
                            <div  data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center" data-aos-duration="2000" className={styles.leftCard}>
+     data-aos-duration="2000" className={styles.leftCard}>
                                <img src={child}  alt=" " />
                                <h4>Удобный формат</h4>
                                <p>Благодаря современным технологиям мы построили самый лучший и комфортный формат дистанционного обучения</p>
@@ -59,7 +59,7 @@ export default class nash_prinsip extends Component {
 
                             <Col sm={12} md={6} lg={6}>
                            <div  data-aos="fade-up"
-     data-aos-anchor-placement="bottom-center"data-aos-duration="2000"  className={styles.rightCard}>
+data-aos-duration="2000"  className={styles.rightCard}>
                                <img src={rightImg} alt=" "/>
                                <h4>Выжимаем максимум</h4>
                                <p>Мы проводим исключительно индивидуальные занятия, чтобы передать максимум знаний и опыта вашему ребенку</p>
@@ -75,56 +75,31 @@ export default class nash_prinsip extends Component {
             <div className={styles.codecrafMain}>
              <h1 className={styles.title}>Почему выбирают <span>codecraft</span></h1>
              <div className={styles.codecraf }>
-                 <div className={styles.boxNash}>
+                 <div className={styles.boxNash1}>
                  <Row>
-                     <Col sm={12} md={6} lg={4}>
-                     {/* <Fade left> */}
+            
 
+                     <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
                      <div >
                          <img src={image1} />
                          <h4>Самые клёвые инструкторы</h4>
                          <p>Инструкторы Codecraft - молодые, энергичные программисты и айтишники, которые с легкостью найдут общий язык с детьми и помогут им понять даже самые сложные нюансы программирования</p>
                      </div>
-
                      </Col>
 
-                     <Col sm={12} md={6} lg={4}>
-                         
+                     <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
                          <img src={image2}/>
                          <h4>Индивидуальный подход</h4>
                          <p>Мы умеем находить индивидуальный подход ко всем нашим ученикам, учитывая их разные характерные особенности</p>
-                       
                      </Col>
 
-                    <Col sm={12} md={6} lg={4}> 
+                    <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000"> 
                     <img src={image3}/>
                     <h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
                     </Col>
          
-                      <Col  sm={12} md={6} lg={4}>
-                     {/* </Fade> */}
-                     </Col>
-
-                     <Col sm={12} md={6} lg={4}>
-                         {/* <Rotate top rigth> */}
-                         <img src={image2}/>
-                         <h4>Индивидуальный подход</h4>
-                         <p>Мы умеем находить индивидуальный подход ко всем нашим ученикам, учитывая их разные характерные особенности</p>
-                         {/* </Rotate> */}
-                     </Col>
-
-                    <Col sm={12} md={6} lg={4}> 
-                    {/* <Fade top> */}
-                    <img src={image3}/>
-                    <h4>Современные технологии</h4>
-                    <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
-                    {/* </Fade> */}
-                    </Col>
-         
-                      <Col  sm={12} md={6} lg={4}>
-                          {/* <Rotate top rigth> */}
-
+                      <Col  sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
                           <div>
                               <img src={image4} />
                               <h4>Удобный график занятий</h4>
@@ -133,14 +108,9 @@ export default class nash_prinsip extends Component {
                           {/* </Rotate> */}
                       </Col>
                            
-                              <Col sm={12} md={6} lg={4}>
-
-                          {/* </Rotate> */}
-                      </Col>
-                           
-                              <Col sm={12} md={6} lg={4}>
-                                  {/* <Slide right> */}
-
+                       
+                          
+                              <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
                                   <div>
                                       <img src={image5} />
                                       <h4>Обучение из любой точки мира</h4>
@@ -148,13 +118,8 @@ export default class nash_prinsip extends Component {
                                   </div>
 
                               </Col>
-                              <Col sm={12} md={6} lg={4}> 
-
-                                  {/* </Slide> */}
-                              </Col>
-                              <Col sm={12} md={6} lg={4}> 
-                              {/* <Slide bottom> */}
-
+                            
+                              <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000"> 
                               <div>
                                   <img src={image6} />
                                   <h4>Сертификат по окончанию</h4>

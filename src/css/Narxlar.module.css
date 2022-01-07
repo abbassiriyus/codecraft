@@ -1,0 +1,42 @@
+.soat{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: rosybrown;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.soati1{
+    cursor: pointer;
+ width: 50%;
+ border-radius: 30px; 
+ display: flex;
+ justify-content: center;
+ align-items: center;  
+}
+.soati2{
+    cursor: pointer;
+    width: 50%;
+    border-radius: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+
+.pulBirligi{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: rosybrown;
+    height: 60px;
+    border-radius: 30px;
+}
