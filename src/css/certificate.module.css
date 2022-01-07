@@ -1,0 +1,95 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.cards{
+    background-color: rgb(79, 33, 122);
+    padding: 70px 80px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    color: white;
+   font-family:'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+}
+.textTitle{
+    margin-top: 50px;
+}
+.cards p{
+    font-size: 18px;
+    margin-top: 30px;
+}
+.imgs{
+    text-align: right;
+}
+.imgs img{
+    width: 70%;
+  
+}
+@media (max-width:1400px) {
+    .textTitle{
+        margin-top: 0px;
+    }
+}
+@media (max-width:1200px) {
+    .textTitle{
+        margin-top: 0px;
+    }
+    .cards p{
+        font-size: 17px;
+        margin-top: 30px;
+    }
+    .imgs{
+        margin-top: 50px;
+        text-align: right;
+    }
+
+}
+@media (max-width:992px) {
+    .textTitle{
+        margin-top:0px;
+    }
+    .cards p{
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .imgs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .imgs img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+      
+    }
+}
+@media (max-width:768px) {
+    .textTitle{
+        margin-top:0px;
+    }
+    .textTitle h2{
+        text-align: center;
+    }
+    .cards p{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .imgs{
+        align-items: center;
+    }
+   
+}
+@media(max-width:576px){
+    .textTitle{
+        margin-top: 30px;
+    }
+    .cards p{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+   
+}
+

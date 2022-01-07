@@ -7,7 +7,7 @@ import Footer from '../src/js/footer'
 import Accordion from '../src/js/accordion'
 import Narxlar from './js/Narxlar';
 import Xabaryuborish from './js/Xabaryuborish';
-
+import Certfikat from './js/certificate'
 function App() {
   return (
    <div>
@@ -17,6 +17,7 @@ function App() {
  <Accordion/>
  <Footer/>
  <Xabaryuborish/>
+<Certfikat />
     </div>
   );
 }

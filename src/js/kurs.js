@@ -66,8 +66,7 @@ export default class kurs extends Component {
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle className={kurstyle.title}>MIT App Inventor 2 <span className={kurstyle.textyellow}>OC
-                                        Android</span></MDBCardTitle>
+            <MDBCardTitle className={kurstyle.title}>MIT App Inventor 2 <span className={kurstyle.textyellow}>OC Android</span></MDBCardTitle>
             <MDBCardText>
            <p>это визуальный конструктор приложений для Android. Таким образом, несмотря на то, что основным языком создания программ для Android является Java, в случае использования App Inventor совершенно не требуется.
                                 </p>

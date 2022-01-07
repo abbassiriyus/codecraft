@@ -5,8 +5,11 @@ import{ Navbar,Nav, Row, Col } from 'react-bootstrap'
 import { FaBars, FaTelegramPlane } from "react-icons/fa"
 import { FaFacebookSquare }from 'react-icons/fa'
 import { RiInstagramFill }from 'react-icons/ri'
+import Sertif from "../js/certificate";
 import 'aos/dist/aos.css';
 import AOS from 'aos'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
   AOS.init();
 export default class Dashboard extends Component {
 
@@ -15,7 +18,7 @@ export default class Dashboard extends Component {
             <div>
  
  
- 
+ <BrowserRouter>
                 {/* navbar */}
              <Navbar expand="lg" className={s.navbar}>
   <div class='container-fluid'>
@@ -26,7 +29,7 @@ export default class Dashboard extends Component {
         <Nav.Link id={s.bolim} href="#home">Главная</Nav.Link>
         <Nav.Link id={s.bolim}  href="#home">Курсы</Nav.Link>
         <Nav.Link id={s.bolim} href="#home">Оплата</Nav.Link>
-        <Nav.Link id={s.bolim} href="#home">Сертификат</Nav.Link>
+        <Nav.Link id={s.bolim} href="#sertifikat">Сертификат</Nav.Link>
       </Nav>
          <div className={s.navicon}>
   <FaFacebookSquare/>
@@ -157,6 +160,10 @@ export default class Dashboard extends Component {
 </main> */}
 
 
+<Routes>
+  <Route exact  path="/sertifikat" element={ <Sertif /> }/>
+</Routes>
+</BrowserRouter>
             </div>
         )
     }
