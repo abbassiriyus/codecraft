@@ -44,7 +44,7 @@ z-index: 121;
 .brend{
     margin: 10px;
     margin-left: 10%;
-    height: 80px;
+    height: 50px;
   
 }
 @media (max-width:1200px){
@@ -110,7 +110,7 @@ z-index: 121;
 
 /* header qismi */
 header{
-background:linear-gradient(to right top,#52006A,#741092da );  
+background:#9727af;  
     width: 100vw;
     height: 950px;
     position: relative;
@@ -154,14 +154,14 @@ header .aylana{
     position: absolute;
     right: -200px;
     top: -200px;
-    background-color: #fa7704;
+    background-color: #edd168;
     width: 900px;
     height: 900px;
     border-radius: 50%;
 }
 @media (max-width:1840px) {
     header{
-        background:linear-gradient(to right top,#52006A,#741092da );  
+        background:#9727af;  
             width: 100vw;
             height: 850px;
             position: relative;
@@ -172,7 +172,7 @@ header .aylana{
         position: absolute;
         right: -200px;
         top: -200px;
-        background-color: #fa7704;
+        background-color: #edd168;
         width: 900px;
         height: 900px;
         border-radius: 50%;
@@ -198,7 +198,7 @@ header .aylana{
 }
 @media (max-width:1640px) {
     header{
-        background:linear-gradient(to right top,#52006A,#741092da );  
+        background:#9727af;  
             width: 100vw;
             height: 800px;
             position: relative;
@@ -209,7 +209,7 @@ header .aylana{
         position: absolute;
         right: -200px;
         top: -200px;
-        background-color: #fa7704;
+        background-color: #edd168;
         width: 900px;
         height: 900px;
         border-radius: 50%;
@@ -236,7 +236,7 @@ header .aylana{
 }
 @media (max-width:1340px) {
     header{
-        background:linear-gradient(to right top,#52006A,#741092da );  
+        background:#9727af;  
             width: 100vw;
             height: 800px;
             position: relative;
@@ -247,7 +247,7 @@ header .aylana{
         position: absolute;
         right: -200px;
         top: -200px;
-        background-color: #fa7704;
+        background-color: #edd168;
         width:700px;
         height: 700px;
         border-radius: 50%;
@@ -292,7 +292,7 @@ header .aylana{
         position: absolute;
         right: -200px;
         top: -200px;
-        background-color: #fa7704;
+        background-color: #edd168;
         width:700px;
         height: 700px;
         border-radius: 50%;
@@ -324,7 +324,7 @@ header .aylana{
 }
 @media (max-width:576px) {
     header{
-        background:linear-gradient(to right top,#52006A,#741092da );  
+        background:#9727af;  
             width: 100vw;
             height: 600px;
             position: relative;
@@ -335,7 +335,7 @@ header .aylana{
         position: absolute;
         right: -200px;
         top: -200px;
-        background-color: #fa7704;
+        background-color: #edd168;
         width:700px;
         height: 700px;
         border-radius: 50%;

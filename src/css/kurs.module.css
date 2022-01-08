@@ -1,6 +1,6 @@
 .cuorse{
     padding: 40px 0 10px;
-    background-color:rgb(92, 22, 133);
+    background-color:#9727af;
 }
 .kurs{
     width: 80%;
@@ -16,7 +16,7 @@
     color: white;
 }
 .cuorse span{
-    color: rgb(255, 136, 0);
+    color: #edd168;
 }
  .kurs .kursImg{
     width: 85%;
@@ -110,7 +110,7 @@ position: relative;
     }
     .kursCard a{
         text-decoration: none;
-        background-color:orange;
+        background-color:#edd168;
         padding: 15px 20px;
         border-radius: 20px;
         margin: 30px auto;
@@ -150,7 +150,7 @@ position: relative;
     }
     .kursCard a{
         text-decoration: none;
-        background-color:orange;
+        background-color:#edd168;
         padding: 15px 20px;
         border-radius: 20px;
         margin: 30px auto;
