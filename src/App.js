@@ -11,12 +11,13 @@ import Certfikat from './js/certificate'
 function App() {
   return (
    <div>
+
+
  <Dashboard/>
  <Nashprinsip/>
  <Kurs/>
- <Accordion/><Narxlar/>
+ <Accordion/>
  <Footer/>
-
  <Xabaryuborish/>
 <Certfikat />
 

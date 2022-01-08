@@ -1,9 +1,14 @@
+.hammasi1{
+    background-color: orchid;
+}
+
 .row1{
+   
     margin: 40px;
 }
 .title{
     color:black;
-    margin: 50px 0;
+    padding: 50px 0;
     text-align: center;
  }
  .title span{
@@ -12,6 +17,29 @@
  .asosiy1{
      display: flex;
  }
- .uchtalik1{
+ .uchtalik1{ 
+     
+      position: relative;
+     padding: 10px;
+     padding-right: 70px;
      display: block;
+ }
+ .as{border-radius: 10px;
+background-color: rebeccapurple;
+padding: 40px;
+ }
+ .robit{
+   position: absolute;
+     right:-15px;
+     top: 4px;
+ }
+ .rasm1{
+     width: 60px;
+     margin: 10px;
+     margin-top: 0px;
+ }
+ .ikkitalik1{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     width: 80%;
+     font-size: 18px;
  }

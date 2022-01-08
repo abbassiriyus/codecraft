@@ -9,6 +9,7 @@ import Sertif from "../js/certificate";
 import 'aos/dist/aos.css';
 import AOS from 'aos'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Bounce } from 'react-reveal'
 
   AOS.init();
 export default class Dashboard extends Component {
@@ -26,7 +27,7 @@ export default class Dashboard extends Component {
     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none',boxShadow:'none',position:'relative',right:'20px'}}><FaBars/></Navbar.Toggle>
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto" id={s.sahifa}>
-        <Nav.Link id={s.bolim} href="#home">Главная</Nav.Link>
+        <Nav.Link id={s.bolim} href="#">Главная</Nav.Link>
         <Nav.Link id={s.bolim}  href="#home">Курсы</Nav.Link>
         <Nav.Link id={s.bolim} href="#home">Оплата</Nav.Link>
         <Nav.Link id={s.bolim} href="#sertifikat">Сертификат</Nav.Link>
@@ -47,14 +48,16 @@ export default class Dashboard extends Component {
 <div className={s.satr}>
 
 <ul> 
-      <h1>Мы учим ремеслу
-программирования</h1>  
+      <h1><Bounce top >Мы учим ремеслу
 
-<li>Для детей и подростков от 7 до 18 лет</li>
+
+программирования</Bounce></h1>  
+
+<Bounce top ><li>Для детей и подростков от 7 до 18 лет</li>
 <li>Учитесь из любой точки мира</li>
 <li>С любым уровнем знаний и подготовки</li>
 <li>Индивидуально с профессиональным преподавателем</li>
-<li>Мы научим вашего ребенка программировать!</li>
+<li>Мы научим вашего ребенка программировать!</li></Bounce>
 </ul>
 </div>
 <div className={s.rasm}><img id={s.images} data-aos="zoom-in" src='https://freepngimg.com/save/33947-kids-learning-clipart/655x400' alt=' '/></div>
@@ -64,7 +67,7 @@ export default class Dashboard extends Component {
 
 {/* asosiy 6ta imkoniyatlar */}
 <main className={s.mativatsiya}>
-  <h1><span style={{color:'orange'}}> 6 причин </span> изучать программирование</h1>
+  <Bounce left cascade ><h1><span style={{color:'orange'}}> 6 причин </span> изучать программирование</h1></Bounce>
 
   
   <Row className={s.chet}>

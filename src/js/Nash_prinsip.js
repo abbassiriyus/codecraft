@@ -18,6 +18,7 @@ import styles from '../css/nashPrinsip.module.css';
 
 import 'aos/dist/aos.css';
 import AOS from 'aos'
+import { Bounce, } from 'react-reveal';
   AOS.init();
 export default class nash_prinsip extends Component {
     render() {
@@ -26,8 +27,11 @@ export default class nash_prinsip extends Component {
             <div className={styles.main}>
             <div className={styles.boxNash}>
                 <div className={styles.mainBox}>
-                    <Row>
-                        <h1 className={styles.title}>Наши принципы <span>преподавания</span></h1>
+                    <Row> 
+         
+        
+                    <Bounce left cascade ><h1 className={styles.title}>Наши принципы <span>
+        преподавания</span></h1></Bounce>
                     <Col sm={12} md={12} md={{order: 1}} lg={12} xl={12} xxl={6}>
                         <div data-aos="zoom-right" data-aos-duration="1000" className={styles.text}>
                         <p>Большая часть нашего учебного времени посвящена получению практического опыта при работе над проектами.</p>
@@ -79,7 +83,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
                  <Row>
             
 
-                     <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
+                     <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
                      <div >
                          <img src={image1} />
                          <h4>Самые клёвые инструкторы</h4>
@@ -87,19 +91,19 @@ data-aos-duration="2000"  className={styles.rightCard}>
                      </div>
                      </Col>
 
-                     <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
+                     <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
                          <img src={image2}/>
                          <h4>Индивидуальный подход</h4>
                          <p>Мы умеем находить индивидуальный подход ко всем нашим ученикам, учитывая их разные характерные особенности</p>
                      </Col>
 
-                    <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000"> 
+                    <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000"> 
                     <img src={image3}/>
                     <h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
                     </Col>
          
-                      <Col  sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
+                      <Col  sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
                           <div>
                               <img src={image4} />
                               <h4>Удобный график занятий</h4>
@@ -110,7 +114,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
                            
                        
                           
-                              <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000">
+                              <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
                                   <div>
                                       <img src={image5} />
                                       <h4>Обучение из любой точки мира</h4>
@@ -119,7 +123,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
 
                               </Col>
                             
-                              <Col sm={12} md={6} lg={4} data-aos="flip-up"  data-aos-duration="2000"> 
+                              <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000"> 
                               <div>
                                   <img src={image6} />
                                   <h4>Сертификат по окончанию</h4>
