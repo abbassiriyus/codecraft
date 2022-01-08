@@ -3,29 +3,87 @@ import { ImDisplay } from 'react-icons/im'
 import s from '../css/Narxlar.module.css'
 export default class Narxlar extends Component {
 state={
-    id:1,
-    key:3
+    id:0,
+    key:0
 }
  soati1=()=>{
 this.setState({id:0})
+document.querySelector('#soati1').style="background-color: #D96903;"
+document.querySelector('#soati2').style="background-color: none;"
+document.querySelector('#soati3').style="background-color: none;"
  }  
  soati2=()=>{
     this.setState({id:1})
+    document.querySelector('#soati1').style="background-color: none;"
+    document.querySelector('#soati2').style="background-color: #D96903;"
+    document.querySelector('#soati3').style="background-color: none;"
 }    
+soati3=()=>{
+    this.setState({id:2})
+    document.querySelector('#soati1').style="background-color: none;"
+    document.querySelector('#soati2').style="background-color: none;"
+    document.querySelector('#soati3').style="background-color: #D96903;"
+} 
+rub1=()=>{
+    this.setState({key:0})
+    document.querySelector('#rub').style="background-color: #D96903;"
+    document.querySelector('#uzb').style="background-color: none;"
+    document.querySelector('#usd').style="background-color: none;"
+    document.querySelector('#eur').style="background-color: none;"
+}
+uzb1=()=>{
+    this.setState({key:1})
+    document.querySelector('#uzb').style="background-color: #D96903;"
+    document.querySelector('#rub').style="background-color: none;"
+    document.querySelector('#usd').style="background-color: none;"
+    document.querySelector('#eur').style="background-color: none;"
+}
+usd1=()=>{
+    this.setState({key:2})
+    document.querySelector('#usd').style="background-color: #D96903;"
+    document.querySelector('#uzb').style="background-color: none;"
+    document.querySelector('#rub').style="background-color: none;"
+    document.querySelector('#eur').style="background-color: none;"
+}
+eur1=()=>{
+    this.setState({key:3})
+    document.querySelector('#eur').style="background-color: #D96903;"
+    document.querySelector('#uzb').style="background-color: none;"
+    document.querySelector('#rub').style="background-color: none;"
+    document.querySelector('#usd').style="background-color: none;"
+}
+color=()=>{
+    document.querySelector('#rub').style="background-color: #D96903;"
+    document.querySelector('#uzb').style="background-color: none;"
+    document.querySelector('#usd').style="background-color: none;"
+    document.querySelector('#eur').style="background-color: none;"
+    document.querySelector('#soati1').style="background-color: #D96903;"
+    document.querySelector('#soati2').style="background-color: none;"
+    document.querySelector('#soati3').style="background-color: none;" 
+}
+componentDidMount(){
+    this.color()
+}
+
     render() {
         return (
-            <div><div className={s.soat}>
-<div className={s.soati1} onClick={this.soati1}>salom</div><div className={s.soati2} onClick={this.soati2}>salom1</div>
+            <div >
+                <header className={s.header1}>
+               <h1> Стоимость и оплата занятий</h1>
+                </header>
+                <div  className={s.soat}> 
+<div className={s.soati1} id='soati1' onClick={this.soati1}>Онлайн 1.5 часа</div>
+<div className={s.soati2} id='soati2'  onClick={this.soati2}>Оффлайн 2 часа</div>
+<div className={s.soati2} id='soati3'  onClick={this.soati3}>Индивидуальные занятия 1.5 часа</div>
 </div>
 
 
         {/* pulBirligi */}
-    <div className={s.pulBirligi}>
-        <div className={s.rub}>RUB</div>
-        <div className={s.uzs}>UZS</div>
-        <div className={s.uan}>UAN</div>
-        <div className={s.usd}>USD</div>
-        <div className={s.eur}>EUR</div>
+<div className={s.pulBirligi}>
+        <div id='rub' onClick={this.rub1} className={s.rub}>RUB</div>
+        <div id='uzb' onClick={this.uzb1} className={s.rub}>UZS</div>
+        <div id='usd' onClick={this.usd1} className={s.rub}>USD</div>
+        <div id='eur' onClick={this.eur1} className={s.rub}>EUR</div>
 
 </div>
 
@@ -34,18 +92,36 @@ this.setState({id:0})
 { this.state.id===0?(
 <div>
     {this.state.key===0?(
-    <div>uzbek1 somi</div>
-    ):(this.state.key===1?(
     <div>rus1 rubl</div>
+    ):(this.state.key===1?(
+    <div>uzbek1 somi</div>
     ):(this.state.key===2?(
     <div>aqsh1 dollor</div>
     ):(
-    <div>xitoy1 uang</div>
+    <div>yevropa1 yevro</div>
     )))}
 </div>
-):(<div>
-     {this.state.key===0?(<h1>hello1</h1>):(this.state.key===1?(<h1>hello2</h1>):(this.state.key===2?(<h1>hello3</h1>):(<h1>hello4</h1>)))}
-</div>)
+):(this.state.id===1?(
+<div>
+     {this.state.key===0?(
+     <h1>hello1</h1>
+     ):(this.state.key===1?(
+     <h1>hello2</h1>
+     ):(this.state.key===2?(
+     <h1>hello3</h1>
+     ):(<h1>hello4</h1>
+     )))}
+</div>
+):(
+<div>
+     {this.state.key===0?(
+     <h1>hello5</h1>
+     ):(this.state.key===1?(
+     <h1>hello6</h1>
+     ):(this.state.key===2?(
+     <h1>hello7</h1>):(
+     <h1>hello8</h1>)))}
+</div>))
 }
             </div>
         )

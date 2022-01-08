@@ -1,3 +1,48 @@
+.header1{
+    background: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1612466874_173-p-fon-oranzhevo-serii-234.jpg');
+width: 100%;
+color: #D96903;
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: 100% 100%;
+height: auto;
+min-height: 600px;
+
+}
+.header1 h1{
+    font-size: 60px;
+    position: relative;
+    top: 100px;
+    left: 70px;
+}
+@media(max-width:1400px){
+    .header1 h1{
+        font-size: 50px;
+        position: relative;
+        top: 100px;
+        left: 70px;
+    }
+}
+@media(max-width:991px){
+    .header1 h1{
+        font-size: 30px;
+        position: relative;
+        top: 100px;
+        left: 40px;
+    }
+}
+@media(max-width:501px){
+    .header1 h1{
+        font-size: 25px;
+        position: relative;
+        top: 100px;
+        left: 50px;
+    }
+}
+
+
+
 .soat{
     margin: auto;
     text-align: center;
@@ -5,26 +50,31 @@
     width: 80%;
     justify-content: center;
     align-items: center;
-    background-color: rosybrown;
-    height: 60px;
+    background-color: #34476723;
+    height: 40px;
+    color: black;
     margin-bottom: 20px;
     border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .soati1{
     cursor: pointer;
- width: 50%;
+ width: 33.3%;
  border-radius: 30px; 
  display: flex;
  justify-content: center;
- align-items: center;  
+ height: 90%;
+ align-items: center; 
 }
 .soati2{
     cursor: pointer;
-    width: 50%;
+    width: 33.2%;
     border-radius: 30px; 
     display: flex;
     justify-content: center;
     align-items: center;  
+    height: 90%;
+   
 }
 
 
@@ -36,7 +86,18 @@
     width: 80%;
     justify-content: center;
     align-items: center;
-    background-color: rosybrown;
-    height: 60px;
+    background-color: #34476723;
+    height: 40px;
     border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.rub{
+    height: 90%;
+    cursor: pointer;
+    width: 24.9%;
+    border-radius: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
