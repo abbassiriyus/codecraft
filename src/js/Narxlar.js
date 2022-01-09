@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
+import { Col, Row } from 'react-bootstrap'
 import { ImDisplay } from 'react-icons/im'
+import rubs from '../img/rub.png'
 import s from '../css/Narxlar.module.css'
+import { FaRubleSign } from 'react-icons/fa'
 export default class Narxlar extends Component {
 state={
     id:0,
@@ -123,6 +126,40 @@ componentDidMount(){
      <h1>hello8</h1>)))}
 </div>))
 }
+     <div className={s.narxCard}>
+        <Row>
+            <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+             <div className={s.cards}>
+                 <div className={s.card}>
+                     <p className={s.number}>590</p>
+                     <h2>540 <FaRubleSign /></h2>
+                     <p>за урок</p>
+                 </div>
+                 <div className={s.cardText}>
+                     <p>Количество: <span>12</span> уроков</p>
+                     <p>Длительность: <span>60</span> минут</p>
+                     <p>Всего за пакет: <span>6500</span> RUB</p>
+                   <button>Оплатитъ</button>
+                 </div>
+             </div>
+            </Col>
+            <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+            <div className={s.cards}>
+                 <div className={s.card}>
+                     <p className={s.number}>400</p>
+                     <h2>360 <FaRubleSign /></h2>
+                     <p>за урок</p>
+                 </div>
+                 <div className={s.cardText}>
+                     <p>Количество: <span>12</span> уроков</p>
+                     <p>Длительность: <span>60</span> минут</p>
+                     <p>Всего за пакет: <span>4300</span> RUB</p>
+                   <button>Оплатитъ</button>
+                 </div>
+             </div>
+            </Col>
+        </Row>
+        </div>
             </div>
         )
     }
