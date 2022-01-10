@@ -20,27 +20,7 @@ export default class Dashboard extends Component {
  
  
  <BrowserRouter>
-                {/* navbar */}
-             <Navbar expand="lg" className={s.navbar}>
-  <div class='container-fluid'>
-    <Navbar.Brand href="#home"><img className={s.brend} src={rasm1} alt=' '/></Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none',boxShadow:'none',position:'relative',right:'20px'}}><FaBars/></Navbar.Toggle>
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto" id={s.sahifa}>
-        <Nav.Link id={s.bolim} href="#">Главная</Nav.Link>
-        <Nav.Link id={s.bolim}  href="#home">Курсы</Nav.Link>
-        <Nav.Link id={s.bolim} href="#home">Оплата</Nav.Link>
-        <Nav.Link id={s.bolim} href="#sertifikat">Сертификат</Nav.Link>
-      </Nav>
-         <div className={s.navicon}>
-  <FaFacebookSquare/>
-  <RiInstagramFill/>
-  <FaTelegramPlane/>
-  </div> 
-    </Navbar.Collapse>
-  </div>
-
-</Navbar> 
+   
 
 
 {/* header  */}

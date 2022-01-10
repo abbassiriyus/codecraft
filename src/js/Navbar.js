@@ -1,4 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
+import s from "../css/Dashboard.module.css"
+import rasm1 from '../img/logo.png'
+import{ Navbar,Nav, } from 'react-bootstrap'
+import { FaBars, FaTelegramPlane } from "react-icons/fa"
+import { FaFacebookSquare }from 'react-icons/fa'
+import { RiInstagramFill }from 'react-icons/ri'
 import { Col, Row } from 'react-bootstrap'
 import { FaFacebookSquare } from 'react-icons/fa';
 import {AiFillInstagram} from 'react-icons/ai';
@@ -6,11 +12,50 @@ import {FaTelegramPlane} from 'react-icons/fa';
 import {RiPhoneFill} from 'react-icons/ri';
 import {ImHeart} from 'react-icons/im';
 import styleFooter from '../css/footer.module.css'
+
 import 'aos/dist/aos.css';
-export default function footer() {
-    return (
-        <div>
-            <footer>
+
+
+
+export default class Navbar extends Component {
+    render() {
+        return (
+            <div>
+                              {/* navbar */}
+             <Navbar expand="lg" className={s.navbar}>
+  <div class='container-fluid'>
+    <Navbar.Brand href="#home"><img className={s.brend} src={rasm1} alt=' '/></Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none',boxShadow:'none',position:'relative',right:'20px'}}><FaBars/></Navbar.Toggle>
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto" id={s.sahifa}>
+        <Nav.Link id={s.bolim} href="#">Главная</Nav.Link>
+        <Nav.Link id={s.bolim}  href="#home">Курсы</Nav.Link>
+        <Nav.Link id={s.bolim} href="#home">Оплата</Nav.Link>
+        <Nav.Link id={s.bolim} href="#sertifikat">Сертификат</Nav.Link>
+      </Nav>
+         <div className={s.navicon}>
+  <FaFacebookSquare/>
+  <RiInstagramFill/>
+  <FaTelegramPlane/>
+  </div> 
+    </Navbar.Collapse>
+  </div>
+
+</Navbar>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
                 
                 <div className={styleFooter.footer}>
                     <Row>
@@ -52,6 +97,10 @@ export default function footer() {
                 </div>
 
             </footer>
-        </div>
-    )
+
+
+
+            </div>
+        )
+    }
 }
