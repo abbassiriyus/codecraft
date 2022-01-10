@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap'
 import { ImDisplay } from 'react-icons/im'
 import rubs from '../img/rub.png'
 import s from '../css/Narxlar.module.css'
-import { FaRubleSign } from 'react-icons/fa'
+import { FaDollarSign, FaEuroSign, FaRubleSign } from 'react-icons/fa'
 export default class Narxlar extends Component {
 state={
     id:0,
@@ -95,71 +95,450 @@ componentDidMount(){
 { this.state.id===0?(
 <div>
     {this.state.key===0?(
-    <div>rus1 rubl</div>
+    <div> 
+        {/* rubl */}
+         <div className={s.narxCard}>
+    <Row>
+        <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+         <div className={s.cards}>
+             <div className={s.card}>
+                 <p className={s.number}>590</p>
+                 <h2>540 <FaRubleSign /></h2>
+                 <p>за урок</p>
+             </div>
+             <div className={s.cardText}>
+                 <p>Количество: <span>12</span> уроков</p>
+                 <p>Длительность: <span>60</span> минут</p>
+                 <p>Всего за пакет: <span>6500</span> RUB</p>
+               <button>Оплатитъ</button>
+             </div>
+         </div>
+        </Col>
+        <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+        <div className={s.cards}>
+             <div className={s.card}>
+                 <p className={s.number}>400</p>
+                 <h2>360 <FaRubleSign /></h2>
+                 <p>за урок</p>
+             </div>
+             <div className={s.cardText}>
+                 <p>Количество: <span>12</span> уроков</p>
+                 <p>Длительность: <span>60</span> минут</p>
+                 <p>Всего за пакет: <span>4300</span> RUB</p>
+               <button>Оплатитъ</button>
+             </div>
+         </div>
+        </Col>
+    </Row>
+    </div></div>
     ):(this.state.key===1?(
-    <div>uzbek1 somi</div>
+    <div>     
+         {/* uzb */}
+    <div className={s.narxCard}>
+<Row>
+   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <div className={s.cards}>
+        <div className={s.card}>
+            <p className={s.number}>590</p>
+            <h2>540 so`m</h2>
+            <p>за урок</p>
+        </div>
+        <div className={s.cardText}>
+            <p>Количество: <span>12</span> уроков</p>
+            <p>Длительность: <span>60</span> минут</p>
+            <p>Всего за пакет: <span>6500</span> UZB</p>
+          <button>Оплатитъ</button>
+        </div>
+    </div>
+   </Col>
+   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+   <div className={s.cards}>
+        <div className={s.card}>
+            <p className={s.number}>400</p>
+            <h2>360 so`m</h2>
+            <p>за урок</p>
+        </div>
+        <div className={s.cardText}>
+            <p>Количество: <span>12</span> уроков</p>
+            <p>Длительность: <span>60</span> минут</p>
+            <p>Всего за пакет: <span>4300</span> UZB</p>
+          <button>Оплатитъ</button>
+        </div>
+    </div>
+   </Col>
+</Row>
+</div></div>
     ):(this.state.key===2?(
-    <div>aqsh1 dollor</div>
+    <div>    
+          {/* dolllor */}
+    <div className={s.narxCard}>
+<Row>
+   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <div className={s.cards}>
+        <div className={s.card}>
+            <p className={s.number}>590</p>
+            <h2>540 <FaDollarSign/></h2>
+            <p>за урок</p>
+        </div>
+        <div className={s.cardText}>
+            <p>Количество: <span>12</span> уроков</p>
+            <p>Длительность: <span>60</span> минут</p>
+            <p>Всего за пакет: <span>6500</span> USD</p>
+          <button>Оплатитъ</button>
+        </div>
+    </div>
+   </Col>
+   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+   <div className={s.cards}>
+        <div className={s.card}>
+            <p className={s.number}>400</p>
+            <h2>360 <FaDollarSign/></h2>
+            <p>за урок</p>
+        </div>
+        <div className={s.cardText}>
+            <p>Количество: <span>12</span> уроков</p>
+            <p>Длительность: <span>60</span> минут</p>
+            <p>Всего за пакет: <span>4300</span> USD</p>
+          <button>Оплатитъ</button>
+        </div>
+    </div>
+   </Col>
+</Row>
+</div></div>
     ):(
-    <div>yevropa1 yevro</div>
+    <div>   
+           {/* yevro */}
+    <div className={s.narxCard}>
+<Row>
+   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <div className={s.cards}>
+        <div className={s.card}>
+            <p className={s.number}>590</p>
+            <h2>540 <FaEuroSign /></h2>
+            <p>за урок</p>
+        </div>
+        <div className={s.cardText}>
+            <p>Количество: <span>12</span> уроков</p>
+            <p>Длительность: <span>60</span> минут</p>
+            <p>Всего за пакет: <span>6500</span> EUR</p>
+          <button>Оплатитъ</button>
+        </div>
+    </div>
+   </Col>
+   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+   <div className={s.cards}>
+        <div className={s.card}>
+            <p className={s.number}>400</p>
+            <h2>360 <FaEuroSign /></h2>
+            <p>за урок</p>
+        </div>
+        <div className={s.cardText}>
+            <p>Количество: <span>12</span> уроков</p>
+            <p>Длительность: <span>60</span> минут</p>
+            <p>Всего за пакет: <span>4300</span> EUR</p>
+          <button>Оплатитъ</button>
+        </div>
+    </div>
+   </Col>
+</Row>
+</div></div>
     )))}
 </div>
 ):(this.state.id===1?(
 <div>
      {this.state.key===0?(
-     <h1>hello1</h1>
+     <h1>      {/* rubl */}
+     <div className={s.narxCard}>
+<Row>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+     <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>590</p>
+             <h2>540 <FaRubleSign /></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>6500</span> RUB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>400</p>
+             <h2>360 <FaRubleSign /></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> RUB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+</Row>
+</div></h1>
      ):(this.state.key===1?(
-     <h1>hello2</h1>
+     <h1>      {/* uzb */}
+     <div className={s.narxCard}>
+<Row>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+     <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>590</p>
+             <h2>540 so`m</h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>6500</span> UZB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>400</p>
+             <h2>360 so`m</h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> UZB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+</Row>
+</div></h1>
      ):(this.state.key===2?(
-     <h1>hello3</h1>
-     ):(<h1>hello4</h1>
+     <h1>      {/* dollor */}
+     <div className={s.narxCard}>
+<Row>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+     <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>590</p>
+             <h2>540 <FaDollarSign/></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>6500</span> USD</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>400</p>
+             <h2>360 <FaDollarSign/></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> USD</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+</Row>
+</div></h1>
+     ):(<h1>   {/* yevro */}
+        <div className={s.narxCard}>
+   <Row>
+       <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+        <div className={s.cards}>
+            <div className={s.card}>
+                <p className={s.number}>590</p>
+                <h2>540 <FaEuroSign /></h2>
+                <p>за урок</p>
+            </div>
+            <div className={s.cardText}>
+                <p>Количество: <span>12</span> уроков</p>
+                <p>Длительность: <span>60</span> минут</p>
+                <p>Всего за пакет: <span>6500</span> EUR</p>
+              <button>Оплатитъ</button>
+            </div>
+        </div>
+       </Col>
+       <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+       <div className={s.cards}>
+            <div className={s.card}>
+                <p className={s.number}>400</p>
+                <h2>360 <FaEuroSign /></h2>
+                <p>за урок</p>
+            </div>
+            <div className={s.cardText}>
+                <p>Количество: <span>12</span> уроков</p>
+                <p>Длительность: <span>60</span> минут</p>
+                <p>Всего за пакет: <span>4300</span> EUR</p>
+              <button>Оплатитъ</button>
+            </div>
+        </div>
+       </Col>
+   </Row>
+   </div></h1>
      )))}
 </div>
 ):(
 <div>
      {this.state.key===0?(
-     <h1>hello5</h1>
+     <h1>   {/* rubl*/}
+     <div className={s.narxCard}>
+<Row>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+     <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>590</p>
+             <h2>540 <FaRubleSign /></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>6500</span> RUB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>400</p>
+             <h2>360 <FaRubleSign /></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> RUB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+</Row>
+</div></h1>
      ):(this.state.key===1?(
-     <h1>hello6</h1>
+     <h1>   {/* uzb */}
+     <div className={s.narxCard}>
+<Row>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+     <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>590</p>
+             <h2>540 so`m</h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>6500</span> UZB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>400</p>
+             <h2>360 so`m</h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> UZB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+</Row>
+</div></h1>
      ):(this.state.key===2?(
-     <h1>hello7</h1>):(
-     <h1>hello8</h1>)))}
+     <h1>   {/* dollor */}
+     <div className={s.narxCard}>
+<Row>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+     <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>590</p>
+             <h2>540 <FaDollarSign/></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>6500</span> USD</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>400</p>
+             <h2>360 <FaDollarSign/></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> USD</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+</Row>
+</div></h1>):(
+     <h1>   {/* yevro */}
+     <div className={s.narxCard}>
+<Row>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+     <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>590</p>
+             <h2>540 <FaEuroSign /></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>6500</span> EUR</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>400</p>
+             <h2>360 <FaEuroSign /></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>60</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> EUR</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+</Row>
+</div></h1>)))}
 </div>))
 }
-     <div className={s.narxCard}>
-        <Row>
-            <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
-             <div className={s.cards}>
-                 <div className={s.card}>
-                     <p className={s.number}>590</p>
-                     <h2>540 <FaRubleSign /></h2>
-                     <p>за урок</p>
-                 </div>
-                 <div className={s.cardText}>
-                     <p>Количество: <span>12</span> уроков</p>
-                     <p>Длительность: <span>60</span> минут</p>
-                     <p>Всего за пакет: <span>6500</span> RUB</p>
-                   <button>Оплатитъ</button>
-                 </div>
-             </div>
-            </Col>
-            <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
-            <div className={s.cards}>
-                 <div className={s.card}>
-                     <p className={s.number}>400</p>
-                     <h2>360 <FaRubleSign /></h2>
-                     <p>за урок</p>
-                 </div>
-                 <div className={s.cardText}>
-                     <p>Количество: <span>12</span> уроков</p>
-                     <p>Длительность: <span>60</span> минут</p>
-                     <p>Всего за пакет: <span>4300</span> RUB</p>
-                   <button>Оплатитъ</button>
-                 </div>
-             </div>
-            </Col>
-        </Row>
-        </div>
+    
             </div>
         )
     }

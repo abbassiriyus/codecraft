@@ -11,6 +11,7 @@ export default function footer() {
     return (
         <div>
             <footer>
+                
                 <div className={styleFooter.footer}>
                     <Row>
                         <Col sm={12} md={12} lg={4} xl={4} xxl={4}>
