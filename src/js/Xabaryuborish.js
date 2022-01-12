@@ -8,7 +8,7 @@ export default class Xabaryuborish extends Component {
     render() {
         return (
             <div className={s.hammasi1}> 
-                 <h1 className={s.title}>ЗАПИШИТЕСЬ НА <span>БЕСПЛАТНЫЙ МАСТЕР-КЛАСС</span></h1>
+                 <h1 id='xabar' className={s.title}>ЗАПИШИТЕСЬ НА <span>БЕСПЛАТНЫЙ МАСТЕР-КЛАСС</span></h1>
          <Row className={s.row1}>
              <Col lg={6} className={s.uchtalik1}>
                  <div style={{display:'flex'}} className={s.as}>

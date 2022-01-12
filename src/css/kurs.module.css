@@ -21,8 +21,9 @@
  .kurs .kursImg{
     width: 85%;
     margin: -30px auto 0;
-    border: 3px solid red;
-    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    height: 200px;
+    border-radius: 10px;
 }
 .rows{
     margin-top: 100px;
@@ -36,7 +37,7 @@ padding-right: 10px;
    display: flex;
    height: 90%;
    width: 90%;
-
+border-radius: 20px;
    margin-bottom: 90px;
    min-height: 600px;
    justify-content: center;
@@ -49,7 +50,7 @@ padding-right: 10px;
     text-align: center;
 }
 .kursCard .textyellow{
-    color: rgb(255, 217, 0);
+    color: #edd168;
 }
 .kursCard .title{
     font-size: 23px;
@@ -68,7 +69,7 @@ padding-right: 10px;
 }
 .kursCard a{
     text-decoration: none;
-    background-color:orange;
+    background-color:#edd168;
     padding: 15px 20px;
     border-radius: 20px;
     margin: 30px auto;
@@ -90,7 +91,7 @@ padding-right: 10px;
     .kursCard{
         display: flex;
         margin-bottom: 90px;
-        min-height: 650px;
+        min-height: 550px;
         justify-content: center;
         box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
 position: relative;

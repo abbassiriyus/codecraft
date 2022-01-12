@@ -32,7 +32,7 @@ export default class nash_prinsip extends Component {
         
                     <Bounce left cascade ><h1 className={styles.title}>Наши принципы <span>
         преподавания</span></h1></Bounce>
-                    <Col sm={12} md={12} md={{order: 1}} lg={12} xl={12} xxl={6}>
+                    <Col sm={12} md={12} md={{order: 1}} lg={6} xl={6} xxl={6}>
                         <div data-aos="zoom-right" data-aos-duration="1000" className={styles.text}>
                         <p>Большая часть нашего учебного времени посвящена получению практического опыта при работе над проектами.</p>
                          <p>Работа над проектами побуждает наших студентов выражать себя с помощью кода.</p>
@@ -46,7 +46,7 @@ export default class nash_prinsip extends Component {
                         </div>
                          </Col>
 
-                         <Col sm={12} md={12} md={12}  lg={12} lg={{order: 2}} xl={12} xxl={6} >
+                         <Col sm={12} md={12} md={12}  lg={6} lg={{order: 2}} xl={6} xxl={6} style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
                           <img data-aos="zoom-in-left" data-aos-duration="2000" className={styles.img} id={styles.img} src={imgs} alt=" "/>
                          
                          </Col>
@@ -91,7 +91,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
                      </div>
                      </Col>
 
-                     <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
+                     <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000" >
                          <img src={image2} alt=" "/>
                          <h4>Индивидуальный подход</h4>
                          <p>Мы умеем находить индивидуальный подход ко всем нашим ученикам, учитывая их разные характерные особенности</p>
