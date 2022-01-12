@@ -19,7 +19,7 @@ export default class certificate extends Component {
                 </Col>
                 <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
                     <div className={sertifekat.imgs}> 
-                        <img src={rasmc}/>
+                        <img alt=' ' src={rasmc}/>
                     </div>
                 </Col>
                
@@ -37,7 +37,7 @@ export default class certificate extends Component {
                 </Col>
                 <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
                     <div className={sertifekat.imgs}> 
-                        <img src={rasmc}/>
+                        <img alt=' ' src={rasmc}/>
                     </div>
                 </Col>
                
@@ -55,7 +55,7 @@ export default class certificate extends Component {
                 </Col>
                 <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
                     <div className={sertifekat.imgs}> 
-                        <img src={rasmc}/>
+                        <img alt=' ' src={rasmc}/>
                     </div>
                 </Col>
                
@@ -73,7 +73,7 @@ export default class certificate extends Component {
                 </Col>
                 <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
                     <div className={sertifekat.imgs}> 
-                        <img src={rasmc}/>
+                        <img alt=' ' src={rasmc}/>
                     </div>
                 </Col>
                
@@ -91,7 +91,7 @@ export default class certificate extends Component {
                 </Col>
                 <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
                     <div className={sertifekat.imgs}> 
-                        <img src={rasmc}/>
+                        <img alt=' ' src={rasmc}/>
                     </div>
                 </Col>
                

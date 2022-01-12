@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import imgs from '../img/gg.gif';
+import imgs from '../img/nnn1.gif';
 import child from '../img/child.png';
 import rightImg from '../img/1111.png';
 import image1 from '../img/o.png';
@@ -11,7 +11,7 @@ import image5 from '../img/glob.png';
 import image6 from '../img/image6.png';
 import {Col,Row} from 'react-bootstrap';
 import styles from '../css/nashPrinsip.module.css';
-
+import '../App.css'
 // import Fade from 'react-reveal/Fade';
 // import Rotate from 'react-reveal/Rotate';
 // import Slide from 'react-reveal/Slide';
@@ -46,8 +46,8 @@ export default class nash_prinsip extends Component {
                         </div>
                          </Col>
 
-                         <Col sm={12} md={12} md={12}  lg={12} lg={{order: 2}} xl={12} xxl={6}>
-                          <img data-aos="zoom-in-left" data-aos-duration="2000" className={styles.img} src={imgs} alt=" "/>
+                         <Col sm={12} md={12} md={12}  lg={12} lg={{order: 2}} xl={12} xxl={6} >
+                          <img data-aos="zoom-in-left" data-aos-duration="2000" className={styles.img} id={styles.img} src={imgs} alt=" "/>
                          
                          </Col>
                     </Row>
@@ -76,8 +76,8 @@ data-aos-duration="2000"  className={styles.rightCard}>
             </div>
 
 
-            <div className={styles.codecrafMain}>
-             <h1 className={styles.title}>Почему выбирают <span>codecraft</span></h1>
+            <div id='pochem' className={styles.codecrafMain}>
+             <h1 className={styles.title}>Почему выбирают <span>CodeCraft</span></h1>
              <div className={styles.codecraf }>
                  <div className={styles.boxNash1}>
                  <Row>
@@ -85,14 +85,14 @@ data-aos-duration="2000"  className={styles.rightCard}>
 
                      <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
                      <div >
-                         <img src={image1} />
+                         <img src={image1} alt=" " />
                          <h4>Самые клёвые инструкторы</h4>
                          <p>Инструкторы Codecraft - молодые, энергичные программисты и айтишники, которые с легкостью найдут общий язык с детьми и помогут им понять даже самые сложные нюансы программирования</p>
                      </div>
                      </Col>
 
                      <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
-                         <img src={image2}/>
+                         <img src={image2} alt=" "/>
                          <h4>Индивидуальный подход</h4>
                          <p>Мы умеем находить индивидуальный подход ко всем нашим ученикам, учитывая их разные характерные особенности</p>
                      </Col>
@@ -105,7 +105,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
          
                       <Col  sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
                           <div>
-                              <img src={image4} />
+                              <img src={image4} alt=' ' />
                               <h4>Удобный график занятий</h4>
                               <p>Мы строим индивидуальный график занятий для каждого ученика, поэтому заниматься можно в любое удобное для Вас время</p>
                           </div>

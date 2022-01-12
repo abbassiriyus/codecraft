@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { ImDisplay } from 'react-icons/im'
-import rubs from '../img/rub.png'
 import s from '../css/Narxlar.module.css'
+import { Accordion } from 'react-bootstrap'
+import accordionstyle from '../css/accordion.module.css'
 import { FaDollarSign, FaEuroSign, FaRubleSign } from 'react-icons/fa'
 export default class Narxlar extends Component {
 state={
@@ -11,56 +11,56 @@ state={
 }
  soati1=()=>{
 this.setState({id:0})
-document.querySelector('#soati1').style="background-color: #D96903;"
+document.querySelector('#soati1').style="background-color: #9727af;"
 document.querySelector('#soati2').style="background-color: none;"
 document.querySelector('#soati3').style="background-color: none;"
  }  
  soati2=()=>{
     this.setState({id:1})
     document.querySelector('#soati1').style="background-color: none;"
-    document.querySelector('#soati2').style="background-color: #D96903;"
+    document.querySelector('#soati2').style="background-color: #9727af;"
     document.querySelector('#soati3').style="background-color: none;"
 }    
 soati3=()=>{
     this.setState({id:2})
     document.querySelector('#soati1').style="background-color: none;"
     document.querySelector('#soati2').style="background-color: none;"
-    document.querySelector('#soati3').style="background-color: #D96903;"
+    document.querySelector('#soati3').style="background-color: #9727af;"
 } 
 rub1=()=>{
     this.setState({key:0})
-    document.querySelector('#rub').style="background-color: #D96903;"
+    document.querySelector('#rub').style="background-color: #9727af;"
     document.querySelector('#uzb').style="background-color: none;"
     document.querySelector('#usd').style="background-color: none;"
     document.querySelector('#eur').style="background-color: none;"
 }
 uzb1=()=>{
     this.setState({key:1})
-    document.querySelector('#uzb').style="background-color: #D96903;"
+    document.querySelector('#uzb').style="background-color: #9727af;"
     document.querySelector('#rub').style="background-color: none;"
     document.querySelector('#usd').style="background-color: none;"
     document.querySelector('#eur').style="background-color: none;"
 }
 usd1=()=>{
     this.setState({key:2})
-    document.querySelector('#usd').style="background-color: #D96903;"
+    document.querySelector('#usd').style="background-color: #9727af;"
     document.querySelector('#uzb').style="background-color: none;"
     document.querySelector('#rub').style="background-color: none;"
     document.querySelector('#eur').style="background-color: none;"
 }
 eur1=()=>{
     this.setState({key:3})
-    document.querySelector('#eur').style="background-color: #D96903;"
+    document.querySelector('#eur').style="background-color: #9727af;"
     document.querySelector('#uzb').style="background-color: none;"
     document.querySelector('#rub').style="background-color: none;"
     document.querySelector('#usd').style="background-color: none;"
 }
 color=()=>{
-    document.querySelector('#rub').style="background-color: #D96903;"
+    document.querySelector('#rub').style="background-color: #9727af;"
     document.querySelector('#uzb').style="background-color: none;"
     document.querySelector('#usd').style="background-color: none;"
     document.querySelector('#eur').style="background-color: none;"
-    document.querySelector('#soati1').style="background-color: #D96903;"
+    document.querySelector('#soati1').style="background-color: #9727af;"
     document.querySelector('#soati2').style="background-color: none;"
     document.querySelector('#soati3').style="background-color: none;" 
 }
@@ -74,12 +74,12 @@ componentDidMount(){
                 <header className={s.header1}>
                <h1> Стоимость и оплата занятий</h1>
                 </header>
+                <h1 style={{margin:'auto',textAlign:'center',marginBottom:'50px',marginTop:'50px'}}>Индивидуальные и группавые занятия</h1>
                 <div  className={s.soat}> 
 <div className={s.soati1} id='soati1' onClick={this.soati1}>Онлайн 1.5 часа</div>
 <div className={s.soati2} id='soati2'  onClick={this.soati2}>Оффлайн 2 часа</div>
 <div className={s.soati2} id='soati3'  onClick={this.soati3}>Индивидуальные занятия 1.5 часа</div>
 </div>
-
 
         {/* pulBirligi */}
 <div className={s.pulBirligi}>
@@ -538,7 +538,43 @@ componentDidMount(){
 </div></h1>)))}
 </div>))
 }
-    
+
+<div className={accordionstyle.accordions}>
+           
+           <h1 className={accordionstyle.title}>Часто задаваемые <span> вопросы</span></h1>
+           <Accordion>
+ <Accordion.Item eventKey="0">
+   <Accordion.Header data-aos="flip-up" ><h5 className={accordionstyle.accordionHeader}>На каком языке ведутся занятия?</h5>
+</Accordion.Header>
+   <Accordion.Body>
+  <p className={accordionstyle.textaccordion}> В данное время занятия ведутся на русском языке, с изучением технической терминологии на английском</p>
+   </Accordion.Body>
+ </Accordion.Item>
+ <Accordion.Item eventKey="1">
+   <Accordion.Header data-aos="flip-up"><h5 className={accordionstyle.accordionHeader}> Есть ли возрастные ограничения?</h5>
+</Accordion.Header>
+   <Accordion.Body>
+ <p className={accordionstyle.textaccordion}>  Да, наша программа курсов рассчитана на детей от 9 до 16 лет</p>
+   </Accordion.Body>
+ </Accordion.Item>
+ <Accordion.Item eventKey="2">
+   <Accordion.Header data-aos="flip-up"> <h5 className={accordionstyle.accordionHeader}>В какое время и сколько раз в неделю проходят занятия?</h5>
+</Accordion.Header>
+   <Accordion.Body>
+  <p className={accordionstyle.textaccordion}> 3 раза в неделю по 120 минут. Подробнее время занятий вы можете посмотреть в разделе Курсы</p>
+   </Accordion.Body>
+ </Accordion.Item>
+ <Accordion.Item eventKey="3">
+   <Accordion.Header data-aos="flip-up"><h5 className={accordionstyle.accordionHeader}> Где проходят занятия?</h5>
+</Accordion.Header>
+   <Accordion.Body>
+  <p className={accordionstyle.textaccordion}> Занятия проходят в Ташкенте по адресу Мирзо-Улугбекский район, ул.Салом1, 241 школа</p>
+   </Accordion.Body>
+ </Accordion.Item>
+
+
+</Accordion>
+       </div>    
             </div>
         )
     }

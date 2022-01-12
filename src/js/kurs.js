@@ -1,7 +1,6 @@
-import React, {useEffect, Component} from 'react'     
+import React, {Component} from 'react'     
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import kurstyle from '../css/kurs.module.css'
-import {FaHandPointUp}from 'react-icons/fa'
 import Python from '../img/header.gif';
 import javascript from '../img/testing.gif';
 import Andiroid from '../img/andiroid.gif';
@@ -20,7 +19,7 @@ export default class kurs extends Component {
     
     return (
       <div>
-          <div className={kurstyle.cuorse}>
+          <div id='kurs' className={kurstyle.cuorse}>
  <h1><span>Чему</span> мы учим?</h1>   
    <div className={kurstyle.kurs}> 
   
@@ -45,7 +44,7 @@ export default class kurs extends Component {
       <MDBCol className={kurstyle.kurscol}>
         <MDBCard data-aos="flip-up"  data-aos-duration="3000" className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
-            src={javascript}
+            src="https://s1.o7planning.com/ru/12267/images/34259571.gif"
             alt='...'
             position='top'
           />
