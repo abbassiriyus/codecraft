@@ -13,16 +13,13 @@ import online from '../img/online.png'
 import kopmboa from '../img/kopmboa.png'
 import kompide from '../img/kompide.png'
 import { Bounce } from 'react-reveal'
-import '../App.css'
   AOS.init();
 export default class Dashboard extends Component {
 
     render() {
         return (
             <div>
- <div class="text-box">
-    <a href="#" class="btn btn-white btn-animate"><MdPhoneInTalk/>ljfsidgyufgasyud</a>
-</div>
+
 
 {/* header  */}
 <header>

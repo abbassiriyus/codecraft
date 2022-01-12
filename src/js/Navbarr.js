@@ -31,7 +31,7 @@ export default class Navbarr extends Component {
                               {/* navbar */}
              <Navbar style={{position:'fixed'}} expand="lg" className={s.navbar}>
   <div class='container-fluid'>
-    <Navbar.Brand href="#home"><img className={s.brend} src={rasm1} alt=' '/></Navbar.Brand>
+    <Navbar.Brand href="/#"><img className={s.brend} src={rasm1} alt=' '/></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none',boxShadow:'none',position:'relative',right:'20px'}}><FaBars/></Navbar.Toggle>
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto" id={s.sahifa}>

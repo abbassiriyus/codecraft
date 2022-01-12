@@ -6,9 +6,10 @@ import Andiroid from '../img/andiroid.gif';
 import Php from '../img/prolog.gif';
 import Html from '../img/html.gif';
 import Scratch from '../img/scratch.gif';
-import Arifmetika from '../img/arif.gif'
+import styles from '../css/nashPrinsip.module.css';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import { Bounce } from 'react-reveal';
 AOS.init();
 export default class kurs extends Component {
 
@@ -19,7 +20,7 @@ export default class kurs extends Component {
     return (
       <div>
           <div id='kurs' className={kurstyle.cuorse}>
- <h1><span>Чему</span> мы учим?</h1>   
+          <Bounce left cascade ><h1 className={styles.title}><span>Чему</span> мы учим?</h1></Bounce>
    <div className={kurstyle.kurs}> 
   
     <div className={kurstyle.rows}>
