@@ -48,7 +48,6 @@ export default class nash_prinsip extends Component {
 
                          <Col sm={12} md={12} md={12}  lg={6} lg={{order: 2}} xl={6} xxl={6} style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
                           <img data-aos="zoom-in-left" data-aos-duration="2000" className={styles.img} id={styles.img} src={imgs} alt=" "/>
-                         
                          </Col>
                     </Row>
                     <Row>
@@ -71,10 +70,8 @@ data-aos-duration="2000"  className={styles.rightCard}>
                            </Col>
                        </Row>
                     </div>
-            
                 </div>
             </div>
-
 
             <div id='pochem' className={styles.codecrafMain}>
              <h1 className={styles.title}>Почему выбирают <span>CodeCraft</span></h1>
