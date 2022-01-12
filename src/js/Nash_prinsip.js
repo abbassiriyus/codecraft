@@ -10,8 +10,9 @@ import image4 from '../img/image4.png';
 import image5 from '../img/glob.png';
 import image6 from '../img/image6.png';
 import {Col,Row} from 'react-bootstrap';
+import CountUp from 'react-countup';
 import styles from '../css/nashPrinsip.module.css';
-import '../App.css'
+// import '../App.css'
 // import Fade from 'react-reveal/Fade';
 // import Rotate from 'react-reveal/Rotate';
 // import Slide from 'react-reveal/Slide';
@@ -21,6 +22,7 @@ import AOS from 'aos'
 import { Bounce, } from 'react-reveal';
   AOS.init();
 export default class nash_prinsip extends Component {
+
     render() {
         return (
             <div>
@@ -129,9 +131,34 @@ data-aos-duration="2000"  className={styles.rightCard}>
                              {/* </Slide> */}
 
                               </Col>
-                      </Row>
+                </Row>
              </div>
              </div>
+            </div>
+
+            <div className={styles.counter}>
+                <div className='container'>
+                    <Row>
+                        <Col>
+                        <div className={styles.counter_item}>
+                            <CountUp className={styles.counter_number} start={0} end={5024} delay={1} duration={4}/><span className={styles.counter_plus}>+</span>
+                            <p className={styles.counter_text}>Выпускников</p>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div style={{borderRight: '1px solid #fff', borderLeft: '1px solid #fff'}} className={styles.counter_item}>
+                        <CountUp className={styles.counter_number} start={0} end={48564} delay={1} duration={5}/><span className={styles.counter_plus}>+</span>
+                            <p className={styles.counter_text}>Часов обучения</p>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className={styles.counter_item}>
+                        <CountUp className={styles.counter_number} start={0} end={46} delay={1} duration={3}/><span className={styles.counter_plus}>+</span>
+                            <p className={styles.counter_text}>Подготовлено <br/>Инструкторов</p>
+                        </div>
+                    </Col>
+                    </Row>
+                </div>
             </div>
            
         </div>

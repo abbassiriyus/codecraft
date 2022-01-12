@@ -22,6 +22,30 @@ margin: 0 auto;
    margin: 50px 0;
    text-align: center;
 }
+.counter{
+   background: radial-gradient(#353535, #252525);
+   color: white;
+   text-align: center;
+   padding: 70px 0;
+}
+.counter_item{
+   padding: 50px 0;
+}
+
+.counter_number{
+   margin: 0;
+   font-size: 56px;
+   font-weight: 600;
+}
+.counter_plus{
+   font-size: 40px;
+   color: rgb(255, 136, 0);
+   display: inline-block;
+}
+.counter_text{
+   color: #7f7f7f;
+   margin: 0;
+}
 .title span{
    color: rgb(255, 136, 0);
 }

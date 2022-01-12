@@ -36,10 +36,11 @@ export default class Dashboard extends Component {
 <li>Индивидуально с профессиональным преподавателем</li>
 <li>Мы научим вашего ребенка программировать!</li></Bounce>
 
+<a href='#xabar' className={s.myButton}>Записатьсия за бесплатный мастер-класс</a>
 </ul>
 
 </div>
-<div className={s.rasm}><img id={s.images} data-aos="zoom-in" src={header} alt=' '/></div>
+<div className={s.rasm}><img style={{right: '-100px'}} id={s.images} data-aos="zoom-in" src={header} alt=' '/></div>
 <div className={s.aylana}></div>
 </header>
 

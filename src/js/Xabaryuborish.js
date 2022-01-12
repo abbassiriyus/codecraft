@@ -1,7 +1,16 @@
+<<<<<<< Updated upstream
 import React, { Component } from 'react';
 import { Row,Col, Form, Button } from 'react-bootstrap';
 import s from '../css/Xabaryuborish.module.css';
 import '../App.css';
+=======
+import React, { Component } from 'react'
+import { Row,Col, Form, Button } from 'react-bootstrap'
+import s from '../css/Xabaryuborish.module.css'
+import styles from '../css/nashPrinsip.module.css';
+import '../App.css';
+import { MdWavingHand } from "react-icons/md";
+>>>>>>> Stashed changes
 import { FaHandPointRight } from 'react-icons/fa';
 export default class Xabaryuborish extends Component {
     render() {
@@ -31,8 +40,9 @@ export default class Xabaryuborish extends Component {
     </Form.Text>
   </Form.Group>
 
-  <Button variant="primary" type="submit">
-    Submit
+  <Button className={s.xabarBtn} type="submit">
+    <MdWavingHand className='mx-3'/>
+    Записаться
   </Button>
 </Form>  <img width="120" height="120" className={s.robit} src='https://pngimg.com/uploads/robot/robot_PNG40.png'/>
 </div></Col>

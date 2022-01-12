@@ -2,14 +2,14 @@ import React, {Component} from 'react'
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import kurstyle from '../css/kurs.module.css'
 import Python from '../img/header.gif';
+// import javascript from '../img/testing.gif';
 import Andiroid from '../img/andiroid.gif';
 import Php from '../img/prolog.gif';
 import Html from '../img/html.gif';
 import Scratch from '../img/scratch.gif';
-import styles from '../css/nashPrinsip.module.css';
+import Arifmetika from '../img/arif.gif'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import { Bounce } from 'react-reveal';
 AOS.init();
 export default class kurs extends Component {
 
@@ -20,11 +20,11 @@ export default class kurs extends Component {
     return (
       <div>
           <div id='kurs' className={kurstyle.cuorse}>
-          <Bounce left cascade ><h1 className={styles.title}><span>Чему</span> мы учим?</h1></Bounce>
+ <h1><span>Чему</span> мы учим?</h1>   
    <div className={kurstyle.kurs}> 
   
     <div className={kurstyle.rows}>
-    <MDBRow className='row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-4 ' >
+    <MDBRow className='row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ' >
       <MDBCol className={kurstyle.kurscol}>
         <MDBCard data-aos='fade-right'  data-aos-duration="2000" className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
@@ -37,14 +37,14 @@ export default class kurs extends Component {
             <MDBCardText>
              <p>Python - это язык программирования, который активно используеться в разработке веб-сайтов, игр и программ. Благодаря своей простоте и понятности, этот язык идеально подходит для новичков.</p>
             </MDBCardText>
-            <a href="/#xabar"> Подробнее</a>
+            <a href=""> Подробнее</a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
       <MDBCol className={kurstyle.kurscol}>
         <MDBCard data-aos="flip-up"  data-aos-duration="3000" className={kurstyle.kursCard}>
           <MDBCardImage className={kurstyle.kursImg}
-            src="https://media.giphy.com/media/hoILp6MRyod8s/giphy.gif"
+            src="https://s1.o7planning.com/ru/12267/images/34259571.gif"
             alt='...'
             position='top'
           />
@@ -53,7 +53,7 @@ export default class kurs extends Component {
             <MDBCardText>
             <p>Javascript - это один из самых востребованных языков программирования на сегодня. Владея этим языком, можно создавать почти всё: веб-сайты, игры и программы для любых электронных устройств,и архитектуру сайта.</p>
             </MDBCardText>
-            <a href="/#xabar"> Подробнее</a>
+            <a href=""> Подробнее</a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -70,7 +70,7 @@ export default class kurs extends Component {
            <p>это визуальный конструктор приложений для Android. Таким образом, несмотря на то, что основным языком создания программ для Android является Java, в случае использования App Inventor совершенно не требуется.
                                 </p>
             </MDBCardText>
-            <a href="/#xabar"> Подробнее</a>
+            <a href=""> Подробнее</a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -88,7 +88,7 @@ export default class kurs extends Component {
             <p>Этот курс позволит освоить базовые принципы в программировании, без которых не обойтись ни одному будущему разработчику. Дети получат необходимый фундамент, который позволит идти дальше изучая более интересные и сложные
                                     темы в программировании.</p>
             </MDBCardText>
-            <a href="/#xabar"> Подробнее</a>
+            <a href=""> Подробнее</a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -105,7 +105,7 @@ export default class kurs extends Component {
             <p>это курс Лучший способ провести время полезно и забавно !!! Цель курса веб-программирования-научить детей самостоятельно создавать веб-страницы, оформлять дизайн и структуру этой страницы. Курс способствует развитию фантазии
                                     и новаторского качества вашега ребенка.</p>
             </MDBCardText>
-            <a href="/#xabar"> Подробнее</a>
+            <a href=""> Подробнее</a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -122,7 +122,7 @@ export default class kurs extends Component {
            <p>
                                     Ваш ребёнок много времени проводит играя за компьютером? Как превратить это время в пользу? Цель курса визуального программирования - научить детей созидательной работе за компьютером, раскрывая весь их творческий потенциал</p>
             </MDBCardText>
-            <a href="/#xabar"> Подробнее</a>
+            <a href=""> Подробнее</a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol >
@@ -131,7 +131,7 @@ export default class kurs extends Component {
      data-aos-duration="2000" className={kurstyle.kurscol}>
         <MDBCard  className={kurstyle.kursCard} data-aos="zoom-in-left" data-aos-duration="3000">
           <MDBCardImage className={kurstyle.kursImg}
-            src="https://umius.ru/wp-content/uploads/2021/12/MA-1170-x-720-px-3.gif"
+            src={Arifmetika}
             alt='...'
             position='top'
           />
@@ -141,7 +141,7 @@ export default class kurs extends Component {
              <p>
                                     это – древняя система счета.Занятия проходят с использованием специальных счетов абакус. К работе левого полушария присоединяется правое полушарие, подключая к логическим операциям творческое мышление. </p>
             </MDBCardText>
-            <a href="/#xabar"> Подробнее</a>
+            <a href=""> Подробнее</a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>

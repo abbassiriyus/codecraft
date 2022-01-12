@@ -6,6 +6,17 @@
    
     margin: 40px;
 }
+.xabarBtn{
+    background-color: rgb(120, 35, 163);
+    border: none;
+    padding: 12px 90px;
+    border-radius: 50px;
+}
+.xabarBtn:hover{
+    background-color: rgb(120, 35, 163);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
 .title{
     font-size: 30px;
     color:white;

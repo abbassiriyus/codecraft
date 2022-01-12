@@ -21,6 +21,26 @@ body{
     border-radius: 40px;
 z-index: 121;
 }
+img{
+    right: 0;
+}
+.myButton{
+    display: block;
+    text-decoration: none;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    background-color: #edd168;
+    color: black;
+    padding: 20px 50px;
+    margin-top: 50px;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+.myButton:hover{
+    background-color: rgb(5, 152, 98);
+    color: white;
+}
 .navicon{
     font-size: 30px;
     width: 200px;
