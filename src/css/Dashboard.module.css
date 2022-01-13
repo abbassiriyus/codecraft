@@ -155,10 +155,11 @@ background:#9727af;
    
     display: block;
     margin: auto;
+    margin-left: 100px;
     z-index: 12;
 }
 .satr ul  h1{
-   
+    line-height: 2.7rem;
     font-size: 4rem;
     font-weight: 700px;
 }
