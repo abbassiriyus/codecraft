@@ -21,7 +21,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos'
 import { Bounce, } from 'react-reveal';
   AOS.init();
-export default class nash_prinsip extends Component {
+export default class Nash_prinsip extends Component {
 
     render() {
         return (

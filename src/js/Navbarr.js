@@ -13,7 +13,7 @@ import styleFooter from '../css/footer.module.css'
 
 import 'aos/dist/aos.css';
 import Dashboard from './Dashboard'
-import Nash_prinsip from './nash_prinsip'
+import Nash_prinsip from './Nash_prinsip'
 import Narxlar from './Narxlar'
 import Certificate from './certificate'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
