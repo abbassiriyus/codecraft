@@ -63,20 +63,19 @@ margin-bottom: 40px;
      border-radius: 30px;
      background-color:#9727af;
  }
- .rasm3:hover{
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
-    background-color:#9727af;
-    animation-name: animatsiya;
-    animation-duration: 1000;
-
+#df:hover{
+    animation: animatsiya 2s ease;
+    animation-iteration-count: infinite;
+}
+#dd{
+    animation: aaa 2s ease;
+    animation-iteration-count: infinite;
 }
 
 @keyframes animatsiya{
-    from {scale:1;}
-    50%  {scale:1.1 ;} /* ignored */
-    to   {scale:1;}   
+    from {transform: scale(1);}
+    50%  {transform: scale(1.2);} /* ignored */
+    to   {transform: scale(1);}   
 }
 @media(max-Width:600px){
     .xabarBtn{
@@ -87,4 +86,12 @@ margin-bottom: 40px;
         text-align: center;
         border-radius: 50px;
     }
+}
+@keyframes aaa {
+    0%{transform: rotateX(0deg);}
+    20%{transform: rotateX(60deg);}
+    40%{transform: rotateX(80deg);}
+    60%{transform: rotateX(100deg);}
+    80%{transform: rotateX(120deg);}
+    100%{transform: rotateX(130deg);}
 }

@@ -36,7 +36,7 @@ export default class Dashboard extends Component {
 <li>Индивидуально с профессиональным преподавателем</li>
 <li>Мы научим вашего ребенка программировать!</li></Bounce>
 
-<a href='#xabar' className={s.myButton}>Записатьсия за бесплатный мастер-класс</a>
+<a href='#xabar' style={{textDecoration:'none',color:'white'}} className={s.myButton}>Записатьсия за бесплатный мастер-класс</a>
 </ul>
 
 </div>

@@ -5,7 +5,23 @@ body{
 
 
 /* navbar qismi */
-
+.tel{
+    z-index: 1011001;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    background-color:black;
+    animation: animatsiya1 2s ease;
+    animation-iteration-count: infinite;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 20px;
+}
 .navbar{ position: fixed;
     left: 3%;
     top: 10px;
@@ -13,8 +29,8 @@ body{
     background-color:white;
     background: linear-gradient(
     to right bottom,
-    rgba(255,255,255,0.9),
-    rgba(255,255,255,0.8)
+    rgba(255,255,255,1),
+    rgba(255,255,255,0.9)
     );
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 40px;
@@ -26,20 +42,18 @@ img{
 .myButton{
     display: block;
     text-decoration: none;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+  border-radius: 50px;
     border: none;
-    background-color: #edd168;
-    color: black;
+    background-color: #EC3E34;
+    color:white;
     padding: 20px 50px;
     margin-top: 50px;
     font-size: 20px;
     transition: all .3s ease-in-out;
+    animation: animatsiya 2s ease;
+    animation-iteration-count: infinite;
 }
-.myButton:hover{
-    background-color: rgb(5, 152, 98);
-    color: white;
-}
+
 .navicon{
     font-size: 30px;
     width: 200px;
@@ -102,22 +116,22 @@ color: orange;
 }
 @media (max-width:991px){
     .myButton{
+        margin: auto;
+        text-align: center;
+        align-items: center;
         display: block;
         text-decoration: none;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
         border: none;
-        background-color: #edd168;
+        background-color: #EC3E34;
         color: white;
         padding: 20px 50px;
         margin-top: 50px;
         font-size: 14px;
         transition: all .3s ease-in-out;
     }
-    .myButton:hover{
-        background-color: rgb(5, 152, 98);
-        color: white;
-    }
+  
     #sahifa{
         margin: auto;
         margin-bottom: 20px;
@@ -507,6 +521,15 @@ opacity: 0.9;
     }
 
 
+    @keyframes animatsiya{
+        from {transform: scale(0.9);}
+        50%  {transform: scale(1);} 
+        to   {transform: scale(0.9);}   
+    }
 
-
+    @keyframes animatsiya1{
+        from {transform: scale(1);opacity: 0.7;}
+        50%  {transform: scale(1.2);opacity: 1;} 
+        to   {transform: scale(1);opacity: 0.7;}   
+    }
   

@@ -3,10 +3,12 @@ import React, { Component } from 'react';
 import { Row,Col, Form, Button } from 'react-bootstrap';
 import s from '../css/Xabaryuborish.module.css';
 import '../App.css';
-import styles from '../css/nashPrinsip.module.css';
 import { MdWavingHand } from "react-icons/md";
 import { FaHandPointRight } from 'react-icons/fa';
 export default class Xabaryuborish extends Component {
+  anima=()=>{
+    document.querySelector('#df').style=""
+  }
     render() {
         return (
             <div className={s.hammasi1}> 
@@ -34,8 +36,8 @@ export default class Xabaryuborish extends Component {
     </Form.Text>
   </Form.Group>
 <div style={{width:'100%',margin:'auto',textAlign:'center'}}>
-  <Button className={s.xabarBtn} type="submit">
-    <MdWavingHand className='mx-3'/>
+  <Button id={s.df}  className={s.xabarBtn} type="submit">
+    <MdWavingHand  className='mx-3'/>
     Записаться
   </Button></div>
 </Form>  <img width="120" height="120" className={s.robit} src='https://pngimg.com/uploads/robot/robot_PNG40.png'/>
@@ -44,19 +46,19 @@ export default class Xabaryuborish extends Component {
 <div>
 
    <div className={s.asosiy1}>
-                 <div className={s.rasm1}><FaHandPointRight style={{color:'white',fontSize:'50px'}} alt=" "  src="https://www.pngrepo.com/download/119285/hand-finger-pointing-to-right-direction-like-an-arrow.png"/></div>
+                 <div className={s.rasm1}><FaHandPointRight id={s.dd} style={{color:'white',fontSize:'50px'}} alt=" "  src="https://www.pngrepo.com/download/119285/hand-finger-pointing-to-right-direction-like-an-arrow.png"/></div>
                  <div className={s.ikkitalik1}>
                  Мы поможем вам определиться и подобрать подходящее направление для вашего ребенка
                  </div>
                  </div>
                  <div className={s.asosiy1}>
-                 <div className={s.rasm1}><FaHandPointRight style={{color:'white',fontSize:'50px'}} alt=" "  src="https://www.pngrepo.com/download/119285/hand-finger-pointing-to-right-direction-like-an-arrow.png"/></div>
+                 <div className={s.rasm1}><FaHandPointRight id={s.dd} style={{color:'white',fontSize:'50px'}} alt=" "  src="https://www.pngrepo.com/download/119285/hand-finger-pointing-to-right-direction-like-an-arrow.png"/></div>
                  <div className={s.ikkitalik1}>
                  Вы познакомитесь с преподавателем и посмотрите как проходят наши занятия
                  </div>
                  </div>
                  <div className={s.asosiy1}>
-                 <div className={s.rasm1}><FaHandPointRight style={{color:'white',fontSize:'50px'}} alt=" " src="https://pngimg.com/uploads/robot/robot_PNG79.png"/></div>
+                 <div className={s.rasm1}><FaHandPointRight id={s.dd} style={{color:'white',fontSize:'50px'}} alt=" " src="https://pngimg.com/uploads/robot/robot_PNG79.png"/></div>
                  <div className={s.ikkitalik1}>
                  Ребенок проведет свое время с пользой, узнает что-то новое и создаст первый проект
                  </div>

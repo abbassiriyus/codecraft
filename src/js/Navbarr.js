@@ -16,20 +16,22 @@ import Dashboard from './Dashboard'
 import Nash_prinsip from './Nash_prinsip'
 import Narxlar from './Narxlar'
 import Certificate from './certificate'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Kurs from './kurs'
 import Xabaryuborish from './Xabaryuborish'
 import Accordion from './accordion'
-
-
+import { BsFillTelephoneFill } from 'react-icons/bs'
+import '../App.css'
 
 export default class Navbarr extends Component {
   
   render() {
         return (
-            <div>
+            <div >
+              <div id='body'></div>
+              <div className={s.tel}><a href="tel:+998 99 300 55 00"><BsFillTelephoneFill style={{color:'green'}}/></a></div>
                               {/* navbar */}
-             <Navbar style={{position:'fixed'}} expand="lg" className={s.navbar}>
+             <Navbar style={{position:'fixed'}}  expand="lg" className={s.navbar}>
   <div class='container-fluid'>
     <Navbar.Brand href="/#"><img className={s.brend} src={rasm1} alt=' '/></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none',boxShadow:'none',position:'relative',right:'20px'}}><FaBars/></Navbar.Toggle>

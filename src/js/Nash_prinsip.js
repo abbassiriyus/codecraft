@@ -97,7 +97,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
                      </Col>
 
                     <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="2000"> 
-                    <img src={image3}/>
+                    <img src="https://nito.rsvpu.ru/img/logo.png"/>
                     <h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
                     </Col>

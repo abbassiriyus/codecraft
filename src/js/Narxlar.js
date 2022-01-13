@@ -99,31 +99,47 @@ componentDidMount(){
         {/* rubl */}
          <div className={s.narxCard}>
     <Row>
-        <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+        <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
          <div className={s.cards}>
              <div className={s.card}>
-                 <p className={s.number}>590</p>
+                 <p className={s.number}>веб-программист</p>
                  <h2>540 <FaRubleSign /></h2>
                  <p>за урок</p>
              </div>
              <div className={s.cardText}>
                  <p>Количество: <span>12</span> уроков</p>
-                 <p>Длительность: <span>60</span> минут</p>
+                 <p>Длительность: <span>90</span> минут</p>
                  <p>Всего за пакет: <span>6500</span> RUB</p>
                <button>Оплатитъ</button>
              </div>
          </div>
         </Col>
-        <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+        <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
         <div className={s.cards}>
              <div className={s.card}>
-                 <p className={s.number}>400</p>
+                 <p className={s.number}>
+создание игры</p>
                  <h2>360 <FaRubleSign /></h2>
                  <p>за урок</p>
              </div>
              <div className={s.cardText}>
                  <p>Количество: <span>12</span> уроков</p>
-                 <p>Длительность: <span>60</span> минут</p>
+                 <p>Длительность: <span>90</span> минут</p>
+                 <p>Всего за пакет: <span>4300</span> RUB</p>
+               <button>Оплатитъ</button>
+             </div>
+         </div>
+        </Col>
+        <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+        <div className={s.cards}>
+             <div className={s.card}>
+                 <p className={s.number}>графический дизайн</p>
+                 <h2>360 <FaRubleSign /></h2>
+                 <p>за урок</p>
+             </div>
+             <div className={s.cardText}>
+                 <p>Количество: <span>12</span> уроков</p>
+                 <p>Длительность: <span>90</span> минут</p>
                  <p>Всего за пакет: <span>4300</span> RUB</p>
                <button>Оплатитъ</button>
              </div>
@@ -136,31 +152,47 @@ componentDidMount(){
          {/* uzb */}
     <div className={s.narxCard}>
 <Row>
-   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+   <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
         <div className={s.card}>
-            <p className={s.number}>590</p>
+            <p className={s.number}>веб-программист</p>
             <h2>540 so`m</h2>
             <p>за урок</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
-            <p>Длительность: <span>60</span> минут</p>
+            <p>Длительность: <span>90</span> минут</p>
             <p>Всего за пакет: <span>6500</span> UZB</p>
           <button>Оплатитъ</button>
         </div>
     </div>
    </Col>
-   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+   <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
    <div className={s.cards}>
         <div className={s.card}>
-            <p className={s.number}>400</p>
+            <p className={s.number}>
+создание игры</p>
             <h2>360 so`m</h2>
             <p>за урок</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
-            <p>Длительность: <span>60</span> минут</p>
+            <p>Длительность: <span>90</span> минут</p>
+            <p>Всего за пакет: <span>4300</span> UZB</p>
+          <button>Оплатитъ</button>
+        </div>
+    </div>
+   </Col>
+   <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+   <div className={s.cards}>
+        <div className={s.card}>
+            <p className={s.number}>графический дизайн</p>
+            <h2>360 so`m</h2>
+            <p>за урок</p>
+        </div>
+        <div className={s.cardText}>
+            <p>Количество: <span>12</span> уроков</p>
+            <p>Длительность: <span>90</span> минут</p>
             <p>Всего за пакет: <span>4300</span> UZB</p>
           <button>Оплатитъ</button>
         </div>
@@ -173,31 +205,47 @@ componentDidMount(){
           {/* dolllor */}
     <div className={s.narxCard}>
 <Row>
-   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+   <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
         <div className={s.card}>
-            <p className={s.number}>590</p>
+            <p className={s.number}>веб-программист</p>
             <h2>540 <FaDollarSign/></h2>
             <p>за урок</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
-            <p>Длительность: <span>60</span> минут</p>
+            <p>Длительность: <span>90</span> минут</p>
             <p>Всего за пакет: <span>6500</span> USD</p>
           <button>Оплатитъ</button>
         </div>
     </div>
    </Col>
-   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+   <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
    <div className={s.cards}>
         <div className={s.card}>
-            <p className={s.number}>400</p>
+            <p className={s.number}>
+создание игры</p>
             <h2>360 <FaDollarSign/></h2>
             <p>за урок</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
-            <p>Длительность: <span>60</span> минут</p>
+            <p>Длительность: <span>90</span> минут</p>
+            <p>Всего за пакет: <span>4300</span> USD</p>
+          <button>Оплатитъ</button>
+        </div>
+    </div>
+   </Col>
+   <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+   <div className={s.cards}>
+        <div className={s.card}>
+            <p className={s.number}>графический дизайн</p>
+            <h2>360 <FaDollarSign/></h2>
+            <p>за урок</p>
+        </div>
+        <div className={s.cardText}>
+            <p>Количество: <span>12</span> уроков</p>
+            <p>Длительность: <span>90</span> минут</p>
             <p>Всего за пакет: <span>4300</span> USD</p>
           <button>Оплатитъ</button>
         </div>
@@ -210,31 +258,47 @@ componentDidMount(){
            {/* yevro */}
     <div className={s.narxCard}>
 <Row>
-   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+   <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
         <div className={s.card}>
-            <p className={s.number}>590</p>
+            <p className={s.number}>веб-программист</p>
             <h2>540 <FaEuroSign /></h2>
             <p>за урок</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
-            <p>Длительность: <span>60</span> минут</p>
+            <p>Длительность: <span>90</span> минут</p>
             <p>Всего за пакет: <span>6500</span> EUR</p>
           <button>Оплатитъ</button>
         </div>
     </div>
    </Col>
-   <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+   <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
    <div className={s.cards}>
         <div className={s.card}>
-            <p className={s.number}>400</p>
+            <p className={s.number}>
+создание игры</p>
             <h2>360 <FaEuroSign /></h2>
             <p>за урок</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
-            <p>Длительность: <span>60</span> минут</p>
+            <p>Длительность: <span>90</span> минут</p>
+            <p>Всего за пакет: <span>4300</span> EUR</p>
+          <button>Оплатитъ</button>
+        </div>
+    </div>
+   </Col>
+   <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+   <div className={s.cards}>
+        <div className={s.card}>
+            <p className={s.number}>графический дизайн</p>
+            <h2>360 <FaEuroSign /></h2>
+            <p>за урок</p>
+        </div>
+        <div className={s.cardText}>
+            <p>Количество: <span>12</span> уроков</p>
+            <p>Длительность: <span>90</span> минут</p>
             <p>Всего за пакет: <span>4300</span> EUR</p>
           <button>Оплатитъ</button>
         </div>
@@ -250,31 +314,48 @@ componentDidMount(){
      <h1>      {/* rubl */}
      <div className={s.narxCard}>
 <Row>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>590</p>
+             <p className={s.number}>веб-программист</p>
              <h2>540 <FaRubleSign /></h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>120</span> минут</p>
              <p>Всего за пакет: <span>6500</span> RUB</p>
            <button>Оплатитъ</button>
          </div>
      </div>
     </Col>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>400</p>
+             <p className={s.number}>
+создание игры</p>
              <h2>360 <FaRubleSign /></h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>120</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> RUB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>
+создание игры</p>
+             <h2>360 <FaRubleSign /></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>120</span> минут</p>
              <p>Всего за пакет: <span>4300</span> RUB</p>
            <button>Оплатитъ</button>
          </div>
@@ -286,67 +367,131 @@ componentDidMount(){
      <h1>      {/* uzb */}
      <div className={s.narxCard}>
 <Row>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>590</p>
+             <p className={s.number}>веб-программист</p>
              <h2>540 so`m</h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>120</span> минут</p>
              <p>Всего за пакет: <span>6500</span> UZB</p>
            <button>Оплатитъ</button>
          </div>
      </div>
     </Col>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>400</p>
+             <p className={s.number}>
+создание игры</p>
              <h2>360 so`m</h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>120</span> минут</p>
              <p>Всего за пакет: <span>4300</span> UZB</p>
            <button>Оплатитъ</button>
          </div>
      </div>
     </Col>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>графический дизайн</p>
+             <h2>360 so`m</h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>120</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> UZB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>
+создание игры</p>
+             <h2>360 so`m</h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>120</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> UZB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>графический дизайн</p>
+             <h2>360 so`m</h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>120</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> UZB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    
 </Row>
 </div></h1>
      ):(this.state.key===2?(
      <h1>      {/* dollor */}
      <div className={s.narxCard}>
 <Row>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>590</p>
+             <p className={s.number}>веб-программист</p>
              <h2>540 <FaDollarSign/></h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>120</span> минут</p>
              <p>Всего за пакет: <span>6500</span> USD</p>
            <button>Оплатитъ</button>
          </div>
      </div>
     </Col>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>400</p>
+             <p className={s.number}>
+создание игры</p>
              <h2>360 <FaDollarSign/></h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>120</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> USD</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>графический дизайн</p>
+             <h2>360 <FaDollarSign/></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>120</span> минут</p>
              <p>Всего за пакет: <span>4300</span> USD</p>
            <button>Оплатитъ</button>
          </div>
@@ -357,31 +502,47 @@ componentDidMount(){
      ):(<h1>   {/* yevro */}
         <div className={s.narxCard}>
    <Row>
-       <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+       <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
         <div className={s.cards}>
             <div className={s.card}>
-                <p className={s.number}>590</p>
+                <p className={s.number}>веб-программист</p>
                 <h2>540 <FaEuroSign /></h2>
                 <p>за урок</p>
             </div>
             <div className={s.cardText}>
                 <p>Количество: <span>12</span> уроков</p>
-                <p>Длительность: <span>60</span> минут</p>
+                <p>Длительность: <span>120</span> минут</p>
                 <p>Всего за пакет: <span>6500</span> EUR</p>
               <button>Оплатитъ</button>
             </div>
         </div>
        </Col>
-       <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+       <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
        <div className={s.cards}>
             <div className={s.card}>
-                <p className={s.number}>400</p>
+                <p className={s.number}>
+создание игры</p>
                 <h2>360 <FaEuroSign /></h2>
                 <p>за урок</p>
             </div>
             <div className={s.cardText}>
                 <p>Количество: <span>12</span> уроков</p>
-                <p>Длительность: <span>60</span> минут</p>
+                <p>Длительность: <span>120</span> минут</p>
+                <p>Всего за пакет: <span>4300</span> EUR</p>
+              <button>Оплатитъ</button>
+            </div>
+        </div>
+       </Col>
+       <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+       <div className={s.cards}>
+            <div className={s.card}>
+                <p className={s.number}>графический дизайн</p>
+                <h2>360 <FaEuroSign /></h2>
+                <p>за урок</p>
+            </div>
+            <div className={s.cardText}>
+                <p>Количество: <span>12</span> уроков</p>
+                <p>Длительность: <span>120</span> минут</p>
                 <p>Всего за пакет: <span>4300</span> EUR</p>
               <button>Оплатитъ</button>
             </div>
@@ -397,31 +558,47 @@ componentDidMount(){
      <h1>   {/* rubl*/}
      <div className={s.narxCard}>
 <Row>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>590</p>
+             <p className={s.number}>веб-программист</p>
              <h2>540 <FaRubleSign /></h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>90</span> минут</p>
              <p>Всего за пакет: <span>6500</span> RUB</p>
            <button>Оплатитъ</button>
          </div>
      </div>
     </Col>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>400</p>
+             <p className={s.number}>
+создание игры</p>
              <h2>360 <FaRubleSign /></h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>90</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> RUB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>графический дизайн</p>
+             <h2>360 <FaRubleSign /></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>90</span> минут</p>
              <p>Всего за пакет: <span>4300</span> RUB</p>
            <button>Оплатитъ</button>
          </div>
@@ -433,31 +610,47 @@ componentDidMount(){
      <h1>   {/* uzb */}
      <div className={s.narxCard}>
 <Row>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>590</p>
+             <p className={s.number}>веб-программист</p>
              <h2>540 so`m</h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>90</span> минут</p>
              <p>Всего за пакет: <span>6500</span> UZB</p>
            <button>Оплатитъ</button>
          </div>
      </div>
     </Col>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>400</p>
+             <p className={s.number}>
+создание игры</p>
              <h2>360 so`m</h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>90</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> UZB</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>графический дизайн</p>
+             <h2>360 so`m</h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>90</span> минут</p>
              <p>Всего за пакет: <span>4300</span> UZB</p>
            <button>Оплатитъ</button>
          </div>
@@ -469,31 +662,47 @@ componentDidMount(){
      <h1>   {/* dollor */}
      <div className={s.narxCard}>
 <Row>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>590</p>
+             <p className={s.number}>веб-программист</p>
              <h2>540 <FaDollarSign/></h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>90</span> минут</p>
              <p>Всего за пакет: <span>6500</span> USD</p>
            <button>Оплатитъ</button>
          </div>
      </div>
     </Col>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>400</p>
+             <p className={s.number}>
+создание игры</p>
              <h2>360 <FaDollarSign/></h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>90</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> USD</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>графический дизайн</p>
+             <h2>360 <FaDollarSign/></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>90</span> минут</p>
              <p>Всего за пакет: <span>4300</span> USD</p>
            <button>Оплатитъ</button>
          </div>
@@ -504,31 +713,48 @@ componentDidMount(){
      <h1>   {/* yevro */}
      <div className={s.narxCard}>
 <Row>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>590</p>
+             <p className={s.number}>веб-программист</p>
              <h2>540 <FaEuroSign /></h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
+             <p>Длительность: <span>90</span> минут</p>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             
              <p>Всего за пакет: <span>6500</span> EUR</p>
            <button>Оплатитъ</button>
          </div>
      </div>
     </Col>
-    <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>400</p>
+             <p className={s.number}>
+создание игры</p>
              <h2>360 <FaEuroSign /></h2>
              <p>за урок</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>60</span> минут</p>
+             <p>Длительность: <span>90</span> минут</p>
+             <p>Всего за пакет: <span>4300</span> EUR</p>
+           <button>Оплатитъ</button>
+         </div>
+     </div>
+    </Col>
+    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
+    <div className={s.cards}>
+         <div className={s.card}>
+             <p className={s.number}>графический дизайн</p>
+             <h2>360 <FaEuroSign /></h2>
+             <p>за урок</p>
+         </div>
+         <div className={s.cardText}>
+             <p>Количество: <span>12</span> уроков</p>
+             <p>Длительность: <span>90</span> минут</p>
              <p>Всего за пакет: <span>4300</span> EUR</p>
            <button>Оплатитъ</button>
          </div>
