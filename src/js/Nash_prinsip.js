@@ -82,7 +82,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
                  <Row>
             
 
-                     <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
+                     <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="2000">
                      <div >
                          <img src={image1} alt=" " />
                          <h4>Самые клёвые инструкторы</h4>
@@ -90,19 +90,19 @@ data-aos-duration="2000"  className={styles.rightCard}>
                      </div>
                      </Col>
 
-                     <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000" >
+                     <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="2000" >
                          <img src={image2} alt=" "/>
                          <h4>Индивидуальный подход</h4>
                          <p>Мы умеем находить индивидуальный подход ко всем нашим ученикам, учитывая их разные характерные особенности</p>
                      </Col>
 
-                    <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000"> 
+                    <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="2000"> 
                     <img src={image3}/>
                     <h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
                     </Col>
          
-                      <Col  sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
+                      <Col  sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="2000">
                           <div>
                               <img src={image4} alt=' ' />
                               <h4>Удобный график занятий</h4>
@@ -113,7 +113,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
                            
                        
                           
-                              <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000">
+                              <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="2000">
                                   <div>
                                       <img src={image5} />
                                       <h4>Обучение из любой точки мира</h4>
@@ -122,7 +122,7 @@ data-aos-duration="2000"  className={styles.rightCard}>
 
                               </Col>
                             
-                              <Col sm={12} md={6} lg={4} data-aos="zoom-in"  data-aos-duration="2000"> 
+                              <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="2000"> 
                               <div>
                                   <img src={image6} />
                                   <h4>Сертификат по окончанию</h4>

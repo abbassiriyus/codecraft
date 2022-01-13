@@ -131,7 +131,7 @@ export default class kurs extends Component {
      data-aos-duration="2000" className={kurstyle.kurscol}>
         <MDBCard  className={kurstyle.kursCard} data-aos="zoom-in-left" data-aos-duration="3000">
           <MDBCardImage className={kurstyle.kursImg}
-            src={Arifmetika}
+            src="https://sunveter.ru/uploads/posts/2014-07/1405803074_professor_pointing.gif"
             alt='...'
             position='top'
           />

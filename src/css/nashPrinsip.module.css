@@ -69,6 +69,7 @@ margin: 0 auto;
 .leftCard, .rightCard{
    text-align: center;
    margin-bottom: 100px;
+   padding: 30px;
 }
 .leftCard img,
 .rightCard img{
@@ -122,6 +123,24 @@ height: 90px;
       margin: 30px 0 40px 38px;
   }
 }
+@media(max-width:992px){
+
+
+.counter_number{
+   margin: 0;
+   font-size: 36px;
+   font-weight: 600;
+}
+.counter_plus{
+   font-size: 20px;
+   color: rgb(255, 136, 0);
+   display: inline-block;
+}
+.counter_text{
+   color: #7f7f7f;
+   margin: 0;
+}
+}
 @media(max-width:678px) {
    .title{
       font-size: 30px;
@@ -137,6 +156,21 @@ height: 90px;
    .boxNash p{
       font-size: 15px;
    }
+   .counter_number{
+      margin: 0;
+      font-size: 26px;
+      font-weight: 600;
+   }
+   .counter_plus{
+      font-size: 15px;
+      color: rgb(255, 136, 0);
+      display: inline-block;
+   }
+   .counter_text{
+      color: #7f7f7f;
+      margin: 0;
+   }
+
 }
 @media(max-width:400px) {
    .title{ 
@@ -157,3 +191,4 @@ height: 90px;
    }
    
 }
+

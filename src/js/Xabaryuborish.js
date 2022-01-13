@@ -33,11 +33,11 @@ export default class Xabaryuborish extends Component {
     Введите свой номер телефона
     </Form.Text>
   </Form.Group>
-
+<div style={{width:'100%',margin:'auto',textAlign:'center'}}>
   <Button className={s.xabarBtn} type="submit">
     <MdWavingHand className='mx-3'/>
     Записаться
-  </Button>
+  </Button></div>
 </Form>  <img width="120" height="120" className={s.robit} src='https://pngimg.com/uploads/robot/robot_PNG40.png'/>
 </div></Col>
              <Col lg={6} style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
