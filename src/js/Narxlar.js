@@ -11,56 +11,56 @@ state={
 }
  soati1=()=>{
 this.setState({id:0})
-document.querySelector('#soati1').style="background-color: #9727af;"
+document.querySelector('#soati1').style="background-color: white;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;"
 document.querySelector('#soati2').style="background-color: none;"
 document.querySelector('#soati3').style="background-color: none;"
  }  
  soati2=()=>{
     this.setState({id:1})
     document.querySelector('#soati1').style="background-color: none;"
-    document.querySelector('#soati2').style="background-color: #9727af;"
+    document.querySelector('#soati2').style="background-color: white;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;"
     document.querySelector('#soati3').style="background-color: none;"
 }    
 soati3=()=>{
     this.setState({id:2})
     document.querySelector('#soati1').style="background-color: none;"
     document.querySelector('#soati2').style="background-color: none;"
-    document.querySelector('#soati3').style="background-color: #9727af;"
+    document.querySelector('#soati3').style="background-color: white;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;"
 } 
 rub1=()=>{
     this.setState({key:0})
-    document.querySelector('#rub').style="background-color: #9727af;"
+    document.querySelector('#rub').style="background-color: white;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;"
     document.querySelector('#uzb').style="background-color: none;"
     document.querySelector('#usd').style="background-color: none;"
     document.querySelector('#eur').style="background-color: none;"
 }
 uzb1=()=>{
     this.setState({key:1})
-    document.querySelector('#uzb').style="background-color: #9727af;"
+    document.querySelector('#uzb').style="background-color: white;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;"
     document.querySelector('#rub').style="background-color: none;"
     document.querySelector('#usd').style="background-color: none;"
     document.querySelector('#eur').style="background-color: none;"
 }
 usd1=()=>{
     this.setState({key:2})
-    document.querySelector('#usd').style="background-color: #9727af;"
+    document.querySelector('#usd').style="background-color: white;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;"
     document.querySelector('#uzb').style="background-color: none;"
     document.querySelector('#rub').style="background-color: none;"
     document.querySelector('#eur').style="background-color: none;"
 }
 eur1=()=>{
     this.setState({key:3})
-    document.querySelector('#eur').style="background-color: #9727af;"
+    document.querySelector('#eur').style="background-color: white;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;"
     document.querySelector('#uzb').style="background-color: none;"
     document.querySelector('#rub').style="background-color: none;"
     document.querySelector('#usd').style="background-color: none;"
 }
 color=()=>{
-    document.querySelector('#rub').style="background-color: #9727af;"
+    document.querySelector('#rub').style="background-color: white;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;"
     document.querySelector('#uzb').style="background-color: none;"
     document.querySelector('#usd').style="background-color: none;"
     document.querySelector('#eur').style="background-color: none;"
-    document.querySelector('#soati1').style="background-color: #9727af;"
+    document.querySelector('#soati1').style="background-color: white;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;"
     document.querySelector('#soati2').style="background-color: none;"
     document.querySelector('#soati3').style="background-color: none;" 
 }
@@ -102,9 +102,9 @@ componentDidMount(){
         <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
          <div className={s.cards}>
              <div className={s.card}>
-                 <p className={s.number}>веб-программист</p>
-                 <h2>540 <FaRubleSign /></h2>
-                 <p>за урок</p>
+                 <p className={s.number}>веб-программирование</p>
+                 <h2>5 320<FaRubleSign /></h2>
+                 <p>за месяц</p>
              </div>
              <div className={s.cardText}>
                  <p>Количество: <span>12</span> уроков</p>
@@ -118,9 +118,9 @@ componentDidMount(){
         <div className={s.cards}>
              <div className={s.card}>
                  <p className={s.number}>
-создание игры</p>
-                 <h2>360 <FaRubleSign /></h2>
-                 <p>за урок</p>
+создание игр</p>
+                 <h2>4 610<FaRubleSign /></h2>
+                 <p>за месяц</p>
              </div>
              <div className={s.cardText}>
                  <p>Количество: <span>12</span> уроков</p>
@@ -134,8 +134,8 @@ componentDidMount(){
         <div className={s.cards}>
              <div className={s.card}>
                  <p className={s.number}>графический дизайн</p>
-                 <h2>360 <FaRubleSign /></h2>
-                 <p>за урок</p>
+                 <h2>7 082<FaRubleSign /></h2>
+                 <p>за месяц</p>
              </div>
              <div className={s.cardText}>
                  <p>Количество: <span>12</span> уроков</p>
@@ -155,14 +155,14 @@ componentDidMount(){
    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
         <div className={s.card}>
-            <p className={s.number}>веб-программист</p>
-            <h2>540 so`m</h2>
-            <p>за урок</p>
+            <p className={s.number}>веб-программирование</p>
+            <h2>750 000 so`m</h2>
+            <p>за месяц</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
             <p>Длительность: <span>90</span> минут</p>
-            <p>Всего за пакет: <span>6500</span> UZB</p>
+            <p>Всего за пакет: <span>2332</span> UZB</p>
           <button>Оплатитъ</button>
         </div>
     </div>
@@ -171,9 +171,9 @@ componentDidMount(){
    <div className={s.cards}>
         <div className={s.card}>
             <p className={s.number}>
-создание игры</p>
-            <h2>360 so`m</h2>
-            <p>за урок</p>
+создание игр</p>
+            <h2>650 000 so`m</h2>
+            <p>за месяц</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
@@ -187,8 +187,8 @@ componentDidMount(){
    <div className={s.cards}>
         <div className={s.card}>
             <p className={s.number}>графический дизайн</p>
-            <h2>360 so`m</h2>
-            <p>за урок</p>
+            <h2>1 000 000 so`m</h2>
+            <p>за месяц</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
@@ -208,9 +208,9 @@ componentDidMount(){
    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
         <div className={s.card}>
-            <p className={s.number}>веб-программист</p>
-            <h2>540 <FaDollarSign/></h2>
-            <p>за урок</p>
+            <p className={s.number}>веб-программирование</p>
+            <h2>70 <FaDollarSign/></h2>
+            <p>за месяц</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
@@ -224,9 +224,9 @@ componentDidMount(){
    <div className={s.cards}>
         <div className={s.card}>
             <p className={s.number}>
-создание игры</p>
-            <h2>360 <FaDollarSign/></h2>
-            <p>за урок</p>
+создание игр</p>
+            <h2>60 <FaDollarSign/></h2>
+            <p>за месяц</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
@@ -240,8 +240,8 @@ componentDidMount(){
    <div className={s.cards}>
         <div className={s.card}>
             <p className={s.number}>графический дизайн</p>
-            <h2>360 <FaDollarSign/></h2>
-            <p>за урок</p>
+            <h2>93<FaDollarSign/></h2>
+            <p>за месяц</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
@@ -261,9 +261,9 @@ componentDidMount(){
    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
     <div className={s.cards}>
         <div className={s.card}>
-            <p className={s.number}>веб-программист</p>
-            <h2>540 <FaEuroSign /></h2>
-            <p>за урок</p>
+            <p className={s.number}>веб-программирование</p>
+            <h2>61<FaEuroSign /></h2>
+            <p>за месяц</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
@@ -277,9 +277,9 @@ componentDidMount(){
    <div className={s.cards}>
         <div className={s.card}>
             <p className={s.number}>
-создание игры</p>
-            <h2>360 <FaEuroSign /></h2>
-            <p>за урок</p>
+создание игр</p>
+            <h2>53<FaEuroSign /></h2>
+            <p>за месяц</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
@@ -293,8 +293,8 @@ componentDidMount(){
    <div className={s.cards}>
         <div className={s.card}>
             <p className={s.number}>графический дизайн</p>
-            <h2>360 <FaEuroSign /></h2>
-            <p>за урок</p>
+            <h2>81 <FaEuroSign /></h2>
+            <p>за месяц</p>
         </div>
         <div className={s.cardText}>
             <p>Количество: <span>12</span> уроков</p>
@@ -317,9 +317,9 @@ componentDidMount(){
     <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>веб-программист</p>
-             <h2>540 <FaRubleSign /></h2>
-             <p>за урок</p>
+             <p className={s.number}>веб-программирование</p>
+             <h2>5320 <FaRubleSign /></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -333,9 +333,9 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>
-создание игры</p>
-             <h2>360 <FaRubleSign /></h2>
-             <p>за урок</p>
+создание игр</p>
+             <h2>4610<FaRubleSign /></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -349,9 +349,9 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>
-создание игры</p>
-             <h2>360 <FaRubleSign /></h2>
-             <p>за урок</p>
+             графический дизайн</p>
+             <h2> 7 082<FaRubleSign /></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -370,9 +370,9 @@ componentDidMount(){
     <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>веб-программист</p>
-             <h2>540 so`m</h2>
-             <p>за урок</p>
+             <p className={s.number}>веб-программирование</p>
+             <h2>750 000 so`m</h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -386,9 +386,9 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>
-создание игры</p>
-             <h2>360 so`m</h2>
-             <p>за урок</p>
+создание игр</p>
+             <h2>650 000 so`m</h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -402,8 +402,8 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>графический дизайн</p>
-             <h2>360 so`m</h2>
-             <p>за урок</p>
+             <h2>1 000 000 so`m</h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -413,37 +413,7 @@ componentDidMount(){
          </div>
      </div>
     </Col>
-    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
-    <div className={s.cards}>
-         <div className={s.card}>
-             <p className={s.number}>
-создание игры</p>
-             <h2>360 so`m</h2>
-             <p>за урок</p>
-         </div>
-         <div className={s.cardText}>
-             <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>120</span> минут</p>
-             <p>Всего за пакет: <span>4300</span> UZB</p>
-           <button>Оплатитъ</button>
-         </div>
-     </div>
-    </Col>
-    <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
-    <div className={s.cards}>
-         <div className={s.card}>
-             <p className={s.number}>графический дизайн</p>
-             <h2>360 so`m</h2>
-             <p>за урок</p>
-         </div>
-         <div className={s.cardText}>
-             <p>Количество: <span>12</span> уроков</p>
-             <p>Длительность: <span>120</span> минут</p>
-             <p>Всего за пакет: <span>4300</span> UZB</p>
-           <button>Оплатитъ</button>
-         </div>
-     </div>
-    </Col>
+   
     
 </Row>
 </div></h1>
@@ -454,9 +424,9 @@ componentDidMount(){
     <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>веб-программист</p>
-             <h2>540 <FaDollarSign/></h2>
-             <p>за урок</p>
+             <p className={s.number}>веб-программирование</p>
+             <h2>70<FaDollarSign/></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -470,9 +440,9 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>
-создание игры</p>
-             <h2>360 <FaDollarSign/></h2>
-             <p>за урок</p>
+создание игр</p>
+             <h2>60<FaDollarSign/></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -486,8 +456,8 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>графический дизайн</p>
-             <h2>360 <FaDollarSign/></h2>
-             <p>за урок</p>
+             <h2>93<FaDollarSign/></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -505,9 +475,9 @@ componentDidMount(){
        <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
         <div className={s.cards}>
             <div className={s.card}>
-                <p className={s.number}>веб-программист</p>
-                <h2>540 <FaEuroSign /></h2>
-                <p>за урок</p>
+                <p className={s.number}>веб-программирование</p>
+                <h2>61<FaEuroSign /></h2>
+                <p>за месяц</p>
             </div>
             <div className={s.cardText}>
                 <p>Количество: <span>12</span> уроков</p>
@@ -521,9 +491,9 @@ componentDidMount(){
        <div className={s.cards}>
             <div className={s.card}>
                 <p className={s.number}>
-создание игры</p>
-                <h2>360 <FaEuroSign /></h2>
-                <p>за урок</p>
+создание игр</p>
+                <h2>53<FaEuroSign /></h2>
+                <p>за месяц</p>
             </div>
             <div className={s.cardText}>
                 <p>Количество: <span>12</span> уроков</p>
@@ -537,8 +507,8 @@ componentDidMount(){
        <div className={s.cards}>
             <div className={s.card}>
                 <p className={s.number}>графический дизайн</p>
-                <h2>360 <FaEuroSign /></h2>
-                <p>за урок</p>
+                <h2>81<FaEuroSign /></h2>
+                <p>за месяц</p>
             </div>
             <div className={s.cardText}>
                 <p>Количество: <span>12</span> уроков</p>
@@ -561,9 +531,9 @@ componentDidMount(){
     <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>веб-программист</p>
-             <h2>540 <FaRubleSign /></h2>
-             <p>за урок</p>
+             <p className={s.number}>веб-программирование</p>
+             <h2>8 514<FaRubleSign /></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -577,9 +547,9 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>
-создание игры</p>
-             <h2>360 <FaRubleSign /></h2>
-             <p>за урок</p>
+создание игр</p>
+             <h2>7 082<FaRubleSign /></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -593,8 +563,8 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>графический дизайн</p>
-             <h2>360 <FaRubleSign /></h2>
-             <p>за урок</p>
+             <h2>10 622<FaRubleSign /></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -613,9 +583,9 @@ componentDidMount(){
     <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>веб-программист</p>
-             <h2>540 so`m</h2>
-             <p>за урок</p>
+             <p className={s.number}>веб-программирование</p>
+             <h2>1 200 000so`m</h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -629,9 +599,9 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>
-создание игры</p>
-             <h2>360 so`m</h2>
-             <p>за урок</p>
+создание игр</p>
+             <h2>1 000 000so`m</h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -645,8 +615,8 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>графический дизайн</p>
-             <h2>360 so`m</h2>
-             <p>за урок</p>
+             <h2>1 500 000so`m</h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -665,9 +635,9 @@ componentDidMount(){
     <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>веб-программист</p>
-             <h2>540 <FaDollarSign/></h2>
-             <p>за урок</p>
+             <p className={s.number}>веб-программирование</p>
+             <h2>111<FaDollarSign/></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -681,9 +651,9 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>
-создание игры</p>
-             <h2>360 <FaDollarSign/></h2>
-             <p>за урок</p>
+создание игр</p>
+             <h2>93<FaDollarSign/></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -697,8 +667,8 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>графический дизайн</p>
-             <h2>360 <FaDollarSign/></h2>
-             <p>за урок</p>
+             <h2>138<FaDollarSign/></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -716,9 +686,9 @@ componentDidMount(){
     <Col sm={12} md={12} lg={6} xl={4} xxl={4}>
      <div className={s.cards}>
          <div className={s.card}>
-             <p className={s.number}>веб-программист</p>
-             <h2>540 <FaEuroSign /></h2>
-             <p>за урок</p>
+             <p className={s.number}>веб-программирование</p>
+             <h2>97<FaEuroSign /></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Длительность: <span>90</span> минут</p>
@@ -733,9 +703,9 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>
-создание игры</p>
-             <h2>360 <FaEuroSign /></h2>
-             <p>за урок</p>
+создание игр</p>
+             <h2>81<FaEuroSign /></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>
@@ -749,8 +719,8 @@ componentDidMount(){
     <div className={s.cards}>
          <div className={s.card}>
              <p className={s.number}>графический дизайн</p>
-             <h2>360 <FaEuroSign /></h2>
-             <p>за урок</p>
+             <h2>121<FaEuroSign /></h2>
+             <p>за месяц</p>
          </div>
          <div className={s.cardText}>
              <p>Количество: <span>12</span> уроков</p>

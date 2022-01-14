@@ -2,9 +2,10 @@
 import React, { Component } from 'react';
 import { Row,Col, Form, Button } from 'react-bootstrap';
 import s from '../css/Xabaryuborish.module.css';
-import '../App.css';
 import { MdWavingHand } from "react-icons/md";
-import { FaHandPointRight } from 'react-icons/fa';
+import koz from '../img/koz.png'
+import ochkiy from '../img/ochkiy.png'
+import yulduz from '../img/yulduz.png'
 export default class Xabaryuborish extends Component {
   anima=()=>{
     document.querySelector('#df').style=""
@@ -40,25 +41,25 @@ export default class Xabaryuborish extends Component {
     <MdWavingHand  className='mx-3'/>
     Записаться
   </Button></div>
-</Form>  <img width="120" height="120" className={s.robit} src='https://pngimg.com/uploads/robot/robot_PNG40.png'/>
+</Form>  <img width="120" height="120" className={s.robit} src='https://pngimg.com/uploads/robot/robot_PNG40.png' alt=" "/>
 </div></Col>
              <Col lg={6} style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
 <div>
 
    <div className={s.asosiy1}>
-                 <div className={s.rasm1}><FaHandPointRight id={s.dd} style={{color:'white',fontSize:'50px'}} alt=" "  src="https://www.pngrepo.com/download/119285/hand-finger-pointing-to-right-direction-like-an-arrow.png"/></div>
+                 <div className={s.rasm1}><img alt=" " width="100%"  src={koz}/></div>
                  <div className={s.ikkitalik1}>
                  Мы поможем вам определиться и подобрать подходящее направление для вашего ребенка
                  </div>
                  </div>
-                 <div className={s.asosiy1}>
-                 <div className={s.rasm1}><FaHandPointRight id={s.dd} style={{color:'white',fontSize:'50px'}} alt=" "  src="https://www.pngrepo.com/download/119285/hand-finger-pointing-to-right-direction-like-an-arrow.png"/></div>
+                 <div style={{marginTop:'50px'}} className={s.asosiy1}>
+                 <div className={s.rasm1}><img alt=" " width="100%"   src={ochkiy}/></div>
                  <div className={s.ikkitalik1}>
                  Вы познакомитесь с преподавателем и посмотрите как проходят наши занятия
                  </div>
                  </div>
-                 <div className={s.asosiy1}>
-                 <div className={s.rasm1}><FaHandPointRight id={s.dd} style={{color:'white',fontSize:'50px'}} alt=" " src="https://pngimg.com/uploads/robot/robot_PNG79.png"/></div>
+                 <div style={{marginTop:'50px'}} className={s.asosiy1}>
+                 <div className={s.rasm1}><img alt=" " width="100%"  src={yulduz}/></div>
                  <div className={s.ikkitalik1}>
                  Ребенок проведет свое время с пользой, узнает что-то новое и создаст первый проект
                  </div>

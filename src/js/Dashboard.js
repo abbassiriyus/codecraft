@@ -51,17 +51,18 @@ export default class Dashboard extends Component {
 
   
   <Row className={s.chet}>
-    <Col   lg={{order:'first'}} lg={4} md={12}
-    >
-    <div style={{display:'flex'}} className={s.kard} data-aos="fade-up"
+    <Col   lg={{order:'first'}} lg={4} md={12} >
+    
+<div style={{display:'flex'}} className={s.kard}  data-aos="fade-up"
      data-aos-anchor-placement="top-bottom"
      data-aos-duration="3000">
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt="  " src={komputer} /></div>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " style={{borderRadius:'50%'}} src={kopmboa} /></div>
       <div style={{display:'block'}}>
-      <h2>Развивает мышление</h2>
-      <p>Создавая программы дети учатся мыслить логически, анализировать, концентрировать внимание и находить решения возникшим проблемам.</p>
+      <h2>Учит работать в команде</h2>
+      <p>Работая в группах, дети учатся находить общий язык, сотрудничать и брать ответственность за свои действия в команде.</p>
       </div>
     </div>
+
     <div style={{display:'flex'}} className={s.kard} data-aos="fade-up"
      data-aos-anchor-placement="top-bottom"
      data-aos-duration="3000">
@@ -71,6 +72,7 @@ export default class Dashboard extends Component {
       <p>Создавая программы, дети учатся разбивать сложные задачи на более мелкие, применив логику, фантазию и креативность.</p>
       </div>
     </div>
+
     <div style={{display:'flex'}} className={s.kard} data-aos="fade-up"
      data-aos-anchor-placement="top-bottom"
      data-aos-duration="3000">
@@ -80,6 +82,8 @@ export default class Dashboard extends Component {
       <p>Программирование - способ использовать на практике абстрактные знания полученные в школе, тем самым повышает интерес к учебе и знаниям у ребенка.</p>
       </div>
     </div>
+
+
     </Col>
     <Col  lg={4}  md={12}  md={{order:'first'}} sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img data-aos="zoom-in-down" data-aos-duration="3000" width="100%"  src={bola} alt=' '/></Col>
     <Col lg={4}  md={12}>
@@ -92,16 +96,18 @@ export default class Dashboard extends Component {
       <p>Программирование – дело не легкое: каждая сделанная ошибка требует внимательного изучения и поиска ее решения.</p>
       </div>
     </div>
-    <div style={{display:'flex'}} className={s.kard}  data-aos="fade-up"
+
+    <div style={{display:'flex',paddingTop:'30px'}} className={s.kard} data-aos="fade-up"
      data-aos-anchor-placement="top-bottom"
      data-aos-duration="3000">
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " style={{borderRadius:'50%'}} src={kopmboa} /></div>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt="  " src={komputer} /></div>
       <div style={{display:'block'}}>
-      <h2>Учит работать в команде</h2>
-      <p>Работая в группах, дети учатся находить общий язык, сотрудничать и брать ответственность за свои действия в команде.</p>
+      <h2>Развивает мышление</h2>
+      <p>Создавая программы дети учатся мыслить логически, анализировать, концентрировать внимание и находить решения возникшим проблемам.</p>
       </div>
     </div>
-    <div style={{display:'flex'}} className={s.kard}  data-aos="fade-up"
+
+    <div style={{display:'flex',}} className={s.kard}  data-aos="fade-up"
      data-aos-anchor-placement="top-bottom"
      data-aos-duration="3000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " src={kompide} /></div>
@@ -110,6 +116,7 @@ export default class Dashboard extends Component {
       <p>Так же, как и владение иностранным языком, знание основ программирования в цифровую эпоху — показатель образованности потенциального сотрудника для работодателя.</p>
       </div>
     </div>
+
     </Col>
   </Row>
 </main>

@@ -1,5 +1,5 @@
 .hammasi1{
-    background-color: #9727af;
+    background-color: #2F2F2F;
     padding: 20px;
 }
 
@@ -18,11 +18,11 @@
 }
 
 .title{
-    font-size: 30px;
+    font-size: 40px;
     color:white;
     padding: 50px 0;
     text-align: center;
-    text-shadow: 2px 8px 0 rgb(49, 28, 28);
+   
  }
  .title span{
     color: #edd168;

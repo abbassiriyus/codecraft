@@ -5,7 +5,7 @@ import Navbarr from './js/Navbarr';
 function App() {
   return (
    <div>
-     <Navbarr/>
+<Navbarr/>
     </div>
   );
 }
