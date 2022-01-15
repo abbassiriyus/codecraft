@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import s from "../css/Dashboard.module.css"
 import{  Row, Col } from 'react-bootstrap'
-import { MdPhoneInTalk } from 'react-icons/md'
+
 import 'aos/dist/aos.css';
 import AOS from 'aos'
 import header from '../img/header.png'

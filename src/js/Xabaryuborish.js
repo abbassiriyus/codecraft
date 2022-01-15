@@ -32,13 +32,13 @@ export default class Xabaryuborish extends Component {
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Номер телефона</Form.Label>
     <Form.Control type="tel" placeholder="введите телефона номер..." />
-    <Form.Text className="text-muted">
+    <Form.Text className="text-muted" >
     Введите свой номер телефона
     </Form.Text>
   </Form.Group>
 <div style={{width:'100%',margin:'auto',textAlign:'center'}}>
   <Button id={s.df}  className={s.xabarBtn} type="submit">
-    <MdWavingHand  className='mx-3'/>
+    <MdWavingHand className='mx-3'/>
     Записаться
   </Button></div>
 </Form>  <img width="120" height="120" className={s.robit} src='https://pngimg.com/uploads/robot/robot_PNG40.png' alt=" "/>

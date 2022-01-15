@@ -10,7 +10,6 @@ import {AiFillInstagram} from 'react-icons/ai';
 import {RiPhoneFill} from 'react-icons/ri';
 import {ImHeart} from 'react-icons/im';
 import styleFooter from '../css/footer.module.css'
-
 import 'aos/dist/aos.css';
 import Dashboard from './Dashboard'
 import Nash_prinsip from './Nash_prinsip'
@@ -29,7 +28,7 @@ export default class Navbarr extends Component {
         return (
             <div >
               <div id='body'></div>
-              <div className={s.tel}><a href="tel:+998 99 300 55 00"><BsFillTelephoneFill style={{color:'green'}}/></a></div>
+              <div className={s.tel}><a  href="tel:+998 99 584 55 51"><BsFillTelephoneFill style={{color:'green'}}/></a></div>
                               {/* navbar */}
              <Navbar style={{position:'fixed'}}  expand="lg" className={s.navbar}>
   <div class='container-fluid'>
@@ -69,7 +68,7 @@ export default class Navbarr extends Component {
                             <li><a href="/#">Главная</a></li>
                             <li><a href="/#pochem">Почему выбирают codecraft</a></li>
                             <li><a href="/new">Сертификат</a></li>
-                            <li><a href="tel:+998 99 300 55 00">наш номер: <span>+998 99 300 55 00</span></a></li>
+                            <li><a href="tel:+998 99 300 55 00" >наш номер: <span>+998 99 300 55 00</span></a></li>
                         </ul>
                         </Col>
                         <Col sm={12} md={12} lg={4} xl={4} xxl={4}>
@@ -89,7 +88,8 @@ export default class Navbarr extends Component {
                                 <a href='https://www.instagram.com/codecraft.uz/'><AiFillInstagram className={styleFooter.icons1}/></a>
                                 <a  href='https://t.me/art_of_coding'><FaTelegramPlane className={styleFooter.icons1}/></a>
                                 </div>
-                                <div className={styleFooter.footerTel}><a href="tel:+998 99 300 55 00"><RiPhoneFill/>+998 99 300 55 00</a></div>
+                                <div className={styleFooter.footerTel}><a  href="tel:+998 99 300 55 00"><RiPhoneFill/>+998 99 300 55 00</a></div>
+                                <div className={styleFooter.footerTel}><a  href="tel:+998 99 584 55 51"><RiPhoneFill/>+998 99 584 55 51</a></div>
                                 </div>
                         </Col>
                     </Row>
