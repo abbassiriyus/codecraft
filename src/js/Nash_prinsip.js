@@ -142,6 +142,10 @@ data-aos-duration="1000"  className={styles.rightCard}>
                         <div className={styles.counter_item}>
                             <CountUp className={styles.counter_number} start={0} end={5024} delay={1} duration={4}/><span className={styles.counter_plus}>+</span>
                             <p className={styles.counter_text}>Выпускников</p>
+
+
+
+                            
                         </div>
                     </Col>
                     <Col>
