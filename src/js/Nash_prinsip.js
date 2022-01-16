@@ -5,7 +5,6 @@ import child from '../img/child.png';
 import rightImg from '../img/1111.png';
 import image1 from '../img/o.png';
 import image2 from '../img/image2.png';
-import image3 from '../img/kom.png';
 import image4 from '../img/image4.png';
 import image5 from '../img/glob.png';
 import image6 from '../img/image6.png';
