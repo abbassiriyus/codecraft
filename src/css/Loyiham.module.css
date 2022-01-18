@@ -1,4 +1,4 @@
-/* html, body {
+html, body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -10,7 +10,7 @@
     box-sizing: border-box;
     position: relative;
 }
-body {
+.all3 {
     box-sizing: border-box;
     background: #000;
     color: #fff;
@@ -18,7 +18,7 @@ body {
     min-height: 100%;
     overflow: hidden;
 }
-main {
+.all3 main {
     background: #111;
     border: solid 1px #222;
     padding: 2rem;
@@ -30,59 +30,58 @@ main {
     grid-gap: 2rem;
     display: block;
 }
-main > * {
+.all3 main > * {
     grid-column: -1;
 }
-img {
+.all3 img {
     
     width: 100%;}
-p {
+.all3 p {
     line-height: 1.8;
     margin: 1rem 0;
     color: #9ea6b8;
 }
-h1 {
+.all3 h1 {
     line-height: 1.3;
     font-size: 5vw;
     margin: 1rem 0;
 }
-h2 {
+.all3 h2 {
     font-size: 4vw;
     margin: 1rem 0;
 }
-h3 {
+.all3 h3 {
     font-size: 2vw;
     font-weight: bold;
 }
-.subheader {
+.all3 .subheader {
     width: 100%;
     font-size: 2vw;
 }
-section {
+.all3 section {
     grid-column: auto;
 }
-header {
+.all3 header {
     display: grid;
     align-content: center;
     grid-column: -1;
 }
-.callout {
+.all3 .callout {
     text-align: center;
     background-color: #3173fa;
     padding: 1vw 3vw;
     width: 100%;
     height: 500px;}
-.callout > p {
+.all3 .callout > p {
     color: white;
 }
-/* ---------------------------------- */
-.container {
+
+.all3 .container {
     perspective: 1200px;
     transform-style: preserve-3d;
     animation: cinematic-camera 11s cubic-bezier(0.6, 0, 0.4, 1) both infinite;
 }
 @keyframes cinematic-camera {
-   /* Move the fading to the containing element as to not break inside 3D transforms. See: https://css-tricks.com/things-watch-working-css-3d/ */
     from {
         perspective-origin: 60% 40%;
    }
@@ -96,7 +95,7 @@ header {
         opacity: 1;
    }
 }
-.container:after {
+.all3 .container:after {
     content: "";
     position: absolute;
     top: 0;
@@ -104,13 +103,13 @@ header {
     width: 100%;
     height: 100vh;
 }
-main {
+.all3 main {
     transform-origin: top center;
     transform-style: preserve-3d;
     animation: inherit;
     animation-name: cinematic;
 }
-main > img {
+.all3 main > img {
     display: block;
     transform-style: preserve-3d;
     animation: inherit;
@@ -121,7 +120,7 @@ main > img {
         transform: translate3d(0, 0, 60px);
    }
 }
-main > img:last-of-type {
+.all3 main > img:last-of-type {
     animation-delay: 4s;
 }
 @keyframes cinematic {
@@ -131,4 +130,4 @@ main > img:last-of-type {
     to {
         transform: translateZ(-100px) rotateY(-30deg) translateY(-100%) translateY(50vh);
    }
-} */
+}

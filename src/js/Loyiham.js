@@ -4,11 +4,11 @@ import s from '../css/Loyiham.module.css'
 export default class Loyiham extends Component {
     render() {
         return (
-            <div>
-                <div className={s.container}>
-  <main>
-    <header>
-      <h2 className={s.subheader}>— Keyframers</h2>
+            <div className={s.all3}>
+                <div className={s.container} style={{height:'1000px',overflow:'hidden'}}>
+  <main >
+    <header style={{width:'100%'}}>
+      <h2 className={s.subheader} >— Abbas CodeCraft team</h2>
       <h1>Where we bring imaginative user interfaces <em>to life.</em></h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit ipsam aspernatur quasi reiciendis at eum cupiditate officiis repudiandae quae ea facere odit beatae voluptate recusandae quas, possimus laborum inventore.</p>
     </header>

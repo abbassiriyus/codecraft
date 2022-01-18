@@ -2,12 +2,20 @@ import React, { Component } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import rasmc from '../img/1.png'
 import sertifekat from '../css/certificate.module.css'
+
 export default class certificate extends Component {
      
     render() {
        return (
             <div>
-              <div className={sertifekat.container}>
+                 <header className={sertifekat.header1}>
+               <h1> Сертификат </h1>
+                </header>
+
+
+
+                <h1 style={{margin:'10%',color:'black'}}>Эта веб-страница временно недоступна</h1>
+              {/* <div className={sertifekat.container}>
               <div className={sertifekat.cards}>
               <Row>
                <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
@@ -98,7 +106,7 @@ export default class certificate extends Component {
                </Row>
                </div>
 
-              </div>
+              </div> */}
             </div>
         )
     }
