@@ -7,9 +7,17 @@ import koz from '../img/koz.png'
 import ochkiy from '../img/ochkiy.png'
 import yulduz from '../img/yulduz.png'
 export default class Xabaryuborish extends Component {
+  state={
+    ism:'',
+    nomer:''
+  }
   anima=()=>{
     document.querySelector('#df').style=""
   }
+yuborish=()=>{
+  
+}
+
     render() {
         return (
             <div className={s.hammasi1}> 
