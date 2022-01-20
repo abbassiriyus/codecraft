@@ -81,11 +81,60 @@ margin-bottom: 40px;
     .xabarBtn{
         background-color: rgb(120, 35, 163);
         border: none;
-        padding: 8px 30px;
+        padding: 8px 15px;
         margin: auto;
         text-align: center;
-        border-radius: 50px;
+        border-radius: 20px;
     }
+    .uchtalik1{ 
+     
+        position: relative;
+       padding: 10px;
+       padding-right: 0px;
+       display: block;
+       margin: 0px;
+   }
+    
+.title{
+    font-size: 20px;
+    color:white;
+    padding: 20px 0;
+    text-align: center;
+   
+ }
+ .title span{
+    color: #edd168;
+ }
+ .as{border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 40px;
+     }
+     .robit{
+      display: none;
+     }
+     .rasm1{
+         width: 40px;
+         margin: 10px;
+         margin-top: 0px;
+     }
+     .ikkitalik1{
+         width: 95%;
+         font-size: 12px;
+         color: white;
+     }
+     .rasm3{
+         width: 80px;
+         height: 40px;
+         border-radius: 30px;
+         background-color:#9727af;
+     }
+     .row1{
+        margin: 40px; 
+          margin-left: 5px;
+          margin-right: 5px;
+    }
+ 
 }
 @keyframes aaa {
     0%{transform: rotateX(0deg);}

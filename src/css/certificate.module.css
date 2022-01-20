@@ -104,4 +104,10 @@ min-height: 400px;
     }
    
 }
+@media(max-width:576px){
+h1{
+    font-size: 20px;
+}
+   
+}
 

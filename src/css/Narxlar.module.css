@@ -34,10 +34,10 @@ min-height: 400px;
 }
 @media(max-width:501px){
     .header1 h1{
-        font-size: 25px;
+        font-size: 20px;
         position: relative;
-        top: 100px;
-        left: 50px;
+        top: 40px;
+        left: 10px;
     }
 }
 

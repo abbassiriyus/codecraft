@@ -166,3 +166,14 @@ position: relative;
         font-family: sans-serif;
     }
 }
+@media (max-width:500px) {
+    .cuorse h1{
+        font-size: 23px;
+        font-weight: 600;
+        text-align: center;
+        color: black;
+    }
+    .cuorse span{
+        color: #edd168;
+    }
+}
