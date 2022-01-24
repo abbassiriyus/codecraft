@@ -3,7 +3,7 @@ import './App.css';
 import Navbarr from './js/Navbarr';
 function App() {
   return (
-   <div>
+   <div style={{overflowX:'hidden'}}>
   
 <Navbarr/>
 
