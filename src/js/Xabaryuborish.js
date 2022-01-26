@@ -16,11 +16,13 @@ export default class Xabaryuborish extends Component {
     document.querySelector('#df').style=""
   }
 yuborish=()=>{
-const t=document.querySelector('#tel').value
-const  f=document.querySelector('#fam').value
-const  i=document.querySelector('#ism').value
-  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=462196488&text='+'ismi: '+{i}+'   Familiya: '+{f}+'   Nomer: '+{t})
-  
+var t=document.querySelector('#tel').value;
+var f=document.querySelector('#fam').value;
+var i=document.querySelector('#ism').value
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=462196488&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`)
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=5087964552&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`)
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=710414046&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+`+'%2B'${t}`)
+  console.log(i,f,t)
 }
 
     render() {
@@ -50,7 +52,7 @@ const  i=document.querySelector('#ism').value
     </Form.Text>
   </Form.Group>
 <div style={{width:'100%',margin:'auto',textAlign:'center'}}>
-  <Button id={s.df}   className={s.xabarBtn} onClick={this.yuborish}>
+  <Button id={s.df} href='/#'  className={s.xabarBtn} onClick={this.yuborish}>
     <MdWavingHand className='mx-3'/>
     Записаться
   </Button></div>
