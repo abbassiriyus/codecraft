@@ -6,6 +6,7 @@ import { MdWavingHand } from "react-icons/md";
 import koz from '../img/koz.png'
 import ochkiy from '../img/ochkiy.png'
 import yulduz from '../img/yulduz.png'
+import axios from 'axios';
 export default class Xabaryuborish extends Component {
   state={
     ism:'',
@@ -15,6 +16,10 @@ export default class Xabaryuborish extends Component {
     document.querySelector('#df').style=""
   }
 yuborish=()=>{
+const t=document.querySelector('#tel').value
+const  f=document.querySelector('#fam').value
+const  i=document.querySelector('#ism').value
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=462196488&text='+'ismi: '+{i}+'   Familiya: '+{f}+'   Nomer: '+{t})
   
 }
 
@@ -28,24 +33,24 @@ yuborish=()=>{
                  <Form style={{width:'100%'}}>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Имя</Form.Label>
-    <Form.Control  type="text" placeholder="Введите имя..." />
+    <Form.Control id='ism'  type="text" placeholder="Введите имя..." />
     
   </Form.Group>
 
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Фамилия</Form.Label>
-    <Form.Control type="text" placeholder="введите фамилию..." />
+    <Form.Control id='fam' type="text" placeholder="введите фамилию..." />
   </Form.Group>
   
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Номер телефона</Form.Label>
-    <Form.Control type="tel" placeholder="введите телефона номер..." />
+    <Form.Control id='tel' type="tel" placeholder="введите телефона номер..." />
     <Form.Text className="text-muted" >
     Введите свой номер телефона
     </Form.Text>
   </Form.Group>
 <div style={{width:'100%',margin:'auto',textAlign:'center'}}>
-  <Button id={s.df}  className={s.xabarBtn} type="submit">
+  <Button id={s.df}   className={s.xabarBtn} onClick={this.yuborish}>
     <MdWavingHand className='mx-3'/>
     Записаться
   </Button></div>

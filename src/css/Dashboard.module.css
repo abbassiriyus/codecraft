@@ -26,12 +26,8 @@ body{
     left: 3%;
     top: 10px;
     width: 94%;
-    background-color:rgba(255, 255, 255, 0.884);
-    background: linear-gradient(
-    to right bottom,
-    rgba(255,255,255,0.8),
-    rgba(255,255,255,0.6)
-    );
+    background-color:rgba(255, 255, 255, 0.584);
+   
     backdrop-filter: blur(20px);
     border-radius: 40px;
 z-index: 121;
@@ -497,7 +493,7 @@ font-size: 40px;
 }
 .chet .kard{
  color:black;
- background-color: white;
+ background-color: rgba(255, 255, 255, 0.342);
  padding: 20px;
 }
 .chet .kard:hover{
@@ -505,6 +501,7 @@ font-size: 40px;
     background-color: #2F2F2F;
     border-radius: 15px;
     scale: 1.1;
+    border-radius: 10px;
    }
    .kard h2{
 font-size: 25px;
@@ -528,6 +525,11 @@ opacity: 0.9;
         }
    }
    @media(max-width:560px){
+       .kard{
+           width: 100%;
+           margin: 0px;
+           padding: 0px;
+       }
     .kard h2{
         font-size: 15px;
            }

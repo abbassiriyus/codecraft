@@ -42,7 +42,7 @@
 	 animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
 	 display: flex;
 }
- .container .box .title h1 {
+.all1 .container .box .title h1 {
 	 font-family: 'Poppins';
 	 color: #fff;
 	 font-size: 42px;
@@ -55,7 +55,7 @@
 	 align-items: baseline;
 	 position: relative;
 }
- .container .box .title h1 span {
+.all1 .container .box .title h1 span {
 	 width: 0px;
 	 height: 0px;
 	 -webkit-border-radius: 50%;
@@ -71,7 +71,7 @@
 	 bottom: 13px;
 	 right: -12px;
 }
- .container .box .role {
+.all1 .container .box .role {
 	 width: 100%;
 	 position: relative;
 	 display: flex;
@@ -79,7 +79,7 @@
 	 height: 30px;
 	 margin-top: -10px;
 }
- .container .box .role .block {
+.all1 .container .box .role .block {
 	 width: 0%;
 	 height: inherit;
 	 background: #e91e63;
@@ -88,7 +88,7 @@
 	 animation-delay: 2s;
 	 display: flex;
 }
- .container .box .role p {
+.all1 .container .box .role p {
 	 animation: secFadeIn 2s forwards;
 	 animation-delay: 3.2s;
 	 opacity: 0;
@@ -179,7 +179,7 @@
 		 opacity: 0.7;
 	}
 }
- #footer {
+.all1 #footer {
 	 width: 350px;
 	 height: 80px;
 	 background: #ffb510;
@@ -193,7 +193,7 @@
 	 animation-delay: 4s;
      z-index: 15;
 }
- #footer span {
+.all1 #footer span {
 	 display: flex;
 	 align-items: center;
 	 justify-content: center;
@@ -201,7 +201,7 @@
 	 color: white;
 	 font-family: 'Poppins';
 }
- #footer span .i {
+.all1 #footer span .i {
 	 margin-right: 25px;
 	 font-size: 22px;
 	 color:white;

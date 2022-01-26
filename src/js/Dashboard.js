@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import s from "../css/Dashboard.module.css"
 import{  Row, Col } from 'react-bootstrap'
-
 import 'aos/dist/aos.css';
 import AOS from 'aos'
 import header from '../img/header.png'
@@ -47,15 +46,15 @@ export default class Dashboard extends Component {
 
 {/* asosiy 6ta imkoniyatlar */}
 <main className={s.mativatsiya}>
-  <Bounce left cascade ><h1><span style={{color:'orange'}}> 6 причин </span> изучать программирование</h1></Bounce>
+  <Bounce left cascade ><h1 style={{marginBottom:'30px'}}><span style={{color:'orange'}}> 6 причин </span> изучать программирование</h1></Bounce>
 
   
   <Row className={s.chet}>
     <Col   lg={{order:'first'}} lg={4} md={12} >
     
-<div style={{display:'flex'}} className={s.kard}  data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"
-     data-aos-duration="3000">
+<div style={{display:'flex'}} className={s.kard}  data-aos="zoom-in"
+     
+     data-aos-duration="1000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " style={{borderRadius:'50%'}} src={kopmboa} /></div>
       <div style={{display:'block'}}>
       <h2>Учит работать в команде</h2>
@@ -63,9 +62,9 @@ export default class Dashboard extends Component {
       </div>
     </div>
 
-    <div style={{display:'flex'}} className={s.kard} data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"
-     data-aos-duration="3000">
+    <div style={{display:'flex'}} className={s.kard} data-aos="zoom-in"
+     
+     data-aos-duration="1000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} style={{borderRadius:"50%"}} alt="  "  src={lemon} /></div>
       <div style={{display:'block'}}>
       <h2>Улучшает способности решать задачи </h2>
@@ -73,9 +72,9 @@ export default class Dashboard extends Component {
       </div>
     </div>
 
-    <div style={{display:'flex'}} className={s.kard} data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"
-     data-aos-duration="3000">
+    <div style={{display:'flex'}} className={s.kard} data-aos="zoom-in"
+     
+     data-aos-duration="1000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " style={{borderRadius:'50%'}} src={team} /></div>
       <div style={{display:'block'}}>
       <h2>Улучшает успеваемость в школе</h2>
@@ -85,11 +84,11 @@ export default class Dashboard extends Component {
 
 
     </Col>
-    <Col  lg={4}  md={12}  md={{order:'first'}} sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img data-aos="zoom-in-down" data-aos-duration="3000" width="100%"  src={bola} alt=' '/></Col>
+    <Col  lg={4}  md={12}  md={{order:'first'}} sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img data-aos="zoom-in-down" data-aos-duration="1000" width="100%"  src={bola} alt=' '/></Col>
     <Col lg={4}  md={12}>
-    <div style={{display:'flex'}} className={s.kard}  data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"
-     data-aos-duration="3000" >
+    <div style={{display:'flex'}} className={s.kard}  data-aos="zoom-in"
+     
+     data-aos-duration="1000" >
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " src={online} /></div>
       <div style={{display:'block'}}>
       <h2>Укрепляет стойкость</h2>
@@ -97,9 +96,9 @@ export default class Dashboard extends Component {
       </div>
     </div>
 
-    <div style={{display:'flex',paddingTop:'30px'}} className={s.kard} data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"
-     data-aos-duration="3000">
+    <div style={{display:'flex',paddingTop:'30px'}} className={s.kard} data-aos="zoom-in"
+     
+     data-aos-duration="1000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt="  " src={komputer} /></div>
       <div style={{display:'block'}}>
       <h2>Развивает мышление</h2>
@@ -107,9 +106,9 @@ export default class Dashboard extends Component {
       </div>
     </div>
 
-    <div style={{display:'flex',}} className={s.kard}  data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"
-     data-aos-duration="3000">
+    <div style={{display:'flex',}} className={s.kard}  data-aos="zoom-in"
+     
+     data-aos-duration="1000">
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " src={kompide} /></div>
       <div style={{display:'block'}}>
       <h2>Расширяет возможности трудоустройства</h2>
@@ -120,11 +119,6 @@ export default class Dashboard extends Component {
     </Col>
   </Row>
 </main>
-
-
-
-
-
             </div>
         )
     }
