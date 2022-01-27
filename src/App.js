@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Navbarr from './js/Navbarr'
+import Menu1 from './Admin/js/Menu1';
 export default class App extends Component {
   render() {
     return <div>
-      <Navbarr/>
-    
+     <Menu1/>
     </div>;
   }
 }
