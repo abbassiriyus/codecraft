@@ -51,7 +51,7 @@ export default class Allpreyekt extends Component {
     <div style={{overflowX:'hidden',backgroundColor:'black'}} >
       
       <div className={style7.web}>
-      <h1 className={style7.title11}><span>наши</span> веб-проекты</h1>
+      <h1 className={style7.title11}><span>Haши</span> веб-проекты</h1>
 
 
 <Row>
@@ -129,10 +129,10 @@ export default class Allpreyekt extends Component {
 
 
 
-    <div style={{overflowX:'hidden',}} >
+    <div style={{overflowX:'hidden',backgroundColor:' rgba(0, 0, 0, 0.445)'}} >
      
       <div className={style7.web2}>
-      <h1 className={style7.title11}><span>наши</span> веб-проекты</h1>
+      <h1 className={style7.title11}><span>Hаши</span> Scratch-проекты</h1>
 
 
 <Row>
@@ -200,7 +200,7 @@ export default class Allpreyekt extends Component {
 
 </div><Loyiham/>
     </div>
-    </div>;
+    </div>
   }
 }
 

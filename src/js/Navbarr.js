@@ -56,7 +56,7 @@ export default class Navbarr extends Component {
       <Route path="/teamId" element={<Narxlar />} />
       <Route path="/new" element={<Allpreyekt />} />
     </Routes>
-  </BrowserRouter>,
+  </BrowserRouter>
 
 <footer>
                 
