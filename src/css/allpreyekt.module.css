@@ -1,12 +1,14 @@
-/* @import "react-alice-carousel/lib/alice-carousel.css"; */
-h1{
-    margin: auto;
-    text-align: center;
-}
+
 .web{
     margin:10%;
     margin-top: 30px;
     margin-bottom: 30px;
+        color: white;
+}
+.title11 {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
 }
 .title11 span{
     color: orange;
@@ -21,9 +23,7 @@ h1{
 border-radius: 20px;
 } 
 
-.item19{
-    background-color:rgba(255, 255, 255, 0.514);
-}
+
 
 
 
@@ -31,10 +31,8 @@ border-radius: 20px;
 .corusell{
     box-shadow: 5px 10px 8px #888888;
     text-align: center;
- 
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.39);
-
 }
 
 /* .cardCorusel{
@@ -52,63 +50,26 @@ border-radius: 20px;
 
 
 
+
+
+
+
 /* /////// */
-.yandexMap1{
-    margin-left: 100px;
-    width: 600px;
-    flex-wrap: wrap;
-    display: flex;
-    
+
+
+
+
+/* @import "react-alice-carousel/lib/alice-carousel.css"; */
+.web2{
+    margin:10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+        color: black;
 }
 
-.manzil{
-    margin: 20px;
-    display: flex;
-    font-size: 30px;
+.corusell2{
+    box-shadow: 5px 10px 8px #888888;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.445);
 }
-
-.spanMap{
-    color: red;
-    display: flex;
-    padding-right: 5px;
-    margin-left: 50px;
-}
-
-
-.Button01{
-    padding: 5px 40px;
-    background-color: #fff;
-    color: #888888;
-    border: blue 1px solid;
-}
-.Button01:hover{
-    background-color: blue;
-    color: #fff;
-}
-
-#MapId{
-    display: flex;
-}
-.listItem{
-    list-style: none;
-    display: flex;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
