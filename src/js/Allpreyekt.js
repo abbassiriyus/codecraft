@@ -20,6 +20,19 @@ import bogcha2 from '../img/bogcha2.png'
 import bogcha3 from '../img/bogcha3.png'
 import bogcha4 from '../img/bogcha4.png'
 import bogcha5 from '../img/bogcha5.png'
+import shashka from '../img/shashka.png';
+import shashka0 from '../img/shashka0.png';
+import shashka3 from '../img/shashka3.png';
+import dore from '../img/dore.png';
+import dore0 from '../img/dore0.png';
+import dore1 from '../img/dore1.png';
+import raketa from '../img/raketa.png';
+import raketa2 from '../img/raketa2.png';
+import raketa3 from '../img/raketa3.png';
+
+
+
+
 
 const items = [
   <div className={style7.item19} data-value="1"><img className={style7.img15} alt=" " src={codecraft1} /></div>,
@@ -44,6 +57,24 @@ const items2 = [
   <div className={style7.item19} data-value="4"><img className={style7.img15} alt=" " src={bogcha4} /></div>,
   <div className={style7.item19} data-value="5"><img className={style7.img15} alt=" " src={bogcha5} /></div>,
 ];
+
+const items3 = [
+    <div className={style7.item19} data-value="1"><img className={style7.img15} alt=" " src={shashka} /></div>,
+    <div className={style7.item19} data-value="2"><img className={style7.img15} alt=" " src={shashka0} /></div>,
+    <div className={style7.item19} data-value="3"><img className={style7.img15} alt=" " src={shashka3} /></div>,
+  ];
+
+  const items4 = [
+    <div className={style7.item19} data-value="1"><img className={style7.img15} alt=" " src={dore} /></div>,
+    <div className={style7.item19} data-value="2"><img className={style7.img15} alt=" " src={dore0} /></div>,
+    <div className={style7.item19} data-value="3"><img className={style7.img15} alt=" " src={dore1} /></div>,
+  ];
+
+  const items5 = [
+    <div className={style7.item19} data-value="1"><img className={style7.img15} alt=" " src={raketa} /></div>,
+    <div className={style7.item19} data-value="2"><img className={style7.img15} alt=" " src={raketa2} /></div>,
+    <div className={style7.item19} data-value="3"><img className={style7.img15} alt=" " src={raketa3} /></div>,
+  ];
 export default class Allpreyekt extends Component {
   render() {
     return <div>
@@ -112,7 +143,7 @@ export default class Allpreyekt extends Component {
     />
 
     <h3>Caдoвый вeб-caйт</h3>
-    <a className={style7.aHref} href="https://credence.uz/">Credence.uz</a>
+    <a className={style7.aHref} href="https://kg.codecraft.uz">Credence.uz</a>
     <p className={style7.loremText}>open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.</p>
     </div></Col>
 </Row>
@@ -148,7 +179,7 @@ export default class Allpreyekt extends Component {
         animationDuration={2500}
         disableButtonsControls
         infinite
-        items={items}
+        items={items3}
         mouseTracking
     />
 
@@ -168,7 +199,7 @@ export default class Allpreyekt extends Component {
         animationDuration={2500}
         disableButtonsControls
         infinite
-        items={items1}
+        items={items4}
         mouseTracking
     />
 
@@ -188,12 +219,12 @@ export default class Allpreyekt extends Component {
         animationDuration={2500}
         disableButtonsControls
         infinite
-        items={items2}
+        items={items5}
         mouseTracking
     />
 
     <h3>Caдoвый вeб-caйт</h3>
-    <a className={style7.aHref} href="https://credence.uz/">Credence.uz</a>
+    <a className={style7.aHref} href="https://kg.codecraft.uz">kg.Credence.uz</a>
     <p className={style7.loremText}>open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.</p>
     </div></Col>
 </Row>
