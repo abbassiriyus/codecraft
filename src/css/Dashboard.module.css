@@ -595,17 +595,40 @@ opacity: 0.9;
             }
         
     }
-  .button1{
+
+  .xarita_oynasi{
       display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 30px;
+      width: 100%;
+      background:black;
+    color: white; }
+  .map1{
+      width: 50%;
+     
   }
-  .maktab1{
-      border:2px solid red;
-      width:33%;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
+  .manzil{
+      padding: 30px;
+      width: 50%;
+      font-size: 30px;
+      min-height: 300px;
+  }
+  .ahref{
+      text-decoration: none;
+      margin: 30px;
+  }
+  @media (max-width:991px) {
+    .xarita_oynasi{
+        display: block;
+        padding: 30px;
+        width: 100%;
+    }
+    .map1{
+        width: 100%;
+       
+    }
+    .manzil{
+        padding: 25px;
+        width: 100%;
+        font-size: 30px;
+    }
   }

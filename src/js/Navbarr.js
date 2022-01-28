@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import s from "../css/Dashboard.module.css"
 import rasm1 from '../img/logo.png'
 import{ Navbar,Nav, } from 'react-bootstrap'
-import { FaBars, FaTelegramPlane } from "react-icons/fa"
+import { FaBars, FaMapMarkerAlt, FaTelegramPlane } from "react-icons/fa"
 import { FaFacebookSquare }from 'react-icons/fa'
 import { RiInstagramFill }from 'react-icons/ri'
 import { Col, Row } from 'react-bootstrap'
@@ -14,6 +14,7 @@ import 'aos/dist/aos.css';
 import Dashboard from './Dashboard'
 import Nash_prinsip from './Nash_prinsip'
 import Narxlar from './Narxlar'
+import { Map, Placemark, YMaps } from 'react-yandex-maps';
 import Allpreyekt from './Allpreyekt'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Kurs from './kurs'
@@ -57,9 +58,27 @@ export default class Navbarr extends Component {
       <Route path="/new" element={<Allpreyekt />} />
     </Routes>
   </BrowserRouter>
-<div className={s.map}>
-  <div className={s.button1}><div className={s.maktab1}>255-maktab</div><div className={s.maktab1}>241-maktab</div><div className={s.maktab1}>200-makatab</div></div>
+<div className={s.xarita_oynasi }>
+  <div className={s.map1}><YMaps>
+  <Map
+  width="100%"
+  height="100%"
+    defaultState={{
+      center: [41.327477, 69.345046],
+      zoom: 15,
+    }}
+  >
+    <Placemark geometry={[41.327477, 69.345046]} />
+  </Map>
+</YMaps>
 </div>
+<div className={s.manzil}>
+<div><FaMapMarkerAlt style={{marginRight:'20px'}} />Maksim Gorkiy Salom kafe 241-maktab 222-xoana</div>
+<a href="tel:+996487223" className={s.ahref}><div><BsFillTelephoneFill style={{marginRight:'20px'}}/>+998996487223</div></a>
+<a href="tel:+996487223" className={s.ahref}><div><BsFillTelephoneFill style={{marginRight:'20px'}}/>+998996487223</div></a>
+</div>
+</div>
+
 <footer>
                 
                 <div className={styleFooter.footer}>
