@@ -57,7 +57,9 @@ export default class Navbarr extends Component {
       <Route path="/new" element={<Allpreyekt />} />
     </Routes>
   </BrowserRouter>
-
+<div className={s.map}>
+  <div className={s.button1}><div className={s.maktab1}>255-maktab</div><div className={s.maktab1}>241-maktab</div><div className={s.maktab1}>200-makatab</div></div>
+</div>
 <footer>
                 
                 <div className={styleFooter.footer}>

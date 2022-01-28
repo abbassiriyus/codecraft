@@ -595,4 +595,17 @@ opacity: 0.9;
             }
         
     }
-  
+  .button1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .maktab1{
+      border:2px solid red;
+      width:33%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+  }
