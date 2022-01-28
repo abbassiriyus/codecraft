@@ -103,8 +103,11 @@ export default class Allpreyekt extends Component {
     />
 
     <h3>Сайт CodeCraft</h3>
-    <a className={style7.aHref} href="https://codecraft.uz">CodeCraft.uz</a>
-    <p className={style7.loremText}>open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.</p>
+    <a className={style7.aHref} href="http://codecraft.uz">CodeCraft.uz</a>
+    <p className={style7.loremText}>Сайт для учебного центра: <br/>
+*Презинтабельный вид<br/>
+*Регистрирация учеников<br/>
+*Администроционное поле</p>
     </div></Col>
     <Col xxl={4} xl={4} lg={6} md={12}><div className={style7.corusell}> 
         <AliceCarousel
@@ -123,8 +126,10 @@ export default class Allpreyekt extends Component {
     />
 
     <h3>Образовательный сайт</h3>
-    <a className={style7.aHref} href="https://credence.uz/">Credence.uz</a>
-    <p className={style7.loremText}>open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.</p>
+    <a className={style7.aHref} href="http://credence.uz/">Credence.uz</a>
+    <p className={style7.loremText}>Сайт для университета: <br/>
+*Видиоуроки/Статьи для студентов и профессоров<br/>
+*Онлайн библиотека для скачивания всех необходимых учебников</p>
     </div></Col>
     <Col xxl={4} xl={4} lg={6} md={12}><div className={style7.corusell}> 
         <AliceCarousel
@@ -143,8 +148,11 @@ export default class Allpreyekt extends Component {
     />
 
     <h3>Caдoвый вeб-caйт</h3>
-    <a className={style7.aHref} href="https://kg.codecraft.uz">Credence.uz</a>
-    <p className={style7.loremText}>open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.</p>
+    <a className={style7.aHref} href="http://kg.codecraft.uz">Credence.uz</a>
+    <p className={style7.loremText}>Сайт для Часных садов<br/> 
+*Захватывающие анимации<br/> 
+*Новости и расписание ивентов<br/>  
+*Информации о воспитателей и дневной отчёт про ребенка</p>
     </div></Col>
 </Row>
 
@@ -183,8 +191,8 @@ export default class Allpreyekt extends Component {
         mouseTracking
     />
 
-    <h3>Сайт CodeCraft</h3>
-    <a className={style7.aHref} href="https://codecraft.uz">CodeCraft.uz</a>
+    <h3>шашки</h3>
+    <a className={style7.aHref} href="http://scratch03.codecraft.uz/">scratch03.codecraft.uz</a>
     <p className={style7.loremText}>open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.</p>
     </div></Col>
     <Col xxl={4} xl={4} lg={6} md={12}><div className={style7.corusell2}> 
@@ -203,9 +211,9 @@ export default class Allpreyekt extends Component {
         mouseTracking
     />
 
-    <h3>Образовательный сайт</h3>
-    <a className={style7.aHref} href="https://credence.uz/">Credence.uz</a>
-    <p className={style7.loremText}>open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.</p>
+    <h3>Фортепиано</h3>
+    <a className={style7.aHref} href="http://scratch01.codecraft.uz/">scratch01.codecraft.uz</a>
+    <p className={style7.loremText}> клавишный струнный инструмент с горизонтальным (рояль) или вертикальным (пианино) расположением струн</p>
     </div></Col>
     <Col xxl={4} xl={4} lg={6} md={12}><div className={style7.corusell2}> 
         <AliceCarousel
@@ -223,8 +231,8 @@ export default class Allpreyekt extends Component {
         mouseTracking
     />
 
-    <h3>Caдoвый вeб-caйт</h3>
-    <a className={style7.aHref} href="https://kg.codecraft.uz">kg.Credence.uz</a>
+    <h3>ракета</h3>
+    <a className={style7.aHref} href="http://scratch02.codecraft.uz/">scratch02.codecraft.uz</a>
     <p className={style7.loremText}>open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.</p>
     </div></Col>
 </Row>

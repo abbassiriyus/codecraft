@@ -26,7 +26,7 @@ export default class Loyiha extends Component {
 </div>
 
 <a href="https://t.me/websirius11" target="_blank">
-    <footer id={s.footer}>
+    <footer style={{zIndex:'213'}}  id={s.footer}>
     <div className={s.texto}>
         <span>
            <FaTelegram className={s.i}/>

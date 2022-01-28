@@ -40,7 +40,7 @@ export default class Navbarr extends Component {
         <Nav.Link id={s.bolim} href="/#" >Главная</Nav.Link>
         <Nav.Link id={s.bolim}   href="/#kurs">Курсы</Nav.Link>
         <Nav.Link id={s.bolim}  href="/teamId">Оплата</Nav.Link>
-        <Nav.Link id={s.bolim}  href="/new" to="">Сертификат</Nav.Link>
+        <Nav.Link id={s.bolim}  href="/new" to="">Проекты</Nav.Link>
       </Nav>
          <div className={s.navicon}>
   <a  href='https://www.facebook.com/codecraft.uz'><FaFacebookSquare/></a>
@@ -58,6 +58,7 @@ export default class Navbarr extends Component {
       <Route path="/new" element={<Allpreyekt />} />
     </Routes>
   </BrowserRouter>
+
 <div className={s.xarita_oynasi }>
   <div className={s.map1}><YMaps>
   <Map
@@ -68,14 +69,15 @@ export default class Navbarr extends Component {
       zoom: 15,
     }}
   >
+    <Placemark geometry={[41.329082, 69.336318]} />
     <Placemark geometry={[41.327477, 69.345046]} />
   </Map>
 </YMaps>
 </div>
 <div className={s.manzil}>
-<div><FaMapMarkerAlt style={{marginRight:'20px'}} />Maksim Gorkiy Salom kafe 241-maktab 222-xoana</div>
-<a href="tel:+996487223" className={s.ahref}><div><BsFillTelephoneFill style={{marginRight:'20px'}}/>+998996487223</div></a>
-<a href="tel:+996487223" className={s.ahref}><div><BsFillTelephoneFill style={{marginRight:'20px'}}/>+998996487223</div></a>
+<div><FaMapMarkerAlt style={{marginRight:'20px'}} />ул.Салом 1, 241-школа, 6-кабинет, ориентир Чайхана Салом</div>
+<div><FaMapMarkerAlt style={{marginRight:'20px'}} />ул.Буюк Ипак Йули 153, 171-школа, 20-кабинет,ориентир гостиница Саёхат</div>
+<a href="tel:+998 99 300 55 00" className={s.ahref}><div><BsFillTelephoneFill style={{marginRight:'20px'}}/>+998 99 300 55 00</div></a>
 </div>
 </div>
 
