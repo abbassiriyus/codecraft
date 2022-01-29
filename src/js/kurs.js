@@ -37,7 +37,7 @@ export default class kurs extends Component {
             <MDBCardText>
              <p>Python - это язык программирования, который активно используеться в разработке веб-сайтов, игр и программ. Благодаря своей простоте и понятности, этот язык идеально подходит для новичков.</p>
             </MDBCardText>
-            <a href="/#xabar"> Подробнее</a>
+            <a href="/python"> Подробнее</a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
