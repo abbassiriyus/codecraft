@@ -394,11 +394,11 @@ header .aylana{
     header .aylana{
         z-index: 1;
         position: absolute;
-        right: -200px;
-        top: -200px;
+        right: -350px;
+        top: -350px;
         background-color: #edd168;
-        width:700px;
-        height: 700px;
+        width:600px;
+        height: 600px;
         border-radius: 50%;
     } 
     .satr ul  h1{
@@ -437,11 +437,11 @@ header .aylana{
     header .aylana{
         z-index: 1;
         position: absolute;
-        right: -200px;
-        top: -200px;
+        right: -400px;
+        top: -400px;
         background-color: #edd168;
-        width:700px;
-        height: 700px;
+        width:600px;
+        height: 600px;
         border-radius: 50%;
     } 
     .satr ul  h1{
@@ -628,7 +628,8 @@ opacity: 0.9;
     }
     .manzil{
         padding: 25px;
+        padding-bottom: 0px;
         width: 100%;
-        font-size: 30px;
+        font-size: 25px;
     }
   }
