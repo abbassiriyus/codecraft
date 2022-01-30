@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
 import { Button, Form, Modal, Table } from 'react-bootstrap';
-
+import { getStudents } from '../../host/config'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios'
+const token = '4656309ee754dca6db56dc768197c9e874ea468a'
+const api = 'http://62.209.129.38:8000/api/students/'; 
+
 export default class User extends Component {
     state={
         show:false,
         show1:false,
         start:0,
         end:20
+    }
+    getStudent=()=>{ 
+//       axios.get(api , { headers: {"Authorization" : `Token ${token}`} })
+// .then(res => {
+// console.log(res.data);})
+// .catch((error) => {
+//   console.log(error)
+// });
+      axios.get(api).then(res=>{
+        console.log(res.data)
+      }).catch(err=>{console.log("error")})
     }
     handleClose=()=>{
         this.setState({show:false})
@@ -31,6 +46,7 @@ for(var i=this.state.start;this.state.end>i;i++){
         }
      } 
 componentDidMount(){
+this.getStudent()
     for(var i=this.state.start;this.state.end>i;i++){
 document.querySelector('#ruku').innerHTML+=`<div>Hello</div>`
     }

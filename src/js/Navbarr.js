@@ -15,7 +15,7 @@ import Dashboard from './Dashboard'
 import Nash_prinsip from './Nash_prinsip'
 import Narxlar from './Narxlar'
 import { Map, Placemark, YMaps } from 'react-yandex-maps';
-import Allpreyekt2 from './Allpreyekt2'
+import Allpreyekt from './Allpreyekt'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Kurs from './kurs'
 import Xabaryuborish from './Xabaryuborish'
@@ -56,8 +56,8 @@ export default class Navbarr extends Component {
     <Routes>
       <Route exact path="/" element={<div style={{marginTop:'0px'}}><Dashboard/><Nash_prinsip/><Kurs/><Xabaryuborish/><Accordion/></div>}/>
       <Route path="/teamId" element={<Narxlar />} />
-      <Route path="/new" element={<Allpreyekt2 />} />
       <Route path="/python" element={<Python/>} />
+      <Route path="/new" element={<Allpreyekt />} />
     </Routes>
   </BrowserRouter>
 

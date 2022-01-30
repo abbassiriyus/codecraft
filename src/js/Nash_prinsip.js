@@ -34,7 +34,7 @@ export default class Nash_prinsip extends Component {
                     <Bounce left cascade ><h1 className={styles.title}>Наши принципы <span>
         преподавания</span></h1></Bounce>
                     <Col sm={12} md={12} md={{order: 1}} lg={6} xl={6} xxl={6}>
-                        <div data-aos="zoom-right" data-aos-duration="1000" className={styles.text}>
+                        <div  className={styles.text}>
                         <p>Большая часть нашего учебного времени посвящена получению практического опыта при работе над проектами.</p>
                          <p>Работа над проектами побуждает наших студентов выражать себя с помощью кода.</p>
                          <p>Мы позволяем ученикам развиваться в своем темпе, помогая каждому понять и применить предоставленную информацию</p>
@@ -48,13 +48,12 @@ export default class Nash_prinsip extends Component {
                          </Col>
 
                          <Col sm={12} md={12} md={12}  lg={6} lg={{order: 2}} xl={6} xxl={6} style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
-                          <img data-aos="zoom-in-left" data-aos-duration="1000" className={styles.img} id={styles.img} src={imgs} alt=" "/>
+                          <img  className={styles.img} id={styles.img} src={imgs} alt=" "/>
                          </Col>
                     </Row>
                     <Row>
                            <Col sm={12} md={6} lg={6}>
-                           <div  data-aos="fade-up"
-     data-aos-duration="1000" className={styles.leftCard}>
+                           <div   className={styles.leftCard}>
                                <img src={child}  alt=" " />
                                <h4>Удобный формат</h4>
                                <p>Благодаря современным технологиям мы построили самый лучший и комфортный формат дистанционного обучения</p>
@@ -62,8 +61,7 @@ export default class Nash_prinsip extends Component {
                            </Col>
 
                             <Col sm={12} md={6} lg={6}>
-                           <div  data-aos="fade-up"
-data-aos-duration="1000"  className={styles.rightCard}>
+                           <div    className={styles.rightCard}>
                                <img src={rightImg} alt=" "/>
                                <h4>Выжимаем максимум</h4>
                                <p>Мы проводим исключительно индивидуальные занятия, чтобы передать максимум знаний и опыта вашему ребенку</p>
@@ -81,7 +79,7 @@ data-aos-duration="1000"  className={styles.rightCard}>
                  <Row>
             
 
-                     <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="1000">
+                     <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} >
                      <div >
                          <img src={image1} alt=" " />
                          <h4>Самые клёвые инструкторы</h4>
@@ -89,19 +87,19 @@ data-aos-duration="1000"  className={styles.rightCard}>
                      </div>
                      </Col>
 
-                     <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="1000" >
+                     <Col sm={12} md={6} lg={4}  style={{padding:'25px'}}  >
                          <img src={image2} alt=" "/>
                          <h4>Индивидуальный подход</h4>
                          <p>Мы умеем находить индивидуальный подход ко всем нашим ученикам, учитывая их разные характерные особенности</p>
                      </Col>
 
-                    <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="1000"> 
+                    <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} > 
                     <img src="https://nito.rsvpu.ru/img/logo.png"/>
                     <h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
                     </Col>
          
-                      <Col  sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="1000">
+                      <Col  sm={12} md={6} lg={4}  style={{padding:'25px'}} >
                           <div>
                               <img src={image4} alt=' ' />
                               <h4>Удобный график занятий</h4>
@@ -112,7 +110,7 @@ data-aos-duration="1000"  className={styles.rightCard}>
                            
                        
                           
-                              <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="1000">
+                              <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} >
                                   <div>
                                       <img src={image5} />
                                       <h4>Обучение из любой точки мира</h4>
@@ -121,7 +119,7 @@ data-aos-duration="1000"  className={styles.rightCard}>
 
                               </Col>
                             
-                              <Col sm={12} md={6} lg={4} data-aos="zoom-in" style={{padding:'25px'}}  data-aos-duration="1000"> 
+                              <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} > 
                               <div>
                                   <img src={image6} />
                                   <h4>Сертификат по окончанию</h4>
