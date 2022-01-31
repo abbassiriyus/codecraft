@@ -17,7 +17,7 @@ import SendIcon from '@mui/icons-material/Send';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
 import SubMenu from 'antd/lib/menu/SubMenu';
-
+import 'antd/dist/antd.css';
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };

@@ -26,7 +26,7 @@ export default class Dashboard extends Component {
 <div className={s.satr}>
 
 <ul> 
-      <h1><Bounce top >Мы учим ремеслу
+      <h1 style={{color:"white"}}><Bounce top >Мы учим ремеслу
 программирования</Bounce></h1>  
 
 <Bounce top ><li>Для детей и подростков от 7 до 18 лет</li>
