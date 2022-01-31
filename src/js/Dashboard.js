@@ -50,7 +50,7 @@ export default class Dashboard extends Component {
 
   
   <Row className={s.chet}>
-    <Col   lg={{order:'first'}} lg={4} md={12} >
+    <Col  lg={{order:'first'}} lg={4} md={12} >
     
 <div style={{display:'flex'}} className={s.kard} >
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " style={{borderRadius:'50%'}} src={kopmboa} /></div>

@@ -20,7 +20,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos'
 import { Bounce, } from 'react-reveal';
   AOS.init();
-export default class Nash_prinsip extends Component {
+export default class Nashprinsip extends Component {
 
     render() {
         return (
@@ -94,7 +94,7 @@ export default class Nash_prinsip extends Component {
                      </Col>
 
                     <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} > 
-                    <img src="https://nito.rsvpu.ru/img/logo.png"/>
+                    <img alt='' src="https://nito.rsvpu.ru/img/logo.png"/>
                     <h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
                     </Col>
@@ -112,7 +112,7 @@ export default class Nash_prinsip extends Component {
                           
                               <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} >
                                   <div>
-                                      <img src={image5} />
+                                      <img src={image5} alt=" " />
                                       <h4>Обучение из любой точки мира</h4>
                                       <p>Благодаря дистанционной форме обучения, Вам не приходиться тратить время на дорогу, заниматься можно в любом удобном месте</p>
                                   </div>
@@ -121,7 +121,7 @@ export default class Nash_prinsip extends Component {
                             
                               <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} > 
                               <div>
-                                  <img src={image6} />
+                                  <img src={image6} alt=" " />
                                   <h4>Сертификат по окончанию</h4>
                                   <p>Все ребята, при успешном завершении курса, получают от нашей школы подтверждающий сертификат с выпиской про оценки</p>
                               </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Container } from 'react-bootstrap'
 import { FaTelegram } from 'react-icons/fa'
 import s from '../css/Loyiha.module.css'
 export default class Loyiha extends Component {
@@ -25,7 +24,7 @@ export default class Loyiha extends Component {
 
 </div>
 
-<a href="https://t.me/websirius11" target="_blank">
+<a href="https://t.me/websirius11" >
     <footer style={{zIndex:'213'}}  id={s.footer}>
     <div className={s.texto}>
         <span>
@@ -34,7 +33,6 @@ export default class Loyiha extends Component {
     </div>
 </footer>
    </a> 
- 
             </div>
         )
     }
