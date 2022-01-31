@@ -1,19 +1,21 @@
-.menu{
-    background: url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80');
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: 100% 100%;
-    height: auto;
-    min-height: 400px;
-}
 
-.menuText{
-    color: white;
-    padding: 15px;
-    text-align: center;
+.header1{
+    background: url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80');
+width: 100%;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: 100% 100%;
+height: auto;
+min-height: 400px;
+
+}
+.header1 h1{
+    font-size: 60px;
+    position: relative;
+    top: 20px;
+    left: 30px;
 
 }
 
@@ -68,6 +70,7 @@ margin-left: 0%;
 }
 .text1{
     font-weight: 140;
+    font-size: 20px;
 }
 
 .pythonUrlImg{
@@ -83,9 +86,11 @@ margin-left: 0%;
     border-left: blue solid 5px;
     border-radius: 5px;
     margin: 0px 0px 0px 0px;
+    font-size: 25px;
 }
 .title1{
     font-weight: 340;
+    font-size: 25px;
 }
 .ulliTitle{
     font-size: 45px;
@@ -113,8 +118,8 @@ margin-left: 0%;
 
 
 .dropbtn {
-    padding: 10px 20px;
-    font-size: 16px;
+
+    font-size: 10px;
     border: none;
     cursor: pointer;
     display: none;
@@ -155,7 +160,7 @@ margin-left: 0%;
 
 
 .dropbtnImg{
-    width: 45px;
+    width: 30px;
     background-color: white;
 }
 
@@ -186,31 +191,58 @@ margin-left: 0%;
     }
   .dropbtn{display: block;}  
   .text{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
 }
 .text1Span{
     text-align: center;
-    font-size: 35px;
+    font-size: 20px;
 }
 .text1{
     font-weight: 100;
+    font-size: 15px;
 }
 .ulli{
     font-weight: 140;
     border-left: blue solid 3px;
     border-radius: 3px;
+    font-size: 15px;
 }
 .title1{
     font-weight: 250;
+    font-size: 17px;
 }
 .ulliTitle{
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
 }
 .imgPython{
-    width: 400px;
+    width: 100%;
 }
+.header1 h1{
+    font-size: 27px;
+   
+}
+.header1{
+    background: url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80');
+width: 100%;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: 100% 100%;
+height: auto;
+min-height: 300px;
+
+}
+}
+@media (max-width:400px) {
+    .header1 h1{
+        font-size: 20px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    } 
 }
 
 
