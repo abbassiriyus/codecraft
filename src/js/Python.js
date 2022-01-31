@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbarr from './Navbarr';
 import python from '../css/Python.module.css';
 import imgTogle from '../img/list.svg';
 
@@ -9,10 +8,9 @@ const Python = () => {
 
     return (
         <div>
-            <div className={python.menu}>
-                <h1 id='id1' className={python.menuText}>Python — что это такое</h1>
-            </div>
-            
+            <header className={python.header1}>
+               <h1> Python — что это такое</h1>
+                </header>
                 
                    <div className='container-fluid' id={python.fluid}>
                        <div className='row'>
@@ -22,7 +20,7 @@ const Python = () => {
                 <div className={python.dropdown}>
                     <button className={python.dropbtn}>   <img className={python.dropbtnImg} src={imgTogle} />  </button>
                     <div className={python.dropdownContent}>
-                        <a href='#id1' > Python — что это такое </a>
+                        <a href='#' > Python — что это такое </a>
                         <a href='#id2' > Для чего нужен язык программирования Python </a>
                         <a href='#id3' > История создания </a>
                         <a href='#id4' > Возможности языка </a>

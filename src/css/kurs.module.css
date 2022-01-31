@@ -167,13 +167,29 @@ position: relative;
     }
 }
 @media (max-width:500px) {
+    .kursCard{
+        position: relative;
+       display: flex;
+       width: 100%;
+    border-radius: 20px;
+       margin-bottom: 90px;
+       min-height: 600px;
+       justify-content: center;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    
+    }
     .cuorse h1{
-        font-size: 23px;
+        margin-top: 40px;
+        font-size: 27px;
         font-weight: 600;
         text-align: center;
         color: black;
     }
     .cuorse span{
         color: #edd168;
+    }
+    .cuorse{
+        padding: 0px 0 0px;
+        background-color:rgba(255, 255, 255, 0.473);
     }
 }

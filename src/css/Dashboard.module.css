@@ -445,7 +445,7 @@ header .aylana{
         border-radius: 50%;
     } 
     .satr ul  h1{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         font-weight: 700px;
         z-index: 3;
         position: relative;
@@ -539,6 +539,11 @@ opacity: 0.9;
            .rasn{
             width: 80px;
         }
+        .chet{
+            margin: 10px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
    }
 
 
@@ -585,7 +590,7 @@ opacity: 0.9;
     @media (max-width:500px) {
         .mativatsiya h1{
             margin: auto;
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             text-align: center;
             margin-top: 40px;
             
