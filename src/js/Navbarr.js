@@ -58,7 +58,7 @@ export default class Navbarr extends Component {
       <Route exact path="/" element={<div style={{marginTop:'0px'}}><Dashboard/><Nash_prinsip/><Kurs/><Xabaryuborish/><Accordion/></div>}/>
       <Route path="/teamId" element={<Narxlar />} />
       <Route path="/python" element={<Python/>} />
-      <Route path="/new" element={<Allpreyekt2 />} />
+      <Route path="/new" element={<Allpreyekt />} />
     </Routes>
   </BrowserRouter>
 

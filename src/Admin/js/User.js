@@ -2,19 +2,18 @@ import React, { Component } from 'react';
 import { Button, Form, Modal, Table } from 'react-bootstrap';
 import { getStudents } from '../../host/config'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios'
 
 export default class User extends Component {
     state={
         show:false,
         show1:false,
-        start:0,
-        end:20
+        data:[],
+        count:0,
     }
     getStudent=()=>{ 
-      axios.get('http://62.209.129.38:8000/api/users/')
+      getStudents()
     .then(res => {
-      console.log(res.data);
+this.setState({data:res.data.results, count:res.data.count})
     }).catch(err => {
       console.log(err);
     })
@@ -43,7 +42,7 @@ this.getStudent()
 
   
     return <div>
-       <Button style={{marginBottom:'40px'}} variant="primary" onClick={this.handleShow}>Create Students</Button>  <h3>All:</h3><br/>
+       <Button style={{marginBottom:'40px'}} variant="primary" onClick={this.handleShow}>Create Students</Button>  <h3>All:{this.state.count}</h3><br/>
       
         <Table stipred bordered hover variant="dark">
   <thead>
@@ -57,32 +56,17 @@ this.getStudent()
     </tr>
   </thead>
   <tbody>
-    
+    {this.state.data.map(item=>{
+      return(
     <tr>
-      
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td>{item.id}</td>
+      <td>{item.first_name}</td>
+      <td>{item.last_name}</td>
+      <td>{item.patronymic}</td>
       <td><Button variant='danger'>Delete</Button></td>
       <td><Button variant="success" onClick={this.handleShow1}>Edit</Button></td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td><Button variant='danger'>Delete</Button></td>
-      <td><Button variant="success" onClick={this.handleShow1}>Edit</Button></td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td >Larry the Bird</td>
-      <td>Thornton</td>
-      <td>@twitter</td>
-      <td><Button variant='danger'>Delete</Button></td>
-      <td><Button variant="success" onClick={this.handleShow1}>Edit</Button></td>
-    </tr>
+    </tr>)
+  })}
   </tbody>
 
 

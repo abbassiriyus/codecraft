@@ -72,7 +72,7 @@ componentDidMount(){
         return (
             <div >
                 <header className={s.header1}>
-               <h1> Стоимость и оплата занятий</h1>
+               <h1 style={{color:'white'}}> Стоимость и оплата занятий</h1>
                 </header>
                 <h1 style={{margin:'auto',textAlign:'center',marginBottom:'50px',marginTop:'50px'}}>Индивидуальные и группавые занятия</h1>
                 <div  className={s.soat}> 
