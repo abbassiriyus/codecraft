@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import s from "../css/Dashboard.module.css"
+import 'antd/dist/antd.css';
 import rasm1 from '../img/logo.png'
 import{ Navbar,Nav, } from 'react-bootstrap'
 import { FaBars, FaMapMarkerAlt, FaTelegramPlane } from "react-icons/fa"
@@ -15,7 +16,7 @@ import Dashboard from './Dashboard'
 import Nash_prinsip from './Nash_prinsip'
 import Narxlar from './Narxlar'
 import { Map, Placemark, YMaps } from 'react-yandex-maps';
-import Allpreyekt from './Allpreyekt'
+import Allpreyekt2 from './Allpreyekt2'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Kurs from './kurs'
 import Xabaryuborish from './Xabaryuborish'
@@ -57,7 +58,7 @@ export default class Navbarr extends Component {
       <Route exact path="/" element={<div style={{marginTop:'0px'}}><Dashboard/><Nash_prinsip/><Kurs/><Xabaryuborish/><Accordion/></div>}/>
       <Route path="/teamId" element={<Narxlar />} />
       <Route path="/python" element={<Python/>} />
-      <Route path="/new" element={<Allpreyekt />} />
+      <Route path="/new" element={<Allpreyekt2 />} />
     </Routes>
   </BrowserRouter>
 

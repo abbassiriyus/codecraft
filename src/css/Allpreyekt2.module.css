@@ -116,10 +116,9 @@ background-color: white;
 #btnNext{
   
    font-size: 22px;
-   position: absolute;
    right: 0px;
-   margin: auto;
-
+   position: relative;
+   margin: 0px 0px 0px 0px ;
    
 }
 

@@ -17,6 +17,7 @@ import SendIcon from '@mui/icons-material/Send';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
 import SubMenu from 'antd/lib/menu/SubMenu';
+import 'antd/dist/antd.css';
 
 
 
@@ -60,10 +61,10 @@ export default class Allpreyekt2 extends Component {
 <Menu
           theme={this.state.theme}
           onClick={this.handleClick}
-          style={{ width: 256 }}
           defaultOpenKeys={['sub1']}
           selectedKeys={[this.state.current]}
           mode="inline"
+          style={{width:'100%',height:'100%'}} 
         >
           <SubMenu key="sub1"  title="Web">
             <Menu.Item key="1">Option 1</Menu.Item>
@@ -74,16 +75,12 @@ export default class Allpreyekt2 extends Component {
           <SubMenu key="sub2" title="scratch">
             <Menu.Item key="5">Option 5</Menu.Item>
             <Menu.Item key="6">Option 6</Menu.Item>
-            <SubMenu key="sub3" title="Submenu">
-              <Menu.Item key="7">Option 7</Menu.Item>
-              <Menu.Item key="8">Option 8</Menu.Item>
-            </SubMenu>
+            
           </SubMenu>
           <SubMenu key="sub4"  title="graph">
-            <Menu.Item key="9">Option 9</Menu.Item>
-            <Menu.Item key="10">Option 10</Menu.Item>
-            <Menu.Item key="11">Option 11</Menu.Item>
-            <Menu.Item key="12">Option 12</Menu.Item>
+            <Menu.Item key="9">No content</Menu.Item>
+            <Menu.Item key="10">No content</Menu.Item>
+            <Menu.Item key="11">No content</Menu.Item>
           </SubMenu>
         </Menu>
 </div>
@@ -195,8 +192,8 @@ export default class Allpreyekt2 extends Component {
 
 
              <div className={style.inputBox}>
-                <ButtonGroup variant="contained" aria-label="outlined primary button group" sx={{width:"100%", height:"100px"}}>
-                <TextField multiline rows={3} fullWidth label="comentariya" id='comentariya'/>
+                <ButtonGroup variant="contained" aria-label="outlined primary button group" sx={{width:"100%"}}>
+                <TextField multiline rows={1} fullWidth label="comentariya" id='comentariya'/>
                     <Button>
                         <SendIcon />
                     </Button>
