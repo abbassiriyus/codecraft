@@ -20,7 +20,6 @@ import SubMenu from 'antd/lib/menu/SubMenu';
 import 'antd/dist/antd.css';
 
 
-
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const myStyle = {
 // margin: "0px 10px",

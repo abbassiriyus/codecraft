@@ -15,6 +15,7 @@ min-height: 400px;
     position: relative;
     top: 20px;
     left: 30px;
+    color: white;
 }
 @media(max-width:1400px){
     .header1 h1{
