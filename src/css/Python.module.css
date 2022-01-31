@@ -1,3 +1,4 @@
+
 .header1{
     background: url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80');
 width: 100%;
@@ -15,6 +16,7 @@ min-height: 400px;
     position: relative;
     top: 20px;
     left: 30px;
+
 }
 
 .position{
@@ -25,7 +27,7 @@ min-height: 400px;
     margin: 00px 0px 0px 0px;
     box-shadow: 5px 5px 10px 5px #888888;
     
-top: 8rem;
+top: 6rem;
 right: 0;
 z-index: 2;
 height: calc(81vh );
@@ -36,6 +38,9 @@ margin-left: 0%;
     text-decoration: none;
     list-style: none;
     text-decoration: none;
+}
+.position{
+    margin-top: 70px;
 }
 
 
