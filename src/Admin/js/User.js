@@ -3,8 +3,6 @@ import { Button, Form, Modal, Table } from 'react-bootstrap';
 import { getStudents } from '../../host/config'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios'
-const token = '4656309ee754dca6db56dc768197c9e874ea468a'
-const api = 'http://62.209.129.38:8000/api/students/'; 
 
 export default class User extends Component {
     state={
@@ -14,16 +12,13 @@ export default class User extends Component {
         end:20
     }
     getStudent=()=>{ 
-//       axios.get(api , { headers: {"Authorization" : `Token ${token}`} })
-// .then(res => {
-// console.log(res.data);})
-// .catch((error) => {
-//   console.log(error)
-// });
-      axios.get(api).then(res=>{
-        console.log(res.data)
-      }).catch(err=>{console.log("error")})
-    }
+      axios.get('http://62.209.129.38:8000/api/users/')
+    .then(res => {
+      console.log(res.data);
+    }).catch(err => {
+      console.log(err);
+    })
+  }
     handleClose=()=>{
         this.setState({show:false})
     }
@@ -36,20 +31,11 @@ export default class User extends Component {
     handleShow1=()=>{
         this.setState({show1:true})
     }
-     sort=()=>{
-        document.querySelector('#ruku').innerHTML=" "
-       var bosh=document.querySelector('#start').value
-       var oxr=document.querySelector('#end').value
-this.setState({start:bosh, end:oxr})
-for(var i=this.state.start;this.state.end>i;i++){
-    document.querySelector('#ruku').innerHTML+=`<div>${i}</div>`
-        }
-     } 
+
 componentDidMount(){
 this.getStudent()
-    for(var i=this.state.start;this.state.end>i;i++){
-document.querySelector('#ruku').innerHTML+=`<div>Hello</div>`
-    }
+
+    
 }
 
   render() {
@@ -58,9 +44,7 @@ document.querySelector('#ruku').innerHTML+=`<div>Hello</div>`
   
     return <div>
        <Button style={{marginBottom:'40px'}} variant="primary" onClick={this.handleShow}>Create Students</Button>  <h3>All:</h3><br/>
-       <input type="number" placeholder={this.state.start} on id="start" onChange={this.sort}/>
-       <input type="number" placeholder={this.state.end} id="end" onChange={this.sort}/><button onClick={this.sort}> Sort</button>
-       <div id="ruku"></div>
+      
         <Table stipred bordered hover variant="dark">
   <thead>
     <tr>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbarr from './js/Navbarr';
+import Navbarr from './Admin/js/Menu1';
 
 export default class App extends Component {
   render() {

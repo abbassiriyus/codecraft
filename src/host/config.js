@@ -4,7 +4,7 @@ import { host,httpRequest } from './host'
 
 export let getStudents = () => {
     let config = {
-      url: `${host}/students/`,
+      url: `${host}/users/`,
       method: "GET",
     };
     return httpRequest(config);
