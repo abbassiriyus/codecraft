@@ -1,39 +1,20 @@
+import React from 'react';
 import { Table, Input, Button, Space } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
+import { getStudents } from '../../host/config';
 
-const data = [
-  {
-    key: '1',
-    name: 'John Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
-  },
-  {
-    key: '2',
-    name: 'Joe Black',
-    age: 42,
-    address: 'London No. 1 Lake Park',
-  },
-  {
-    key: '3',
-    name: 'Jim Green',
-    age: 32,
-    address: 'Sidney No. 1 Lake Park',
-  },
-  {
-    key: '4',
-    name: 'Jim Red',
-    age: 32,
-    address: 'London No. 2 Lake Park',
-  },
-];
 
-class Group1 extends React.Component {
+export default class Group1 extends React.Component {
   state = {
     searchText: '',
     searchedColumn: '',
+    data:[]
   };
+  getStudent=()=>{
+    getStudents().then(res=>{this.setState({data:res.data}) 
+    console.log("ok") }).then(err=>{console.log('error')}) 
+  }
 
   getColumnSearchProps = dataIndex => ({
     filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
@@ -112,34 +93,35 @@ class Group1 extends React.Component {
     clearFilters();
     this.setState({ searchText: '' });
   };
+  componentDidMount(){
+      this.getStudent()
+  }
 
   render() {
     const columns = [
       {
-        title: 'Name',
-        dataIndex: 'name',
-        key: 'name',
+        title: 'username',
+        dataIndex: 'username',
+        key: 'username',
         width: '30%',
-        ...this.getColumnSearchProps('name'),
+        ...this.getColumnSearchProps('username'),
       },
       {
-        title: 'Age',
-        dataIndex: 'age',
-        key: 'age',
+        title: 'first_name',
+        dataIndex: 'first_name',
+        key: 'first_name',
         width: '20%',
-        ...this.getColumnSearchProps('age'),
+        ...this.getColumnSearchProps('first_name'),
       },
       {
-        title: 'Address',
-        dataIndex: 'address',
-        key: 'address',
-        ...this.getColumnSearchProps('address'),
-        sorter: (a, b) => a.address.length - b.address.length,
+        title: 'patronymic',
+        dataIndex: 'patronymic',
+        key: 'patronymic',
+        ...this.getColumnSearchProps('patronymic'),
+        sorter: (a, b) => a.patronymic.length - b.patronymic.length,
         sortDirections: ['descend', 'ascend'],
       },
     ];
-    return <Table columns={columns} dataSource={data} />;
+    return <Table columns={columns} dataSource={this.state.data} />;
   }
 }
-
-ReactDOM.render(<Group1 />, mountNode);
