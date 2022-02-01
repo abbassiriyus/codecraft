@@ -16,7 +16,7 @@ import Dashboard from './Dashboard'
 import Nash_prinsip from './Nash_prinsip'
 import Narxlar from './Narxlar'
 import { Map, Placemark, YMaps } from 'react-yandex-maps';
-import Allpreyekt from './Allpreyekt'
+import Allpreyekt from './Allpreyekt2'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Kurs from './kurs'
 import Xabaryuborish from './Xabaryuborish'

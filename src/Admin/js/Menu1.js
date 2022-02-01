@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css';
+import Group1 from './Group1';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import {
   DesktopOutlined,
@@ -56,7 +57,9 @@ export default class Menu1 extends Component {
           <Content style={{ margin: '0 16px' }}>
             
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-              <User/>
+
+              {/* asdasdfasfasdfasdfasdfas */}
+              <Group1 />
             </div>
           </Content>
           <Footer style={{ textAlign: 'center' }}>Ant Design ©2022 Created by Abbas</Footer>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
+import Menu1 from './Admin/js/Menu1';
 import Navbarr from './js/Navbarr';
 
 export default class App extends Component {
@@ -22,6 +23,7 @@ export default class App extends Component {
         <meta property="fb:app_id" content="ID_APP_FACEBOOK" />
       </Helmet>‍    
      <Navbarr/>
-    </div>;
+     <Menu1 />
+    </div>
   }
 }

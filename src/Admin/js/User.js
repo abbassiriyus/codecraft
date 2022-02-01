@@ -13,7 +13,7 @@ export default class User extends Component {
     getStudent=()=>{ 
       getStudents()
     .then(res => {
-this.setState({data:res.data.results, count:res.data.count})
+this.setState({data:res.data, count:res.data.count})
     }).catch(err => {
       console.log(err);
     })
