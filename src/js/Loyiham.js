@@ -34,7 +34,7 @@ export default class Loyiham extends Component {
   </main>
 </div>
 
-<a href="https://youtu.be/cxwZfcoiUSE" target="_blank" data-keyframers-credit style={{color: '#FFF', Zindex: '10'}}></a>
+<a href="https://youtu.be/cxwZfcoiUSE" data-keyframers-credit style={{color: '#FFF', Zindex: '10'}}></a>
 <script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
             </div>
         )

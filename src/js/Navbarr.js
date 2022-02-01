@@ -13,7 +13,7 @@ import {ImHeart} from 'react-icons/im';
 import styleFooter from '../css/footer.module.css'
 import 'aos/dist/aos.css';
 import Dashboard from './Dashboard'
-import Nash_prinsip from './Nash_prinsip'
+import Nashprinsip from './Nashprinsip'
 import Narxlar from './Narxlar'
 import { Map, Placemark, YMaps } from 'react-yandex-maps';
 import Allpreyekt from './Allpreyekt2'
@@ -55,7 +55,7 @@ export default class Navbarr extends Component {
 
 <BrowserRouter>
     <Routes>
-      <Route exact path="/" element={<div style={{marginTop:'0px'}}><Dashboard/><Nash_prinsip/><Kurs/><Xabaryuborish/><Accordion/></div>}/>
+      <Route exact path="/" element={<div style={{marginTop:'0px'}}><Dashboard/><Nashprinsip/><Kurs/><Xabaryuborish/><Accordion/></div>}/>
       <Route path="/teamId" element={<Narxlar />} />
       <Route path="/python" element={<Python/>} />
       <Route path="/new" element={<Allpreyekt />} />
@@ -101,7 +101,7 @@ export default class Navbarr extends Component {
                         <li><a href="/#kurs">Курсы обучения</a></li>
                         <li><a href="/teamId">Стоимость и оплата</a></li>
                         <li><a href="/#xabar">Заявка на мастер-класс</a></li>
-                        <li><a href="">Часто задаваемые вопросы</a></li>
+                        <li><a href="/#xabar">Часто задаваемые вопросы</a></li>
                         </ul>
                         </Col>
                         <Col sm={12} md={12} lg={4} xl={4} xxl={4}>

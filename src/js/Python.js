@@ -9,7 +9,7 @@ const Python = () => {
     return (
         <div>
             <header className={python.header1}>
-               <h1> Python — что это такое</h1>
+               <h1 id='d1'> Python — что это такое</h1>
                 </header>
                 
                    <div className='container-fluid' id={python.fluid}>
@@ -18,9 +18,9 @@ const Python = () => {
                            <div className={python.drop}>
                 {/* hghfghfghfghfghfgh */}
                 <div className={python.dropdown}>
-                    <button className={python.dropbtn}>   <img className={python.dropbtnImg} src={imgTogle} />  </button>
+                    <button className={python.dropbtn}>   <img className={python.dropbtnImg} alt=" " src={imgTogle} />  </button>
                     <div className={python.dropdownContent}>
-                        <a href='#' > Python — что это такое </a>
+                        <a href='#id' > Python — что это такое </a>
                         <a href='#id2' > Для чего нужен язык программирования Python </a>
                         <a href='#id3' > История создания </a>
                         <a href='#id4' > Возможности языка </a>
@@ -51,7 +51,7 @@ const Python = () => {
                                     </p>
                                 </div>
                             <div className={python.pythonUrlImg}> 
-                            <img className={python.imgPython} src='https://mchost.ru/files/img/python.png' />
+                            <img className={python.imgPython} alt=' ' src='https://mchost.ru/files/img/python.png' />
                             </div>
 
                             <div className={python.ulliBox}>

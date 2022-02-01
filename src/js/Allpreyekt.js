@@ -82,7 +82,7 @@ export default class Allpreyekt extends Component {
     <div style={{overflowX:'hidden',backgroundColor:'black'}} >
       
       <div className={style7.web}>
-      <h1 className={style7.title11}><span>Haши</span> веб-проекты</h1>
+      <h1 className={style7.title11} style={{color:'white'}}><span>Haши</span> веб-проекты</h1>
 
 
 <Row>

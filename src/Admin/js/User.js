@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, Modal, Table } from 'react-bootstrap';
+import { Pagination } from 'antd';
 import { getStudents } from '../../host/config'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -43,7 +44,12 @@ this.getStudent()
   
     return <div>
        <Button style={{marginBottom:'40px'}} variant="primary" onClick={this.handleShow}>Create Students</Button>  <h3>All:{this.state.count}</h3><br/>
-      
+       <Pagination
+    total={this.state.count}
+    showSizeChanger
+    showQuickJumper
+    showTotal={total => `Total ${total} items`}
+  />
         <Table stipred bordered hover variant="dark">
   <thead>
     <tr>
