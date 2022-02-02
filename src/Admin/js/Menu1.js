@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css';
 import Group1 from './Group1';
-import { Layout, Menu,} from 'antd';
+import { Layout, Menu,  } from 'antd';
 import {
   DesktopOutlined,
   PieChartOutlined,
