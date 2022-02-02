@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css';
 import Group1 from './Group1';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu,} from 'antd';
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -9,6 +9,7 @@ import {
   TeamOutlined,
   UserOutlined,
 } from '@ant-design/icons';
+
 import User from './User';
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -59,7 +60,8 @@ export default class Menu1 extends Component {
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
 
               {/* asdasdfasfasdfasdfasdfas */}
-              <Group1 />
+              <User/>
+              {/* <Group1 /> */}
             </div>
           </Content>
           <Footer style={{ textAlign: 'center' }}>Ant Design ©2022 Created by Abbas</Footer>

@@ -1,82 +1,166 @@
 import React, { Component } from 'react';
-import { Button, Form, Modal, Table } from 'react-bootstrap';
-import { Pagination } from 'antd';
 import { getStudents } from '../../host/config'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Highlighter from 'react-highlight-words';
+import { SearchOutlined } from '@ant-design/icons';
+import { Table, Input, Button, Space,Form, Modal, } from 'antd';
 
 export default class User extends Component {
     state={
         show:false,
         show1:false,
-        data:[],
+       visble:false,
         count:0,
+         searchText: '',
+      searchedColumn: '', 
+      data:[],
     }
-    getStudent=()=>{ 
-      getStudents()
-    .then(res => {
-this.setState({data:res.data, count:res.data.count})
-    }).catch(err => {
-      console.log(err);
-    })
-  }
-    handleClose=()=>{
-        this.setState({show:false})
-    }
-    handleShow=()=>{
-        this.setState({show:true})
-    }
-    handleClose1=()=>{
-        this.setState({show1:false})
-    }
-    handleShow1=()=>{
-        this.setState({show1:true})
-    }
-
-componentDidMount(){
-this.getStudent()
-
     
-}
-
+    getStudent=()=>{
+      getStudents().then(res=>{this.setState({data:res.data}) 
+      console.log("ok") }).then(err=>{console.log('error')}) 
+    }
+  
+    getColumnSearchProps = dataIndex => ({
+      filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
+        <div style={{ padding: 8 }}>
+          <Input
+            ref={node => {
+              this.searchInput = node;
+            }}
+            placeholder={`Search ${dataIndex}`}
+            value={selectedKeys[0]}
+            onChange={e => setSelectedKeys(e.target.value ? [e.target.value] : [])}
+            onPressEnter={() => this.handleSearch(selectedKeys, confirm, dataIndex)}
+            style={{ marginBottom: 8, display: 'block' }}
+          />
+          <Space>
+            <Button
+              type="primary"
+              onClick={() => this.handleSearch(selectedKeys, confirm, dataIndex)}
+              icon={<SearchOutlined />}
+              size="small"
+              style={{ width: 90 }}
+            >
+              Search
+            </Button>
+            <Button onClick={() => this.handleReset(clearFilters)} size="small" style={{ width: 90 }}>
+              Reset
+            </Button>
+            <Button
+              type="link"
+              size="small"
+              onClick={() => {
+                confirm({ closeDropdown: false });
+                this.setState({
+                  searchText: selectedKeys[0],
+                  searchedColumn: dataIndex,
+                });
+              }}
+            >
+              Filter
+            </Button>
+          </Space>
+        </div>
+      ),
+      filterIcon: filtered => <SearchOutlined style={{ color: filtered ? '#1890ff' : undefined }} />,
+      onFilter: (value, record) =>
+        record[dataIndex]
+          ? record[dataIndex].toString().toLowerCase().includes(value.toLowerCase())
+          : '',
+      onFilterDropdownVisibleChange: visible => {
+        if (visible) {
+          setTimeout(() => this.searchInput.select(), 100);
+        }
+      },
+      render: text =>
+        this.state.searchedColumn === dataIndex ? (
+          <Highlighter
+            highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
+            searchWords={[this.state.searchText]}
+            autoEscape
+            textToHighlight={text ? text.toString() : ''}
+          />
+        ) : (
+          text
+        ),
+    });
+  
+    handleSearch = (selectedKeys, confirm, dataIndex) => {
+      confirm();
+      this.setState({
+        searchText: selectedKeys[0],
+        searchedColumn: dataIndex,
+      });
+    };
+  
+    handleReset = clearFilters => {
+      clearFilters();
+      this.setState({ searchText: '' });
+    };
+    componentDidMount(){
+      this.getStudent()
+    }
+  
   render() {
-    
+    const columns = [
+      {
+        title: 'id',
+        dataIndex: 'id',
+        key: 'id',
+        width: '30%',
+        ...this.getColumnSearchProps('id'),
+      },
+      {
+        title: 'last_name',
+        dataIndex: 'last_name',
+        key: 'last_name',
+        width: '30%',
+        ...this.getColumnSearchProps('last_name'),
+      },
+      {
+        title: 'first_name',
+        dataIndex: 'first_name',
+        key: 'first_name',
+        width: '20%',
+        ...this.getColumnSearchProps('first_name'),
+      },
+      {
+        title: 'patronymic',
+        dataIndex: 'patronymic',
+        key: 'patronymic',
+        ...this.getColumnSearchProps('patronymic'),
+        sorter: (a, b) => a.patronymic.length - b.patronymic.length,
+        sortDirections: ['descend', 'ascend'],
+      },
+      {
+        title: 'Action',
+        dataIndex: '',
+        key: 'x',
+        render: () => <a>Delete</a>,
+      },
+      {
+        title: 'Action',
+        dataIndex: '',
+        key: 'x',
+        render: () => <a>Edit</a>,
+      },
+    ];
 
   
     return <div>
-       <Button style={{marginBottom:'40px'}} variant="primary" onClick={this.handleShow}>Create Students</Button>  <h3>All:{this.state.count}</h3><br/>
-       <Pagination
-    total={this.state.count}
-    showSizeChanger
-    showQuickJumper
-    showTotal={total => `Total ${total} items`}
-  />
-        <Table stipred bordered hover variant="dark">
-  <thead>
-    <tr>
-      <th>id</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Pateronimic</th>
-      <th>Delete</th>
-      <th>Edit</th>
-    </tr>
-  </thead>
-  <tbody>
-    {this.state.data.map(item=>{
-      return(
-    <tr>
-      <td>{item.id}</td>
-      <td>{item.first_name}</td>
-      <td>{item.last_name}</td>
-      <td>{item.patronymic}</td>
-      <td><Button variant='danger'>Delete</Button></td>
-      <td><Button variant="success" onClick={this.handleShow1}>Edit</Button></td>
-    </tr>)
-  })}
-  </tbody>
+       <Button style={{marginBottom:'40px'}} variant="primary" 
+      //  onClick={this.handleShow} 
+       onClick={() => this.setState({visible:true})}>Create Students</Button> 
+       
+       
+      <Table columns={columns} dataSource={this.state.data} />;
 
-
-      <Modal fullscreen={true} show={this.state.show} onHide={this.handleClose} animation={false}>
+      <Modal  title="Modal 1000px width"
+        centered
+        visible={this.state.visible}
+        onOk={() => this.setState({visible:false})}
+        onCancel={() => this.setState({visible:false})}
+        width={1000} >
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -143,19 +227,12 @@ this.getStudent()
 <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Individual type" />
   </Form.Group></Form></Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={this.handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={this.handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+    
       </Modal>
 
 
 
-<Modal fullscreen={true} show={this.state.show1} onHide={this.handleClose1} animation={false}>
+<Modal fullscreen={true} visible={this.state.show1} onHide={this.handleClose1} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Modal header</Modal.Title>
         </Modal.Header>
@@ -244,9 +321,20 @@ this.getStudent()
           </Button>
         </Modal.Footer>
       </Modal>
+     
+      <Modal
+        title="Modal 1000px width"
+        centered
+        visible={this.state.visible}
+        onOk={() => this.setState({visible:false})}
+        onCancel={() => this.setState({visible:false})}
+        width={1000}
+      >
+        <p>some contents...</p>
+        <p>some contents...</p>
+        <p>some contents...</p>
+      </Modal>
 
-
-</Table>
     </div>;
   }
 }

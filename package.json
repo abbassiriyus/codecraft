@@ -13,6 +13,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.18.5",
+    "antd-country-phone-input": "^4.3.0",
     "aos": "^2.3.4",
     "axios": "^0.25.0",
     "bootstrap": "^5.1.3",
@@ -32,7 +33,8 @@
     "react-yandex-maps": "^4.6.0",
     "react-yandex-metrika": "^2.6.0",
     "reactstrap": "^9.0.1",
-    "web-vitals": "^2.1.2"
+    "web-vitals": "^2.1.2",
+    "world_countries_lists": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

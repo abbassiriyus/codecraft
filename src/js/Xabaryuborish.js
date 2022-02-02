@@ -7,6 +7,14 @@ import koz from '../img/koz.png'
 import ochkiy from '../img/ochkiy.png'
 import yulduz from '../img/yulduz.png'
 import axios from 'axios';
+import CountryPhoneInput, { ConfigProvider } from 'antd-country-phone-input';
+import en from 'world_countries_lists/data/en/world.json';
+
+// Usually you only need to import ConfigProvider & CSS once in App.js/App.tsx
+// CSS order is important!
+import 'antd/dist/antd.css';
+import 'antd-country-phone-input/dist/index.css';
+
 export default class Xabaryuborish extends Component {
   state={
     ism:'',
@@ -19,10 +27,10 @@ yuborish=()=>{
 var t=document.querySelector('#tel').value;
 var f=document.querySelector('#fam').value;
 var i=document.querySelector('#ism').value
-  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=462196488&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`)
-  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=5087964552&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`)
-  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=710414046&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+`+'%2B'${t}`)
-  alert("Заявка принята мы свяжемся с вами в течении часа")
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=462196488&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+'998'+`${t}`)
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=5087964552&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+'998'+`${t}`)
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=710414046&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+`+'%2B'+'998'+${t}`)
+  t.length==9?(alert("Заявка принята мы свяжемся с вами в течении часа")):(alert("не правильно введён номер"))
 }
 
     render() {
@@ -46,7 +54,11 @@ var i=document.querySelector('#ism').value
   
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Номер телефона</Form.Label>
-    <Form.Control id='tel' type="tel" placeholder="введите телефона номер..." />
+    {/* <Form.Control id='tel' type="tel" placeholder="введите телефона номер..." /> */}
+    <ConfigProvider locale={en}>
+      <CountryPhoneInput  id='tel' />
+    </ConfigProvider>
+
     <Form.Text className="text-muted" >
     Введите свой номер телефона
     </Form.Text>
