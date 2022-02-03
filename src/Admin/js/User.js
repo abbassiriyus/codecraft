@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
-import { getStudents } from '../../host/config'
+import { deleteUser, getStudents } from '../../host/config'
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
-import { Table, Input, Button, Space,Form, Modal, } from 'antd';
-
+import { Table, Input, Button, Space, Popconfirm,} from 'antd';
+import { Form , Modal } from 'react-bootstrap';
+import axios from 'axios';
 export default class User extends Component {
     state={
         show:false,
         show1:false,
-       visble:false,
+    
         count:0,
          searchText: '',
       searchedColumn: '', 
       data:[],
     }
+     handleClose = () => this.setState({show:false});
+    handleShow = () => this.setState({show:true});
+    handleClose1 = () => this.setState({show1:false});
+    handleShow1 = () => this.setState({show1:true});
     
     getStudent=()=>{
       getStudents().then(res=>{this.setState({data:res.data}) 
@@ -97,6 +102,9 @@ export default class User extends Component {
       clearFilters();
       this.setState({ searchText: '' });
     };
+    handleDelete = (key) => {
+      deleteUser().then(res=>{console.log(key)})
+    };
     componentDidMount(){
       this.getStudent()
     }
@@ -136,7 +144,12 @@ export default class User extends Component {
         title: 'Action',
         dataIndex: '',
         key: 'x',
-        render: () => <a>Delete</a>,
+        render: (_, record) =>
+          this.state.data.length >= 1 ? (
+            <Popconfirm title="Sure to delete?" onConfirm={() => this.handleDelete(record.key)}>
+              <a>Delete</a>
+            </Popconfirm>
+          ) : null,
       },
       {
         title: 'Action',
@@ -149,18 +162,14 @@ export default class User extends Component {
   
     return <div>
        <Button style={{marginBottom:'40px'}} variant="primary" 
-      //  onClick={this.handleShow} 
-       onClick={() => this.setState({visible:true})}>Create Students</Button> 
+       onClick={this.handleShow}>Create Students</Button> 
        
        
       <Table columns={columns} dataSource={this.state.data} />;
 
-      <Modal  title="Modal 1000px width"
-        centered
-        visible={this.state.visible}
-        onOk={() => this.setState({visible:false})}
-        onCancel={() => this.setState({visible:false})}
-        width={1000} >
+      <Modal
+      fullscreen={true}
+        show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -227,7 +236,14 @@ export default class User extends Component {
 <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Individual type" />
   </Form.Group></Form></Modal.Body>
-    
+        <Modal.Footer>
+          <Button variant="secondary" onClick={this.handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={this.handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
       </Modal>
 
 
@@ -321,19 +337,7 @@ export default class User extends Component {
           </Button>
         </Modal.Footer>
       </Modal>
-     
-      <Modal
-        title="Modal 1000px width"
-        centered
-        visible={this.state.visible}
-        onOk={() => this.setState({visible:false})}
-        onCancel={() => this.setState({visible:false})}
-        width={1000}
-      >
-        <p>some contents...</p>
-        <p>some contents...</p>
-        <p>some contents...</p>
-      </Modal>
+    
 
     </div>;
   }
