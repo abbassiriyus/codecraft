@@ -9,7 +9,6 @@ export default class User extends Component {
     state={
         show:false,
         show1:false,
-    
         count:0,
          searchText: '',
       searchedColumn: '', 
@@ -103,8 +102,17 @@ export default class User extends Component {
       this.setState({ searchText: '' });
     };
     handleDelete = (key) => {
-      deleteUser().then(res=>{console.log(key)})
-    };
+      deleteUser(key).then(res=>{alert("o`chirib tashladik")})
+    }
+    PostUser=()=>{
+      const user={
+        first_name:document.querySelector('#formBasicFirst').text,
+      }
+      console.log(user)
+    }
+
+
+
     componentDidMount(){
       this.getStudent()
     }
@@ -143,10 +151,10 @@ export default class User extends Component {
       {
         title: 'Action',
         dataIndex: '',
-        key: 'x',
+        key: 'id',
         render: (_, record) =>
-          this.state.data.length >= 1 ? (
-            <Popconfirm title="Sure to delete?" onConfirm={() => this.handleDelete(record.key)}>
+          this.state.data.length >= 1? (
+            <Popconfirm title="Sure to delete?" onConfirm={() => this.handleDelete(record.id)}>
               <a>Delete</a>
             </Popconfirm>
           ) : null,
@@ -154,8 +162,8 @@ export default class User extends Component {
       {
         title: 'Action',
         dataIndex: '',
-        key: 'x',
-        render: () => <a>Edit</a>,
+        key: 'id',
+        render: (_, record) => <a onClick={()=>this.handleShow1()}>Edit</a>,
       },
     ];
 
@@ -165,8 +173,8 @@ export default class User extends Component {
        onClick={this.handleShow}>Create Students</Button> 
        
        
-      <Table columns={columns} dataSource={this.state.data} />;
-
+      <Table columns={columns} dataSource={this.state.data} />
+<Button onClick={this.PostUser}>testbutton</Button>
       <Modal
       fullscreen={true}
         show={this.state.show} onHide={this.handleClose}>
@@ -175,11 +183,11 @@ export default class User extends Component {
         </Modal.Header>
         <Modal.Body style={{display:'flex'}}><Form style={{display:'block',width:'50%',padding:'30px'}}>
   
-  <Form.Group className="mb-3" controlId="formBasicUser">
+  <Form.Group className="mb-3" controlId="formBasicFirst">
     <Form.Label>First name</Form.Label>
     <Form.Control type="email" className="mb-3" placeholder="Enter first name" />
   </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
+  <Form.Group className="mb-3" controlId="formBasicLast">
     <Form.Label>Last name</Form.Label>
     <Form.Control type="email" className="mb-3" placeholder="Enter last name<" />
   </Form.Group>
@@ -248,7 +256,7 @@ export default class User extends Component {
 
 
 
-<Modal fullscreen={true} visible={this.state.show1} onHide={this.handleClose1} animation={false}>
+<Modal fullscreen={true} show={this.state.show1} onHide={this.handleClose1} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Modal header</Modal.Title>
         </Modal.Header>

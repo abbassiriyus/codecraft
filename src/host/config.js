@@ -9,9 +9,10 @@ export let getStudents = () => {
     };
     return httpRequest(config);
   }
-  export const deleteUser= (id) => {
+
+  export const deleteUser= key => {
   let config = {
-      url: `${host}/users/${id}/`,
+      url: `${host}/users/${key}/`,
       method: "delete",
     };
     return httpRequest(config);
