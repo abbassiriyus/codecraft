@@ -24,6 +24,7 @@ import Accordion from './accordion'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import '../App.css'
 import Python from './Python'
+import Scratch from './Scratch'
 
 export default class Navbarr extends Component {
   
@@ -58,6 +59,7 @@ export default class Navbarr extends Component {
       <Route exact path="/" element={<div style={{marginTop:'0px'}}><Dashboard/><Nashprinsip/><Kurs/><Xabaryuborish/><Accordion/></div>}/>
       <Route path="/teamId" element={<Narxlar />} />
       <Route path="/python" element={<Python/>} />
+      <Route path="/scratch" element={<Scratch/>} />
       <Route path="/new" element={<Allpreyekt />} />
     </Routes>
   </BrowserRouter>
