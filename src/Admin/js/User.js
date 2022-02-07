@@ -105,10 +105,27 @@ export default class User extends Component {
       deleteUser(key).then(res=>{alert("o`chirib tashladik")})
     }
     PostUser=()=>{
+      document.querySelector('#formBasicFirst').value=""
+      document.querySelector('#formBasicLast').value=""
+      document.querySelector('#formBasicPat').value=""
+      document.querySelector('#formBasicBirth').value=""
+      document.querySelector('#formBasicTel').value=""
+      document.querySelector('#formBasicTel1').value=""
+      document.querySelector('#formBasicImages').value=""
+      document.querySelector('#formBasicNote').value=""
       const user={
-        first_name:document.querySelector('#formBasicFirst').text,
+        'first_name':document.querySelector('#formBasicFirst').value,
+        'last_name':document.querySelector('#formBasicLast').value,
+        'patronymic':document.querySelector('#formBasicPat').value,
+        'birthdate':document.querySelector('#formBasicBirth').value,
+        'phone_number':document.querySelector('#formBasicTel').value,
+        'extra_phone_numbers':document.querySelector('#formBasicTel1').value,
+        'profile_photo':document.querySelector('#formBasicImages').value,
+        'notes':document.querySelector('#formBasicNote').value,
+        
       }
       console.log(user)
+      this.handleClose()
     }
 
 
@@ -174,58 +191,117 @@ export default class User extends Component {
        
        
       <Table columns={columns} dataSource={this.state.data} />
-<Button onClick={this.PostUser}>testbutton</Button>
+
       <Modal
       fullscreen={true}
         show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Yangi talaba qo`shish</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{display:'flex'}}><Form style={{display:'block',width:'50%',padding:'30px'}}>
   
-  <Form.Group className="mb-3" controlId="formBasicFirst">
-    <Form.Label>First name</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter first name" />
+  <Form.Group className="mb-3" >
+    <Form.Label>First name<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" className="mb-3" id="formBasicFirst" placeholder="Enter first name" />
   </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicLast">
-    <Form.Label>Last name</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter last name<" />
+  <Form.Group className="mb-3" >
+    <Form.Label>Last name<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" className="mb-3" id="formBasicLast" placeholder="Enter last name<" />
   </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
+  <Form.Group className="mb-3" >
     <Form.Label>Patronimic</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter patronimic" />
+    <Form.Control type="email" className="mb-3" id="formBasicPat" placeholder="Enter patronimic" />
   </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Birthdate</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter birthdate" />
+  <Form.Group className="mb-3" >
+    <Form.Label>Birthdate<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="date" className="mb-3" id="formBasicBirth" placeholder="Enter birthdate" />
   </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Telefon number</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter telefon number" />
+  <Form.Group className="mb-3" >
+    <Form.Label>Telefon number <sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" className="mb-3" id="formBasicTel" placeholder="Enter telefon number" />
   </Form.Group> 
-   <Form.Group className="mb-3" controlId="formBasicUser">
+   <Form.Group className="mb-3" >
     <Form.Label>Extra telefon number</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter email" />
+    <Form.Control type="email" className="mb-3" id="formBasicTel1" placeholder="Enter email" />
+  </Form.Group>
+  <Form.Group className="mb-3">
+  <Form.Label>Position<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+  <Form.Select aria-label="Default select example"  id="formBasicPos">
+     <option value="s">Student</option>
+  <option value="p">Ota-ona</option>
+  <option value="i">Instructor</option>
+  <option value="a">Admin</option>
+</Form.Select></Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Profil foto</Form.Label>
+    <Form.Control type="file" className="mb-3" id="formBasicImages" placeholder="Images" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Notes</Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Check type="checkbox" id="formBasicBlock" label="Block" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Check type="checkbox" label="Deleted" />
+  </Form.Group>
+
+<Form.Group className="mb-3" >
+    <Form.Check type="checkbox" label="Individual type" />
   </Form.Group>
 </Form>
 <Form style={{display:'block',width:'50%',padding:'30px'}}>
-<Form.Group className="mb-3" controlId="formBasicUser">
-  <Form.Label>Position</Form.Label>
-  <Form.Select aria-label="Default select example">
-     <option value="1">Student</option>
-  <option value="2">Ota-ona</option>
-  <option value="3">Instructor</option>
-  <option value="4">Admin</option>
-</Form.Select></Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Profil foto</Form.Label>
-    <Form.Control type="images" className="mb-3" placeholder="Enter email" />
+
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport Address<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
   </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Notes</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter email" />
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport number<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
   </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport serial<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport who give<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport when give<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport file<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="file" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport file1<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="file" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Office address</Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Office bank account</Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Office bank code</Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Office inn</Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Office licence file</Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+  {/* <Form.Group className="mb-3" controlId="formBasicUser">
     <Form.Label>Course</Form.Label>
   <Form.Select aria-label="Default select example">
      <option value="1">Scratch</option>
@@ -233,22 +309,13 @@ export default class User extends Component {
   <option value="3">Backent</option>
   <option value="4">graph</option>
 </Form.Select>
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Block" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Deleted" />
-  </Form.Group>
-
-<Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Individual type" />
-  </Form.Group></Form></Modal.Body>
+  </Form.Group> */}
+</Form></Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={this.handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={this.handleClose}>
+          <Button variant="primary"   onClick={this.PostUser}>
             Save Changes
           </Button>
         </Modal.Footer>
