@@ -49,7 +49,7 @@ export default class kurs extends Component {
             <MDBCardText>
             <p>Javascript - это один из самых востребованных языков программирования на сегодня. Владея этим языком, можно создавать почти всё: веб-сайты, игры и программы для любых электронных устройств,и архитектуру сайта.</p>
             </MDBCardText>
-            <a href="/#xabar"> Подробнее</a>
+            <a href="/javascript"> Подробнее</a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
