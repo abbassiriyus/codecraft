@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { deleteUser, getStudents } from '../../host/config'
+import { deleteUser, getStudents, postUsers } from '../../host/config'
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
 import { Table, Input, Button, Space, Popconfirm,} from 'antd';
 import { Form , Modal } from 'react-bootstrap';
 import axios from 'axios';
+
 export default class User extends Component {
     state={
         show:false,
@@ -19,7 +20,7 @@ export default class User extends Component {
     handleClose1 = () => this.setState({show1:false});
     handleShow1 = () => this.setState({show1:true});
     
-    getStudent=()=>{
+    getStudent=()=>{ 
       getStudents().then(res=>{this.setState({data:res.data}) 
       console.log("ok") }).then(err=>{console.log('error')}) 
     }
@@ -105,33 +106,55 @@ export default class User extends Component {
       deleteUser(key).then(res=>{alert("o`chirib tashladik")})
     }
     PostUser=()=>{
-      document.querySelector('#formBasicFirst').value=""
-      document.querySelector('#formBasicLast').value=""
-      document.querySelector('#formBasicPat').value=""
-      document.querySelector('#formBasicBirth').value=""
-      document.querySelector('#formBasicTel').value=""
-      document.querySelector('#formBasicTel1').value=""
+   
+      
+      var user={
+        first_name:document.querySelector('#formBasicFirst').value,
+        last_name:document.querySelector('#formBasicLast').value,
+        patronymic:document.querySelector('#formBasicPat').value,
+        birthdate:document.querySelector('#formBasicBirth').value,
+        phone_number:document.querySelector('#formBasicTel').value,
+        extra_phone_numbers:document.querySelector('#formBasicTel1').value,
+        profile_photo:document.querySelector('#formBasicImages').value,
+        notes:document.querySelector('#formBasicNote').value,
+        passport_address:document.querySelector('#passport_address').value,
+        passport_number:document.querySelector('#passport_number').value,
+        passport_serial:document.querySelector('#passport_serial').value,
+        passport_who_give:document.querySelector('#passport_who_give').value,
+        passport_when_give:document.querySelector('#passport_when_give').value,
+        passport_file:document.querySelector('#passport_file').value,
+        position:document.querySelector('#position').value,
+        // 'passport_file1':
+        // 'office_address':
+        // 'office_bank_account':
+        // 'office_bank_code':
+        // 'office_inn':
+
+
+
+      }
+axios.post('http://62.209.129.38:8000/api/users/', {user} ).then((response)=>{
+  console.log(response);
+})
+.catch((error)=> {
+  console.log("ishlamadi");
+});
+      this.handleClose()
+    }
+    Byvalue=()=>{
       document.querySelector('#formBasicImages').value=""
       document.querySelector('#formBasicNote').value=""
-      const user={
-        'first_name':document.querySelector('#formBasicFirst').value,
-        'last_name':document.querySelector('#formBasicLast').value,
-        'patronymic':document.querySelector('#formBasicPat').value,
-        'birthdate':document.querySelector('#formBasicBirth').value,
-        'phone_number':document.querySelector('#formBasicTel').value,
-        'extra_phone_numbers':document.querySelector('#formBasicTel1').value,
-        'profile_photo':document.querySelector('#formBasicImages').value,
-        'notes':document.querySelector('#formBasicNote').value,
-        
-      }
-      console.log(user)
-      this.handleClose()
+      document.querySelector('#formBasicPat').value=""
+      document.querySelector('#formBasicTel1').value=""
     }
 
 
 
     componentDidMount(){
+
       this.getStudent()
+
+
     }
   
   render() {
@@ -186,19 +209,110 @@ export default class User extends Component {
 
   
     return <div>
-       <Button style={{marginBottom:'40px'}} variant="primary" 
+       <Button onChange={this.Byvalue} style={{marginBottom:'40px'}} variant="primary" 
        onClick={this.handleShow}>Create Students</Button> 
        
        
-      <Table columns={columns} dataSource={this.state.data} />
+      <Table  columns={columns} dataSource={this.state.data} />
 
-      <Modal
+      <Modal 
       fullscreen={true}
         show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Yangi talaba qo`shish</Modal.Title>
+          <Modal.Title>instructor yoki admin qo`shish</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{display:'flex'}}><Form style={{display:'block',width:'50%',padding:'30px'}}>
+  
+  <Form.Group className="mb-3" >
+    <Form.Label>First name<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" className="mb-3" id="formBasicFirst" placeholder="Enter first name" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Last name<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" className="mb-3" id="formBasicLast" placeholder="Enter last name<" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Patronimic</Form.Label>
+    <Form.Control type="email" className="mb-3" id="formBasicPat" placeholder="Enter patronimic" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Birthdate<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="date" className="mb-3" id="formBasicBirth" placeholder="Enter birthdate" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Telefon number <sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" className="mb-3" id="formBasicTel" placeholder="Enter telefon number" />
+  </Form.Group> 
+   <Form.Group className="mb-3" >
+    <Form.Label>Extra telefon number</Form.Label>
+    <Form.Control type="email" className="mb-3" id="formBasicTel1" placeholder="Enter email" />
+  </Form.Group>
+  <Form.Group className="mb-3">
+  <Form.Label>Position<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+  <Form.Select aria-label="Default select example"  id="position">
+  <option value="i">Instructor</option>
+  <option value="a">Admin</option>
+</Form.Select></Form.Group>
+ <Form.Group className="mb-3" >
+    <Form.Label>Notes</Form.Label>
+    <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
+  </Form.Group>
+ 
+</Form>
+<Form style={{display:'block',width:'50%',padding:'30px'}}>
+<Form.Group className="mb-3" >
+    <Form.Label>Profil foto</Form.Label>
+    <Form.Control type="file" className="mb-3" id="formBasicImages" placeholder="Images" />
+  </Form.Group>
+ 
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport Address<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" id="passport_address" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport number<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" id="passport_number" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport serial<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" id="passport_serial" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport who give<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" id="passport_who_give" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport when give<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="email" id="passport_when_give" className="mb-3" placeholder="text" />
+  </Form.Group>
+  <Form.Group className="mb-3" >
+    <Form.Label>Passport file<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="file" id="passport_file" className="mb-3" placeholder="text" />
+  </Form.Group>
+
+</Form></Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={this.handleClose}>
+            Close
+          </Button>
+          <Button variant="primary"   onClick={this.PostUser}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+
+
+{/* <Modal fullscreen={true} show={this.state.show1} onHide={this.handleClose1} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal header</Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{display:'flex'}}><Form style={{display:'block',width:'50%',padding:'30px'}}>
+  <Form.Group className="mb-3" controlId="formBasicUser">
+    <Form.Label>Id</Form.Label>
+    <Form.Control type="email"   aria-label="Disabled input example"
+    readOnly className="mb-3" placeholder="1213121" />
+  </Form.Group>
   
   <Form.Group className="mb-3" >
     <Form.Label>First name<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
@@ -252,8 +366,7 @@ export default class User extends Component {
   </Form.Group>
 </Form>
 <Form style={{display:'block',width:'50%',padding:'30px'}}>
-
-  <Form.Group className="mb-3" >
+<Form.Group className="mb-3" >
     <Form.Label>Passport Address<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
     <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
   </Form.Group>
@@ -301,103 +414,10 @@ export default class User extends Component {
     <Form.Label>Office licence file</Form.Label>
     <Form.Control type="email" id="formBasicNote" className="mb-3" placeholder="text" />
   </Form.Group>
-  {/* <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Course</Form.Label>
-  <Form.Select aria-label="Default select example">
-     <option value="1">Scratch</option>
-  <option value="2">Web front-end</option>
-  <option value="3">Backent</option>
-  <option value="4">graph</option>
-</Form.Select>
-  </Form.Group> */}
-</Form></Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={this.handleClose}>
-            Close
-          </Button>
-          <Button variant="primary"   onClick={this.PostUser}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
-
-
-
-<Modal fullscreen={true} show={this.state.show1} onHide={this.handleClose1} animation={false}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal header</Modal.Title>
-        </Modal.Header>
-        <Modal.Body style={{display:'flex'}}><Form style={{display:'block',width:'50%',padding:'30px'}}>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Id</Form.Label>
-    <Form.Control type="email"   aria-label="Disabled input example"
-    readOnly className="mb-3" placeholder="1213121" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>First name</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter first name" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Last name</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter last name<" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Patronimic</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter patronimic" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Birthdate</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter birthdate" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Telefon number</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter telefon number" />
-  </Form.Group> 
-   <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Extra telefon number</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter email" />
-  </Form.Group>
-</Form>
-<Form style={{display:'block',width:'50%',padding:'30px'}}>
-<Form.Group className="mb-3" controlId="formBasicUser">
-  <Form.Label>Position</Form.Label>
-  <Form.Select aria-label="Default select example">
-     <option value="1">Student</option>
-  <option value="2">Ota-ona</option>
-  <option value="3">Instructor</option>
-  <option value="4">Admin</option>
-</Form.Select></Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Profil foto</Form.Label>
-    <Form.Control type="images" className="mb-3" placeholder="Enter email" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Notes</Form.Label>
-    <Form.Control type="email" className="mb-3" placeholder="Enter email" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicUser">
-    <Form.Label>Course</Form.Label>
-  <Form.Select aria-label="Default select example">
-     <option value="1">Scratch</option>
-  <option value="2">Web front-end</option>
-  <option value="3">Backent</option>
-  <option value="4">graph</option>
-</Form.Select>
-  </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicUser">
     <Form.Label>Create date</Form.Label>
     <Form.Control type="email"   aria-label="Disabled input example"
     readOnly className="mb-3" placeholder="1213121" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Block" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Deleted" />
-  </Form.Group>
-
-<Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Individual type" />
   </Form.Group></Form>
 </Modal.Body>
         <Modal.Footer>
@@ -411,7 +431,7 @@ export default class User extends Component {
             Save Changes
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
     
 
     </div>;

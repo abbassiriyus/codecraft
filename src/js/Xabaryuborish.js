@@ -26,9 +26,10 @@ export default class Xabaryuborish extends Component {
 yuborish=()=>{
 var t=document.querySelector('#tel').value;
 var f=document.querySelector('#fam').value;
-var i=document.querySelector('#ism').value
+var i=document.querySelector('#ism').value 
   axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=462196488&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+'998'+`${t}`)
   axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=5087964552&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+'998'+`${t}`)
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=897831465&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+`+'%2B'+'998'+${t}`)
   axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=710414046&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+`+'%2B'+'998'+${t}`)
   t.length==9?(alert("Заявка принята мы свяжемся с вами в течении часа")):(alert("не правильно введён номер"))
 }

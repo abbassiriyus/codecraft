@@ -17,6 +17,8 @@ import Nashprinsip from './Nashprinsip'
 import Narxlar from './Narxlar'
 import { Map, Placemark, YMaps } from 'react-yandex-maps';
 import Allpreyekt from './Allpreyekt'
+import Allpreyekt2 from './Allpreyekt2'
+import Admin from '../Admin/js/Menu1'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Kurs from './kurs'
 import Xabaryuborish from './Xabaryuborish'
@@ -34,7 +36,7 @@ export default class Navbarr extends Component {
               <div id='body'></div>
               <div className={s.tel}><a  href="tel:+998 99 584 55 51"><BsFillTelephoneFill style={{color:'green'}}/></a></div>
                               {/* navbar */}
-             <Navbar style={{position:'fixed'}}  expand="lg" className={s.navbar}>
+             <Navbar style={{position:'fixed',zIndex:'13232'}}  expand="lg" className={s.navbar}>
   <div class='container-fluid'>
     <Navbar.Brand href="/#"><img className={s.brend} src={rasm1} alt=' '/></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border:'none',boxShadow:'none',position:'relative',right:'20px'}}><FaBars/></Navbar.Toggle>
@@ -61,6 +63,8 @@ export default class Navbarr extends Component {
       <Route path="/python" element={<Python/>} />
       <Route path="/scratch" element={<Scratch/>} />
       <Route path="/new" element={<Allpreyekt />} />
+      <Route path="/new2" element={<Allpreyekt2 />} />
+      <Route path="/tush1232" element={<Admin />} />
     </Routes>
   </BrowserRouter>
 

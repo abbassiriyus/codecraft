@@ -17,3 +17,11 @@ export let getStudents = () => {
     };
     return httpRequest(config);
   };
+  export const postUsers= (formDataObj) => {
+    let config = {
+        url: `${host}/users/`,
+        method: "post",
+        data: formDataObj
+      };
+      return httpRequest(config);
+    };
