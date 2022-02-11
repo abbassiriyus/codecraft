@@ -27,6 +27,7 @@ import { BsFillTelephoneFill } from 'react-icons/bs'
 import '../App.css'
 import Python from './Python'
 import Scratch from './Scratch'
+import Javaskript from './Javaskript';
 
 export default class Navbarr extends Component {
   
@@ -62,6 +63,7 @@ export default class Navbarr extends Component {
       <Route path="/teamId" element={<Narxlar />} />
       <Route path="/python" element={<Python/>} />
       <Route path="/scratch" element={<Scratch/>} />
+      <Route path="/javascript" element={<Javaskript />} />
       <Route path="/new" element={<Allpreyekt />} />
       <Route path="/new2" element={<Allpreyekt2 />} />
       <Route path="/tush1232" element={<Admin />} />
