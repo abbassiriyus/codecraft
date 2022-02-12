@@ -11,15 +11,29 @@ import {
 } from '@ant-design/icons';
 
 import User from './User';
-
+import Admin from './Teach/Admin'
+import Instructor from './Teach/Instructor'
+import Student from './Teach/Student'
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
 export default class Menu1 extends Component {
   state = {
     collapsed: false,
+    oyna:0
   };
-
+user=()=>{
+  this.setState({oyna:2})
+}
+student=()=>{
+  this.setState({oyna:3})
+}
+Instruktr=()=>{
+  this.setState({oyna:4})
+}
+admin=()=>{
+  this.setState({oyna:5})
+}
   onCollapse = collapsed => {
     console.log(collapsed);
     this.setState({ collapsed });
@@ -35,18 +49,16 @@ export default class Menu1 extends Component {
             <Menu.Item key="1" icon={<PieChartOutlined />}>
               Option 1
             </Menu.Item>
-            <Menu.Item key="2" icon={<DesktopOutlined />}>
-              Option 2
-            </Menu.Item>
-            <SubMenu key="sub1" icon={<UserOutlined />} title="User">
-              <Menu.Item key="3">Students</Menu.Item>
-              <Menu.Item key="4">Instructor</Menu.Item>
-              <Menu.Item key="5">Parents</Menu.Item>
-              <Menu.Item key="6">Admin</Menu.Item>
+            <SubMenu key="sub1" icon={<UserOutlined />} title="Teach">
+            <Menu.Item key="2" onClick={this.user}>User</Menu.Item>
+              <Menu.Item key="3" onClick={this.student}>Students</Menu.Item>
+              <Menu.Item key="4" onClick={this.Instruktr}>Instructor</Menu.Item>
+              <Menu.Item key="5" onClick={this.admin}>Admin</Menu.Item>
+
             </SubMenu>
             <SubMenu key="sub2" icon={<TeamOutlined />} title="Groups">
-              <Menu.Item key="7">Team 1</Menu.Item>
-              <Menu.Item key="8">Team 2</Menu.Item>
+              <Menu.Item key="6">Team 1</Menu.Item>
+              <Menu.Item key="7">Team 2</Menu.Item>
             </SubMenu>
             <Menu.Item key="9" icon={<FileOutlined />}>
               Files
@@ -58,10 +70,7 @@ export default class Menu1 extends Component {
           <Content style={{ margin: '0 16px' }}>
             
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-
-              {/* asdasdfasfasdfasdfasdfas */}
-              <User/>
-              {/* <Group1 /> */}
+{this.state.oyna==1?(<h1>tahrir</h1>):(this.state.oyna==2?(<h1><User/></h1>):(this.state.oyna==3?(<h1><Student/></h1>):(this.state.oyna==4?(<h1><Instructor/></h1>):(<h1><Admin/></h1>))))}
             </div>
           </Content>
           <Footer style={{ textAlign: 'center' }}>Ant Design ©2022 Created by Abbas</Footer>

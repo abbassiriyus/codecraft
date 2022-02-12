@@ -67,7 +67,7 @@ Sc5=()=>{
     <div>
         
     {this.state.key?(<div> <header className={scratch.header1} style={{zIndex:'1323'}}>
-       <h1 className={scratch.idi1} id='id1'>Scratch это-</h1>
+       <h1 className={scratch.idi1} id='id1' >Scratch это-</h1>
         </header>
        
         <Button style={{position:'fixed',zIndex:'100',opacity:'0.6'}} onClick={this.Uz}>Uz</Button>
@@ -147,26 +147,26 @@ Sc5=()=>{
        <h1 className={scratch.idi1} id='id1' style={{fontSize:'50px'}}>Scratchning afzalliklar va qo`shimcha imkoniyatlari</h1>
         </header> */}
     <Button style={{position:'fixed',zIndex:'100',opacity:'0.6'}} onClick={this.Ru}>Rus</Button>
-<div style={{position:'fixed',right:'0px',top:'300px',zIndex:'21312'}}>
-<div style={{display:'flex',position:'fixed',right:'0px',top:'300px',zIndex:'21312' }}>
-  <a className={scratch.scratch1} style={{padding:'20px',backgroundColor:'white',paddingTop:'0px',paddingBottom:'0px'}} href="#s1" id='sc1'>Scratch nima?</a><Button onClick={this.Sc1}> </Button></div>
-<div style={{display:'flex',position:'fixed',right:'0px',top:'340px',zIndex:'21312' }}>
-  <a className={scratch.scratch2} style={{padding:'20px',backgroundColor:'white',paddingTop:'0px',paddingBottom:'0px'}} href="#s2" id='sc2'>Foydalanish</a><Button onClick={this.Sc2}> </Button></div>
-<div style={{display:'flex',position:'fixed',right:'0px',top:'380px',zIndex:'21312' }}>
-  <a className={scratch.scratch3} style={{padding:'20px',backgroundColor:'white',paddingTop:'0px',paddingBottom:'0px'}} href="#s3" id='sc3'>Maqsadimiz</a><Button onClick={this.Sc3}> </Button></div>
-<div style={{display:'flex',position:'fixed',right:'0px',top:'420px',zIndex:'21312' }}>
-  <a className={scratch.scratch4} style={{padding:'20px',backgroundColor:'white',paddingTop:'0px',paddingBottom:'0px'}} href="#s4" id='sc4'>Scratchda yaratilgan o`yinlar</a><Button onClick={this.Sc4}> </Button></div>
-<div style={{display:'flex',position:'fixed',right:'0px',top:'460px',zIndex:'21312' }}>
-  <a className={scratch.scratch5} style={{padding:'20px',backgroundColor:'white',paddingTop:'0px',paddingBottom:'0px'}} href="#s5" id='sc5'>Savollar</a><Button onClick={this.Sc5}> </Button></div>
+<div style={{position:'fixed',right:'0px',top:'100px',zIndex:'21312'}}>
+<div style={{display:'flex',position:'fixed',right:'0px',top:'100px',zIndex:'21312' }}>
+  <a className={scratch.scratch1} style={{padding:'20px',backgroundColor:'white',paddingTop:'0px',paddingBottom:'0px'}} href="#s1" id='sc1'>Scratch nima?</a><Button onClick={this.Sc1} onDoubleClick={this.start}> </Button></div>
+<div style={{display:'flex',position:'fixed',right:'0px',top:'140px',zIndex:'21312' }}>
+  <a className={scratch.scratch2} style={{padding:'20px',backgroundColor:'white',paddingTop:'0px',paddingBottom:'0px'}} href="#s2" id='sc2'>Foydalanish</a><Button onClick={this.Sc2} onDoubleClick={this.start}> </Button></div>
+<div style={{display:'flex',position:'fixed',right:'0px',top:'180px',zIndex:'21312' }}>
+  <a className={scratch.scratch3} style={{padding:'20px',backgroundColor:'white',paddingTop:'0px',paddingBottom:'0px'}} href="#s3" id='sc3'>Maqsadimiz</a><Button onClick={this.Sc3} onDoubleClick={this.start}> </Button></div>
+<div style={{display:'flex',position:'fixed',right:'0px',top:'220px',zIndex:'21312' }}>
+  <a className={scratch.scratch4} style={{padding:'20px',backgroundColor:'white',paddingTop:'0px',paddingBottom:'0px'}} href="#s4" id='sc4'>Scratchda yaratilgan o`yinlar</a><Button onClick={this.Sc4} onDoubleClick={this.start} > </Button></div>
+<div style={{display:'flex',position:'fixed',right:'0px',top:'260px',zIndex:'21312' }}>
+  <a className={scratch.scratch5} style={{padding:'20px',backgroundColor:'white',paddingTop:'0px',paddingBottom:'0px'}} href="#s5" id='sc5'>Savollar</a><Button onClick={this.Sc5} onDoubleClick={this.start}> </Button></div>
 </div>
 
     <div class="section-container">
   <section id='s1'>
-    <h1 style={{padding:'50px',fontFamily:'fanatic',fontSize:'60px',color:'orange'}}>Scratch  bloklarga asoslangan dasturlash yordamida interaktiv hikoyalar, o'yinlar , badiiy , simulyatsiya va boshqalarni yaratish uchun vositalar mavjud .</h1>
+    <h1 style={{padding:'100px',fontFamily:'fanatic',fontSize:'60px',color:'orange'}}  id={scratch.anim}>Scratch  bloklarga asoslangan dasturlash yordamida interaktiv hikoyalar, o'yinlar , badiiy , simulyatsiya va boshqalarni yaratish uchun mo`ljallangan dasturlash tili` .</h1>
   </section>
   <section id='s2'>
-    <div style={{display:'flex'}}><img style={{width:'50%',padding:'80px'}} src='https://www.kangaroopert.com/wp-content/uploads/2018/01/scratch-project-1-vid.gif'/>
-    <h1 style={{width:'50%',padding:'80px',fontFamily:'fanatic',fontSize:'35px',color:'orange'}}  >Scratch - bu asosan kodni o'rganishda yordam beradigan 8-16 yoshdagi bolalarga mo'ljallangan blokli vizual dasturlash tili va veb-sayti. Sayt foydalanuvchilari Internetda blokga o'xshash interfeys yordamida loyihalar yaratishlari mumkin. Xizmat MIT Media Lab tomonidan ishlab chiqilgan , 70 dan ortiq tillarga tarjima qilingan va dunyoning aksariyat qismlarida qo'llaniladi. Scratch maktabdan keyingi markazlarda, maktablarda va kollejlarda, shuningdek boshqa jamoat bilimlari muassasalarida o'qitiladi va qo'llaniladi.
+    <div style={{display:'flex'}}><img style={{width:'50%',padding:'40px',margin:'40px'}} className={scratch.rasmmm}  src='https://www.kangaroopert.com/wp-content/uploads/2018/01/scratch-project-1-vid.gif'/>
+    <h1 style={{width:'50%',padding:'80px',fontFamily:'fanatic',fontSize:'35px',color:'orange'}} id={scratch.anim} >Scratch - bu asosan kodni o'rganishda yordam beradigan 8-16 yoshdagi bolalarga mo'ljallangan blokli vizual dasturlash tili va veb-sayti. Sayt foydalanuvchilari Internetda blokga o'xshash interfeys yordamida loyihalar yaratishlari mumkin. Xizmat MIT Media Lab tomonidan ishlab chiqilgan , 70 dan ortiq tillarga tarjima qilingan va dunyoning aksariyat qismlarida qo'llaniladi. Scratch maktabdan keyingi markazlarda, maktablarda va kollejlarda, shuningdek boshqa jamoat bilimlari muassasalarida o'qitiladi va qo'llaniladi.
       </h1></div>
   </section>
   <section id='s3'>

@@ -22,7 +22,7 @@ export default class User extends Component {
     
     getStudent=()=>{ 
       getStudents().then(res=>{this.setState({data:res.data}) 
-      console.log("ok") }).then(err=>{console.log('error')}) 
+       })
     }
   
     getColumnSearchProps = dataIndex => ({
@@ -115,14 +115,14 @@ export default class User extends Component {
         birthdate:document.querySelector('#formBasicBirth').value,
         phone_number:document.querySelector('#formBasicTel').value,
         extra_phone_numbers:document.querySelector('#formBasicTel1').value,
-        profile_photo:document.querySelector('#formBasicImages').value,
+        // profile_photo:document.querySelector('#formBasicImages').value,
         notes:document.querySelector('#formBasicNote').value,
         passport_address:document.querySelector('#passport_address').value,
         passport_number:document.querySelector('#passport_number').value,
         passport_serial:document.querySelector('#passport_serial').value,
         passport_who_give:document.querySelector('#passport_who_give').value,
         passport_when_give:document.querySelector('#passport_when_give').value,
-        passport_file:document.querySelector('#passport_file').value,
+        // passport_file:document.querySelector('#passport_file').value,
         position:document.querySelector('#position').value,
         // 'passport_file1':
         // 'office_address':
@@ -133,19 +133,22 @@ export default class User extends Component {
 
 
       }
-axios.post('http://62.209.129.38:8000/api/users/', {user} ).then((response)=>{
-  console.log(response);
+      console.log(user)
+axios.post('http://62.209.129.38:8000/api/users/', user).then((response)=>{
+  console.log("Post bajarildi", response);
+  console.log("user info ketdi:", user);
 })
 .catch((error)=> {
-  console.log("ishlamadi");
+  console.log("Post error: ", error);
 });
       this.handleClose()
     }
     Byvalue=()=>{
-      document.querySelector('#formBasicImages').value=""
+      document.querySelector('#formBasicImages').value=null
       document.querySelector('#formBasicNote').value=""
       document.querySelector('#formBasicPat').value=""
       document.querySelector('#formBasicTel1').value=""
+      document.querySelector('#passport_file').value=null
     }
 
 
@@ -210,7 +213,7 @@ axios.post('http://62.209.129.38:8000/api/users/', {user} ).then((response)=>{
   
     return <div>
        <Button onChange={this.Byvalue} style={{marginBottom:'40px'}} variant="primary" 
-       onClick={this.handleShow}>Create Students</Button> 
+       onClick={this.handleShow}>Create User</Button> 
        
        
       <Table  columns={columns} dataSource={this.state.data} />
