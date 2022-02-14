@@ -2,9 +2,19 @@ import { host,httpRequest,access_token } from './host'
 
 
 
-export let getStudents = () => {
+export let getUsers = () => {
     let config = {
       url: `${host}/users/`,
+      method: "GET",
+        headers: {
+          'Authorization': `Token ${access_token}`
+        }
+    };
+    return httpRequest(config);
+  }
+  export let getStudents = () => {
+    let config = {
+      url: `${host}/students/`,
       method: "GET",
         headers: {
           'Authorization': `Token ${access_token}`
@@ -43,6 +53,17 @@ export let getStudents = () => {
     };
     return httpRequest(config);
   };
+
+  export const deleteStudent= key => {
+    let config = {
+        url: `${host}/users/${key}/`,
+        method: "delete",
+        headers: {
+          'Authorization': `Token ${access_token}`,
+        }
+      };
+      return httpRequest(config);
+    };
   export const postUsers= (formDataObj) => {
     let config = {
         url: `${host}/users/`,

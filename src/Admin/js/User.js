@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { deleteUser, getStudents, postUsers } from '../../host/config'
+import { deleteUser, getUsers, postUsers } from '../../host/config'
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
 import { Table, Input, Button, Space, Popconfirm,} from 'antd';
@@ -21,7 +21,7 @@ export default class User extends Component {
     handleShow1 = () => this.setState({show1:true});
     
     getStudent=()=>{ 
-      getStudents().then(res=>{this.setState({data:res.data}) 
+      getUsers().then(res=>{this.setState({data:res.data}) 
        })
     }
   

@@ -20,7 +20,7 @@ const { SubMenu } = Menu;
 export default class Menu1 extends Component {
   state = {
     collapsed: false,
-    oyna:0
+    oyna:1
   };
 user=()=>{
   this.setState({oyna:2})

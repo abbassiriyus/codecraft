@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { deleteUser, getStudents, postUsers } from '../../../host/config'
+import { deleteStudent, getStudents, postUsers } from '../../../host/config'
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
 import { Table, Input, Button, Space, Popconfirm,} from 'antd';
@@ -22,7 +22,12 @@ export default class Student extends Component {
     handleShow1 = () => this.setState({show1:true});
     
     getStudent=()=>{ 
-      getStudents().then(res=>{this.setState({data:res.data}) 
+      getStudents().then(res=>{
+     
+          this.setState({data:res.data.filter(element=>element.student)})  
+        
+        
+       
        })
     }
   
@@ -104,63 +109,65 @@ export default class Student extends Component {
       this.setState({ searchText: '' });
     };
     handleDelete = (key) => {
-      deleteUser(key).then(res=>{alert("o`chirib tashladik")})
+      deleteStudent(key).then(res=>{alert("o`chirib tashladik")})
     }
     PostUser=()=>{
    
       
       var user={
 
-parents:{
+"parent":{
 
-        first_name:document.querySelector('#formBasicFirst').value,
-        last_name:document.querySelector('#formBasicLast').value,
-        patronymic:document.querySelector('#formBasicPat').value,
-        birthdate:document.querySelector('#formBasicBirth').value,
-        phone_number:document.querySelector('#formBasicTel').value,
-        extra_phone_numbers:document.querySelector('#formBasicTel1').value,
-        // profile_photo:document.querySelector('#formBasicImages').value,
-        notes:document.querySelector('#formBasicNote').value,
-        passport_address:document.querySelector('#passport_address').value,
-        passport_number:document.querySelector('#passport_number').value,
-        passport_serial:document.querySelector('#passport_serial').value,
-        passport_who_give:document.querySelector('#passport_who_give').value,
-        passport_when_give:document.querySelector('#passport_when_give').value,
-        // passport_file:document.querySelector('#passport_file').value,
-        position:"p",
-        // 'passport_file1':
-        // 'office_address':
-        // 'office_bank_account':
-        // 'office_bank_code':
-        // 'office_inn':
+        "first_name":document.querySelector('#formBasicFirst').value,
+        "last_name":document.querySelector('#formBasicLast').value,
+        "patronymic":document.querySelector('#formBasicPat').value,
+        "birthdate":document.querySelector('#formBasicBirth').value,
+        "phone_number":document.querySelector('#formBasicTel').value,
+        "extra_phone_numbers":document.querySelector('#formBasicTel1').value,
+        "profile_photo":null,
+        "notes":document.querySelector('#formBasicNote').value,
+        "passport_address":document.querySelector('#passport_address').value,
+        "passport_number":document.querySelector('#passport_number').value,
+        "passport_serial":document.querySelector('#passport_serial').value,
+        "passport_who_give":document.querySelector('#passport_who_give').value,
+        "passport_when_give":document.querySelector('#passport_when_give').value,
+        "individual_type": false,
+        "passport_file": null,
+        "passport_file1": null,
+        "office_address": "",
+        "office_bank_account": "",
+        "office_bank_code": "",
+        "office_inn": "",
+        "office_licence_file": null
 },
-student:{
-  first_name:document.querySelector('#formBasicFirstO').value,
-  last_name:document.querySelector('#formBasicLastO').value,
-  patronymic:document.querySelector('#formBasicPatO').value,
-  birthdate:document.querySelector('#formBasicBirthO').value,
-  phone_number:document.querySelector('#formBasicTelO').value,
-  extra_phone_numbers:document.querySelector('#formBasicTel1O').value,
-  // profile_photo:document.querySelector('#formBasicImages').value,
-  notes:document.querySelector('#formBasicNoteO').value,
-  passport_address:document.querySelector('#passport_addressO').value,
-  passport_number:document.querySelector('#passport_numberO').value,
-  passport_serial:document.querySelector('#passport_serialO').value,
-  passport_who_give:document.querySelector('#passport_who_giveO').value,
-  passport_when_give:document.querySelector('#passport_when_giveO').value,
-  // passport_file:document.querySelector('#passport_file').value,
-  position:"s",
-  // 'passport_file1':
-  // 'office_address':
-  // 'office_bank_account':
-  // 'office_bank_code':
-  // 'office_inn':
+"student":{
+  "first_name":document.querySelector('#formBasicFirstO').value,
+  "last_name":document.querySelector('#formBasicLastO').value,
+  "patronymic":document.querySelector('#formBasicPatO').value,
+  "birthdate":document.querySelector('#formBasicBirthO').value,
+  "phone_number":document.querySelector('#formBasicTelO').value,
+  "extra_phone_numbers":document.querySelector('#formBasicTel1O').value,
+  "profile_photo":null,
+  "notes":document.querySelector('#formBasicNoteO').value,
+  "passport_address":document.querySelector('#passport_addressO').value,
+  "passport_number":document.querySelector('#passport_numberO').value,
+  "passport_serial":document.querySelector('#passport_serialO').value,
+  "passport_who_give":document.querySelector('#passport_who_giveO').value,
+  "passport_when_give":document.querySelector('#passport_when_giveO').value,
+  "individual_type": false,
+  "passport_file": null,
+  "passport_file1": null,
+  "office_address": "",
+  "office_bank_account": "",
+  "office_bank_code": "",
+  "office_inn": "",
+  "office_licence_file": null
 }
 
 
       }
       console.log(user)
-axios.post('http://62.209.129.38:8000/api/students/', {user} , {
+axios.post('http://62.209.129.38:8000/api/students/', user , {
   headers: {
     'Authorization': `Token ${access_token}` 
   }
@@ -222,7 +229,7 @@ axios.post('http://62.209.129.38:8000/api/students/', {user} , {
         sortDirections: ['descend', 'ascend'],
       },
       {
-        title: 'Action',
+        title: 'Delete',
         dataIndex: '',
         key: 'id',
         render: (_, record) =>
@@ -238,6 +245,12 @@ axios.post('http://62.209.129.38:8000/api/students/', {user} , {
         key: 'id',
         render: (_, record) => <a onClick={()=>this.handleShow1()}>Edit</a>,
       },
+      {
+        title: 'Action',
+        dataIndex: '',
+        key: 'id',
+        render: (_, record) => <a onClick={()=>this.handleShow2()}>More</a>,
+      },
     ];
 
   
@@ -246,7 +259,7 @@ axios.post('http://62.209.129.38:8000/api/students/', {user} , {
        onClick={this.handleShow}>Create Student</Button> 
        
        
-      <Table  columns={columns} dataSource={this.state.data} />
+      <Table  columns={columns} dataSource={this.state.data.student} />
 
    
    
