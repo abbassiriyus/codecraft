@@ -201,6 +201,8 @@ axios.post('http://62.209.129.38:8000/api/students/', user , {
       {
         title: 'id',
         render: (record) => record.student.id,
+        sorter: (a, b) => a.student.id - b.student.id,
+        sortDirections: ['descend', 'ascend'],
       },
       {
         title: 'last_name',
@@ -211,13 +213,12 @@ axios.post('http://62.209.129.38:8000/api/students/', user , {
       {
         title: 'first_name',
         render: (record) => record.student.first_name,
+        sorter: (a, b) => a.student.first_name.length - b.student.first_name.length,
+        sortDirections: ['descend', 'ascend'],
       },
       {
         title: 'patronymic',
-        render: (record) => record.student.first_name,
-        sorter: (a, b) => a.patronymic.length - b.patronymic.length,
-        sortDirections: ['descend', 'ascend'],
-       
+        render: (record) => record.student.patronymic,
       },
       {
         title: 'Delete',

@@ -107,8 +107,6 @@ export default class User extends Component {
       deleteUser(key).then(res=>{alert("o`chirib tashladik")})
     }
     PostUser=()=>{
-   
-      
       var user={
         first_name:document.querySelector('#formBasicFirst').value,
         last_name:document.querySelector('#formBasicLast').value,

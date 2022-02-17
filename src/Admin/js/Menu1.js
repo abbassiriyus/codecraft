@@ -14,6 +14,7 @@ import User from './User';
 import Admin from './Teach/Admin'
 import Instructor from './Teach/Instructor'
 import Student from './Teach/Student'
+import Addstudent from './Addstudent';
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
@@ -37,6 +38,10 @@ admin=()=>{
 course=()=>{
   this.setState({oyna:6})
 }
+addStudent=()=>{
+  this.setState({oyna:7})
+}
+
   onCollapse = collapsed => {
     console.log(collapsed);
     this.setState({ collapsed });
@@ -61,7 +66,7 @@ course=()=>{
             </SubMenu>
             <SubMenu key="sub2" icon={<TeamOutlined />} title="Groups">
               <Menu.Item key="6" onClick={this.course}>Course</Menu.Item>
-              <Menu.Item key="7">Team 2</Menu.Item>
+              <Menu.Item key="7" onClick={this.addStudent}>Couese add student</Menu.Item>
             </SubMenu>
             <Menu.Item key="9" icon={<FileOutlined />}>
               Files
@@ -73,7 +78,17 @@ course=()=>{
           <Content style={{ margin: '0 16px' }}>
             
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-{this.state.oyna==1?(<h1>tahrir</h1>):(this.state.oyna==2?(<h1><User/></h1>):(this.state.oyna==3?(<h1><Student/></h1>):(this.state.oyna==4?(<h1><Instructor/></h1>):(this.state.oyna==5?(<h1><Admin/></h1>):(<h1><Group1/></h1>)))))}
+{this.state.oyna==1?(<h1>tahrir</h1>):(this.state.oyna==2?(<h1><User/></h1>
+):(
+  this.state.oyna==3?(<h1><Student/></h1>
+  ):(
+    this.state.oyna==4?(<h1><Instructor/></h1>
+    ):(
+      this.state.oyna==5?(<h1><Admin/></h1>
+      ):(
+        this.state.oyna==6?(<h1><Group1/></h1>
+          ):(
+          <h1><Addstudent/></h1>))))))}
             </div>
           </Content>
           <Footer style={{ textAlign: 'center' }}>Ant Design ©2022 Created by Abbas</Footer>

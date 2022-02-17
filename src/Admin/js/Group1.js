@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Input, Button, Space } from 'antd';
+import { Table, Input, Button, Space, Popconfirm } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
 import { getGroup } from '../../host/config';
@@ -140,6 +140,29 @@ export default class Group1 extends React.Component {
         ...this.getColumnSearchProps('end_date'),
         sorter: (a, b) => a.end_date.length - b.end_date.length,
         sortDirections: ['descend', 'ascend'],
+      },
+      {
+        title: 'Action',
+        dataIndex: '',
+        key: 'id',
+        render: (_, record) =>
+          this.state.data.length >= 1? (
+            <Popconfirm title="Sure to delete?" onConfirm={() => this.handleDelete(record.id)}>
+              <a>Delete</a>
+            </Popconfirm>
+          ) : null,
+      },
+      {
+        title: 'Action',
+        dataIndex: '',
+        key: 'id',
+        render: (_, record) => <a onClick={()=>this.handleShow1()}>Edit</a>,
+      },
+      {
+        title: 'Add student',
+        dataIndex: '',
+        key: 'id',
+        render: (_, record) => <a onClick={()=>this.handleShow1()}>Add</a>,
       },
     ];
     return <Table columns={columns} dataSource={this.state.data} />;
