@@ -12,25 +12,24 @@ export default class Student extends Component {
         show:false,
         show1:false,
         count:0,
-         searchText: '',
-      searchedColumn: '', 
-      data:[],
+        searchText: '',
+        searchedColumn: '', 
+        data:[],
     }
      handleClose = () => this.setState({show:false});
     handleShow = () => this.setState({show:true});
     handleClose1 = () => this.setState({show1:false});
     handleShow1 = () => this.setState({show1:true});
-    
+      
+
+
     getStudent=()=>{ 
       getStudents().then(res=>{
-     
-          this.setState({data:res.data.filter(element=>element.student)})  
-        
-        
-       
+          this.setState({data:res.data})  
        })
     }
-  
+
+    
     getColumnSearchProps = dataIndex => ({
       filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
         <div style={{ padding: 8 }}>
@@ -198,35 +197,27 @@ axios.post('http://62.209.129.38:8000/api/students/', user , {
     }
   
   render() {
-    const columns = [
+    const columns= [
       {
         title: 'id',
-        dataIndex: 'id',
-        key: 'id',
-        width: '30%',
-        ...this.getColumnSearchProps('id'),
+        render: (record) => record.student.id,
       },
       {
         title: 'last_name',
-        dataIndex: 'last_name',
-        key: 'last_name',
-        width: '30%',
-        ...this.getColumnSearchProps('last_name'),
+        render: (record) => record.student.last_name,
+        sorter: (a, b) => a.student.last_name.length - b.student.last_name.length,
+        sortDirections: ['descend', 'ascend'],
       },
       {
         title: 'first_name',
-        dataIndex: 'first_name',
-        key: 'first_name',
-        width: '20%',
-        ...this.getColumnSearchProps('first_name'),
+        render: (record) => record.student.first_name,
       },
       {
         title: 'patronymic',
-        dataIndex: 'patronymic',
-        key: 'patronymic',
-        ...this.getColumnSearchProps('patronymic'),
+        render: (record) => record.student.first_name,
         sorter: (a, b) => a.patronymic.length - b.patronymic.length,
         sortDirections: ['descend', 'ascend'],
+       
       },
       {
         title: 'Delete',
@@ -259,7 +250,7 @@ axios.post('http://62.209.129.38:8000/api/students/', user , {
        onClick={this.handleShow}>Create Student</Button> 
        
        
-      <Table  columns={columns} dataSource={this.state.data.student} />
+      <Table  columns={columns} dataSource={this.state.data} />
 
    
    

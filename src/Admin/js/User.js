@@ -22,6 +22,7 @@ export default class User extends Component {
     
     getStudent=()=>{ 
       getUsers().then(res=>{this.setState({data:res.data}) 
+      console.log(res.data)
        })
     }
   
@@ -133,10 +134,8 @@ export default class User extends Component {
 
 
       }
-      console.log(user)
 axios.post('http://62.209.129.38:8000/api/users/', user).then((response)=>{
-  console.log("Post bajarildi", response);
-  console.log("user info ketdi:", user);
+  alert("Ma`lumot yubordi")
 })
 .catch((error)=> {
   console.log("Post error: ", error);
@@ -154,10 +153,7 @@ axios.post('http://62.209.129.38:8000/api/users/', user).then((response)=>{
 
 
     componentDidMount(){
-
       this.getStudent()
-
-
     }
   
   render() {

@@ -76,3 +76,16 @@ export let getUsers = () => {
       };
       return httpRequest(config);
     };
+
+    export let getGroup = () => {
+      let config = {
+        url: `${host}/groups/`,
+        method: "GET",
+          headers: {
+            'Authorization': `Token ${access_token}`
+          }
+      };
+      return httpRequest(config);
+    }
+
+
