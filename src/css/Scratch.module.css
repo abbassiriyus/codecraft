@@ -25,7 +25,7 @@ min-height: 400px;
     background-color: white;
     position: sticky;
     margin: 00px 0px 0px 0px;
-    box-shadow: 5px 5px 10px 5px #888888;
+    box-shadow: 3px 3px 10px 2px #c9c7c7;
     
 top: 6rem;
 right: 0;
@@ -111,8 +111,7 @@ margin-left: 0%;
     padding: 5px;
 }
 .hrefLi :hover{
-    text-shadow: 0 0 3px blue;
-    color: brown;
+    color: black;
     
 }
 #fluid{
@@ -179,7 +178,7 @@ margin-left: 0%;
   }
 
   .imgPython{
-      width: 600px;
+      width: 100%;
   }
 
   @media(max-width:911px){
@@ -248,7 +247,44 @@ min-height: 300px;
         left: 0px;
     } 
 }
+.rasmm{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
-
+}
+.rasmmm{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.rasmmm{
+    animation: infinite;
+    animation-duration: 3s;
+    animation-name: anima;
+}
+#anim{
+    animation: infinite;
+    animation-duration: 3s;
+    animation-name: anima1;
+}
+.rasmm:hover{
+    z-index: 22;
+    animation: infinite;
+    animation-duration: 3s;
+    animation-name: anima;
+scale: 1.1;
+background-color: #ffffff;
+}
+@keyframes anima {
+        0% { top: 0; left: 0; }
+        30% { top: 50px; }
+        68%, 72% { left: 50px; }
+        100% { top: 100px; left: 100px; }
+}
+@keyframes anima1 {
+    0% { transform: scale(0.9); }
+    25% { transform: scale(1);  }
+    50% { transform: scale(0.9); }
+    75% { transform: scale(1); }
+    100% {transform: scale(0.9); }
+}
 
 
