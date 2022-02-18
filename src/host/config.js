@@ -9,6 +9,7 @@ export let getStudents = () => {
     };
     return httpRequest(config);
   }
+
   export const deleteUser= (id) => {
   let config = {
       url: `${host}/users/${id}/`,
@@ -16,3 +17,20 @@ export let getStudents = () => {
     };
     return httpRequest(config);
   };
+
+  export let getContact=()=>{
+    let config = {
+      url:`${host}/contact/`,
+      method: 'GET',
+    };
+    return httpRequest(config);
+  }
+  export let getContactPut=()=>{
+    let config = {
+      url:`${host}/contact/`,
+      method: 'PUT',
+    };
+    return httpRequest(config);
+  }
+  
+
