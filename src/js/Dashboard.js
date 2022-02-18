@@ -35,7 +35,7 @@ export default class Dashboard extends Component {
 <li>Индивидуально с профессиональным преподавателем</li>
 <li>Мы научим вашего ребенка программировать!</li></Bounce>
 
-<a href='#xabar' style={{textDecoration:'none',color:'white'}} className={s.myButton}>Записаться на бесплатный мастер-класс</a>
+<a href='#xabar' style={{textDecoration:'none',color:'white'}} className={s.myButton}>Записатьсия за бесплатный мастер-класс</a>
 </ul>
 
 </div>
@@ -52,7 +52,6 @@ export default class Dashboard extends Component {
   <Row className={s.chet}>
     <Col  lg={{order:'first'}} lg={4} md={12} >
     
-      
 <div style={{display:'flex'}} className={s.kard} >
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " style={{borderRadius:'50%'}} src={kopmboa} /></div>
       <div style={{display:'block'}}>

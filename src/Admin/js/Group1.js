@@ -1,8 +1,8 @@
 import React from 'react';
-import { Table, Input, Button, Space, Popconfirm } from 'antd';
+import { Table, Input, Button, Space } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
-import { getGroup } from '../../host/config';
+import { getStudents } from '../../host/config';
 
 
 export default class Group1 extends React.Component {
@@ -12,7 +12,7 @@ export default class Group1 extends React.Component {
     data:[]
   };
   getStudent=()=>{
-    getGroup().then(res=>{this.setState({data:res.data}) 
+    getStudents().then(res=>{this.setState({data:res.data}) 
     console.log("ok") }).then(err=>{console.log('error')}) 
   }
 
@@ -100,69 +100,26 @@ export default class Group1 extends React.Component {
   render() {
     const columns = [
       {
-        title: 'classroom_building',
-        dataIndex: 'classroom_building',
-        key: 'classroom_building',
+        title: 'username',
+        dataIndex: 'username',
+        key: 'username',
         width: '30%',
-        ...this.getColumnSearchProps('classroom_building'),
+        ...this.getColumnSearchProps('username'),
       },
       {
-        title: 'classroom_room',
-        dataIndex: 'classroom_room',
-        key: 'classroom_room',
+        title: 'first_name',
+        dataIndex: 'first_name',
+        key: 'first_name',
         width: '20%',
-        ...this.getColumnSearchProps('classroom_room'),
+        ...this.getColumnSearchProps('first_name'),
       },
       {
-        title: 'short_title',
-        render: (record) => record.course.short_title,
-        sorter: (a, b) => a.course.short_title.length - b.course.short_title.length,
+        title: 'patronymic',
+        dataIndex: 'patronymic',
+        key: 'patronymic',
+        ...this.getColumnSearchProps('patronymic'),
+        sorter: (a, b) => a.patronymic.length - b.patronymic.length,
         sortDirections: ['descend', 'ascend'],
-      },
-      {
-        title: 'price',
-        render: (record) => record.course.price,
-        sorter: (a, b) => a.price - b.price,
-        sortDirections: ['descend', 'ascend'],
-      },
-      {
-        title: 'start_date',
-        dataIndex: 'start_date',
-        key: 'start_date',
-        ...this.getColumnSearchProps('start_date'),
-        sorter: (a, b) => a.start_date.length - b.start_date.length,
-        sortDirections: ['descend', 'ascend'],
-      },
-      {
-        title: 'end_date',
-        dataIndex: 'end_date',
-        key: 'end_date',
-        ...this.getColumnSearchProps('end_date'),
-        sorter: (a, b) => a.end_date.length - b.end_date.length,
-        sortDirections: ['descend', 'ascend'],
-      },
-      {
-        title: 'Action',
-        dataIndex: '',
-        key: 'id',
-        render: (_, record) =>
-          this.state.data.length >= 1? (
-            <Popconfirm title="Sure to delete?" onConfirm={() => this.handleDelete(record.id)}>
-              <a>Delete</a>
-            </Popconfirm>
-          ) : null,
-      },
-      {
-        title: 'Action',
-        dataIndex: '',
-        key: 'id',
-        render: (_, record) => <a onClick={()=>this.handleShow1()}>Edit</a>,
-      },
-      {
-        title: 'Add student',
-        dataIndex: '',
-        key: 'id',
-        render: (_, record) => <a onClick={()=>this.handleShow1()}>Add</a>,
       },
     ];
     return <Table columns={columns} dataSource={this.state.data} />;
