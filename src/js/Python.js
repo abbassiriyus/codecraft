@@ -9,7 +9,7 @@ const Python = () => {
     return (
         <div>
             <header className={python.header1}>
-               <h1 id='d1'> Python — что это такое</h1>
+               <h1 className={python.idi1} id='id1'> Python — что это такое</h1>
                 </header>
                 
                    <div className='container-fluid' id={python.fluid}>
@@ -122,17 +122,6 @@ const Python = () => {
                            </div>
                        </div>
                    </div>
-                        
-                        
-                   
-                
-
-            
-
-            
-
-
-            
         </div>
     );
 };
