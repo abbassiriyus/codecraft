@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import SelectSearch from 'react-select-search/dist/cjs/index.js';
 export default class Addstudent extends Component {
     state={
         options:[
