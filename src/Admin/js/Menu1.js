@@ -15,14 +15,19 @@ import Admin from './Teach/Admin'
 import Instructor from './Teach/Instructor'
 import Student from './Teach/Student'
 import Addstudent from './Addstudent';
+import Call from './Tahrir/Call';
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
 export default class Menu1 extends Component {
   state = {
     collapsed: false,
-    oyna:3
+    oyna:1
   };
+
+  tahrir=()=>{
+    this.setState({oyna:1})
+  }
 user=()=>{
   this.setState({oyna:2})
 }
@@ -54,8 +59,8 @@ addStudent=()=>{
         <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
           <div className="logo" style={{height:'70px'}}/>
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-            <Menu.Item key="1" icon={<PieChartOutlined />}>
-              Option 1
+            <Menu.Item key="1" icon={<PieChartOutlined />} onClick={this.tahrir}>
+              Tahrir
             </Menu.Item>
             <SubMenu key="sub1" icon={<UserOutlined />} title="Teach">
             <Menu.Item key="2" onClick={this.user}>User</Menu.Item>
@@ -78,7 +83,9 @@ addStudent=()=>{
           <Content style={{ margin: '0 16px' }}>
             
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-{this.state.oyna==1?(<h1>tahrir</h1>):(this.state.oyna==2?(<h1><User/></h1>
+{this.state.oyna==1?(<h1><Call/></h1>
+):(
+  this.state.oyna==2?(<h1><User/></h1>
 ):(
   this.state.oyna==3?(<h1><Student/></h1>
   ):(

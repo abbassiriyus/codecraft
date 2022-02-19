@@ -7,10 +7,6 @@ import koz from '../img/koz.png'
 import ochkiy from '../img/ochkiy.png'
 import yulduz from '../img/yulduz.png'
 import axios from 'axios';
-import CountryPhoneInput, { ConfigProvider } from 'antd-country-phone-input';
-
-// Usually you only need to import ConfigProvider & CSS once in App.js/App.tsx
-// CSS order is important!
 import 'antd/dist/antd.css';
 import 'antd-country-phone-input/dist/index.css';
 

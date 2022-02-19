@@ -53,6 +53,16 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   };
+  export const deleteGroup= key => {
+    let config = {
+        url: `${host}/group-students/${key}/`,
+        method: "delete",
+        headers: {
+          'Authorization': `Token ${access_token}`,
+        }
+      };
+      return httpRequest(config);
+    };
 
   export const deleteStudent= key => {
     let config = {
@@ -88,4 +98,28 @@ export let getUsers = () => {
       return httpRequest(config);
     }
 
+    export let getContact= () => {
+      let config = {
+        url: `${host}/contact/`,
+        method: "GET",
+          headers: {
+            'Authorization': `Token ${access_token}`
+          }
+      };
+      
+      return httpRequest(config);
+    }
+
+    export let putContact= (data) => {
+      let config = {
+    
+        url: `${host}/contact/`,
+        method: "PUT",
+          headers: {
+            'Authorization': `Token ${access_token}`
+          }
+      };
+      
+      return httpRequest(config);
+    }
 
