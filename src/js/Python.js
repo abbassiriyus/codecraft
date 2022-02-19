@@ -20,7 +20,7 @@ const Python = () => {
                 <div className={python.dropdown}>
                     <button className={python.dropbtn}>   <img className={python.dropbtnImg} alt=" " src={imgTogle} />  </button>
                     <div className={python.dropdownContent}>
-                        <a href='#id' > Python — что это такое </a>
+                        <a href='#id1' > Python — что это такое </a>
                         <a href='#id2' > Для чего нужен язык программирования Python </a>
                         <a href='#id3' > История создания </a>
                         <a href='#id4' > Возможности языка </a>
