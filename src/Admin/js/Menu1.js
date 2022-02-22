@@ -22,7 +22,7 @@ const { SubMenu } = Menu;
 export default class Menu1 extends Component {
   state = {
     collapsed: false,
-    oyna:1
+    oyna:6
   };
 
   tahrir=()=>{
@@ -71,7 +71,7 @@ addStudent=()=>{
             </SubMenu>
             <SubMenu key="sub2" icon={<TeamOutlined />} title="Groups">
               <Menu.Item key="6" onClick={this.course}>Course</Menu.Item>
-              <Menu.Item key="7" onClick={this.addStudent}>Couese add student</Menu.Item>
+              <Menu.Item key="7" onClick={this.addStudent}>Group student</Menu.Item>
             </SubMenu>
             <Menu.Item key="9" icon={<FileOutlined />}>
               Files

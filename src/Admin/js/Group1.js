@@ -13,7 +13,8 @@ export default class Group1 extends React.Component {
     searchedColumn: '',
     show:false,
     show1:false,
-    data:[]
+    data:[],
+    dataCourse:[]
   };
 
 
@@ -157,6 +158,7 @@ export default class Group1 extends React.Component {
 }
 
 
+
     }
     console.log(user)
 axios.post('http://62.209.129.38:8000/api/groups/', user , {
@@ -172,7 +174,15 @@ console.log("Post error: ", error);
 });
     this.handleClose()
   }
-
+  openmodal=(id)=>{
+ var output=this.state.data.filter(key=>(key.id==id))
+  this.setState({dataCourse:output})
+  console.log(output)
+  this.handleShow1()
+  }
+  openStudent=()=>{
+    
+  }
   componentDidMount(){
       this.getStudent()
   }
@@ -242,7 +252,7 @@ console.log("Post error: ", error);
         title: 'Add student',
         dataIndex: '',
         key: 'id',
-        render: (_, record) => <a onClick={()=>this.handleShow1()}>Add</a>,
+        render: (_, record) => <a onClick={()=>this.openmodal(record.id)}>Add</a>,
       },
     ];
     return<div>
@@ -325,6 +335,40 @@ console.log("Post error: ", error);
             Save Changes
           </Button>
         </Modal.Footer>
-      </Modal></div>
+      </Modal>
+      
+      
+      <Modal show={this.state.show1} onHide={this.handleClose1} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal header</Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{display:'flex'}}>
+          <Form style={{display:'block',padding:'30px'}}>
+  <Form.Group className="mb-3">
+  <Form.Label>Position<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+  <Form.Select aria-label="Default select example"  id="formBasicPos">
+     <option value="s">Student</option>
+</Form.Select></Form.Group>
+  </Form>
+</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={this.handleClose1}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={this.handleClose1}>
+            Create document
+          </Button>
+          <Button variant="primary" onClick={this.handleClose1}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      
+      
+      
+      
+      
+      
+      </div>
   }
 }

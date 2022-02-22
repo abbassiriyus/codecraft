@@ -1,21 +1,22 @@
 import React, { Component } from 'react'
+import { Form } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export default class Addstudent extends Component {
-    state={
-        options:[
-            {name: 'Swedish', value: 'sv'},
-            {name: 'English', value: 'en'},
-            {
-                type: 'group',
-                name: 'Group name',
-                items: [
-                    {name: 'Spanish', value: 'es'},
-                ]
-            },
-        ]
-    }
+
   render() {
     return (
-<div></div>
+<div>
+<Form.Select aria-label="Default select example">
+  <option>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</Form.Select>
+
+
+
+</div>
         )
   }
 }
