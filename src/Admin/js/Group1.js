@@ -200,8 +200,6 @@ getGroupS(id).then(res=>{
         // },
       "points":this.state.dataCourse.points,
       "certificate":this.state.dataCourse.certificate,
-      "contract_no":this.state.dataCourse.contract_no,
-      "contract":this.state.dataCourse.contract,
       "discount":this.state.dataCourse.discount,
       "confirmed":this.state.dataCourse.confirmed,
       "group":this.state.dataCourse.group

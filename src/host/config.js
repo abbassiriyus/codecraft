@@ -63,6 +63,16 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   };
+  export const deleteSG1= key => {
+    let config = {
+        url: `${host}/group-students/${key}/`,
+        method: "delete",
+        headers: {
+          'Authorization': `Token ${access_token}`,
+        }
+      };
+      return httpRequest(config);
+    };
   export const deleteGroup= key => {
     let config = {
         url: `${host}/group-students/${key}/`,
@@ -117,6 +127,18 @@ export let getUsers = () => {
       };
       return httpRequest(config);
     }
+
+    export let getCourseS = (id) => {
+      let config = {
+        url: `${host}/group-students/?gr=${id}`,
+        method: "GET",
+          headers: {
+            'Authorization': `Token ${access_token}`
+          }
+      };
+      return httpRequest(config);
+    }
+
     export let getContact= () => {
       let config = {
         url: `${host}/contact/`,
