@@ -22,6 +22,16 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   }
+  export let getStudent1 = () => {
+    let config = {
+      url: `${host}/users/?only=s`,
+      method: "GET",
+        headers: {
+          'Authorization': `Token ${access_token}`
+        }
+    };
+    return httpRequest(config);
+  }
   export let getAdmins = () => {
     let config = {
       url: `${host}/admins/`,
@@ -97,7 +107,16 @@ export let getUsers = () => {
       };
       return httpRequest(config);
     }
-
+    export let getGroupS = (id) => {
+      let config = {
+        url: `${host}/group-students/${id}`,
+        method: "GET",
+          headers: {
+            'Authorization': `Token ${access_token}`
+          }
+      };
+      return httpRequest(config);
+    }
     export let getContact= () => {
       let config = {
         url: `${host}/contact/`,

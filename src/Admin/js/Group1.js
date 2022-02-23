@@ -2,7 +2,7 @@ import React from 'react';
 import { Table, Input, Button, Space, Popconfirm } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
-import { getGroup,deleteGroup } from '../../host/config';
+import { getGroup,getGroupS,deleteGroup,getStudent1} from '../../host/config';
 import { Form, Modal } from 'react-bootstrap';
 import axios from 'axios';
 import { access_token } from '../../host/host';
@@ -14,7 +14,9 @@ export default class Group1 extends React.Component {
     show:false,
     show1:false,
     data:[],
-    dataCourse:[]
+    dataCourse:[],
+    dataStudent:[],
+    studentId:0
   };
 
 
@@ -175,20 +177,69 @@ console.log("Post error: ", error);
     this.handleClose()
   }
   openmodal=(id)=>{
- var output=this.state.data.filter(key=>(key.id==id))
-  this.setState({dataCourse:output})
-  console.log(output)
+getGroupS(id).then(res=>{
+  this.setState({dataCourse:res.data})
+  console.log(res.data)
+})
   this.handleShow1()
   }
+
+  postStudent=(id1)=>{
+    this.setState({studentId:id1})
+    console.log(id1)
+  }
+  postObject=()=>{ 
+  const  user={
+      "student":this.state.studentId,
+      //{
+          // "first_name": this.state.studentId.first_name,
+          // "last_name": this.state.studentId.last_name,
+          // "patronymic":this.state.studentId.patronymic,
+          // "position": "s",
+        //   "id": this.state.studentId.id
+        // },
+      "points":this.state.dataCourse.points,
+      "certificate":this.state.dataCourse.certificate,
+      "contract_no":this.state.dataCourse.contract_no,
+      "contract":this.state.dataCourse.contract,
+      "discount":this.state.dataCourse.discount,
+      "confirmed":this.state.dataCourse.confirmed,
+      "group":this.state.dataCourse.group
+  } 
+  console.log(user)
+  axios.post('http://62.209.129.38:8000/api/group-students/', user , {
+    headers: {
+      'Authorization': `Token ${access_token}` 
+    }
+    }).then((response)=>{
+    console.log("Post bajarildi", response);
+    console.log("user info ketdi:", user);
+    })
+    .catch((error)=> {
+    console.log("Post error: ", error);
+    });
+        this.handleClose1()
+      } 
+
+  
   openStudent=()=>{
-    
+    getStudent1().then(res=>{
+ this.setState({dataStudent:res.data})
+    }) 
   }
   componentDidMount(){
       this.getStudent()
+      this.openStudent()
   }
 
   render() {
     const columns = [
+      {
+        title: 'id',
+        dataIndex: 'id',
+        key: 'id',
+        ...this.getColumnSearchProps('id'),
+      },
       {
         title: 'classroom_building',
         dataIndex: 'classroom_building',
@@ -347,7 +398,7 @@ console.log("Post error: ", error);
   <Form.Group className="mb-3">
   <Form.Label>Position<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
   <Form.Select aria-label="Default select example"  id="formBasicPos">
-     <option value="s">Student</option>
+    {this.state.dataStudent.map(item=>{return <option onClick={()=>this.postStudent(item.id)} value="s">{item.first_name} {item.last_name} {item.patronymic} {item.id}</option>})}
 </Form.Select></Form.Group>
   </Form>
 </Modal.Body>
@@ -355,10 +406,8 @@ console.log("Post error: ", error);
           <Button variant="secondary" onClick={this.handleClose1}>
             Close
           </Button>
-          <Button variant="primary" onClick={this.handleClose1}>
-            Create document
-          </Button>
-          <Button variant="primary" onClick={this.handleClose1}>
+         
+          <Button variant="primary" onClick={()=>this.postObject()}>
             Save Changes
           </Button>
         </Modal.Footer>
