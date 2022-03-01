@@ -21,11 +21,12 @@ export default class Xabaryuborish extends Component {
 yuborish=()=>{
 var t=document.querySelector('#tel').value;
 var f=document.querySelector('#fam').value;
+var f1=document.querySelector('#fam1').value;
 var i=document.querySelector('#ism').value 
-  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=462196488&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`)
-  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=5087964552&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`)
-  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=897831465&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`)
-  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=710414046&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`)
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=462196488&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=5087964552&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=897831465&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=710414046&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
   t.length==13?(alert("Заявка принята мы свяжемся с вами в течении часа")):(alert("не правильно введён номер"))
 }
 componentDidMount(){
@@ -48,6 +49,10 @@ componentDidMount(){
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Фамилия</Form.Label>
     <Form.Control id='fam' type="text" placeholder="введите фамилию..." />
+  </Form.Group>
+  <Form.Group className="mb-3" controlId="formBasicPassword1">
+    <Form.Label>Название курса</Form.Label>
+    <Form.Control id='fam1' type="text" placeholder="Название курса " />
   </Form.Group>
   
   <Form.Group className="mb-3" controlId="formBasicPassword">

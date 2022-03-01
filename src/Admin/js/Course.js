@@ -2,12 +2,12 @@ import React from 'react';
 import { Table, Input, Button, Space, Popconfirm } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
-import { getGroup,getGroupS,deleteGroup,getStudent1} from '../../host/config';
+import { getCourse,getGroupS,deleteGroup,} from '../../host/config';
 import { Form, Modal } from 'react-bootstrap';
 import axios from 'axios';
 import { access_token } from '../../host/host';
 
-export default class Group1 extends React.Component {
+export default class Course extends React.Component {
   state = {
     searchText: '',
     searchedColumn: '',
@@ -15,8 +15,6 @@ export default class Group1 extends React.Component {
     show1:false,
     data:[],
     dataCourse:[],
-    dataStudent:[],
-    studentId:0
   };
 
 
@@ -26,7 +24,7 @@ export default class Group1 extends React.Component {
   handleShow1 = () => this.setState({show1:true});
 
   getStudent=()=>{
-    getGroup().then(res=>{this.setState({data:res.data}) 
+    getCourse().then(res=>{this.setState({data:res.data}) 
     console.log("ok") }).then(err=>{console.log('error')}) 
   }
 
@@ -115,9 +113,6 @@ export default class Group1 extends React.Component {
    
       
     var user={
-
-"course":{
-
       "short_title":document.querySelector('#formBasicFirst').value,
       "title":document.querySelector('#formBasicLast').value,
       "price":document.querySelector('#formBasicPat').value,
@@ -126,23 +121,19 @@ export default class Group1 extends React.Component {
       "lesson_duration":document.querySelector('#formBasicTel1').value,
       "min_students":document.querySelector('#formBasicNote1').value,
       "max_students":document.querySelector('#formBasicNote2').value,
-      "description_file":document.querySelector('#passport_address').files,
-      "title_image":document.querySelector('#passport_number').files,
-      "cover_image":document.querySelector('#passport_serial').files,
+      // "description_file":document.querySelector('#passport_address').files,
+      // "title_image":document.querySelector('#passport_number').files,
+      // "cover_image":document.querySelector('#passport_serial').files,
       "deleted":document.querySelector('#passport_who_give').value,
       "notes":document.querySelector('#passport_when_give').value,
       "course_section_id": document.querySelector('#passport_file').value,
       "publicized": document.querySelector('#publicized').checked,
       "curriculum": document.querySelector('#curriculum').value,
       "required_course_id": document.querySelector('#required_course_id').value,
-},
-"start_date": document.querySelector('#date1').value,
-"end_date":document.querySelector('#date2').value,
-"classroom_building":document.querySelector('#school').value,
-"classroom_room": document.querySelector('#room').value,
 }
+
 console.log(user)
-axios.post('http://62.209.129.38:8000/api/groups/', user , {
+axios.post('http://62.209.129.38:8000/api/courses/', user , {
 headers: {
   'Authorization': `Token ${access_token}` 
 }
@@ -163,50 +154,8 @@ getGroupS(id).then(res=>{
   this.handleShow1()
   }
 
-  postStudent=(id1)=>{
-    this.setState({studentId:id1})
-    console.log(id1)
-  }
-  postObject=()=>{ 
-  const  user={
-      "student":this.state.studentId,
-      //{
-          // "first_name": this.state.studentId.first_name,
-          // "last_name": this.state.studentId.last_name,
-          // "patronymic":this.state.studentId.patronymic,
-          // "position": "s",
-        //   "id": this.state.studentId.id
-        // },
-      "points":this.state.dataCourse.points,
-      "certificate":this.state.dataCourse.certificate,
-      "discount":this.state.dataCourse.discount,
-      "confirmed":this.state.dataCourse.confirmed,
-      "group":this.state.dataCourse.group
-  } 
-  console.log(user)
-  axios.post('http://62.209.129.38:8000/api/group-students/', user , {
-    headers: {
-      'Authorization': `Token ${access_token}` 
-    }
-    }).then((response)=>{
-    console.log("Post bajarildi", response);
-    console.log("user info ketdi:", user);
-    })
-    .catch((error)=> {
-    console.log("Post error: ", error);
-    });
-        this.handleClose1()
-      } 
-
-  
-  openStudent=()=>{
-    getStudent1().then(res=>{
- this.setState({dataStudent:res.data})
-    }) 
-  }
   componentDidMount(){
       this.getStudent()
-      this.openStudent()
   }
 
   render() {
@@ -218,46 +167,18 @@ getGroupS(id).then(res=>{
         ...this.getColumnSearchProps('id'),
       },
       {
-        title: 'classroom_building',
-        dataIndex: 'classroom_building',
-        key: 'classroom_building',
-        width: '30%',
-        ...this.getColumnSearchProps('classroom_building'),
-      },
-      {
-        title: 'classroom_room',
-        dataIndex: 'classroom_room',
-        key: 'classroom_room',
-        width: '20%',
-        ...this.getColumnSearchProps('classroom_room'),
-      },
-      {
         title: 'short_title',
-        render: (record) => record.course.short_title,
+        dataIndex: 'short_title',
         sorter: (a, b) => a.course.short_title.length - b.course.short_title.length,
         sortDirections: ['descend', 'ascend'],
+        ...this.getColumnSearchProps('short_title'),
       },
       {
         title: 'price',
-        render: (record) => record.course.price,
+        dataIndex: 'price',
         sorter: (a, b) => a.price - b.price,
         sortDirections: ['descend', 'ascend'],
-      },
-      {
-        title: 'start_date',
-        dataIndex: 'start_date',
-        key: 'start_date',
-        ...this.getColumnSearchProps('start_date'),
-        sorter: (a, b) => a.start_date.length - b.start_date.length,
-        sortDirections: ['descend', 'ascend'],
-      },
-      {
-        title: 'end_date',
-        dataIndex: 'end_date',
-        key: 'end_date',
-        ...this.getColumnSearchProps('end_date'),
-        sorter: (a, b) => a.end_date.length - b.end_date.length,
-        sortDirections: ['descend', 'ascend'],
+        ...this.getColumnSearchProps('price'),
       },
       {
         title: 'Action',
@@ -275,12 +196,6 @@ getGroupS(id).then(res=>{
         dataIndex: '',
         key: 'id',
         render: (_, record) => <a onClick={()=>this.handleShow1()}>Edit</a>,
-      },
-      {
-        title: 'Add student',
-        dataIndex: '',
-        key: 'id',
-        render: (_, record) => <a onClick={()=>this.openmodal(record.id)}>Add</a>,
       },
     ];
     return<div>
@@ -364,26 +279,6 @@ getGroupS(id).then(res=>{
     <Form.Label>required_course_id<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
     <Form.Control type="number" id="required_course_id" className="mb-3" placeholder="course_section_id" />
   </Form.Group>
- 
-
-  <Form.Group className="mb-3" >
-    <Form.Label>start_date<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="date" id="date1" className="mb-3" placeholder="course_section_id" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>end_date<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="date" id="date2" className="mb-3" placeholder="course_section_id" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>classroom_building<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="text" id="school" className="mb-3" placeholder="course_section_id" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>classroom_room<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="text" id="room" className="mb-3" placeholder="course_section_id" />
-  </Form.Group>
-
-
 </Form></Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={this.handleClose}>
@@ -394,37 +289,6 @@ getGroupS(id).then(res=>{
           </Button>
         </Modal.Footer>
       </Modal>
-      
-      
-      <Modal show={this.state.show1} onHide={this.handleClose1} animation={false}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal header</Modal.Title>
-        </Modal.Header>
-        <Modal.Body style={{display:'flex'}}>
-          <Form style={{display:'block',padding:'30px'}}>
-  <Form.Group className="mb-3">
-  <Form.Label>Position<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-  <Form.Select aria-label="Default select example"  id="formBasicPos">
-    {this.state.dataStudent.map(item=>{return <option onClick={()=>this.postStudent(item.id)} value="s">{item.first_name} {item.last_name} {item.patronymic} {item.id}</option>})}
-</Form.Select></Form.Group>
-  </Form>
-</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={this.handleClose1}>
-            Close
-          </Button>
-         
-          <Button variant="primary" onClick={()=>this.postObject()}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
-      
-      
-      
-      
-      
-      
       </div>
   }
 }

@@ -81,17 +81,19 @@ export default class Navbarr extends Component {
   height="100%"
     defaultState={{
       center: [41.327477, 69.345046],
-      zoom: 15,
+      zoom: 12,
     }}
   >
     <Placemark geometry={[41.329082, 69.336318]} />
     <Placemark geometry={[41.327477, 69.345046]} />
+    <Placemark geometry={[41.338663, 69.334790]} />
   </Map>
 </YMaps>
 </div>
 <div className={s.manzil}>
 <div><FaMapMarkerAlt style={{marginRight:'20px'}} />ул.Салом 1, 241-школа, 6-кабинет, ориентир Чайхана Салом</div>
 <div><FaMapMarkerAlt style={{marginRight:'20px'}} />ул.Буюк Ипак Йули 153, 171-школа, 20-кабинет,ориентир гостиница Саёхат</div>
+<div><FaMapMarkerAlt style={{marginRight:'20px'}} />Зиёлилар,9а Буз-1 ж/м, Мирзо-Улугбекский район,Ташкент Блок Б 204 кабинет</div>
 </div>
 </div>
 

@@ -16,6 +16,8 @@ import Instructor from './Teach/Instructor'
 import Student from './Teach/Student'
 import Addstudent from './Addstudent';
 import Call from './Tahrir/Call';
+import Course from './Course';
+import Timeslot from './Timeslot';
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
@@ -40,13 +42,18 @@ Instruktr=()=>{
 admin=()=>{
   this.setState({oyna:5})
 }
-course=()=>{
+group=()=>{
   this.setState({oyna:6})
 }
 addStudent=()=>{
   this.setState({oyna:7})
 }
-
+course=()=>{
+  this.setState({oyna:8})
+}
+time=()=>{
+  this.setState({oyna:9})
+}
   onCollapse = collapsed => {
     console.log(collapsed);
     this.setState({ collapsed });
@@ -70,10 +77,12 @@ addStudent=()=>{
 
             </SubMenu>
             <SubMenu key="sub2" icon={<TeamOutlined />} title="Groups">
-              <Menu.Item key="6" onClick={this.course}>Course</Menu.Item>
+            <Menu.Item key="8" onClick={this.course}>Course</Menu.Item>
+              <Menu.Item key="6" onClick={this.group}>Group</Menu.Item>
               <Menu.Item key="7" onClick={this.addStudent}>Group student</Menu.Item>
+              <Menu.Item key="9" onClick={this.time}>Timeslot</Menu.Item>
             </SubMenu>
-            <Menu.Item key="9" icon={<FileOutlined />}>
+            <Menu.Item key="10" icon={<FileOutlined />}>
               Files
             </Menu.Item>
           </Menu>
@@ -93,9 +102,13 @@ addStudent=()=>{
     ):(
       this.state.oyna==5?(<h1><Admin/></h1>
       ):(
-        this.state.oyna==6?(<h1><Group1/></h1>
+        this.state.oyna==8?(<h1><Course/></h1>
           ):(
-          <h1><Addstudent/></h1>))))))}
+            this.state.oyna==6?(<h1><Group1/></h1>
+              ):(
+                this.state.oyna==7?(<h1><Addstudent/></h1>
+                  ):(
+                  <h1><Timeslot/></h1>))))))))}
             </div>
           </Content>
           <Footer style={{ textAlign: 'center' }}>Ant Design ©2022 Created by Abbas</Footer>

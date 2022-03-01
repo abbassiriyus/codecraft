@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import s from "../css/Dashboard.module.css"
+import styles from '../css/nashPrinsip.module.css';
 import{  Row, Col } from 'react-bootstrap'
 import 'aos/dist/aos.css';
 import AOS from 'aos'
+import CountUp from 'react-countup';
 import header from '../img/header.png'
 import bola from '../img/bolacha1.gif'
 import komputer from '../img/komputer.png'
@@ -44,6 +46,37 @@ export default class Dashboard extends Component {
 </header>
 
 
+
+
+
+<div className={styles.counter}>
+                <div className='container'>
+                    <Row>
+                        <Col>
+                        <div className={styles.counter_item}>
+                            <CountUp className={styles.counter_number} start={0} end={5024} delay={1} duration={4}/><span className={styles.counter_plus}>+</span>
+                            <p className={styles.counter_text}>Выпускников</p>
+
+
+
+                            
+                        </div>
+                    </Col>
+                    <Col>
+                        <div style={{borderRight: '1px solid #fff', borderLeft: '1px solid #fff'}} className={styles.counter_item}>
+                        <CountUp className={styles.counter_number} start={0} end={48564} delay={1} duration={5}/><span className={styles.counter_plus}>+</span>
+                            <p className={styles.counter_text}>Часов обучения</p>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className={styles.counter_item}>
+                        <CountUp className={styles.counter_number} start={0} end={46} delay={1} duration={3}/><span className={styles.counter_plus}>+</span>
+                            <p className={styles.counter_text}>Подготовлено <br/>Инструкторов</p>
+                        </div>
+                    </Col>
+                    </Row>
+                </div>
+            </div>
 {/* asosiy 6ta imkoniyatlar */}
 <main className={s.mativatsiya}>
   <Bounce left cascade ><h1 style={{marginBottom:'30px'}}><span style={{color:'orange'}}> 6 причин </span> изучать программирование</h1></Bounce>

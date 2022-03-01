@@ -32,6 +32,16 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   }
+  export let getCourse = () => {
+    let config = {
+      url: `${host}/courses/`,
+      method: "GET",
+        headers: {
+          'Authorization': `Token ${access_token}`
+        }
+    };
+    return httpRequest(config);
+  }
   export let getAdmins = () => {
     let config = {
       url: `${host}/admins/`,
@@ -52,7 +62,26 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   }
-
+  export let getTimeslots = () => {
+    let config = {
+      url: `${host}/time-slots/`,
+      method: "GET",
+        headers: {
+          'Authorization': `Token ${access_token}`
+        }
+    };
+    return httpRequest(config);
+  }
+  export const deleteTimeslots= key => {
+    let config = {
+        url: `${host}/time-slot/${key}/`,
+        method: "delete",
+        headers: {
+          'Authorization': `Token ${access_token}`,
+        }
+      };
+      return httpRequest(config);
+    };
   export const deleteUser= key => {
   let config = {
       url: `${host}/users/${key}/`,
@@ -63,6 +92,16 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   };
+  export const deleteCourse= key => {
+    let config = {
+        url: `${host}/courses/${key}/`,
+        method: "delete",
+        headers: {
+          'Authorization': `Token ${access_token}`,
+        }
+      };
+      return httpRequest(config);
+    };
   export const deleteSG1= key => {
     let config = {
         url: `${host}/group-students/${key}/`,
