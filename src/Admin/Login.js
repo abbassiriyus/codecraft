@@ -1,51 +1,64 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import './Login.css';
-
-async function loginUser(credentials) {
- return fetch('http://localhost:8080/login', {
-   method: 'POST',
-   headers: {
-     'Content-Type': 'application/json'
-   },
-   body: JSON.stringify(credentials)
- })
-   .then(data => data.json())
-}
-
-export default function Login({ setToken }) {
-  const [username, setUserName] = useState();
-  const [password, setPassword] = useState();
-
-  const handleSubmit = async e => {
-    e.preventDefault();
-    const token = await loginUser({
-      username,
-      password
-    });
-    setToken(token);
+import React, { Component } from 'react'
+import './login.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbarr from '../Admin/js/Menu1';
+import { postLogin } from '../host/config';
+import Body from './js/Body';
+export default class Login extends Component {  
+  state={
+    token:''
   }
-
-  return(
-    <div className="login-wrapper">
-      <h1>Please Log In</h1>
-      <form onSubmit={handleSubmit}>
+ 
+   handleSubmit = e => {
+    e.preventDefault();
+    const token ={ 
+      password:this.password,
+      username:this.username
+    };
+    postLogin(token).then(res=>{
+      localStorage.setItem('token', res.key)
+this.setState({token:res.data.key})
+    });
+  }
+  //  componentDidMount(){
+  //   this.setState({token:localStorage.getItem('token')})
+  //   console.log(localStorage.getItem('token'))
+  // }
+  render() {
+    return (
+      <div> 
+          <div className="login-wrapper"><div className='art'>
+      <h3>Please Log In</h3>
+      <form  className="form1" onSubmit={this.handleSubmit}>
         <label>
-          <p>Username</p>
-          <input type="text" onChange={e => setUserName(e.target.value)} />
-        </label>
+          <span>Username</span><br/>
+          <input type="text" onChange={e=>this.username=e.target.value} />
+        </label><br/><br/>
         <label>
-          <p>Password</p>
-          <input type="password" onChange={e => setPassword(e.target.value)} />
+          <span>Password</span><br/>
+          <input type="password" onChange={e=>this.password=e.target.value} />
         </label>
-        <div>
-          <button type="submit">Submit</button>
+        <div><br/>
+      <a href="/tush1232">yuborish</a>
         </div>
-      </form>
+      </form></div>
     </div>
-  )
+   <BrowserRouter>
+    <Routes>
+      <Route path="/tush1232" element={<Body/>} />
+    </Routes>
+  </BrowserRouter>
+      </div>
+    )
+  }
 }
 
-Login.propTypes = {
-  setToken: PropTypes.func.isRequired
-};
+
+
+
+
+
+
+
+
+

@@ -2,7 +2,7 @@ import React from 'react';
 import { Table, Input, Button, Space, Popconfirm } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
-import { getGroup,getGroupS,deleteGroup,getStudent1} from '../../host/config';
+import { getGroup,getGroupS,deleteGroup,getStudent1, postGroup1, getCourse, getTimeslots} from '../../host/config';
 import { Form, Modal } from 'react-bootstrap';
 import axios from 'axios';
 import { access_token } from '../../host/host';
@@ -16,7 +16,11 @@ export default class Group1 extends React.Component {
     data:[],
     dataCourse:[],
     dataStudent:[],
-    studentId:0
+    studentId:0,
+    dataC:[],
+    dataT:[],
+    idC:0,
+    idT:0
   };
 
 
@@ -29,7 +33,21 @@ export default class Group1 extends React.Component {
     getGroup().then(res=>{this.setState({data:res.data}) 
     console.log("ok") }).then(err=>{console.log('error')}) 
   }
-
+  getId1=(key)=>{
+this.setState({idC:key})
+  }
+  getId2=(key)=>{
+    this.setState({idT:key})
+      }
+  getStudent=()=>{
+    getGroup().then(res=>{this.setState({data:res.data}) 
+    console.log("ok") }).then(err=>{console.log('error')}) 
+  }
+  getData=()=>{
+    getCourse().then(res=>{this.setState({dataC:res.data}) 
+    }) 
+    getTimeslots().then(res=>{this.setState({dataT:res.data}) 
+  }) }
   getColumnSearchProps = dataIndex => ({
     filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
       <div style={{ padding: 8 }}>
@@ -115,38 +133,14 @@ export default class Group1 extends React.Component {
    
       
     var user={
-
-"course":{
-
-      "short_title":document.querySelector('#formBasicFirst').value,
-      "title":document.querySelector('#formBasicLast').value,
-      "price":document.querySelector('#formBasicPat').value,
-      "subtitle":document.querySelector('#formBasicBirth').value,
-      "lessons":document.querySelector('#formBasicTel').value,
-      "lesson_duration":document.querySelector('#formBasicTel1').value,
-      "min_students":document.querySelector('#formBasicNote1').value,
-      "max_students":document.querySelector('#formBasicNote2').value,
-      "description_file":document.querySelector('#passport_address').files,
-      "title_image":document.querySelector('#passport_number').files,
-      "cover_image":document.querySelector('#passport_serial').files,
-      "deleted":document.querySelector('#passport_who_give').value,
-      "notes":document.querySelector('#passport_when_give').value,
-      "course_section_id": document.querySelector('#passport_file').value,
-      "publicized": document.querySelector('#publicized').checked,
-      "curriculum": document.querySelector('#curriculum').value,
-      "required_course_id": document.querySelector('#required_course_id').value,
-},
+      "course":this.state.idC,
+      "timeslot":this.state.idT,
 "start_date": document.querySelector('#date1').value,
 "end_date":document.querySelector('#date2').value,
 "classroom_building":document.querySelector('#school').value,
 "classroom_room": document.querySelector('#room').value,
 }
-console.log(user)
-axios.post('http://62.209.129.38:8000/api/groups/', user , {
-headers: {
-  'Authorization': `Token ${access_token}` 
-}
-}).then((response)=>{
+postGroup1(user).then((response)=>{
 console.log("Post bajarildi", response);
 console.log("user info ketdi:", user);
 })
@@ -170,25 +164,13 @@ getGroupS(id).then(res=>{
   postObject=()=>{ 
   const  user={
       "student":this.state.studentId,
-      //{
-          // "first_name": this.state.studentId.first_name,
-          // "last_name": this.state.studentId.last_name,
-          // "patronymic":this.state.studentId.patronymic,
-          // "position": "s",
-        //   "id": this.state.studentId.id
-        // },
       "points":this.state.dataCourse.points,
       "certificate":this.state.dataCourse.certificate,
       "discount":this.state.dataCourse.discount,
       "confirmed":this.state.dataCourse.confirmed,
       "group":this.state.dataCourse.group
   } 
-  console.log(user)
-  axios.post('http://62.209.129.38:8000/api/group-students/', user , {
-    headers: {
-      'Authorization': `Token ${access_token}` 
-    }
-    }).then((response)=>{
+postGroup1(user).then((response)=>{
     console.log("Post bajarildi", response);
     console.log("user info ketdi:", user);
     })
@@ -207,6 +189,7 @@ getGroupS(id).then(res=>{
   componentDidMount(){
       this.getStudent()
       this.openStudent()
+      this.getData()
   }
 
   render() {
@@ -285,87 +268,15 @@ getGroupS(id).then(res=>{
     ];
     return<div>
          <Button onChange={this.Byvalue} style={{marginBottom:'40px'}} variant="primary" 
-       onClick={this.handleShow}>Create course</Button>
+       onClick={this.handleShow}>Create Group</Button>
      <Table columns={columns} dataSource={this.state.data} />
      <Modal 
-      fullscreen={true}
+     
         show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Create new course</Modal.Title>
+          <Modal.Title>Create new group</Modal.Title>
         </Modal.Header>
-        <Modal.Body style={{display:'flex'}}><Form style={{display:'block',width:'50%',padding:'30px'}}>
-  
-  <Form.Group className="mb-3" >
-    <Form.Label>short_title<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="email" className="mb-3" id="formBasicFirst" placeholder="short_title" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>title<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="email" className="mb-3" id="formBasicLast" placeholder="title" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>price</Form.Label>
-    <Form.Control type="number" className="mb-3" id="formBasicPat" placeholder="price" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>subtitle<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="text" className="mb-3" id="formBasicBirth" placeholder="subtitle" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>lessons <sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="number" className="mb-3" id="formBasicTel" placeholder="lessons" />
-  </Form.Group> 
-   <Form.Group className="mb-3" >
-    <Form.Label>lesson_duration</Form.Label>
-    <Form.Control type="number" className="mb-3" id="formBasicTel1" placeholder="lesson_duration" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>min_students</Form.Label>
-    <Form.Control type="number" id="formBasicNote1" className="mb-3" placeholder="min_students" />
-  </Form.Group>
- <Form.Group className="mb-3" >
-    <Form.Label>max_students</Form.Label>
-    <Form.Control type="number" id="formBasicNote2" className="mb-3" placeholder="max_students" />
-  </Form.Group>
-</Form>
-<Form style={{display:'block',width:'50%',padding:'30px'}}>
-  <Form.Group className="mb-3" >
-    <Form.Label>description_file<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="file" id="passport_address" className="mb-3" placeholder="description_file" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>title_image<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="file" id="passport_number" className="mb-3" placeholder="title_image" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>cover_image<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="file" id="passport_serial" className="mb-3" placeholder="cover_image" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-  <Form.Label>Delete<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="number"  id="passport_who_give" className="mb-3" placeholder="deleted" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>notes<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="text" id="passport_when_give" className="mb-3" placeholder="notes" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>course section id<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="number" id="passport_file" className="mb-3" placeholder="course_section_id" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Check type="checkbox" id="publicized" className="mb-3" label="Publicized" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>curriculum<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="textarea" id="curriculum" className="mb-3" placeholder="course_section_id" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>required_course_id<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="number" id="required_course_id" className="mb-3" placeholder="course_section_id" />
-  </Form.Group>
- 
-
+        <Modal.Body><Form style={{padding:'30px'}}>
   <Form.Group className="mb-3" >
     <Form.Label>start_date<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
     <Form.Control type="date" id="date1" className="mb-3" placeholder="course_section_id" />
@@ -382,6 +293,12 @@ getGroupS(id).then(res=>{
     <Form.Label>classroom_room<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
     <Form.Control type="text" id="room" className="mb-3" placeholder="course_section_id" />
   </Form.Group>
+  <Form.Select aria-label="Default select example">
+ {this.state.dataC.map(item=>{ return <option value="1" onClick={()=>this.getId1(item.id)}>{item.short_title} {item.id}</option>})}
+</Form.Select>
+<Form.Select aria-label="Default select example">
+ {this.state.dataT.map(item=>{ return <option value="1" onClick={()=>this.getId2(item.id)}>{item.timeslot_name} {item.id}</option>})}
+</Form.Select>
 
 
 </Form></Modal.Body>

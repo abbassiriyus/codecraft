@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Table, Input, Button, Space, Popconfirm } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
-import { getTimeslots,getGroupS,deleteTimeslots,} from '../../host/config';
+import { getTimeslots,getGroupS,deleteTimeslots, postTimeslot,} from '../../host/config';
 import { Form, Modal } from 'react-bootstrap';
 import axios from 'axios';
 import { access_token } from '../../host/host';
@@ -16,9 +16,35 @@ export default class Timeslot extends Component {
         dataCourse:[],
       };
     
-    
+      postObject=()=>{ 
+        const  user={
+          "timeslot_name":document.querySelector('#timeslot_name').value,
+          "start_time":document.querySelector('#start_time').value,
+          "end_time":document.querySelector('#end_time').value,
+          "duration":document.querySelector('#duration').value,
+          "mon":document.querySelector('#mon').checked,
+          "tue":document.querySelector('#tue').checked,
+          "wed":document.querySelector('#wed').checked,
+          "thu":document.querySelector('#thu').checked,
+          "fri":document.querySelector('#fri').checked,
+          "sat":document.querySelector('#sat').checked,
+          "sun":document.querySelector('#sun').checked,
+        } 
+      postTimeslot(user).then((response)=>{
+          console.log("Post bajarildi", response);
+          console.log("user info ketdi:", user);
+          })
+          .catch((error)=> {
+          console.log("Post error: ", error);
+          });
+              this.handleClose1()
+            } 
+
+
       handleClose = () => this.setState({show:false});
       handleShow = () => this.setState({show:true});
+      handleClose1 = () => this.setState({show1:false});
+      handleShow1 = () => this.setState({show1:true});
      
     
       getTimeslot=()=>{
@@ -219,10 +245,6 @@ export default class Timeslot extends Component {
               render: (_, record) => <a onClick={()=>this.handleShow1()}>Edit</a>,
             },
           ];
-
-
-
-
     return (
       <div>
 
@@ -241,80 +263,49 @@ export default class Timeslot extends Component {
         <Modal.Body style={{display:'flex'}}><Form style={{display:'block',width:'50%',padding:'30px'}}>
   
   <Form.Group className="mb-3" >
-    <Form.Label>short_title<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="email" className="mb-3" id="formBasicFirst" placeholder="short_title" />
+    <Form.Label>timeslot_name<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="text" className="mb-3" id="timeslot_name" placeholder="short_title" />
   </Form.Group>
   <Form.Group className="mb-3" >
-    <Form.Label>title<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="email" className="mb-3" id="formBasicLast" placeholder="title" />
+    <Form.Label>start_time<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="time" className="mb-3" id="start_time" placeholder="title" />
   </Form.Group>
   <Form.Group className="mb-3" >
-    <Form.Label>price</Form.Label>
-    <Form.Control type="number" className="mb-3" id="formBasicPat" placeholder="price" />
+    <Form.Label>end_time</Form.Label>
+    <Form.Control type="time" className="mb-3" id="end_time" placeholder="price" />
   </Form.Group>
   <Form.Group className="mb-3" >
-    <Form.Label>subtitle<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="text" className="mb-3" id="formBasicBirth" placeholder="subtitle" />
+    <Form.Label>duration<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
+    <Form.Control type="number" className="mb-3" id="duration" placeholder="subtitle" />
   </Form.Group>
   <Form.Group className="mb-3" >
-    <Form.Label>lessons <sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="number" className="mb-3" id="formBasicTel" placeholder="lessons" />
+    <Form.Check type="checkbox" id="mon" className="mb-3" label="Dushanba" />
   </Form.Group> 
-   <Form.Group className="mb-3" >
-    <Form.Label>lesson_duration</Form.Label>
-    <Form.Control type="number" className="mb-3" id="formBasicTel1" placeholder="lesson_duration" />
+  <Form.Group className="mb-3" >
+    <Form.Check type="checkbox" id="tue" className="mb-3" label="Seshanba" />
   </Form.Group>
   <Form.Group className="mb-3" >
-    <Form.Label>min_students</Form.Label>
-    <Form.Control type="number" id="formBasicNote1" className="mb-3" placeholder="min_students" />
-  </Form.Group>
- <Form.Group className="mb-3" >
-    <Form.Label>max_students</Form.Label>
-    <Form.Control type="number" id="formBasicNote2" className="mb-3" placeholder="max_students" />
-  </Form.Group>
-</Form>
-<Form style={{display:'block',width:'50%',padding:'30px'}}>
-  <Form.Group className="mb-3" >
-    <Form.Label>description_file<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="file" id="passport_address" className="mb-3" placeholder="description_file" />
+    <Form.Check type="checkbox" id="wed" className="mb-3" label="Chorshanba" />
   </Form.Group>
   <Form.Group className="mb-3" >
-    <Form.Label>title_image<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="file" id="passport_number" className="mb-3" placeholder="title_image" />
+    <Form.Check type="checkbox" id="thu" className="mb-3" label="Payshanba" />
+  </Form.Group>
+
+  <Form.Group className="mb-3" >
+    <Form.Check type="checkbox" id="fri" className="mb-3" label="Juma" />
   </Form.Group>
   <Form.Group className="mb-3" >
-    <Form.Label>cover_image<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="file" id="passport_serial" className="mb-3" placeholder="cover_image" />
+    <Form.Check type="checkbox" id="sat" className="mb-3" label="Shanba" />
   </Form.Group>
   <Form.Group className="mb-3" >
-  <Form.Label>Delete<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="number"  id="passport_who_give" className="mb-3" placeholder="deleted" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>notes<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="text" id="passport_when_give" className="mb-3" placeholder="notes" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>course section id<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="number" id="passport_file" className="mb-3" placeholder="course_section_id" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Check type="checkbox" id="publicized" className="mb-3" label="Publicized" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>curriculum<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="textarea" id="curriculum" className="mb-3" placeholder="course_section_id" />
-  </Form.Group>
-  <Form.Group className="mb-3" >
-    <Form.Label>required_course_id<sup style={{color:'red',fontSize:'18px',position:'relative',top:'3px'}}>*</sup></Form.Label>
-    <Form.Control type="number" id="required_course_id" className="mb-3" placeholder="course_section_id" />
+    <Form.Check type="checkbox" id="sun" className="mb-3" label="Yakshanba" />
   </Form.Group>
 </Form></Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={this.handleClose}>
             Close
           </Button>
-          <Button variant="primary"   onClick={this.PostUser}>
+          <Button variant="primary"   onClick={this.postObject}>
             Save Changes
           </Button>
         </Modal.Footer>

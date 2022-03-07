@@ -12,6 +12,7 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   }
+
   export let getStudents = () => {
     let config = {
       url: `${host}/students/`,
@@ -22,6 +23,7 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   }
+
   export let getStudent1 = () => {
     let config = {
       url: `${host}/users/?only=s`,
@@ -32,6 +34,7 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   }
+
   export let getCourse = () => {
     let config = {
       url: `${host}/courses/`,
@@ -42,6 +45,7 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   }
+
   export let getAdmins = () => {
     let config = {
       url: `${host}/admins/`,
@@ -52,6 +56,7 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   }
+
   export let getInstructors = () => {
     let config = {
       url: `${host}/instructors/`,
@@ -62,6 +67,7 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   }
+
   export let getTimeslots = () => {
     let config = {
       url: `${host}/time-slots/`,
@@ -72,9 +78,10 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   }
+
   export const deleteTimeslots= key => {
     let config = {
-        url: `${host}/time-slot/${key}/`,
+        url: `${host}/time-slots/${key}/`,
         method: "delete",
         headers: {
           'Authorization': `Token ${access_token}`,
@@ -82,6 +89,7 @@ export let getUsers = () => {
       };
       return httpRequest(config);
     };
+
   export const deleteUser= key => {
   let config = {
       url: `${host}/users/${key}/`,
@@ -92,6 +100,7 @@ export let getUsers = () => {
     };
     return httpRequest(config);
   };
+
   export const deleteCourse= key => {
     let config = {
         url: `${host}/courses/${key}/`,
@@ -102,6 +111,7 @@ export let getUsers = () => {
       };
       return httpRequest(config);
     };
+
   export const deleteSG1= key => {
     let config = {
         url: `${host}/group-students/${key}/`,
@@ -112,9 +122,10 @@ export let getUsers = () => {
       };
       return httpRequest(config);
     };
-  export const deleteGroup= key => {
+
+    export const deleteGroup= key => {
     let config = {
-        url: `${host}/group-students/${key}/`,
+        url: `${host}/groups/${key}/`,
         method: "delete",
         headers: {
           'Authorization': `Token ${access_token}`,
@@ -133,7 +144,8 @@ export let getUsers = () => {
       };
       return httpRequest(config);
     };
-  export const postUsers= (formDataObj) => {
+
+    export const postUsers= (formDataObj) => {
     let config = {
         url: `${host}/users/`,
         method: "post",
@@ -145,8 +157,44 @@ export let getUsers = () => {
       };
       return httpRequest(config);
     };
+    export const postTimeslot= (formDataObj) => {
+      let config = {
+          url: `${host}/time-slots/`,
+          method: "post",
+          data: formDataObj,
+          headers: {
+            'Authorization': `Token ${access_token}`,
+            "Content-Type": "multipart/form-data"
+          }
+        };
+        return httpRequest(config);
+      };
+  
+    export const postCourse= (formDataObj) => {
+      let config = {
+          url: `${host}/courses/`,
+          method: "post",
+          data: formDataObj,
+          headers: {
+            'Authorization': `Token ${access_token}`,
+          }
+        };
+        return httpRequest(config);
+      };
+ 
+      export const postGroup1= (formDataObj) => {
+        let config = {
+            url: `${host}/groups/`,
+            method: "post",
+            data: formDataObj,
+            headers: {
+              'Authorization': `Token ${access_token}`,
+            }
+          };
+          return httpRequest(config);
+        };
 
-    export let getGroup = () => {
+    export let getGroup= () => {
       let config = {
         url: `${host}/groups/`,
         method: "GET",
@@ -156,6 +204,7 @@ export let getUsers = () => {
       };
       return httpRequest(config);
     }
+
     export let getGroupS = (id) => {
       let config = {
         url: `${host}/group-students/${id}`,
@@ -192,7 +241,6 @@ export let getUsers = () => {
 
     export let putContact= (data) => {
       let config = {
-    
         url: `${host}/contact/`,
         method: "PUT",
           headers: {
@@ -203,3 +251,12 @@ export let getUsers = () => {
       return httpRequest(config);
     }
 
+ 
+    export const postLogin= (formDataObj) => {
+      let config = {
+          url: 'https://api.codecraft.uz/auth/login/',
+          method: "post",
+          data: formDataObj,
+        };
+        return httpRequest(config);
+      };

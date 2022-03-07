@@ -30,9 +30,14 @@ import Scratch from './Scratch'
 import Javaskript from './Javaskript'
 import PHP from './PHP'
 import MentalArifmetika from './MentalArifmetika';
-
+import Login from '../Admin/Login'
+import Menu1 from '../Admin/js/Menu1';
 export default class Navbarr extends Component {
-  
+  state={
+    token:''
+  }
+
+
   render() {
         return (
             <div >
@@ -70,7 +75,7 @@ export default class Navbarr extends Component {
       <Route path="/mentalarifmetika" element={<MentalArifmetika />} />
       <Route path="/new" element={<Allpreyekt />} />
       <Route path="/new2" element={<Allpreyekt2 />} />
-      <Route path="/tush1232" element={<Admin />} />
+      <Route path="/tush1232" element={<div>{this.state.token?(<Login/>):(<Menu1/>)}</div>} />
     </Routes>
   </BrowserRouter>
 

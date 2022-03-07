@@ -2,7 +2,7 @@ import React from 'react';
 import { Table, Input, Button, Space, Popconfirm } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
-import { getCourse,getGroupS,deleteGroup,} from '../../host/config';
+import { getCourse,getGroupS,deleteGroup, deleteCourse, postCourse,} from '../../host/config';
 import { Form, Modal } from 'react-bootstrap';
 import axios from 'axios';
 import { access_token } from '../../host/host';
@@ -106,7 +106,7 @@ export default class Course extends React.Component {
     this.setState({ searchText: '' });
   };
   handleDelete = (key) => {
-    deleteGroup(key).then(res=>{alert("o`chirib tashladik")})
+    deleteCourse(key).then(res=>{alert("o`chirib tashladik")})
   }
 
   PostUser=()=>{
@@ -132,12 +132,8 @@ export default class Course extends React.Component {
       "required_course_id": document.querySelector('#required_course_id').value,
 }
 
-console.log(user)
-axios.post('http://62.209.129.38:8000/api/courses/', user , {
-headers: {
-  'Authorization': `Token ${access_token}` 
-}
-}).then((response)=>{
+
+postCourse(user).then((response)=>{
 console.log("Post bajarildi", response);
 console.log("user info ketdi:", user);
 })
