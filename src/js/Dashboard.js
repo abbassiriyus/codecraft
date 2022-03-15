@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import s from "../css/Dashboard.module.css"
-import styles from '../css/nashPrinsip.module.css';
 import{  Row, Col } from 'react-bootstrap'
 import 'aos/dist/aos.css';
 import AOS from 'aos'
-import CountUp from 'react-countup';
 import header from '../img/header.png'
+import down1 from '../img/premium-icon-down-arrow-3840825 1.png'
+import down2 from '../img/premium-icon-down-arrow-3840825 2.png'
 import bola from '../img/bolacha1.gif'
 import komputer from '../img/komputer.png'
 import lemon from '../img/lemon.png'
@@ -13,6 +13,7 @@ import team from '../img/team.png'
 import online from '../img/online.png'
 import kopmboa from '../img/kopmboa.png'
 import kompide from '../img/kompide.png'
+import ellips from '../img/Ellipse1.png'
 import { Bounce } from 'react-reveal'
   AOS.init();
 export default class Dashboard extends Component {
@@ -31,63 +32,34 @@ export default class Dashboard extends Component {
       <h1 style={{color:"white"}}><Bounce top >Мы учим ремеслу
 программирования</Bounce></h1>  
 
-<Bounce top ><li>Для детей и подростков от 7 до 18 лет</li>
+<Bounce top ><li>Для детей и подростков от 7 до 25 лет</li>
 <li>Учитесь из любой точки мира</li>
-<li>С любым уровнем знаний и подготовки</li>
-<li>Индивидуально с профессиональным преподавателем</li>
+<li>C любым уровнем знаний и подготовки</li>
+<li>Индивидуально c профессиональным преподавателем</li>
 <li>Мы научим вашего ребенка программировать!</li></Bounce>
-
-<a href='#xabar' style={{textDecoration:'none',color:'white'}} className={s.myButton}>Записаться на бесплатный мастер-класс</a>
 </ul>
 
-</div>
-<div className={s.rasm}><img style={{right: '-100px'}} id={s.images} data-aos="zoom-in" src={header} alt=' '/></div>
-<div className={s.aylana}></div>
+</div><a href='#xabar' style={{textDecoration:'none',color:'white'}} className={s.myButton}><img className={s.down1} src={down1}/> Записаться на бесплатный мастер-класс<img className={s.down2} src={down2}/></a>
+<div className={s.rasm}><img  id={s.images} data-aos="zoom-in" src={header} alt=' '/></div>
+ <img  className={s.aylana} src={ellips} /> 
 </header>
 
 
 
 
 
-<div className={styles.counter}>
-                <div className='container'>
-                    <Row>
-                        <Col>
-                        <div className={styles.counter_item}>
-                            <CountUp className={styles.counter_number} start={0} end={5024} delay={1} duration={4}/><span className={styles.counter_plus}>+</span>
-                            <p className={styles.counter_text}>Выпускников</p>
 
-
-
-                            
-                        </div>
-                    </Col>
-                    <Col>
-                        <div style={{borderRight: '1px solid #fff', borderLeft: '1px solid #fff'}} className={styles.counter_item}>
-                        <CountUp className={styles.counter_number} start={0} end={48564} delay={1} duration={5}/><span className={styles.counter_plus}>+</span>
-                            <p className={styles.counter_text}>Часов обучения</p>
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className={styles.counter_item}>
-                        <CountUp className={styles.counter_number} start={0} end={46} delay={1} duration={3}/><span className={styles.counter_plus}>+</span>
-                            <p className={styles.counter_text}>Подготовлено <br/>Инструкторов</p>
-                        </div>
-                    </Col>
-                    </Row>
-                </div>
-            </div>
 {/* asosiy 6ta imkoniyatlar */}
 <main className={s.mativatsiya}>
   <Bounce left cascade ><h1 style={{marginBottom:'30px'}}><span style={{color:'orange'}}> 6 причин </span> изучать программирование</h1></Bounce>
 
   
   <Row className={s.chet}>
-    <Col  lg={{order:'first'}} lg={4} md={12} >
+    <Col   lg={4} md={12} >
     
       
 <div style={{display:'flex'}} className={s.kard} >
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " style={{borderRadius:'50%'}} src={kopmboa} /></div>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" "  src={kopmboa} /></div>
       <div style={{display:'block'}}>
       <h2>Учит работать в команде</h2>
       <p>Работая в группах, дети учатся находить общий язык, сотрудничать и брать ответственность за свои действия в команде.</p>
@@ -95,7 +67,7 @@ export default class Dashboard extends Component {
     </div>
 
     <div style={{display:'flex'}} className={s.kard}>
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} style={{borderRadius:"50%"}} alt="  "  src={lemon} /></div>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn}  alt="  "  src={lemon} /></div>
       <div style={{display:'block'}}>
       <h2>Улучшает способности решать задачи </h2>
       <p>Создавая программы, дети учатся разбивать сложные задачи на более мелкие, применив логику, фантазию и креативность.</p>
@@ -103,7 +75,7 @@ export default class Dashboard extends Component {
     </div>
 
     <div style={{display:'flex'}} className={s.kard}>
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " style={{borderRadius:'50%'}} src={team} /></div>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" "  src={team} /></div>
       <div style={{display:'block'}}>
       <h2>Улучшает успеваемость в школе</h2>
       <p>Программирование - способ использовать на практике абстрактные знания полученные в школе, тем самым повышает интерес к учебе и знаниям у ребенка.</p>
@@ -112,7 +84,7 @@ export default class Dashboard extends Component {
 
 
     </Col>
-    <Col  lg={4}  md={12}  md={{order:'first'}} sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img  width="100%"  src={bola} alt=' '/></Col>
+    <Col  lg={4}  md={12}   sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img  width="100%"  src={bola} alt=' '/></Col>
     <Col lg={4}  md={12}>
     <div style={{display:'flex'}} className={s.kard}  >
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " src={online} /></div>

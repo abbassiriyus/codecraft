@@ -5,8 +5,10 @@
 }
 
 .main{
-   background-color: #2F2F2F;
-   box-shadow: rgba(255, 166, 0, 0.4) 0px 5px, rgba(255, 166, 0, 0.3) 0px 10px, rgba(255, 166, 0, 0.2) 0px 15px, rgba(255, 166, 0, 0.1) 0px 20px, rgba(255, 166, 0, 0.05) 0px 25px;
+   background: #2F2F2F;
+box-shadow: 0px -30px 40px #FAC819 ,0px 30px 40px #FAC819;
+
+
 }
 .boxNash{
 width:80%;
@@ -20,6 +22,7 @@ margin: 0 auto;
 .title{
    color: #fff;
    margin: 50px 0;
+   padding-top: 50px;
    text-align: center;
 }
 .counter{
@@ -51,25 +54,33 @@ margin: 0 auto;
    color: #edd168;
 }
 .text {
-   padding: 30px;
+   padding-top: 30px;
+   
 }
-.text p{
+.text span{
+   margin-top: 70px;
    color: white;
-   font-size: 15px;
-   font-weight: 200;
+   font-size: 20px;
+   font-weight: 600;
   
 }
  .mainBox #img{
     width: 90%;
     margin: 40px 0;
-    border-radius: 20px;
+    border-radius: 85px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .leftCard, .rightCard{
-   text-align: center;
+   text-align: center; 
+   margin: 30px;
    margin-bottom: 100px;
-   padding: 30px;
+/* background: rgba(255, 235, 59, 0.897); */
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+filter: drop-shadow(inset 4px 10px 30px rgba(255, 235, 59, 0.897));
+border-radius: 85px;
+
+  
 }
 .leftCard img,
 .rightCard img{

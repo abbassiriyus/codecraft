@@ -4,7 +4,7 @@
     margin: 0;
 }
 footer{
-    background-color: black;
+    background-color: #2F2F2F;
 }
 .footer{
     width: 85%;
@@ -16,6 +16,7 @@ footer{
     font-size:25px;
     font-weight: 600;
     text-transform: uppercase;
+    color:  rgb(255, 123, 0);
 }
 .footer ul{
     list-style-type: none;

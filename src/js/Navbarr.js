@@ -18,7 +18,7 @@ import Narxlar from './Narxlar'
 import { Map, Placemark, YMaps } from 'react-yandex-maps';
 import Allpreyekt from './Allpreyekt'
 import Allpreyekt2 from './Allpreyekt2'
-import Admin from '../Admin/js/Menu1'
+// import Admin from '../Admin/js/Menu1'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Kurs from './kurs'
 import Xabaryuborish from './Xabaryuborish'
@@ -30,8 +30,7 @@ import Scratch from './Scratch'
 import Javaskript from './Javaskript'
 import PHP from './PHP'
 import MentalArifmetika from './MentalArifmetika';
-import Login from '../Admin/Login'
-import Menu1 from '../Admin/js/Menu1';
+
 export default class Navbarr extends Component {
   state={
     token:''
@@ -75,7 +74,6 @@ export default class Navbarr extends Component {
       <Route path="/mentalarifmetika" element={<MentalArifmetika />} />
       <Route path="/new" element={<Allpreyekt />} />
       <Route path="/new2" element={<Allpreyekt2 />} />
-      <Route path="/tush1232" element={<div>{this.state.token?(<Login/>):(<Menu1/>)}</div>} />
     </Routes>
   </BrowserRouter>
 
@@ -96,9 +94,9 @@ export default class Navbarr extends Component {
 </YMaps>
 </div>
 <div className={s.manzil}>
-<div><FaMapMarkerAlt style={{marginRight:'20px'}} />ул.Салом 1, 241-школа, 6-кабинет, ориентир Чайхана Салом</div>
-<div><FaMapMarkerAlt style={{marginRight:'20px'}} />ул.Буюк Ипак Йули 153, 171-школа, 20-кабинет,ориентир гостиница Саёхат</div>
-<div><FaMapMarkerAlt style={{marginRight:'20px'}} />Зиёлилар,9а Буз-1 ж/м, Мирзо-Улугбекский район,Ташкент Блок Б 204 кабинет</div>
+<div><FaMapMarkerAlt style={{marginRight:'20px'}} />241-школа, 6-кабинет, ул.Салом 1. Ориентир: Чайхана Салом</div>
+<div><FaMapMarkerAlt style={{marginRight:'20px'}} />171-школа, 20-кабинет, ул.Буюк Ипак Йули 153. Ориентир: гостиница Саёхат</div>
+<div><FaMapMarkerAlt style={{marginRight:'20px'}} />ИНХА, Блок Б 204 кабинет. Зиёлилар, 9а Буз-1 ж/м, Мирзо-Улугбекский район.</div>
 </div>
 </div>
 
@@ -110,7 +108,7 @@ export default class Navbarr extends Component {
                         <h4>О школе</h4>
                         <ul>
                             <li><a href="/#">Главная</a></li>
-                            <li><a href="/#pochem">Почему выбирают codecraft</a></li>
+                            <li><a href="/#pochem">Почему выбирают CodeCraft</a></li>
                             <li><a href="/new">Сертификат</a></li>
                         </ul>
                         </Col>
