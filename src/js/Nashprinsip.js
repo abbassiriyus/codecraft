@@ -12,11 +12,6 @@ import shar12 from '../img/Ellipse 2.png'
 import {Col,Row} from 'react-bootstrap';
 import CountUp from 'react-countup';
 import styles from '../css/nashPrinsip.module.css';
-// import '../App.css'
-// import Fade from 'react-reveal/Fade';
-// import Rotate from 'react-reveal/Rotate';
-// import Slide from 'react-reveal/Slide';
-
 import 'aos/dist/aos.css';
 import AOS from 'aos'
 import { Bounce, } from 'react-reveal';
@@ -55,16 +50,18 @@ export default class Nashprinsip extends Component {
                          </Col>
                     </Row>
                     <Row>
-                           <Col sm={12} md={6} lg={6}>
-                           <div   className={styles.leftCard}>
+                           <Col sm={12} md={12} lg={6}>
+                           <div className={styles.leftCard}>
+                           <div className={styles.back}/>
                                <img src={child}  alt=" " />
                                <h4>Удобный формат</h4>
                                <p>Благодаря современным технологиям мы построили самый лучший и комфортный формат дистанционного обучения</p>
                                </div> 
                            </Col>
 
-                            <Col sm={12} md={6} lg={6}>
-                           <div    className={styles.rightCard}>
+                            <Col sm={12} md={12} lg={6}>
+                           <div className={styles.rightCard}>
+                             <div className={styles.back}/>
                                <img src={rightImg} alt=" "/>
                                <h4>Выжимаем максимум</h4>
                                <p>Мы проводим исключительно индивидуальные занятия, чтобы передать максимум знаний и опыта вашему ребенку</p>
