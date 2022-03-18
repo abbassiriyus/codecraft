@@ -54,18 +54,18 @@ export default class Nashprinsip extends Component {
                            <div className={styles.leftCard}>
                            <div className={styles.back}/>
                                <img src={child}  alt=" " />
-                               <h4>Удобный формат</h4>
+                               <div className={styles.pochtext}><h4>Удобный формат</h4>
                                <p>Благодаря современным технологиям мы построили самый лучший и комфортный формат дистанционного обучения</p>
-                               </div> 
+                               </div> </div>
                            </Col>
 
                             <Col sm={12} md={12} lg={6}>
                            <div className={styles.rightCard}>
                              <div className={styles.back}/>
                                <img src={rightImg} alt=" "/>
-                               <h4>Выжимаем максимум</h4>
+                               <div className={styles.pochtext}><h4>Выжимаем максимум</h4>
                                <p>Мы проводим исключительно индивидуальные занятия, чтобы передать максимум знаний и опыта вашему ребенку</p>
-                           </div>
+                           </div></div>
                            </Col>
                        </Row>
                     </div>
@@ -79,52 +79,56 @@ export default class Nashprinsip extends Component {
                  <Row>
             
 
-                     <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} >
-                     <div >
-                         <img src={image1} alt=" " />
-                         <h4>Самые клёвые инструкторы</h4>
-                         <p>Инструкторы Codecraft - молодые, энергичные программисты и айтишники, которые с легкостью найдут общий язык с детьми и помогут им понять даже самые сложные нюансы программирования</p>
-                     </div>
+                     <Col sm={12} md={12} lg={6}  style={{padding:'25px'}} >
+                     <div className={styles.pochcard}>
+                         <img src={image1} style={{padding:'10px'}}  alt=" " />
+                         <div className={styles.pochtext}><h4>Самые клёвые инструкторы</h4>
+                         <p>Инструкторы <span style={{color:'#FAC819'}}>Codecraft</span>  - молодые, энергичные программисты и айтишники, которые с легкостью найдут общий язык с детьми и помогут им понять даже самые сложные нюансы программирования</p>
+                     </div></div>
                      </Col>
 
-                     <Col sm={12} md={6} lg={4}  style={{padding:'25px'}}  >
-                         <img src={image2} alt=" "/>
-                         <h4>Индивидуальный подход</h4>
+                     <Col sm={12} md={12} lg={6} style={{padding:'25px'}}  >
+                     <div className={styles.pochcard} style={{border:'2px solid #3F3E3EBF'}}  >
+                         <img src={image2} style={{padding:'10px'}}  alt=" "/>
+                         <div className={styles.pochtext}><h4>Индивидуальный подход</h4>
                          <p>Мы умеем находить индивидуальный подход ко всем нашим ученикам, учитывая их разные характерные особенности</p>
+                         </div ></div>
                      </Col>
 
-                    <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} > 
-                    <img alt='' src="https://nito.rsvpu.ru/img/logo.png"/>
-                    <h4>Современные технологии</h4>
+                    <Col sm={12} md={12} lg={6}  style={{padding:'25px'}} > 
+                    <div className={styles.pochcard}  style={{border:'2px solid #3F3E3EBF'}} >
+                    <img style={{padding:'10px'}}  alt='' src="https://nito.rsvpu.ru/img/logo.png"/>
+                    <div className={styles.pochtext} ><h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
+                    </div></div>
                     </Col>
          
-                      <Col  sm={12} md={6} lg={4}  style={{padding:'25px'}} >
-                          <div>
-                              <img src={image4} alt=' ' />
-                              <h4>Удобный график занятий</h4>
+                      <Col  sm={12} md={12} lg={6}  style={{padding:'25px'}} >
+                          <div className={styles.pochcard}>
+                              <img src={image4} style={{padding:'10px'}} alt=' ' />
+                              <div className={styles.pochtext}><h4>Удобный график занятий</h4>
                               <p>Мы строим индивидуальный график занятий для каждого ученика, поэтому заниматься можно в любое удобное для Вас время</p>
-                          </div>
+                          </div></div>
                           {/* </Rotate> */}
                       </Col>
                            
                        
                           
-                              <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} >
-                                  <div>
-                                      <img src={image5} alt=" " />
-                                      <h4>Обучение из любой точки мира</h4>
+                              <Col sm={12} md={12} lg={6}  style={{padding:'25px'}} >
+                                  <div className={styles.pochcard} >
+                                      <img src={image5} alt=" " style={{padding:'10px'}} />
+                                      <div className={styles.pochtext}><h4>Обучение из любой точки мира</h4>
                                       <p>Благодаря дистанционной форме обучения, Вам не приходиться тратить время на дорогу, заниматься можно в любом удобном месте</p>
-                                  </div>
+                                  </div></div>
 
                               </Col>
                             
-                              <Col sm={12} md={6} lg={4}  style={{padding:'25px'}} > 
-                              <div>
-                                  <img src={image6} alt=" " />
-                                  <h4>Сертификат по окончанию</h4>
+                              <Col sm={12} md={12} lg={6}  style={{padding:'25px'}} > 
+                              <div className={styles.pochcard} style={{border:'2px solid #3F3E3EBF'}}>
+                                  <img src={image6} alt=" " style={{padding:'10px'}}  />
+                                  <div className={styles.pochtext}><h4>Сертификат по окончанию</h4>
                                   <p>Все ребята, при успешном завершении курса, получают от нашей школы подтверждающий сертификат с выпиской про оценки</p>
-                              </div>
+                              </div></div>
                              {/* </Slide> */}
 
                               </Col>
