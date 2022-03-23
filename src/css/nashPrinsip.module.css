@@ -41,7 +41,7 @@ margin: 0 auto;
 }
 .counter_plus{
    font-size: 40px;
-   color: #edd168;
+   color:#FAC819;
    display: inline-block;
 }
 .counter_text{
@@ -49,7 +49,7 @@ margin: 0 auto;
    margin: 0;
 }
 .title span{
-   color: #edd168;
+   color:#FAC819;
 }
 .text {
    padding-top: 30px; 
@@ -152,7 +152,7 @@ height: 90px;
 }
 .counter_plus{
    font-size: 20px;
-   color: #edd168;
+   color:#FAC819;
    display: inline-block;
 }
 .counter_text{
@@ -196,7 +196,7 @@ height: 90px;
    }
    .counter_plus{
       font-size: 12px;
-      color: #edd168;
+      color:#FAC819;
       display: inline-block;
    }
    .counter_text{

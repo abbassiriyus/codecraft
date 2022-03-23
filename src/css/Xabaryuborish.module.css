@@ -7,13 +7,13 @@
     margin: 40px;
 }
 .xabarBtn{
-    background-color: rgb(120, 35, 163);
+    background-color:#FAC819;
     border: none;
     padding: 12px 90px;
     border-radius: 50px;
 }
 .xabarBtn:hover{
-    background-color: rgb(120, 35, 163);
+    background-color:#FAC819;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -25,27 +25,28 @@
    
  }
  .title span{
-    color: #edd168;
+    color:#FAC819;
  }
  .asosiy1{
      display: flex;
  }
  .uchtalik1{ 
-     
       position: relative;
      padding: 10px;
      padding-right: 70px;
      display: block;
  }
- .as{border-radius: 10px;
-background-color: white;
-padding: 40px;
-margin-bottom: 40px;
+ .as{
+ border-radius: 45px;
+ background-color: white;
+ padding: 40px;
+ margin-bottom: 40px;
  }
 .robit{
-   position: absolute;
-     right:-85px;
-     top: 4px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: -130px;
  }
  .rasm1{
      width: 60px;
@@ -53,15 +54,15 @@ margin-bottom: 40px;
      margin-top: 0px;
  }
  .ikkitalik1{
-     width: 80%;
-     font-size: 18px;
-     color: white;
+    width: 80%;
+    font-size: 18px;
+    color: white;
  }
  .rasm3{
      width: 200px;
      height: 50px;
      border-radius: 30px;
-     background-color:#9727af;
+     background-color:#FAC819;
  }
 #df:hover{
     animation: animatsiya 2s ease;
@@ -71,15 +72,25 @@ margin-bottom: 40px;
     animation: aaa 2s ease;
     animation-iteration-count: infinite;
 }
+.hash3{
+    font-family: Work Sans;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #2F2F2F;
+}
 
 @keyframes animatsiya{
     from {transform: scale(1);}
-    50%  {transform: scale(1.2);} /* ignored */
+    50%  {transform: scale(1.1);} /* ignored */
     to   {transform: scale(1);}   
 }
 @media(max-Width:600px){
     .xabarBtn{
-        background-color: rgb(120, 35, 163);
+        background-color:#FAC819;
         border: none;
         padding: 8px 15px;
         margin: auto;
@@ -87,7 +98,6 @@ margin-bottom: 40px;
         border-radius: 20px;
     }
     .uchtalik1{ 
-     
         position: relative;
        padding: 10px;
        padding-right: 0px;
@@ -103,7 +113,7 @@ margin-bottom: 40px;
    
  }
  .title span{
-    color: #edd168;
+    color:#FAC819;
  }
  .as{border-radius: 10px;
     background-color: white;
@@ -143,4 +153,39 @@ margin-bottom: 40px;
     60%{transform: rotateX(100deg);}
     80%{transform: rotateX(120deg);}
     100%{transform: rotateX(130deg);}
+}
+.xabarBtn img{
+    width: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.xabarBtn:hover .down1{
+    animation-name: headerbutton;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.xabarBtn:hover .down2{
+    animation-name: headerbutton2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.inputw{
+    background: #FFFAFA;
+border: 1px solid rgba(47, 47, 47, 0.45);
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+height: 37px;
+font-size: 10px;
+}
+@keyframes headerbutton{
+    from {position: relative;left: 0px;}
+    50% {position: relative;left: -30px;} 
+    to {position: relative;left: 0px;} 
+}
+@keyframes headerbutton2{
+    from {position: relative;right: 0px;}
+    50% {position: relative;right: -30px;} 
+    to {position: relative;right: 0px;} 
 }

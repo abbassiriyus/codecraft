@@ -6,9 +6,13 @@ import { MdWavingHand } from "react-icons/md";
 import koz from '../img/koz.png'
 import ochkiy from '../img/ochkiy.png'
 import yulduz from '../img/yulduz.png'
+import robot from '../img/robot.png'
 import axios from 'axios';
 import 'antd/dist/antd.css';
 import 'antd-country-phone-input/dist/index.css';
+import down1 from '../img/premium-icon-down-arrow-3840825 1.png'
+import down2 from '../img/premium-icon-down-arrow-3840825 2.png'
+
 
 export default class Xabaryuborish extends Component {
   state={
@@ -37,39 +41,7 @@ componentDidMount(){
             <div className={s.hammasi1}> 
                  <h1 id='xabar' className={s.title}>ЗАПИШИТЕСЬ НА <span>БЕСПЛАТНЫЙ МАСТЕР-КЛАСС</span></h1>
          <Row className={s.row1}>
-             <Col lg={6} className={s.uchtalik1}>
-                 <div style={{display:'flex'}} className={s.as}>
-                 <Form style={{width:'100%'}}>
-  <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label>Имя</Form.Label>
-    <Form.Control id='ism'  type="text" placeholder="Введите имя..." />
-    
-  </Form.Group>
-
-  <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Фамилия</Form.Label>
-    <Form.Control id='fam' type="text" placeholder="введите фамилию..." />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicPassword1">
-    <Form.Label>Название курса</Form.Label>
-    <Form.Control id='fam1' type="text" placeholder="Название курса " />
-  </Form.Group>
-  
-  <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Номер телефона</Form.Label>
-    <Form.Control id='tel' type="tel" placeholder="введите телефона номер..." />
-    <Form.Text className="text-muted" >
-    Введите свой номер телефона
-    </Form.Text>
-  </Form.Group>
-<div style={{width:'100%',margin:'auto',textAlign:'center'}}>
-  <Button id={s.df} href='/#'  className={s.xabarBtn} onClick={this.yuborish}>
-    <MdWavingHand className='mx-3'/>
-    Записаться
-  </Button></div>
-</Form>  <img width="120" height="120" className={s.robit} src='https://pngimg.com/uploads/robot/robot_PNG40.png' alt=" "/>
-</div></Col>
-             <Col lg={6} style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+         <Col lg={6} style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
 <div>
 
    <div className={s.asosiy1}>
@@ -92,6 +64,50 @@ componentDidMount(){
                  </div>
 </div>
              </Col>
+         
+             <Col lg={6} className={s.uchtalik1}>
+                 <div style={{display:'flex'}} className={s.as}>
+                 <Form style={{width:'100%'}}>
+        <img width="120" height="120" className={s.robit} src={robot} alt=" "/>
+        <h3 className={s.hash3}>Заявка на мастер-класс</h3>
+<div style={{display:'flex', justifyContent:'space-around'}}>
+  
+  <div style={{width:'50%'}}>
+  <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Form.Label>Имя</Form.Label>
+    <Form.Control id='ism' className={s.inputw}  type="text" placeholder="Введите имя..." />
+    
+  </Form.Group>
+
+
+  <Form.Group className="mb-3" controlId="formBasicPassword">
+    <Form.Label>Фамилия</Form.Label>
+    <Form.Control id='fam' className={s.inputw} type="text" placeholder="введите фамилию..." />
+  </Form.Group>
+</div>
+<div style={{width:'50%'}}>
+  <Form.Group className="mb-3" controlId="formBasicPassword1">
+    <Form.Label>Название курса</Form.Label>
+    <Form.Control id='fam1' className={s.inputw} type="text" placeholder="Название курса " />
+  </Form.Group>
+  
+  <Form.Group className="mb-3" controlId="formBasicPassword">
+    <Form.Label>Номер телефона</Form.Label>
+    <Form.Control id='tel' type="tel" className={s.inputw} placeholder="введите телефона номер..." />
+    <Form.Text className="text-muted" >
+    Введите свой номер телефона
+    </Form.Text>
+  </Form.Group></div>
+</div>
+
+<div style={{width:'100%',margin:'auto',textAlign:'center'}}>
+  <Button id={s.df} href='/#'  className={s.xabarBtn} onClick={this.yuborish}>
+   <img src={down1} className={s.down1} alt=" "/>
+    Записаться
+    <img src={down2} className={s.down2} alt=" "/>
+  </Button></div>
+</Form>  
+</div></Col>
          </Row>       
             </div>
         )
