@@ -38,7 +38,8 @@ componentDidMount(){
 }
     render() {
         return (
-            <div className={s.hammasi1}> 
+            <div className={s.hammasi1}>
+              <div className={s.sharw}></div> 
                  <h1 id='xabar' className={s.title}>ЗАПИШИТЕСЬ НА <span>БЕСПЛАТНЫЙ МАСТЕР-КЛАСС</span></h1>
          <Row className={s.row1}>
          <Col lg={6} style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
@@ -74,29 +75,26 @@ componentDidMount(){
   
   <div style={{width:'50%'}}>
   <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label>Имя</Form.Label>
+    <Form.Label className={s.inputwf}>Имя</Form.Label>
     <Form.Control id='ism' className={s.inputw}  type="text" placeholder="Введите имя..." />
     
   </Form.Group>
 
 
   <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Фамилия</Form.Label>
+    <Form.Label className={s.inputwf}>Фамилия</Form.Label>
     <Form.Control id='fam' className={s.inputw} type="text" placeholder="введите фамилию..." />
   </Form.Group>
 </div>
 <div style={{width:'50%'}}>
   <Form.Group className="mb-3" controlId="formBasicPassword1">
-    <Form.Label>Название курса</Form.Label>
+    <Form.Label className={s.inputwf}>Название курса</Form.Label>
     <Form.Control id='fam1' className={s.inputw} type="text" placeholder="Название курса " />
   </Form.Group>
   
   <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Номер телефона</Form.Label>
+    <Form.Label className={s.inputwf}>Номер телефона</Form.Label>
     <Form.Control id='tel' type="tel" className={s.inputw} placeholder="введите телефона номер..." />
-    <Form.Text className="text-muted" >
-    Введите свой номер телефона
-    </Form.Text>
   </Form.Group></div>
 </div>
 

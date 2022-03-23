@@ -1,6 +1,8 @@
 .hammasi1{
+    box-shadow: 0px -20px 40px #FAC819 ,0px 20px 40px #FAC819;
     background-color: #2F2F2F;
     padding: 20px;
+    overflow: hidden;
 }
 
 .row1{
@@ -11,10 +13,13 @@
     border: none;
     padding: 12px 90px;
     border-radius: 50px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .xabarBtn:hover{
     background-color:#FAC819;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .title{
@@ -35,6 +40,8 @@
      padding: 10px;
      padding-right: 70px;
      display: block;
+     z-index: 12;
+     margin-top: 100px;
  }
  .as{
  border-radius: 45px;
@@ -64,10 +71,10 @@
      border-radius: 30px;
      background-color:#FAC819;
  }
-#df:hover{
+/* #df:hover{
     animation: animatsiya 2s ease;
     animation-iteration-count: infinite;
-}
+} */
 #dd{
     animation: aaa 2s ease;
     animation-iteration-count: infinite;
@@ -103,6 +110,7 @@ color: #2F2F2F;
        padding-right: 0px;
        display: block;
        margin: 0px;
+       margin-top: 150px;
    }
     
 .title{
@@ -115,14 +123,12 @@ color: #2F2F2F;
  .title span{
     color:#FAC819;
  }
- .as{border-radius: 10px;
+ .as{
     background-color: white;
-    padding: 10px;
+  
     margin-bottom: 40px;
      }
-     .robit{
-      display: none;
-     }
+   
      .rasm1{
          width: 40px;
          margin: 10px;
@@ -132,12 +138,6 @@ color: #2F2F2F;
          width: 95%;
          font-size: 12px;
          color: white;
-     }
-     .rasm3{
-         width: 80px;
-         height: 40px;
-         border-radius: 30px;
-         background-color:#9727af;
      }
      .row1{
         margin: 40px; 
@@ -177,8 +177,55 @@ box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 15px;
 height: 37px;
-font-size: 10px;
+font-size: 15px;
+width: 80%;
 }
+.inputwf{
+    font-size: 15px;  
+}
+.sharw{
+    z-index: 1;
+    position: absolute;
+    right: -200px;
+    bottom: -200px;
+    width: 600px;
+    height: 600px;
+    filter: blur(25px);
+    background: #FAC819;
+    border-radius: 50%
+}
+
+
+@media (min-width:991px) and (max-width:1300px){
+    .title{
+        font-size: 20px;
+        color:white;
+        padding: 20px 0;
+        text-align: center;
+       
+     }
+     .xabarBtn{
+         font-size:15px ;
+         display: flex;
+     }
+     .xabarBtn img{
+        width: 22px;
+        margin-left: 20px;
+        margin-right: 20px;
+    
+    }
+    .hash3{
+        font-size: 20px;
+    }
+    .inputw{
+        font-size: 13px;
+    }
+    .inputwf{
+    font-size: 15px;  
+}
+
+}
+
 @keyframes headerbutton{
     from {position: relative;left: 0px;}
     50% {position: relative;left: -30px;} 
