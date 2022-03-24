@@ -1,55 +1,152 @@
-*{
-    box-sizing: border-box;
+.hammasi{
+    display: flex;
+    width: 100vw;
+    height: 700px;
 }
-.title{
-    color:black;
-    margin: 50px 0;
-    text-align: center;
-    font-size: 55px;
- }
- .title span{
-    color: #edd168;
- }
-.accordions{
-    width: 80%;
-    margin: 100px auto;
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding-left: 10%;
 }
-.accordionHeader{
-    font-size: 25px;
-    font-weight: 700;
-    color: black;
-    font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+.robot{
+    display: block;
+    margin-top: 50px;
+    width: 40%;
 }
-.accordionHeader:hover{
-    color: #edd168;
+.ikkita11,.ikkita12,.ikkita21,.ikkita22,.bitta  {
+    border-radius: 50%;
+    width: 300px;
+    height: 250px;
+    position: relative;
 }
-.textaccordion{
-    color: black;
-font-weight: 100;
-    font-size: 18px;
-    font-family: sans-serif;
+.shar{
+    position: absolute;
+    background: #FAC819;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(10px);   
 }
-@media (max-width:500px) {
-    .accordionHeader{
-     font-size: 18px;
-        font-weight: 700;
-        color: black;
-        font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    .accordions{
-        width: 100%;
-        margin: 20px auto;
-    }   
-    .textaccordion{
-        color: black;
-        font-weight: 700;
+  .p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.satr{
+    background: url('../img/oblaka.png');
+    background-size: 110% 110%;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+padding: 70px;
+ padding-left: 200px;
+}
+.robot img{
+    width: 600px;
+    position: relative;
+    top: -160px;
+    left: 100px;
+    z-index: -1;
+}
+
+.doira1{z-index: 12;
+    width: 40px;
+    margin: auto;
+    margin-right: 160px;
+    height: 40px;
+    background: #FAC819;
+    border-radius: 50%;
+    filter: blur(3px);
+}
+
+@media (max-width:1440px){
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding-left: 10%;
         font-size: 15px;
-        font-family: sans-serif;
-    } 
-    .title{
-        color:black;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 40px;
-     }
+        z-index: 1;
+    }
+    .robot{
+        display: block;
+        margin-top: 50px;
+        width: 50%;
+    }
+    .robot img{
+        width: 600px;
+        position: relative;
+        top: -160px;
+        left: 0px;
+        z-index: -1;
+    }
+    .ikkita11,.ikkita12,.ikkita21,.ikkita22,.bitta  {
+        border-radius: 50%;
+        width: 200px;
+        height: 180px;
+        position: relative;
+    }
+    .satr{
+        background: url('../img/oblaka.png');
+        background-size: 110% 110%;
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+    padding: 70px;
+     padding-left: 200px;
+     font-size: 15px;
+    }
+}
+@media (max-width:991px){
+    .hammasi{
+        display: block;
+        width: 100vw;
+        height: auto;
+        margin-bottom: 60px;
+    }
+    .text{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 0px;
+        font-size: 15px;
+    }
+    .robot{
+     display: none;
+    }
+}
+@media (max-width:700px){
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 8px;
+        z-index: 1;
+    }
+    .robot img{
+        width: 600px;
+        position: relative;
+        top: -160px;
+        left: 0px;
+        z-index: -1;
+    }
+    .ikkita11,.ikkita12,.ikkita21,.ikkita22,.bitta  {
+        border-radius: 50%;
+        width: 140px;
+        height: 100px;
+        position: relative;
+    }
+
+
 }

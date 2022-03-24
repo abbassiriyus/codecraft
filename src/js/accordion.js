@@ -1,65 +1,38 @@
 import React from 'react'
 import { Accordion } from 'react-bootstrap'
 import accordionstyle from '../css/accordion.module.css'
+import bot from '../img/bot.png'
 export default function accordion() {
     return (
         <div>
-    
+<div className={accordionstyle.hammasi}>
+  <div className={accordionstyle.text}>
+    <div className={accordionstyle.ikkita1}>
+    <div className={accordionstyle.ikkita11}><div className={accordionstyle.shar}></div><p className={accordionstyle.p}>На каком языке ведутся занятия?</p></div>
+    <div className={accordionstyle.ikkita12}><div className={accordionstyle.shar}></div><p className={accordionstyle.p}>Есть ли возрастные ограничения?</p></div>
+      
+      </div>
+    <div className={accordionstyle.bitta}><div className={accordionstyle.shar}></div><p className={accordionstyle.p}>Сколько детей занимается в группе?</p>
+</div>
+    <div className={accordionstyle.ikkita2}>
+    <div className={accordionstyle.ikkita21}><div className={accordionstyle.shar}></div><p className={accordionstyle.p}>Где мы можем получить более подробную информацию о каждом курсе?</p></div>
+    <div className={accordionstyle.ikkita22}><div className={accordionstyle.shar}></div><p className={accordionstyle.p}>В какое время и сколько раз в неделю проходят занятия?</p>
+</div>
+    </div>
+    </div>
+  
+  <div className={accordionstyle.robot}>
+    <div className={accordionstyle.satr}>В данное время занятия ведутся на русском языке, с изучением технической терминологии на английском</div>
+    <div className={accordionstyle.doira1}></div>
+   
+    <div className={accordionstyle.robot}><img src={bot}/></div>
+     </div>
+  </div>
 
-            <div className={accordionstyle.accordions}>
-           
-            <h1 className={accordionstyle.title}>Часто задаваемые <span> вопросы</span></h1>
-            <Accordion>
-  <Accordion.Item eventKey="0">
-    <Accordion.Header  ><h5 className={accordionstyle.accordionHeader}>На каком языке ведутся занятия?</h5>
-</Accordion.Header>
-    <Accordion.Body>
-   <p className={accordionstyle.textaccordion}> В данное время занятия ведутся на русском языке, с изучением технической терминологии на английском</p>
-    </Accordion.Body>
-  </Accordion.Item>
-  <Accordion.Item eventKey="1">
-    <Accordion.Header ><h5 className={accordionstyle.accordionHeader}> Есть ли возрастные ограничения?</h5>
-</Accordion.Header>
-    <Accordion.Body>
-  <p className={accordionstyle.textaccordion}>  Да, наша программа курсов рассчитана на детей от 9 до 16 лет</p>
-    </Accordion.Body>
-  </Accordion.Item>
-  <Accordion.Item eventKey="2">
-    <Accordion.Header > <h5 className={accordionstyle.accordionHeader}>В какое время и сколько раз в неделю проходят занятия?</h5>
-</Accordion.Header>
-    <Accordion.Body>
-   <p className={accordionstyle.textaccordion}> 3 раза в неделю по 120 минут. Подробнее время занятий вы можете посмотреть в разделе Курсы</p>
-    </Accordion.Body>
-  </Accordion.Item>
-  <Accordion.Item eventKey="3">
-    <Accordion.Header ><h5 className={accordionstyle.accordionHeader}> Где проходят занятия?</h5>
-</Accordion.Header>
-    <Accordion.Body>
-   <p className={accordionstyle.textaccordion}> Занятия проходят в Ташкенте по адресу Мирзо-Улугбекский район, ул.Салом1, 241 школа</p>
-    </Accordion.Body>
-  </Accordion.Item>
-  <Accordion.Item eventKey="4">
-    <Accordion.Header ><h5 className={accordionstyle.accordionHeader}>Какова продолжительность курсов?</h5>
-</Accordion.Header>
-    <Accordion.Body>
-   <p className={accordionstyle.textaccordion}> Продолжительность курсов 1-3 месяца</p>
-    </Accordion.Body>
-  </Accordion.Item>
-  <Accordion.Item eventKey="5">
-    <Accordion.Header ><h5 className={accordionstyle.accordionHeader}>Сколько детей занимается в группе?</h5>
-</Accordion.Header>
-    <Accordion.Body>
-  <p className={accordionstyle.textaccordion}>  В наших группах одновременно занимаются от 6 до 15 человек</p>
-    </Accordion.Body>
-  </Accordion.Item>
-  <Accordion.Item eventKey="6">
-    <Accordion.Header ><h5 className={accordionstyle.accordionHeader}> Где мы можем получить более подробную информацию о каждом курсе?</h5></Accordion.Header>
-    <Accordion.Body>
-<p className={accordionstyle.textaccordion}>Для подробной информации вы можете перейти в раздел Курсы, либо связаться с нами по номерам +998 99 300-55-00, +998 93 537-66-77 или отправив электронное письмо на адрес hello@codecraft.uz</p>
-    </Accordion.Body>
-  </Accordion.Item>
-</Accordion>
-        </div>
+
+
+
+<div></div>
         </div>
     )
 }

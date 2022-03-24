@@ -1,12 +1,14 @@
 
 import React, { Component } from 'react';
-import { Row,Col, Form, Button } from 'react-bootstrap';
+import { Row,Col, Form, Button, Modal } from 'react-bootstrap';
 import s from '../css/Xabaryuborish.module.css';
-import { MdWavingHand } from "react-icons/md";
-import koz from '../img/koz.png'
+import koz from '../img/koz.png';
+import modalr from '../img/robo11.png';
+import modalt from '../img/Shape10.png';
 import ochkiy from '../img/ochkiy.png'
 import yulduz from '../img/yulduz.png'
 import robot from '../img/robot.png'
+import elipe from '../img/Ellipse33.png'
 import axios from 'axios';
 import 'antd/dist/antd.css';
 import 'antd-country-phone-input/dist/index.css';
@@ -17,10 +19,28 @@ import down2 from '../img/premium-icon-down-arrow-3840825 2.png'
 export default class Xabaryuborish extends Component {
   state={
     ism:'',
-    nomer:''
+    nomer:'',
+    show:false,
+    show2:false
   }
   anima=()=>{
     document.querySelector('#df').style=""
+  }
+  open=()=>{
+    this.setState({show:true})
+    document.querySelector('#tel').value="";
+    document.querySelector('#fam').value="";
+    document.querySelector('#fam1').value="";
+    document.querySelector('#ism').value="" 
+  }
+  open2=()=>{
+    this.setState({show2:true})
+  }
+  close2=()=>{
+    this.setState({show2:false})
+  }
+  close=()=>{
+    this.setState({show:false})
   }
 yuborish=()=>{
 var t=document.querySelector('#tel').value;
@@ -31,7 +51,7 @@ var i=document.querySelector('#ism').value
   axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=5087964552&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
   axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=897831465&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
   axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=710414046&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
-  t.length==13?(alert("Заявка принята мы свяжемся с вами в течении часа")):(alert("не правильно введён номер"))
+  t.length==13?(this.open()):(this.open2())
 }
 componentDidMount(){
   document.querySelector('#tel').value='+998';
@@ -92,21 +112,56 @@ componentDidMount(){
     <Form.Control id='fam1' className={s.inputw} type="text" placeholder="Название курса " />
   </Form.Group>
   
-  <Form.Group className="mb-3" controlId="formBasicPassword">
+  <Form.Group className="mb-3"  controlId="formBasicPassword">
     <Form.Label className={s.inputwf}>Номер телефона</Form.Label>
     <Form.Control id='tel' type="tel" className={s.inputw} placeholder="введите телефона номер..." />
   </Form.Group></div>
 </div>
 
 <div style={{width:'100%',margin:'auto',textAlign:'center'}}>
-  <Button id={s.df} href='/#'  className={s.xabarBtn} onClick={this.yuborish}>
+  <Button id={s.df}   className={s.xabarBtn} onClick={this.yuborish}>
    <img src={down1} className={s.down1} alt=" "/>
     Записаться
     <img src={down2} className={s.down2} alt=" "/>
   </Button></div>
 </Form>  
 </div></Col>
-         </Row>       
+         </Row>  
+
+         
+      <Modal show={this.state.show}   className={s.modal}><div className={s.asosmodal}>
+<div className={s.fikr}><img width="50%" src={modalt} />
+<div className={s.modaltext}>
+  <h3>Ваша заявка принята !</h3>
+  <span>Вскорем времени наша администрация
+с вами свяжется</span>
+  </div>
+</div>  
+<div className={s.robo}><img width="50%"  src={modalr} />
+
+</div><img src={elipe} className={s.shar1} alt=" "/>
+<img src={elipe} className={s.shar2} alt=" "/>
+<img src={elipe} className={s.shar3} alt=" "/>
+
+<Button variant="primary" onClick={this.close} className={s.modalbutton}><span>Ok</span></Button>
+    </div>
+      </Modal>     
+      <Modal show={this.state.show2}   className={s.modal}><div className={s.asosmodal}>
+<div className={s.fikr}><img width="50%" src={modalt} />
+<div className={s.modaltext}>
+  <h3 style={{color:'red'}}>Ваша заявка непринята !</h3>
+  <span style={{color:'red'}}>Вне правильно введён номер</span>
+  </div>
+</div>  
+<div className={s.robo}><img width="50%"  src={modalr} />
+
+</div><img src={elipe} className={s.shar1} alt=" "/>
+<img src={elipe} className={s.shar2} alt=" "/>
+<img src={elipe} className={s.shar3} alt=" "/>
+
+<Button variant="primary" onClick={this.close2} className={s.modalbutton}><span>Ok</span></Button>
+    </div>
+      </Modal>  
             </div>
         )
     }

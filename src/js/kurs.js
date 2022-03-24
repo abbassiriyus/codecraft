@@ -7,7 +7,9 @@ import javascript from '../img/testing.png';
 import android from '../img/android.png';
 import scratch from '../img/scratch.png';
 import unity from '../img/unity.png';
-import AOS from 'aos'
+import AOS from 'aos';
+import down1 from '../img/premium-icon-down-arrow-3840825 1.png';
+import down2 from '../img/premium-icon-down-arrow-3840825 2.png';
 import 'aos/dist/aos.css';
 AOS.init();
 export default class kurs extends Component {
@@ -69,7 +71,11 @@ export default class kurs extends Component {
            <p>это визуальный конструктор приложений для Android. Таким образом, несмотря на то, что основным языком создания программ для Android является Java, в случае использования App Inventor совершенно не требуется.
                                 </p>
             </MDBCardText>
-            <a href="/#xabar"> Подробнее</a>
+            <a href="/#xabar">
+              <img src={down1} alt=" "/>
+               Подробнее
+               <img src={down2} alt=" "/>
+               </a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -99,7 +105,7 @@ export default class kurs extends Component {
             position='top'
           />
           <MDBCardBody>
-            <MDBCardTitle className={kurstyle.title}>Курс <span className={kurstyle.textyellow}>Scratch</span></MDBCardTitle>
+            <MDBCardTitle className={kurstyle.title}>Курс<span className={kurstyle.textyellow}>Scratch</span></MDBCardTitle>
             <MDBCardText>
            <p>
                                     Ваш ребёнок много времени проводит играя за компьютером? Как превратить это время в пользу? Цель курса визуального программирования - научить детей созидательной работе за компьютером, раскрывая весь их творческий потенциал</p>
