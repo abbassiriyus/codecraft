@@ -9,9 +9,15 @@
     justify-content: center;
 }
 .cuorse h1{
-    font-size: 50px;
-    font-weight: 600;
+    font-family: 'Work Sans';
+    font-style: normal;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
     text-align: center;
+    letter-spacing: -0.02em;
     color: black;
 }
 .cuorse span{
@@ -122,6 +128,9 @@ padding-right: 10px;
         box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
         position: relative;
      }
+     .cuorse h1{
+         font-size: 24px;
+     }
      .kursCard .title{
         font-size: 23px;
         font-weight: 600;
@@ -152,8 +161,7 @@ padding-right: 10px;
     }
     .cuorse h1{
         margin-top: 40px;
-        font-size: 27px;
-        font-weight: 600;
+        font-size: 24px;
         text-align: center;
         color: black;
     }

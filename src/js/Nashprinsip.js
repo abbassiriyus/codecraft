@@ -4,7 +4,8 @@ import imgs from '../img/nnn1.gif';
 import child from '../img/child.png';
 import rightImg from '../img/1111.png';
 import image1 from '../img/o.png';
-import image2 from '../img/image2.png';
+import image2 from '../img/image2.png'
+import image3 from '../img/image3.png';
 import image4 from '../img/image4.png';
 import image5 from '../img/glob.png';
 import image6 from '../img/image6.png';
@@ -97,7 +98,7 @@ export default class Nashprinsip extends Component {
 
                     <Col sm={12} md={12} lg={6}  style={{padding:'25px'}} > 
                     <div className={styles.pochcard}  style={{border:'2px solid #3F3E3EBF'}} >
-                    <img style={{padding:'10px'}}  alt='' src="https://nito.rsvpu.ru/img/logo.png"/>
+                    <img style={{padding:'10px'}}  alt='' src={image3}/>
                     <div className={styles.pochtext} ><h4>Современные технологии</h4>
                     <p>Мы всегда следим за актуальностью наших учебных программ, следуя всевозможным современным тенденциям</p>
                     </div></div>

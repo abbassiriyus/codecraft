@@ -18,10 +18,16 @@ margin: 0 auto;
    }
 
 .title{
-   color: #fff;
-   margin: 50px 0;
-   padding-top: 50px ;
+   font-family: 'Work Sans';
+   font-style: normal;
+   padding-top: 40px;
+   margin-bottom: 40px;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 56px;
    text-align: center;
+   letter-spacing: -0.02em;
+   color: #F3F0F0;
 }
 .counter{
    box-shadow: 0px -20px 40px #FAC819 ,0px 20px 40px #FAC819;
@@ -100,7 +106,15 @@ height: 90px;
 }
 .codecrafMain .title{
    color: black;
-  text-shadow: none;
+   font-family: 'Work Sans';
+   font-style: normal;
+   padding-top: 40px;
+   margin-bottom: 40px;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 56px;
+   text-align: center;
+   letter-spacing: -0.02em;
 }
 .codecraf img{
 height: 90px;
@@ -143,7 +157,9 @@ height: 90px;
 }
 }
 @media(max-width:992px){
-
+   .codecrafMain .title{
+   font-size: 24px;
+}
 
 .counter_number{
    margin: 0;
@@ -155,7 +171,7 @@ height: 90px;
    color:#FAC819;
    display: inline-block;
 }
-.counter_text{
+.counter_text {
    color: #7f7f7f;
    margin: 0;
 }
@@ -176,7 +192,7 @@ height: 90px;
          margin: 0 auto;
          }
    .title{
-      font-size: 20px;
+      font-size: 24px;
    }
   
    .mainBox .img{
@@ -227,7 +243,7 @@ height: 90px;
 }
 @media(max-width:500px) {
    .title{ 
-      font-size: 27px;   
+      font-size: 24px;   
    }
   
    .mainBox .img{
