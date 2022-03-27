@@ -70,10 +70,6 @@ padding-right: 10px;
     font-family: sans-serif;
     padding-bottom: 20px;
 }
-.kursCard a img{
-    width: 20px;
-    padding: 20px;
-}
 .kursCard a{
     text-decoration: none;
     background-color:#FAC819;
@@ -89,6 +85,13 @@ padding-right: 10px;
     position: absolute;
     left: 30%;
     bottom: 0px;
+}
+a .img{
+    height: 20px;
+    position: relative;
+    top: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .icon{
     padding-right:6px;

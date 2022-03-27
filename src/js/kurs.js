@@ -38,7 +38,9 @@ export default class kurs extends Component {
             <MDBCardText>
              <p>Python - это язык программирования, который активно используеться в разработке веб-сайтов, игр и программ. Благодаря своей простоте и понятности, этот язык идеально подходит для новичков.</p>
             </MDBCardText>
-            <a href="/python"> Подробнее</a>
+            <a href="/python">  <img src={down1} className={kurstyle.img} alt=" "/>
+               Подробнее
+               <img src={down2} className={kurstyle.img} alt=" "/></a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -54,7 +56,9 @@ export default class kurs extends Component {
             <MDBCardText>
             <p>Javascript - это один из самых востребованных языков программирования на сегодня. Владея этим языком, можно создавать почти всё: веб-сайты, игры и программы для любых электронных устройств,и архитектуру сайта.</p>
             </MDBCardText>
-            <a href="/javascript"> Подробнее</a>
+            <a href="/javascript">  <img src={down1} className={kurstyle.img} alt=" "/>
+               Подробнее
+               <img src={down2} className={kurstyle.img} alt=" "/></a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -72,9 +76,9 @@ export default class kurs extends Component {
                                 </p>
             </MDBCardText>
             <a href="/#xabar">
-              <img src={down1} alt=" "/>
+              <img src={down1} className={kurstyle.img} alt=" "/>
                Подробнее
-               <img src={down2} alt=" "/>
+               <img src={down2} className={kurstyle.img} alt=" "/>
                </a>
           </MDBCardBody>
         </MDBCard>
@@ -93,7 +97,9 @@ export default class kurs extends Component {
             <p>Этот курс позволит освоить базовые принципы в программировании, без которых не обойтись ни одному будущему разработчику. Дети получат необходимый фундамент, который позволит идти дальше изучая более интересные и сложные
                                     темы в программировании.</p>
             </MDBCardText>
-            <a href="/php"> Подробнее</a>
+            <a href="/php">  <img src={down1} className={kurstyle.img} alt=" "/>
+               Подробнее
+               <img src={down2} className={kurstyle.img} alt=" "/></a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -110,7 +116,9 @@ export default class kurs extends Component {
            <p>
                                     Ваш ребёнок много времени проводит играя за компьютером? Как превратить это время в пользу? Цель курса визуального программирования - научить детей созидательной работе за компьютером, раскрывая весь их творческий потенциал</p>
             </MDBCardText>
-            <a href="/scratch"> Подробнее</a>
+            <a href="/scratch">  <img src={down1} className={kurstyle.img} alt=" "/>
+               Подробнее
+               <img src={down2} className={kurstyle.img} alt=" "/></a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol >
@@ -128,7 +136,9 @@ export default class kurs extends Component {
             
 Unity - это популярный игровой движок, позволяющий создавать трехмерные игры, которые будут работать на компьютере, телефоне, и даже игровой приставке. Лучший выбор для более опытных ребят.</p>
             </MDBCardText>
-            <a href="/mentalarifmetika"> Подробнее</a>
+            <a href="/mentalarifmetika">  <img src={down1} className={kurstyle.img} alt=" "/>
+               Подробнее
+               <img src={down2} className={kurstyle.img} alt=" "/></a>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>

@@ -16,6 +16,8 @@ export default class Narxlar extends Component {
   render() {
     return (
       <div className={s.hammasi}>
+          <div className={s.shar1}></div>
+          <div className={s.shar2}></div>
 <h1 className={s.title}>Стоимость <span> курсов</span></h1>
 <Container fluid>
 <Row className={s.row}>
