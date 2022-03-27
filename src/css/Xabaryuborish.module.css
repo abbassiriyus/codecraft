@@ -264,7 +264,19 @@ width: 80%;
        padding-right: 0px;
        display: block;
        margin: 0px;
+       width: 100%;
        margin-top: 150px;
+   }
+   .hammasi1{
+       padding: 0px;
+       margin-left: 0px;
+   }
+   .as{
+       width: 100%;
+       padding-left: 20px;
+       padding-right: 10px;
+       margin-left: 0px;
+       margin-right: 0px;
    }
    .inputw{
     background: #FFFAFA;
@@ -274,7 +286,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 15px;
 height: 25px;
 font-size: 10px;
-width: 80%;
+width: 90%;
 }
     
 .title{
@@ -317,6 +329,7 @@ width: 80%;
      .xabarBtn{
          font-size:15px ;
          display: flex;
+         width: 80%;
      }
      .xabarBtn img{
         width: 22px;
@@ -326,6 +339,7 @@ width: 80%;
     }
     .hash3{
         font-size: 15px;
+        margin-bottom: -40px;
     }
  
 }

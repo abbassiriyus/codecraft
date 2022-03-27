@@ -50,7 +50,6 @@ export default class Navbarr extends Component {
         return (
             <div >
               <div id='body'></div>
-              <div className={s.tel}><a  href="tel:+998 99 584 55 51"><BsFillTelephoneFill style={{color:'green'}}/></a></div>
                               {/* navbar */}
              <Navbar style={{position:'fixed',zIndex:'13232'}}  expand="lg" className={s.navbar}>
   <div class='container-fluid'>

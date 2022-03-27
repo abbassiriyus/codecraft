@@ -86,3 +86,19 @@ top: -50px;
         font-size: 24px;
     }  
 }
+@media (max-width:500px){
+    .card .img{
+        display: flex;
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .button{
+        font-size: 20px;
+    }
+}

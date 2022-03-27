@@ -58,24 +58,24 @@ export default class Dashboard extends Component {
     <Col   lg={4} md={12} >
     
       
-<div style={{display:'flex'}} className={s.kard} >
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" "  src={kopmboa} /></div>
+<div  className={s.kard} >
+      <div ><img className={s.rasn} alt=" "  src={kopmboa} /></div>
       <div style={{display:'block'}}>
       <h2>Учит работать в команде</h2>
       <p>Работая в группах, дети учатся находить общий язык, сотрудничать и брать ответственность за свои действия в команде.</p>
       </div>
     </div>
 
-    <div style={{display:'flex'}} className={s.kard}>
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn}  alt="  "  src={lemon} /></div>
+    <div  className={s.kard}>
+      <div ><img className={s.rasn}  alt="  "  src={lemon} /></div>
       <div style={{display:'block'}}>
       <h2>Улучшает способности решать задачи </h2>
       <p>Создавая программы, дети учатся разбивать сложные задачи на более мелкие, применив логику, фантазию и креативность.</p>
       </div>
     </div>
 
-    <div style={{display:'flex'}} className={s.kard}>
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" "  src={team} /></div>
+    <div  className={s.kard}>
+      <div ><img className={s.rasn} alt=" "  src={team} /></div>
       <div style={{display:'block'}}>
       <h2>Улучшает успеваемость в школе</h2>
       <p>Программирование - способ использовать на практике абстрактные знания полученные в школе, тем самым повышает интерес к учебе и знаниям у ребенка.</p>
@@ -86,24 +86,24 @@ export default class Dashboard extends Component {
     </Col>
     <Col  lg={4}  md={12}   sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img  width="100%"  src={bola} alt=' '/></Col>
     <Col lg={4}  md={12}>
-    <div style={{display:'flex'}} className={s.kard}  >
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " src={online} /></div>
+    <div  className={s.kard}  >
+      <div ><img className={s.rasn} alt=" " src={online} /></div>
       <div style={{display:'block'}}>
       <h2>Укрепляет стойкость</h2>
       <p>Программирование – дело не легкое: каждая сделанная ошибка требует внимательного изучения и поиска ее решения.</p>
       </div>
     </div>
 
-    <div style={{display:'flex',paddingTop:'30px'}} className={s.kard}>
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt="  " src={komputer} /></div>
+    <div  className={s.kard}>
+      <div ><img className={s.rasn} alt="  " src={komputer} /></div>
       <div style={{display:'block'}}>
       <h2>Развивает мышление</h2>
       <p>Создавая программы дети учатся мыслить логически, анализировать, концентрировать внимание и находить решения возникшим проблемам.</p>
       </div>
     </div>
 
-    <div style={{display:'flex',}} className={s.kard} >
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginRight:'30px'}}><img className={s.rasn} alt=" " src={kompide} /></div>
+    <div className={s.kard} >
+      <div ><img className={s.rasn} alt=" " src={kompide} /></div>
       <div style={{display:'block'}}>
       <h2>Расширяет возможности трудоустройства</h2>
       <p>Так же, как и владение иностранным языком, знание основ программирования в цифровую эпоху — показатель образованности потенциального сотрудника для работодателя.</p>

@@ -74,16 +74,16 @@ padding-right: 10px;
     text-decoration: none;
     background-color:#FAC819;
     padding: 15px 20px;
-    border-radius: 20px;
+    border-radius: 60px;
     margin: 30px auto;
     color: white;
     font-size: 18px;
-    width: 40%;
+    width: 60%;
     font-family: sans-serif;
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 30%;
+    left: 20%;
     bottom: 0px;
 }
 a .img{

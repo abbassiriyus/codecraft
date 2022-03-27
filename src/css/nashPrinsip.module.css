@@ -6,6 +6,7 @@
 
 .main{
    background: #2F2F2F;
+   overflow-x: hidden;
 box-shadow: 0px -30px 40px #FAC819 ,0px 30px 40px #FAC819;
 }
 .boxNash{
@@ -118,7 +119,6 @@ height: 90px;
 }
 .codecraf img{
 height: 90px;
-
 }
 .boxNash p{
    font-size: 17px;
@@ -131,6 +131,16 @@ height: 90px;
    opacity: 0.96;
    font-weight: 600;
    color: black;
+}
+.pochcard{
+   display: flex;
+   background: #F3F0F0;
+   border: 2px solid #DFB319BF;
+   box-shadow: 0px 4px 4px 0px #00000040;
+   backdrop-filter: blur(4px);
+   border-radius: 85px;
+   padding: 20px;
+
 }
  @media(max-width:1700px) {
    .mainBox .img{
@@ -245,7 +255,16 @@ height: 90px;
    .title{ 
       font-size: 24px;   
    }
-  
+   .leftCard, .rightCard{
+      text-align: center; 
+   width:300px;
+   margin: auto;
+     margin-top: 20px;
+      margin-bottom: 40px;
+   border-radius: 85px;
+   
+     
+   }
    .mainBox .img{
       width: 100%;
       margin: 30px;
@@ -258,11 +277,17 @@ height: 90px;
      
    }
    .text span{
-      margin-top: 70px;
+      margin-top: 30px;
       color: white;
       font-size: 15px;
       font-weight: 600;
    }
+   .codecraf img{
+      height: 75px;
+      }
+      .pochcard{
+         display: block;
+      }
    
 }
 .back{
@@ -273,16 +298,7 @@ height: 90px;
    border-radius: 85px;
    filter: blur(50px);
 }
-.pochcard{
-   display: flex;
-   background: #F3F0F0;
-   border: 2px solid #DFB319BF;
-   box-shadow: 0px 4px 4px 0px #00000040;
-   backdrop-filter: blur(4px);
-   border-radius: 85px;
-   padding: 20px;
 
-}
 .pochtext h4{
    font-size: 15px;
    font-weight: 900;

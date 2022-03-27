@@ -175,3 +175,12 @@ footer{
         margin-left: 0;
     }
 }
+@media (max-width:500px){
+    .xomiyla img {
+        width: 70px;
+        margin-left:30px;
+    }
+   .xomiyla h3{
+       font-size: 15px;
+   } 
+}
