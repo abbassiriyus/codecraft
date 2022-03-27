@@ -119,11 +119,11 @@ componentDidMount(){
 </div>
 
 <div style={{width:'100%',margin:'auto',textAlign:'center'}}>
-  <Button id={s.df}   className={s.xabarBtn} onClick={this.yuborish}>
-   <img src={down1} className={s.down1} alt=" "/>
+  <button id={s.df}   className={s.xabarBtn} style={{color:'white'}} onClick={this.yuborish}>
+   <img src={down1} className={s.down1} alt=" " />
     Записаться
     <img src={down2} className={s.down2} alt=" "/>
-  </Button></div>
+  </button></div>
 </Form>  
 </div></Col>
          </Row>  

@@ -38,6 +38,7 @@ import image35 from '../img/image35.png'
 import image36 from '../img/image36.png'
 import tiue from '../img/tiue.png'
 import ITpark from '../img/ITpark.png'
+import Carousel1 from './Carousel1';
 
 export default class Navbarr extends Component {
   state={
@@ -84,6 +85,11 @@ export default class Navbarr extends Component {
       <Route path="/new2" element={<Allpreyekt2 />} />
     </Routes>
   </BrowserRouter>
+
+
+
+
+<Carousel1/>
 
 
 
