@@ -74,7 +74,7 @@ export default class Navbarr extends Component {
 
 <BrowserRouter>
     <Routes>
-      <Route exact path="/" element={<div style={{marginTop:'0px'}}><Dashboard/><Nashprinsip/><Kurs/><Xabaryuborish/><Accordion/></div>}/>
+      <Route exact path="/" element={<div style={{marginTop:'0px'}}><Dashboard/><Nashprinsip/><Kurs/><Xabaryuborish/><Accordion/><Carousel1/></div>}/>
       <Route path="/teamId" element={<Narxlar />} />
       <Route path="/python" element={<Python/>} />
       <Route path="/scratch" element={<Scratch/>} />
@@ -89,7 +89,7 @@ export default class Navbarr extends Component {
 
 
 
-<Carousel1/>
+
 
 
 
