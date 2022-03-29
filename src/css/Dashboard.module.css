@@ -529,6 +529,7 @@ font-size: 24px;
            margin: 0px;
            padding: 30px;
            width: 93%;
+           background-color: red;
        }
        .kard h2{
         font-size: 15px;
