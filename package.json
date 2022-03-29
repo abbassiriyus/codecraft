@@ -34,10 +34,12 @@
     "react-yandex-maps": "^4.6.0",
     "react-yandex-metrika": "^2.6.0",
     "reactstrap": "^9.0.1",
+    "serve": "^13.0.2",
     "web-vitals": "^2.1.2",
     "world_countries_lists": "^2.3.0"
   },
   "scripts": {
+    "homepage" : ".",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
