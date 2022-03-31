@@ -21,7 +21,7 @@
     "mdb-ui-kit": "^3.10.1",
     "react": "^17.0.2",
     "react-alice-carousel": "^2.5.1",
-    "react-bootstrap": "^2.0.4",
+    "react-bootstrap": "^2.2.2",
     "react-countup": "^6.1.0",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
@@ -39,7 +39,7 @@
     "world_countries_lists": "^2.3.0"
   },
   "scripts": {
-    "homepage" : ".",
+    "homepage": ".",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
