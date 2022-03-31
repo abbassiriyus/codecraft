@@ -6,7 +6,8 @@
 
 .main{
    background: #2F2F2F;
-   overflow-x: hidden;
+   overflow: hidden;
+   /* box-sizing: border-box; */
 box-shadow: 0px -30px 40px #FAC819 ,0px 30px 40px #FAC819;
 }
 .boxNash{

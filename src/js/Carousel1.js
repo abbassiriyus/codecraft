@@ -8,6 +8,7 @@ import barno from '../img/barno.jpg'
 import begzod from '../img/begzod.JPG'
 import abbas from '../img/abbas.jpg'
 import abror from '../img/abrar.jpg'
+import saida from '../img/saida.jpg'
 const handleDragStart = (e) => e.preventDefault();
 
 const responsive = {
@@ -19,16 +20,21 @@ const responsive = {
 export default class Carousel1 extends Component {
   render() {
     const items = [
+      <div className={s.card}>
+      <div className={s.img}> <img src={saida} alt="" /></div>
+       <h2>Халилова Саида</h2>
+       <span>Директор</span>
+   </div>,
      <div className={s.card}>
         <div className={s.img}> <img src={rajabboy} alt="" /></div>
          <h2>Наимов Ражаббой</h2>
          <span>Инструктор по вэб программированию</span>
      </div>,
-       <div className={s.card}>
-       <div className={s.img}> <img src={abbas} alt="" /></div>
-        <h2>Аббас Ергашалиев</h2>
-        <span>Инструктор по вэб программированию</span>
-    </div>,
+    //    <div className={s.card}>
+    //    <div className={s.img}> <img src={abbas} alt="" /></div>
+    //     <h2>Аббас Ергашалиев</h2>
+    //     <span>Инструктор по вэб программированию</span>
+    // </div>,
       <div className={s.card}>
       <div className={s.img}> <img src={abror} alt="" /></div>
        <h2>Aхмадов Aброржон</h2>

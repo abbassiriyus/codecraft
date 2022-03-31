@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { Row,Col, Form, Button, Modal } from 'react-bootstrap';
+import { Row,Col, Form, Button, Modal, Container } from 'react-bootstrap';
 import s from '../css/Xabaryuborish.module.css';
 import koz from '../img/koz.png';
 import modalr from '../img/robo11.png';
@@ -28,7 +28,7 @@ export default class Xabaryuborish extends Component {
   }
   open=()=>{
     this.setState({show:true})
-    document.querySelector('#tel').value="";
+    document.querySelector('#tel').value="+9989";
     document.querySelector('#fam').value="";
     document.querySelector('#fam1').value="";
     document.querySelector('#ism').value="" 
@@ -61,11 +61,12 @@ componentDidMount(){
             <div className={s.hammasi1}>
               <div className={s.sharw}></div> 
                  <h1 id='xabar' className={s.title}>ЗАПИШИТЕСЬ НА <span>БЕСПЛАТНЫЙ МАСТЕР-КЛАСС</span></h1>
+                 <Container fluid>
          <Row className={s.row1}>
-         <Col lg={6} style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+         <Col lg={6} md={12} sm={12} xs={12}  style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
 <div>
 
-   <div className={s.asosiy1}>
+   < div className={s.asosiy1}>
                  <div className={s.rasm1}><img alt=" " width="100%"  src={koz}/></div>
                  <div className={s.ikkitalik1}>
                  Мы поможем вам определиться и подобрать подходящее направление для вашего ребенка
@@ -86,7 +87,7 @@ componentDidMount(){
 </div>
              </Col>
          
-             <Col lg={6} className={s.uchtalik1}>
+             <Col lg={6} md={12} sm={12} xs={12} className={s.uchtalik1}>
                  <div style={{display:'flex'}} className={s.as}>
                  <Form style={{width:'100%'}}>
         <img width="120" height="120" className={s.robit} src={robot} alt=" "/>
@@ -126,7 +127,7 @@ componentDidMount(){
   </button></div>
 </Form>  
 </div></Col>
-         </Row>  
+         </Row>  </Container>
 
          
       <Modal show={this.state.show}   className={s.modal}><div className={s.asosmodal}>

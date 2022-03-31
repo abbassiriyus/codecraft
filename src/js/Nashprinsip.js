@@ -10,7 +10,7 @@ import image4 from '../img/image4.png';
 import image5 from '../img/glob.png';
 import image6 from '../img/image6.png';
 import shar12 from '../img/Ellipse 2.png'
-import {Col,Row} from 'react-bootstrap';
+import {Col,Container,Row} from 'react-bootstrap';
 import CountUp from 'react-countup';
 import styles from '../css/nashPrinsip.module.css';
 import 'aos/dist/aos.css';
@@ -25,12 +25,12 @@ export default class Nashprinsip extends Component {
             <div className={styles.main}>  <img style={{position:'absolute',left:'0px',bottom:'-42px'}} src={shar12}/>
             <div className={styles.boxNash}>
                 <div className={styles.mainBox}>
-                  
+                <Container fluid>
                     <Row> 
          
         
-                    <Bounce left cascade ><h1 className={styles.title}>Наши принципы <span>
-        преподавания</span></h1></Bounce>
+                 <h1 className={styles.title}>Наши принципы <span>
+        преподавания</span></h1>
 
                     <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
                         <div  className={styles.text}>
@@ -68,7 +68,7 @@ export default class Nashprinsip extends Component {
                                <p>Мы проводим исключительно индивидуальные занятия, чтобы передать максимум знаний и опыта вашему ребенку</p>
                            </div></div>
                            </Col>
-                       </Row>
+                       </Row></Container>
                     </div>
                 </div>
             </div>
