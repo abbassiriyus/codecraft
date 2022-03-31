@@ -96,7 +96,7 @@ export default class Navbarr extends Component {
 
 
 <div className={s.xarita_oynasi}>
-<h1 className={s.title}>Площадки <span>Codecraft</span></h1>
+<h1 className={s.title} style={{zIndex:'123213'}}>Площадки <span>Codecraft</span></h1>
 <div className={s.shar31}></div>
 <div className={s.shar32}></div>
 <div className={s.shar33}></div>
@@ -119,9 +119,9 @@ className={s.xarita}
 </YMaps>
 </div>
 <div className={s.manzil}>
-<div><FaMapMarkerAlt style={{marginRight:'20px',color:'#FAC819'}} />241-школа, 6-кабинет, ул.Салом 1. Ориентир: Чайхана Салом</div>
-<div><FaMapMarkerAlt style={{marginRight:'20px',color:'#FAC819'}} />171-школа, 20-кабинет, ул.Буюк Ипак Йули 153. Ориентир: гостиница Саёхат</div>
-<div><FaMapMarkerAlt style={{marginRight:'20px',color:'#FAC819'}} />ИНХА, Блок Б 204 кабинет. Зиёлилар, 9а Буз-1 ж/м, Мирзо-Улугбекский район.</div>
+<div><FaMapMarkerAlt style={{marginRight:'20px',color:'#FFFFFF'}} />241-школа, 6-кабинет, ул.Салом 1. Ориентир: Чайхана Салом</div>
+<div><FaMapMarkerAlt style={{marginRight:'20px',color:'#FFFFFF'}} />171-школа, 20-кабинет, ул.Буюк Ипак Йули 153. Ориентир: гостиница Саёхат</div>
+<div><FaMapMarkerAlt style={{marginRight:'20px',color:'#FFFFFF'}} />ИНХА, Блок Б 204 кабинет. Зиёлилар, 9а Буз-1 ж/м, Мирзо-Улугбекский район.</div>
 </div>
 </div>
 
