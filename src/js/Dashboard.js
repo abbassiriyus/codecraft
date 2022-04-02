@@ -51,7 +51,7 @@ export default class Dashboard extends Component {
 
 {/* asosiy 6ta imkoniyatlar */}
 <main className={s.mativatsiya}>
-  <Bounce left cascade ><h1 style={{marginBottom:'30px'}}><span style={{color:'#FAC819'}}> 6 причин </span> изучать программирование</h1></Bounce>
+ <h1 style={{marginBottom:'30px'}}><span style={{color:'#FAC819'}}> 6 причин </span> изучать программирование</h1>
 
   
   <Row className={s.chet}>
