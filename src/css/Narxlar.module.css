@@ -132,13 +132,12 @@ z-index: 3;
         background-color: #FAC819;
         border-radius: 50%;
     }
+  
     @media (max-width:991px){
         .hammasi .title{
-font-size: 30px;
-
+          font-size: 30px;
         }
         .shar2{
-
             width: 700px;
             height: 700px;
             position: absolute;
@@ -148,5 +147,13 @@ font-size: 30px;
             background-color: #FAC819;
             border-radius: 50%;
         }
+    }
+    @media(max-width:600px){
+    .hammasi .card1 h2{
+         font-size: 15px;
+         left: 40px;
+         bottom: 6px;
+        }
+
     }
     

@@ -53,7 +53,7 @@ export default class Narxlar extends Component {
 <img src={orta3} className={s.rasm1} alt=" "/>
 <h3>Индивидуальное
 расписание</h3>
-<h2>от 1 000 000 сум</h2>
+<h2 id={s.h2}>от 1 000 000 сум</h2>
 </div></Col>
 </Row></Container>
       </div>
