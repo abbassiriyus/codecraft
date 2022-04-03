@@ -109,6 +109,12 @@ padding-bottom: 50px;
     to   {transform: scale(1);}   
 }
 @media(max-Width:600px){
+    .stilly{
+        display: none;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
     .xabarBtn{
         background-color:#FAC819;
         border: none;
@@ -118,12 +124,13 @@ padding-bottom: 50px;
         border-radius: 20px;
     }
     .uchtalik1{ 
+  
         position: relative;
        padding: 10px;
        padding-right: 0px;
        display: block;
        margin: 0px;
-       margin-top: 150px;
+       margin-top: 0px;
    }
    .inputw{
     background: #FFFAFA;
@@ -148,7 +155,7 @@ width: 80%;
  }
  .as{
     background-color: white;
-  
+  display: none;
     margin-bottom: 40px;
      }
    

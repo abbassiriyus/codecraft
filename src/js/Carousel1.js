@@ -30,11 +30,11 @@ export default class Carousel1 extends Component {
          <h2>Наимов Ражаббой</h2>
          <span>Инструктор по вэб программированию</span>
      </div>,
-    //    <div className={s.card}>
-    //    <div className={s.img}> <img src={abbas} alt="" /></div>
-    //     <h2>Аббас Ергашалиев</h2>
-    //     <span>Инструктор по вэб программированию</span>
-    // </div>,
+       <div className={s.card}>
+       <div className={s.img}> <img src={abbas} alt="" /></div>
+        <h2>Аббас Ергашалиев</h2>
+        <span>Инструктор по вэб программированию</span>
+    </div>,
       <div className={s.card}>
       <div className={s.img}> <img src={abror} alt="" /></div>
        <h2>Aхмадов Aброржон</h2>
@@ -43,7 +43,7 @@ export default class Carousel1 extends Component {
        <div className={s.card}>
       <div className={s.img}><img src={barno} alt="" /></div> 
        <h2>Умаралиев Улугбек</h2>
-       <span>Инструктор по вэб программированию</span>
+       <span>Инструктор по Python</span>
    </div>,
        <div className={s.card}>
       <div className={s.img}> <img src={askar} alt="" /></div>

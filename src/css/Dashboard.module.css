@@ -362,7 +362,7 @@ header .aylana{
     } 
   
     .satr ul  h1{
-        font-size: 1.3rem;
+        font-size: 2rem;
         font-weight: 700;
         z-index: 23;
         position: relative;
@@ -370,7 +370,7 @@ header .aylana{
     .satr ul li{
         font-weight: 700;
         margin: auto;
-        font-size: 15px;
+        font-size: 25px;
         z-index: 23;
         position: relative;
     }
@@ -408,12 +408,12 @@ header .aylana{
         z-index: 234;
     }
 }
-@media (max-width:420px){
+@media (max-width:500px){
     .myButton{
         font-size: 10px; 
         width: 96%;
         left: 1%;
-        bottom: 10%;
+        bottom: 20%;
     padding: 7px; }
     .myButton img{
         margin-left: 7px;
@@ -423,18 +423,18 @@ header .aylana{
     .satr ul  h1{
         width: auto;
         display: flex;
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 900;
         margin-bottom: 0px;
-        position: relative;
-        left: -39px;
+
+  
     }
     .satr ul li{
         margin: auto;
-        font-size: 11px;
+        font-size: 13px;
         font-weight: 700;
-        position: relative;
-        left: -39px;
+
+    
     }    
 }
 @keyframes headerbutton{
@@ -710,7 +710,7 @@ margin: auto;
     width: 200px;
     height: 200px;
     filter: blur(10px);
-    top: 700px ;
+    top: 600px ;
     left: 700px;
     background-color: #FAC819;
     border-radius: 50%;

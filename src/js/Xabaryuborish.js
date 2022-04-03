@@ -63,8 +63,8 @@ componentDidMount(){
                  <h1 id='xabar' className={s.title}>ЗАПИШИТЕСЬ НА <span>БЕСПЛАТНЫЙ МАСТЕР-КЛАСС</span></h1>
                  <Container fluid>
          <Row className={s.row1}>
-         <Col lg={6} md={12} sm={12} xs={12}  style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-<div>
+         <Col lg={6} md={12} sm={12} xs={12} className={s.stilly}>
+<div >
 
    < div className={s.asosiy1}>
                  <div className={s.rasm1}><img alt=" " width="100%"  src={koz}/></div>
