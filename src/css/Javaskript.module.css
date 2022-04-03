@@ -2,16 +2,21 @@
     background-color: #2F2F2F;
     margin-bottom: 100px;
 }
-.mains, .boxText{
+.mains,
+ .boxText,
+  .bizningJava{
     margin: 0 auto;
     max-width:85%;
 }
-.mains, .coloryellow{
-    
+.mains, 
+.coloryellow, 
+.bizningJavaBolim{
     background: #FAC819;
     border-radius: 55px;
 }
-.headingTitle, .section h2{
+.headingTitle, 
+.section h2,
+.bizningJava h2{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
@@ -19,8 +24,7 @@
     line-height: 42px;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
-   
+    color: #FFFFFF;   
 }
 
 .headingTitle{
@@ -29,8 +33,6 @@ margin-bottom: 100px;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
 }
 .mains{
-   
-    
     border-top-right-radius: 124px;
     border-bottom-right-radius: 124px;
 }
@@ -40,37 +42,26 @@ width: 99%;
 }
 .headingName h4{
     text-align: center;
+    box-sizing: border-box;
 }
 .imgshadow{
-    position: relative;
     text-align: end;
-   
 }
-.boxshadow{
-    width: 628px;
-    height: 369px;
-    background: rgba(62, 59, 85, 0.85);
-    filter: blur(45px);
-    border-radius: 61px;
-    margin-left: 95px;
-}
+
 .imgsjavascript{
-    position: absolute;
-margin-left: 100px;
-width: 657px;
-height: 369px;
-top:0;
-
+width: 100%;
+height: 100%;
+box-shadow:-90px 10px 10px 20px rgba(62, 59, 85, 0.85);
+margin-left: 20px;
+border-radius: 50px;
 }
-.headingName h2,
+.headingName h4,
 .headingName p{
-
 font-family: 'Work Sans';
 font-style: normal;
 font-weight: 700;
 font-size: 24px;
 line-height: 28px;
-text-align: center;
 letter-spacing: -0.02em;
 padding:0px 9px 7px 5px;
 color: #2F2F2F;
@@ -86,15 +77,69 @@ p .texts{
 
 
 /* 2-BOLIM */
+
 .section h2{
     margin: 120px 0 140px;
 }
-.chapmushakimg, .ongmushakimg{
-    width: 41px;
+.chapmushakimg,
+ .ongmushakimg{
+width: 41px;
 height: 41px;
 margin-bottom: 30px;
 }
- .coloryellow{
-
-     text-align: center;
+.coloryellow {
+    text-align: center;
+    padding: 20px 14px 22px;
+    margin-bottom: 20px;
+}
+.coloryellow img{
+    text-align: center;
+    width: 62px;
+    height: 62px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coloryellow h4{
+    font-weight: 700;
+}
+ .coloryellow p,
+ .coloryellow h4,
+ .bizningJavaBolim h4,
+.bizningJavaBolim p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #000000; 
  }
+ .bizningJava{
+     padding: 48px 32px 48px 47px;
+     text-align: center; 
+background: rgba(225, 222, 222, 0.65);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+filter: blur(0.5px);
+backdrop-filter: blur(4px);
+border-radius: 55px;
+margin-top: 98px;
+ }
+.bizningJava h2{
+    margin-bottom: 113px;
+}
+.bizningJavaBolim{
+padding: 8px 17px;
+margin-bottom: 10px;
+/* margin-right: 103px; */
+}
+.bizningJavaBolim:nth-child(1){
+    margin-right:100px;
+}
+.bizningJavaBolim img{
+    margin-bottom: 12px;
+}
+.bizningJavaBolim h4{
+    font-weight: 700;
+}

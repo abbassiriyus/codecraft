@@ -532,6 +532,8 @@ font-size: 24px;
            margin: auto;
            text-align: center;
            margin-top:20px;
+           padding: 10px;
+           width: 90%;
        }
        .kard h2{
         font-size: 15px;
@@ -547,7 +549,9 @@ margin: auto;
             width: 60px;
 
         }
-      
+#img13{
+    margin-top: 20px;
+}      
    }
 
 
@@ -555,37 +559,6 @@ margin: auto;
 
 
 
-   /* Наши принципы преподавания */
-   .asos2{
-       background-color: #2F2F2F;
-   }
-   .asos2 h1{
-    margin: auto;
-    text-align: center;
-    font-family: 'Work Sans';
-    font-style: normal;
-    padding-top: 40px;
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #F3F0F0;
-    color: white;   
-    }
-    .asos2 .rov2{
-        margin: 10%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .asos2 .text2{
-        color: white;
-        font-size: 18px;
-    }
-    .asos2 .img2{
-        width: 100%;
-    }
   
 
 
