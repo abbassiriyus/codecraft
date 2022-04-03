@@ -130,12 +130,15 @@ margin-top: 98px;
     margin-bottom: 113px;
 }
 .bizningJavaBolim{
+    min-height: 250px;
 padding: 8px 17px;
-margin-bottom: 10px;
-/* margin-right: 103px; */
+margin-bottom: 50px;
+    margin-right:20px;
+    margin-left: 50px;
 }
-.bizningJavaBolim:nth-child(1){
-    margin-right:100px;
+#bizningJavaBolimChild{
+    margin-right: 50px;
+    margin-left: 50px;
 }
 .bizningJavaBolim img{
     margin-bottom: 12px;

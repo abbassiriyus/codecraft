@@ -119,7 +119,7 @@ const Javaskript = () => {
                                 </div>
                             </Col>
                             <Col md={6} lg={4} xl={3} xxl={3}>
-                                <div className={skript.bizningJavaBolim}>
+                                <div id={ skript.bizningJavaBolimChild} className={skript.bizningJavaBolim}>
                             <img src={vektor3} />
                           <h4>WEB-приложения</h4>
 <p>Применение в разработке web-приложений с использованием специализированных платформ с открытым исходным кодом.</p>
@@ -147,7 +147,7 @@ const Javaskript = () => {
                             </div>
                             </Col>
                             <Col md={6} lg={4} xl={3} xxl={3}>
-                                <div className={skript.bizningJavaBolim}> 
+                                <div id={skript.bizningJavaBolimChild} className={skript.bizningJavaBolim}> 
                                     <img src={Vektor4} />
                                     <h4>Научные приложения</h4>
                                  <p>Такие научные вычислительные системы, как MATLAB, используют Java для взаимодействия с пользовательским интерфейсом.</p>
