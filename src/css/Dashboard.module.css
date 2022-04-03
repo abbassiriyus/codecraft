@@ -453,14 +453,14 @@ header .aylana{
 margin: auto;
 margin-top: 40px;
 font-size: 40px; 
-font-family: 'Work Sans';
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-style: normal;
 margin-bottom: 40px;
-font-weight: 700;
+font-weight: 600;
 font-size: 48px;
 line-height: 56px;
 text-align: center;
-letter-spacing: -0.02em;
+/* letter-spacing: -0.0em; */
 color: black;
 }
 .chet{
@@ -524,20 +524,25 @@ font-size: 24px;
 }
    }
    @media(max-width:560px){
-       .kard{
+    .chet .kard{
            display: block;
            margin: 0px;
            padding: 30px;
-           width: 93%;
-           background-color: red;
+           width: 100%;
+           margin: auto;
+           text-align: center;
+           margin-top:20px;
        }
        .kard h2{
         font-size: 15px;
            }
            .kard p{
         font-size: 12px;
+        width: 90%;
+margin: auto;
            }
            .rasn{
+               margin: auto;
             height: 60px;
             width: 60px;
 

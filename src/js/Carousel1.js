@@ -42,13 +42,13 @@ export default class Carousel1 extends Component {
    </div>,
        <div className={s.card}>
       <div className={s.img}><img src={barno} alt="" /></div> 
-       <h2>Абдулазизова Барно</h2>
-       <span>Проектный менеджер,администратор</span>
+       <h2>Умаралиев Улугбек</h2>
+       <span>Инструктор по вэб программированию</span>
    </div>,
        <div className={s.card}>
       <div className={s.img}> <img src={askar} alt="" /></div>
        <h2>Баймирзаев Аскар</h2>
-       <span>маркетолог</span>
+       <span>Проектный менеджер,администратор,маркетолог </span>
    </div>,
       <div className={s.card}>
      <div className={s.img}><img src={begzod} alt="" /></div>
