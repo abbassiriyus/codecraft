@@ -84,7 +84,7 @@ export default class Dashboard extends Component {
 
 
     </Col>
-    <Col  lg={4}  md={12}   sm={{order:'first'}} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img  width="100%"  src={bola} alt=' '/></Col>
+    <Col  lg={4}  md={12}   sm={{order:'first'}} id={s.img13} style={{display:'flex',justifyContent:'center',alignItems:'center'}}><img  width="100%"  src={bola} alt=' '/></Col>
     <Col lg={4}  md={12}>
     <div  className={s.kard}  >
       <div ><img className={s.rasn} alt=" " src={online} /></div>
