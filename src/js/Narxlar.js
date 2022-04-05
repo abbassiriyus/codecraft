@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import s from '../css/Narxlar.module.css'
 import orta1 from '../img/orta1.png'
 import yuqori1 from '../img/yuqori1.png'
@@ -19,9 +19,9 @@ export default class Narxlar extends Component {
           <div className={s.shar1}></div>
           <div className={s.shar2}></div>
 <h1 className={s.title}>Стоимость <span> курсов</span></h1>
-<Container fluid>
-<Row className={s.row}>
-<Col lg={4}  md={6} >
+<div style={{marginLeft:'60px'}} >
+<Row className={s.row} >
+<Col lg={4}  md={6} style={{margin:'auto',marginTop:'30px'}} >
 <div className={s.card1}>
 <h3>Занятия в группах
 онлайн</h3>
@@ -33,7 +33,7 @@ export default class Narxlar extends Component {
 <h2>от 700 000 сум</h2>
 
 </div>
-<button className={s.tugma12}>ЗАКАЗАТЬ</button>
+<div className={s.tugma12}>ЗАКАЗАТЬ</div>
 </Col>
 <Col lg={4}  md={6}><div className={s.card1}>
 <h3>Занятия в группах
@@ -45,7 +45,7 @@ export default class Narxlar extends Component {
 <h3>По будням 
 и выходным дням</h3>
 <h2>от 650 000 сум</h2>
-</div></Col>
+</div><div className={s.tugma12}>ЗАКАЗАТЬ</div></Col>
 <Col lg={4}  md={6}><div className={s.card1}>
 <h3>Персональные 
 онлайн и оффлан</h3>
@@ -56,8 +56,8 @@ export default class Narxlar extends Component {
 <h3>Индивидуальное
 расписание</h3>
 <h2 id={s.h2}>от 1 500 000 сум</h2>
-</div></Col>
-</Row></Container>
+</div><div className={s.tugma12}>ЗАКАЗАТЬ</div></Col>
+</Row></div>
       </div>
     )
   }
