@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import s from '../css/Narxlar.module.css'
 import orta1 from '../img/orta1.png'
 import yuqori1 from '../img/yuqori1.png'
@@ -31,7 +31,9 @@ export default class Narxlar extends Component {
 <img src={orta1} className={s.rasm1} alt=" "/>
 <h3>По выходным дням</h3>
 <h2>от 700 000 сум</h2>
+
 </div>
+<button className={s.tugma12}>ЗАКАЗАТЬ</button>
 </Col>
 <Col lg={4}  md={6}><div className={s.card1}>
 <h3>Занятия в группах
@@ -53,7 +55,7 @@ export default class Narxlar extends Component {
 <img src={orta3} className={s.rasm1} alt=" "/>
 <h3>Индивидуальное
 расписание</h3>
-<h2 id={s.h2}>от 1 000 000 сум</h2>
+<h2 id={s.h2}>от 1 500 000 сум</h2>
 </div></Col>
 </Row></Container>
       </div>

@@ -24,6 +24,16 @@ export default class Carousel1 extends Component {
       <div className={s.img}> <img src={saida} alt="" /></div>
        <h2>Халилова Саида</h2>
        <span>Директор</span>
+   </div>, 
+       <div className={s.card}>
+      <div className={s.img}> <img src={askar} alt="" /></div>
+       <h2>Баймирзаев Аскар</h2>
+       <span>Mаркетолог </span>
+   </div>, 
+   <div className={s.card}>
+      <div className={s.img}> <img src={askar} alt="" /></div>
+       <h2>Рустамов Расул Рустамович</h2>
+       <span>Бухгалтер </span>
    </div>,
      <div className={s.card}>
         <div className={s.img}> <img src={rajabboy} alt="" /></div>
@@ -45,11 +55,7 @@ export default class Carousel1 extends Component {
        <h2>Умаралиев Улугбек</h2>
        <span>Инструктор по Python</span>
    </div>,
-       <div className={s.card}>
-      <div className={s.img}> <img src={askar} alt="" /></div>
-       <h2>Баймирзаев Аскар</h2>
-       <span>Проектный менеджер,администратор,маркетолог </span>
-   </div>,
+  
       <div className={s.card}>
      <div className={s.img}><img src={begzod} alt="" /></div>
       <h2>Каххоров Бекзод</h2>

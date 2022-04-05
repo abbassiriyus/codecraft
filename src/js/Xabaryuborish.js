@@ -104,7 +104,7 @@ componentDidMount(){
 
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label className={s.inputwf}>Фамилия</Form.Label>
-    <Form.Control id='fam' className={s.inputw} type="text" placeholder="введите фамилию..." />
+    <Form.Control id='fam' className={s.inputw} type="text" placeholder="Введите фамилию..." />
   </Form.Group>
 </div>
 <div style={{width:'50%'}}>
@@ -115,7 +115,7 @@ componentDidMount(){
   
   <Form.Group className="mb-3"  controlId="formBasicPassword">
     <Form.Label className={s.inputwf}>Номер телефона</Form.Label>
-    <Form.Control id='tel' type="tel" className={s.inputw} placeholder="введите телефона номер..." />
+    <Form.Control id='tel' type="tel" className={s.inputw} placeholder="Введите телефона номер..." />
   </Form.Group></div>
 </div>
 
