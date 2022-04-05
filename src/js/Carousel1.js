@@ -9,6 +9,7 @@ import begzod from '../img/begzod.JPG'
 import abbas from '../img/abbas.jpg'
 import abror from '../img/abrar.jpg'
 import saida from '../img/saida.jpg'
+import rasul from '../img/rasul.jpg'
 const handleDragStart = (e) => e.preventDefault();
 
 const responsive = {
@@ -31,7 +32,7 @@ export default class Carousel1 extends Component {
        <span>Mаркетолог </span>
    </div>, 
    <div className={s.card}>
-      <div className={s.img}> <img src={askar} alt="" /></div>
+      <div className={s.img}> <img src={rasul} alt="" /></div>
        <h2>Рустамов Расул Рустамович</h2>
        <span>Бухгалтер </span>
    </div>,
