@@ -63,8 +63,8 @@ componentDidMount(){
                  <h1 id='xabar' className={s.title}>ЗАПИШИТЕСЬ НА <span>БЕСПЛАТНЫЙ МАСТЕР-КЛАСС</span></h1>
                  <Container fluid>
          <Row className={s.row1}>
-         <Col lg={6} md={12} sm={12} xs={12}  style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-<div>
+         <Col lg={6} md={12} sm={12} xs={12} className={s.stilly}>
+<div >
 
    < div className={s.asosiy1}>
                  <div className={s.rasm1}><img alt=" " width="100%"  src={koz}/></div>
@@ -104,7 +104,7 @@ componentDidMount(){
 
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label className={s.inputwf}>Фамилия</Form.Label>
-    <Form.Control id='fam' className={s.inputw} type="text" placeholder="введите фамилию..." />
+    <Form.Control id='fam' className={s.inputw} type="text" placeholder="Введите фамилию..." />
   </Form.Group>
 </div>
 <div style={{width:'50%'}}>
@@ -115,7 +115,7 @@ componentDidMount(){
   
   <Form.Group className="mb-3"  controlId="formBasicPassword">
     <Form.Label className={s.inputwf}>Номер телефона</Form.Label>
-    <Form.Control id='tel' type="tel" className={s.inputw} placeholder="введите телефона номер..." />
+    <Form.Control id='tel' type="tel" className={s.inputw} placeholder="Введите телефона номер..." />
   </Form.Group></div>
 </div>
 

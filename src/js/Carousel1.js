@@ -9,6 +9,7 @@ import begzod from '../img/begzod.JPG'
 import abbas from '../img/abbas.jpg'
 import abror from '../img/abrar.jpg'
 import saida from '../img/saida.jpg'
+import rasul from '../img/rasul.jpg'
 const handleDragStart = (e) => e.preventDefault();
 
 const responsive = {
@@ -24,17 +25,27 @@ export default class Carousel1 extends Component {
       <div className={s.img}> <img src={saida} alt="" /></div>
        <h2>Халилова Саида</h2>
        <span>Директор</span>
+   </div>, 
+       <div className={s.card}>
+      <div className={s.img}> <img src={askar} alt="" /></div>
+       <h2>Баймирзаев Аскар</h2>
+       <span>Mаркетолог </span>
+   </div>, 
+   <div className={s.card}>
+      <div className={s.img}> <img src={rasul} alt="" /></div>
+       <h2>Рустамов Расул Рустамович</h2>
+       <span>Бухгалтер </span>
    </div>,
      <div className={s.card}>
         <div className={s.img}> <img src={rajabboy} alt="" /></div>
          <h2>Наимов Ражаббой</h2>
          <span>Инструктор по вэб программированию</span>
      </div>,
-    //    <div className={s.card}>
-    //    <div className={s.img}> <img src={abbas} alt="" /></div>
-    //     <h2>Аббас Ергашалиев</h2>
-    //     <span>Инструктор по вэб программированию</span>
-    // </div>,
+       <div className={s.card}>
+       <div className={s.img}> <img src={abbas} alt="" /></div>
+        <h2>Аббас Ергашалиев</h2>
+        <span>Инструктор по вэб программированию</span>
+    </div>,
       <div className={s.card}>
       <div className={s.img}> <img src={abror} alt="" /></div>
        <h2>Aхмадов Aброржон</h2>
@@ -43,13 +54,9 @@ export default class Carousel1 extends Component {
        <div className={s.card}>
       <div className={s.img}><img src={barno} alt="" /></div> 
        <h2>Умаралиев Улугбек</h2>
-       <span>Инструктор по вэб программированию</span>
+       <span>Инструктор по Python</span>
    </div>,
-       <div className={s.card}>
-      <div className={s.img}> <img src={askar} alt="" /></div>
-       <h2>Баймирзаев Аскар</h2>
-       <span>Проектный менеджер,администратор,маркетолог </span>
-   </div>,
+  
       <div className={s.card}>
      <div className={s.img}><img src={begzod} alt="" /></div>
       <h2>Каххоров Бекзод</h2>

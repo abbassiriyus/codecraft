@@ -3,9 +3,9 @@
 width: 100vw;
 padding-bottom:100px ;
 box-shadow:inset 0px 30px 20px #FAC819,inset 0px -30px 20px #FAC819;
+padding-bottom: 200px;
 }
 .row{
-   
     margin-left: auto;
      justify-content: space-around;
 }
@@ -17,7 +17,7 @@ font-size: 48px;
 line-height: 75px;
 margin: auto;
 z-index: 23;
-/* identical to box height */
+width: 100vw;
 letter-spacing: -0.02em;
 padding-top: 140px;
 margin-bottom: 40px;
@@ -156,4 +156,26 @@ z-index: 3;
         }
 
     }
+    
+.tugma12{
+    font-family: 'Work Sans';
+    font-style: normal;
+    z-index: 321;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #FBB815;
+    border-radius: 55px;
+    border: none;
+    padding: 20px;
+    padding-top: 10px;
+    width: 300px;
+    padding-bottom: 10px; 
+      display: flex;
+    justify-content: center;
+    text-align: center;
+}
     
