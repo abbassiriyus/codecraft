@@ -11,9 +11,10 @@
 .mains, 
 .coloryellow, 
 .bizningJavaBolim{
-    background: #FAC819;
+    background: #f0b410d2;
     border-radius: 55px;
 }
+
 .headingTitle, 
 .section h2,
 .bizningJava h2{
@@ -32,13 +33,11 @@ padding-top: 260px;
 margin-bottom: 100px;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
 }
-.mains{
-    border-top-right-radius: 124px;
-    border-bottom-right-radius: 124px;
-}
+
 .headingName{   
 margin:50px 0 0 66px;
 width: 99%;
+
 }
 .headingName h4{
     text-align: center;
@@ -48,32 +47,45 @@ width: 99%;
     text-align: end;
 }
 
-.imgsjavascript{
+.imgsjavascripts{
+    border-radius: 45px;
+    position: absolute;
+    filter: blur(20px);
+background-color: #1E1A38;
 width: 100%;
+right: 0px;
 height: 100%;
-box-shadow:-90px 10px 10px 20px rgba(62, 59, 85, 0.85);
-margin-left: 20px;
-border-radius: 50px;
+margin-left: 30px;
+
+
 }
+.imgsjavascript{
+    position: relative;
+    left: 10px;
+max-width: 100%;
+max-height: 100%;
+margin-left: 30px;
+
+
+}
+
+
 .headingName h4,
-.headingName p{
+.headingName span{
 font-family: 'Work Sans';
 font-style: normal;
 font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-letter-spacing: -0.02em;
+font-size: 18px;
+max-width: 900px;
 padding:0px 9px 7px 5px;
 color: #2F2F2F;
 }
-.headingName p{
+.headingName span{
     margin-top:40px;
     text-align: justify;
+    padding: 0 20px 30px 0;
 }
-p .texts{
-    display: block;
-   text-align: center;
-}
+
 
 
 /* 2-BOLIM */
@@ -111,11 +123,14 @@ margin-bottom: 30px;
 .bizningJavaBolim p{
     font-family: 'Work Sans';
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     letter-spacing: -0.02em;
     color: #000000; 
  }
+
+ /*3-bolim  */
+
  .bizningJava{
      padding: 48px 32px 48px 47px;
      text-align: center; 
@@ -141,6 +156,8 @@ margin-bottom: 50px;
     margin-left: 50px;
 }
 .bizningJavaBolim img{
+    width: 50px;
+    height: 50px;
     margin-bottom: 12px;
 }
 .bizningJavaBolim h4{

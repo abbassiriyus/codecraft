@@ -27,13 +27,17 @@ const Javaskript = () => {
                 <h2 className={skript.headingTitle}>Язык программирования JavaScript</h2>
                 <div className={skript.mains}>
                <Row>
-              <Col sm={12} md={12} lg={6} xl={6} xxl={6}>
+              <Col sm={12} md={12} lg={7} xl={7} xxl={7}>
                 <div className={skript.headingName}>
                     <h4>Основы программирования на Java</h4>
-<p>Java — это язык программирования который следует принципу «Написать один раз и использовать везде». Java можно найти везде, это основной язык разработки для Android, веб-приложений, правительственных веб-сайтов и технологий обработки больших данных, также java подходит и для научных проектов, особенно в области <span className={skript.texts}>обработки естественного языка</span>.</p>                 
+<span>Java — это язык программирования который следует принципу «Написать один раз и использовать везде». Java можно найти везде, это основной язык разработки для Android, веб-приложений, правительственных веб-сайтов и технологий обработки больших данных, также java подходит и для научных проектов, особенно в области обработки естественного языка.</span>   
                     </div>
               </Col>
-              <Col sm={12} md={12} lg={6} xl={6} xxl={6} className={skript.imgshadow}><div className={skript.boxshadow}></div><img className={skript.imgsjavascript} src={imgs}  />
+              <Col sm={12} md={12} lg={5} xl={5} xxl={5}>
+<div style={{position:'relative'}} >
+                  <div className={skript.imgsjavascripts}></div>
+                  <img className={skript.imgsjavascript} src={imgs} />
+</div>
               </Col>
                </Row>
                </div>

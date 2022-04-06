@@ -22,6 +22,7 @@ import Allpreyekt2 from './Allpreyekt2'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Kurs from './kurs'
 import Xabaryuborish from './Xabaryuborish'
+import Xabaryuborish1 from './Xabaryuborish1'
 import Accordion from './accordion'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import '../App.css'
@@ -77,6 +78,7 @@ export default class Navbarr extends Component {
       <Route path="/teamId" element={<Narxlar />} />
       <Route path="/python" element={<Python/>} />
       <Route path="/scratch" element={<Scratch/>} />
+      <Route path="/link" element={<Xabaryuborish1/>} />
       <Route path="/javascript" element={<Javaskript />} />
       <Route path="/php" element={<PHP />} />
       <Route path="/mentalarifmetika" element={<MentalArifmetika />} />
