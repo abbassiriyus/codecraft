@@ -3,7 +3,7 @@ import imgTogle from '../img/list.svg';
 import React, { Component } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import './scratch.css'
-import { Image } from 'antd';
+
 export default class Scratch extends Component {
     state={
         key:true,
@@ -165,19 +165,19 @@ Sc5=()=>{
     <h1 style={{padding:'100px',fontFamily:'fanatic',fontSize:'60px',color:'orange'}}  id={scratch.anim}>Scratch  bloklarga asoslangan dasturlash yordamida interaktiv hikoyalar, o'yinlar , badiiy , simulyatsiya va boshqalarni yaratish uchun mo`ljallangan dasturlash tili` .</h1>
   </section>
   <section id='s2'>
-    <div style={{display:'flex'}}><img style={{width:'50%',padding:'40px',margin:'40px'}} className={scratch.rasmmm}  src='https://www.kangaroopert.com/wp-content/uploads/2018/01/scratch-project-1-vid.gif'/>
+    <div style={{display:'flex'}}><img style={{width:'50%',padding:'40px',margin:'40px'}} alt=" " className={scratch.rasmmm}  src='https://www.kangaroopert.com/wp-content/uploads/2018/01/scratch-project-1-vid.gif'/>
     <h1 style={{width:'50%',padding:'80px',fontFamily:'fanatic',fontSize:'35px',color:'orange'}} id={scratch.anim} >Scratch - bu asosan kodni o'rganishda yordam beradigan 8-16 yoshdagi bolalarga mo'ljallangan blokli vizual dasturlash tili va veb-sayti. Sayt foydalanuvchilari Internetda blokga o'xshash interfeys yordamida loyihalar yaratishlari mumkin. Xizmat MIT Media Lab tomonidan ishlab chiqilgan , 70 dan ortiq tillarga tarjima qilingan va dunyoning aksariyat qismlarida qo'llaniladi. Scratch maktabdan keyingi markazlarda, maktablarda va kollejlarda, shuningdek boshqa jamoat bilimlari muassasalarida o'qitiladi va qo'llaniladi.
       </h1></div>
   </section>
   <section id='s3'>
     <h1><Row>
-      <Col><img style={{width:'100%',padding:'20px'}} className={scratch.rasmm}  src='https://lh5.googleusercontent.com/WXipiV4kl0MbFIaypdfl5wPY2CBPuC8YUlJTH_vHzRW5-bZX2CPwMm0dKF2-pnloA7ipFGobciUT5FEp9GJLgfHgYCtOKbaYlGpdTYNRIAq9QqICXia-9GZzr7mY2C7FJjqM51lE'/></Col>
-      <Col><img  style={{width:'100%',padding:'20px'}} className={scratch.rasmm} src='https://i.ytimg.com/vi/r56Tmwr6PAA/maxresdefault.jpg'/></Col>
-      <Col><img  style={{width:'100%',padding:'20px'}} className={scratch.rasmm} src='http://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/08/Django-Tutorial.png'/></Col>
+      <Col><img alt=" " style={{width:'100%',padding:'20px'}} className={scratch.rasmm}  src='https://lh5.googleusercontent.com/WXipiV4kl0MbFIaypdfl5wPY2CBPuC8YUlJTH_vHzRW5-bZX2CPwMm0dKF2-pnloA7ipFGobciUT5FEp9GJLgfHgYCtOKbaYlGpdTYNRIAq9QqICXia-9GZzr7mY2C7FJjqM51lE'/></Col>
+      <Col><img alt=" "  style={{width:'100%',padding:'20px'}} className={scratch.rasmm} src='https://i.ytimg.com/vi/r56Tmwr6PAA/maxresdefault.jpg'/></Col>
+      <Col><img alt=" "  style={{width:'100%',padding:'20px'}} className={scratch.rasmm} src='http://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/08/Django-Tutorial.png'/></Col>
       </Row></h1>
   </section>
   <section id='s4'>
-  <iframe width="100%" height="100%"
+  <iframe width="100%" height="100%" title=' '
 src="https://res.cloudinary.com/duvkf4jlo/video/upload/v1644405159/Scratch_hafaqr.mp4?_s=vp-1.7.0">
 </iframe> 
   </section>

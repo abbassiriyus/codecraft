@@ -10,8 +10,6 @@ import yulduz from '../img/yulduz.png'
 import robot from '../img/robot.png'
 import elipe from '../img/Ellipse33.png'
 import axios from 'axios';
-import 'antd/dist/antd.css';
-import 'antd-country-phone-input/dist/index.css';
 import down1 from '../img/premium-icon-down-arrow-3840825 1.png'
 import down2 from '../img/premium-icon-down-arrow-3840825 2.png'
 
@@ -23,15 +21,13 @@ export default class Xabaryuborish extends Component {
     show:false,
     show2:false
   }
-  anima=()=>{
-    document.querySelector('#df').style=""
-  }
-  open=()=>{
-    this.setState({show:true})
+
+  open=()=>{ 
     document.querySelector('#tel').value="+9989";
     document.querySelector('#fam').value="";
     document.querySelector('#fam1').value="";
     document.querySelector('#ism').value="" 
+    this.setState({show:true})
   }
   open2=()=>{
     this.setState({show2:true})
@@ -47,11 +43,12 @@ var t=document.querySelector('#tel').value;
 var f=document.querySelector('#fam').value;
 var f1=document.querySelector('#fam1').value;
 var i=document.querySelector('#ism').value 
-  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=462196488&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
+  t.length==13?(this.open()):(this.open2())
+  axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=1520593027&text='+'Developper Abbas   ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
+	axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=462196488&text='+'Abror python ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
   axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=5087964552&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
   axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=897831465&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
   axios.get('https://api.telegram.org/bot5043091089:AAGUna36ZRubuSNAEulUgJ-vt8utcQbE-9M/sendMessage?chat_id=710414046&text='+'ismi: '+`${i}`+'   Familiya: '+`${f}`+'   Nomer: '+'%2B'+`${t}`+'  Kurs: '+`${f1}`)
-  t.length==13?(this.open()):(this.open2())
 }
 componentDidMount(){
   document.querySelector('#tel').value='+998';
@@ -89,7 +86,7 @@ componentDidMount(){
          
              <Col lg={6} md={12} sm={12} xs={12} className={s.uchtalik1}>
                  <div style={{display:'flex'}} className={s.as}>
-                 <Form style={{width:'100%'}}>
+                 <Form  style={{width:'100%'}}>
         <img width="120" height="120" className={s.robit} src={robot} alt=" "/>
         <h3 className={s.hash3}>Заявка на мастер-класс</h3>
 <div style={{display:'flex', justifyContent:'space-around'}}>
@@ -120,13 +117,14 @@ componentDidMount(){
 </div>
 
 <div style={{width:'100%',margin:'auto',textAlign:'center'}}>
-  <button id={s.df}   className={s.xabarBtn} style={{color:'white'}} onClick={this.yuborish}>
+  <Button  id={s.df}  onClick={()=>this.yuborish()}  className={s.xabarBtn} style={{color:'white'}}>
    <img src={down1} className={s.down1} alt=" " />
     Записаться
     <img src={down2} className={s.down2} alt=" "/>
-  </button></div>
+  </Button></div>
 </Form>  
 </div></Col>
+
          </Row>  </Container>
 
          
