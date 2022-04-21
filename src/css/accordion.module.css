@@ -66,6 +66,39 @@ padding: 70px;
     border-radius: 50%;
     filter: blur(3px);
 }
+.bitta:hover{
+    animation-name: anim1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.bitta:active .satr{
+background-color: red;
+}
+.ikkita11:hover{
+    animation-name: anim1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.ikkita12:hover{
+    animation-name: anim1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.ikkita21:hover{
+    animation-name: anim1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.ikkita22:hover{
+animation-name: anim1;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+}
+
+@keyframes anim1{
+    0%{position: relative;top: 0px;}
+100%{position: relative;top: -20px;}
+}
 
 @media (max-width:1440px){
     .text{
@@ -95,21 +128,7 @@ padding: 70px;
         height: 180px;
         position: relative;
     }
-   .bitta:hover{
-        scale: 1.03;
-    }
-    .ikkita11:hover{
-        scale: 1.03;
-    }
-    .ikkita12:hover{
-        scale: 1.03;
-    }
-    .ikkita21:hover{
-        scale: 1.03;
-    }
-    .ikkita22:hover{
-        scale: 1.03;
-    }
+ 
     .satr{
         background: url('../img/oblaka.png');
         background-size: 110% 110%;
